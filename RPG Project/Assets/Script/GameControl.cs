@@ -55,6 +55,12 @@ public class GameControl : MonoBehaviour {
         fogRef.CleanMove();
         refMPU.Deactivate();
         firstCell.GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
+
+        //Clear Movment Cell
+        for (int i = 0; i < movementCell.Count; i++)
+        {
+            movementCell[i].GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
+        }
     }
 
     public void CombatPlayer ()
