@@ -24,6 +24,7 @@ public class EnemyController : MonoBehaviour {
         enemies = FindObjectsOfType<Enemy>();
         foreach (var enemy in enemies)
         {
+            refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
             enemy.ManhattanSearch();
             enemy.SearchPlayer();
             enemy.MoveEnemy();
@@ -39,6 +40,7 @@ public class EnemyController : MonoBehaviour {
                 }
             }
         }
+        refGrid.CreateGrid();
         refGC.phase = GamePhase.Selezione;
     }
 }

@@ -54,8 +54,8 @@ public class Enemy : MonoBehaviour
         moveCell.Clear();
         isPlayerVisible = false;
 
-        Color ciao = new Color(Random.value, Random.value, Random.value);
-
+        //Color ciao = new Color(Random.value, Random.value, Random.value);
+        
         for (int i = (myI - vista); i <= (myI + vista); i++)
         {
             for (int j = (myJ - vista); j <= (myJ + vista); j++)
@@ -64,9 +64,9 @@ public class Enemy : MonoBehaviour
                     continue;
                 if (j < 0)
                     continue;
-                if (i > 19)
+                if (i > Grid.COL-1)
                     continue;
-                if (j > 19)
+                if (j > Grid.ROW-1)
                     continue;
                 LookCell.Add(refGrid.cellMat[i, j]);
                 if (refGrid.cellMat[i, j].isWall)
@@ -112,9 +112,9 @@ public class Enemy : MonoBehaviour
                     continue;
                 if (j < 0)
                     continue;
-                if (i > 19)
+                if (i > Grid.COL-1)
                     continue;
-                if (j > 19)
+                if (j > Grid.ROW-1)
                     continue;
 
                 if (refGrid.cellMat[i, j].isWall)
@@ -190,9 +190,9 @@ public class Enemy : MonoBehaviour
                     continue;
                 if (j < 0)
                     continue;
-                if (i > 19)
+                if (i > Grid.COL-1)
                     continue;
-                if (j > 19)
+                if (j > Grid.ROW-1)
                     continue;
 
                 if (refGrid.cellMat[i, j].GetComponentInChildren<Enemy>())

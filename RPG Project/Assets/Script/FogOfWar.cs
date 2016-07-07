@@ -41,9 +41,9 @@ public class FogOfWar : MonoBehaviour {
                     continue;
                 if (y < 0)
                     continue;
-                if (i > 19)
+                if (i > Grid.COL-1)
                     continue;
-                if (y > 19)
+                if (y > Grid.ROW-1)
                     continue;
 
                 if (refGrid.cellMat[i,y].isWall)
@@ -81,6 +81,7 @@ public class FogOfWar : MonoBehaviour {
         //Coloring the adjacent of enemy
         if (enemyCell != null)
         {
+            
             RefreshEnemyList();
             GetEnemy();
         }
@@ -172,10 +173,21 @@ public class FogOfWar : MonoBehaviour {
 
     void RefreshEnemyList()
     {
-        for (int i = 0; i < 20; i++)
+        int range = 10;
+        int playerX = refGrid.playerLinking.GetComponentInParent<Cell>().myI;
+        int playerY = refGrid.playerLinking.GetComponentInParent<Cell>().myJ;
+        for (int i = (playerX - range); i < (playerX + range); i++)
         {
-            for (int j = 0; j < 20; j++)
+            for (int j = (playerY - range); j < (playerY + range); j++)
             {
+                if (i < 0)
+                    continue;
+                if (j < 0)
+                    continue;
+                if (i > Grid.COL - 1)
+                    continue;
+                if (j > Grid.ROW - 1)
+                    continue;
                 if (refGrid.cellMat[i, j].GetComponentInChildren<Enemy>())
                 {
                     enemyCell.Add(refGrid.cellMat[i, j]);
@@ -221,33 +233,28 @@ public class FogOfWar : MonoBehaviour {
 
     public void GetPlayerNearEnemy(int newI, int newJ)
     {
-        //int newI = GetComponentInParent<Cell>().myI;
-        //int newJ = GetComponentInParent<Cell>().myJ;
+        
 
         if (refGrid.cellMat[newI + 1, newJ].GetComponentInChildren<Player>())
         {
-            //refGC.enemyCell = refGrid.cellMat[newI + 1, newJ].gameObject;
             refGrid.cellMat[newI , newJ].GetComponentInChildren<Enemy>().isNear = true;
 
         }
 
         if (refGrid.cellMat[newI - 1, newJ].GetComponentInChildren<Player>())
         {
-            //refGC.enemyCell = refGrid.cellMat[newI - 1, newJ].gameObject;
             refGrid.cellMat[newI , newJ].GetComponentInChildren<Enemy>().isNear = true;
 
         }
 
         if (refGrid.cellMat[newI, newJ + 1].GetComponentInChildren<Player>())
         {
-            //refGC.enemyCell = refGrid.cellMat[newI, newJ + 1].gameObject;
             refGrid.cellMat[newI, newJ ].GetComponentInChildren<Enemy>().isNear = true;
 
         }
 
         if (refGrid.cellMat[newI, newJ - 1].GetComponentInChildren<Player>())
         {
-            //refGC.enemyCell = refGrid.cellMat[newI, newJ - 1].gameObject;
             refGrid.cellMat[newI, newJ ].GetComponentInChildren<Enemy>().isNear = true;
 
         }

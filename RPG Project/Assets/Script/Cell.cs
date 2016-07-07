@@ -10,6 +10,8 @@ public class Cell : MonoBehaviour {
     public bool isWall = false;
     public bool isCombat = false;
 
+    public bool spawned = false;
+
     public Enemy enemyRef;
     public FogOfWar refFog;
     GameControl gcRef;
@@ -29,10 +31,10 @@ public class Cell : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (isWall)
+        /*if (isWall)
         {
             GetComponent<SpriteRenderer>().color = Color.black;
-        }
+        }*/
 
         
     }
@@ -54,7 +56,11 @@ public class Cell : MonoBehaviour {
     void OnMouseUp()
     {
 
-        
+        gcRef = FindObjectOfType<GameControl>();
+        playerRef = FindObjectOfType<Player>();
+        refFog = FindObjectOfType<FogOfWar>();
+        enemyRef = FindObjectOfType<Enemy>();
+        refMPU = FindObjectOfType<MenuPopUp>();
         if (gcRef.phase == GamePhase.Selezione)
         {
             

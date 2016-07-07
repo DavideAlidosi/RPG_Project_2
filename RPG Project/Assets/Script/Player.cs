@@ -39,10 +39,12 @@ public class Player : MonoBehaviour {
     {
         gridRef = FindObjectOfType<Grid>();
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < Grid.COL; i++)
         {
-            for (int j = 0; j < 20; j++)
+            for (int j = 0; j < Grid.ROW; j++)
             {
+                if (gridRef.cellMat[i, j] == null) continue;
+                
                 if (gridRef.cellMat[i, j].isSpawnCell)
                 {                   
                     this.transform.parent = gridRef.cellMat[i, j].transform;
