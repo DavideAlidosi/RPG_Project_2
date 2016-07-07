@@ -61,6 +61,7 @@ public class GameControl : MonoBehaviour {
         {
             movementCell[i].GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
         }
+        movementCell.Clear();
     }
 
     public void CombatPlayer ()
