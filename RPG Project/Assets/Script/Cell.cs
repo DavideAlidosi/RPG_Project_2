@@ -7,8 +7,10 @@ public class Cell : MonoBehaviour {
     public SpriteRenderer sBox;
     public bool isFree = false;
     Vector2 pos;
-    public bool isWall = false;
+    public bool isWall = true;
     public bool isCombat = false;
+
+    public SpriteRenderer refMyTile;
 
     public bool spawned = false;
 

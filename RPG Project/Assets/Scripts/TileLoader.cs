@@ -10,16 +10,15 @@ public struct TileData
     public int cell_x;
     public int cell_y;
 }
-    
+
 /*
     * Loads all tiles found in the current scene.
     */
 public class TileLoader : MonoBehaviour
 {
-    Grid refGrid;
+    
     public List<TileData> LoadAllTilesInScene(string tag)
     {
-        refGrid = FindObjectOfType<Grid>();
         List<TileData> allTileDatas = new List<TileData>();
         GameObject[] allGos = FindObjectsOfType<GameObject>();
         foreach (GameObject go in allGos)
@@ -31,9 +30,9 @@ public class TileLoader : MonoBehaviour
                 td.cell_x = Mathf.RoundToInt(go.transform.position.x);
                 td.cell_y = Mathf.RoundToInt(go.transform.position.y);
                 allTileDatas.Add(td);
-            }
 
-                
+               
+            }
         }
         return allTileDatas;
     }

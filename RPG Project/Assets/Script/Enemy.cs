@@ -205,10 +205,10 @@ public class Enemy : MonoBehaviour
                 }
                 if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= vista)
                 {
-                    if (refGrid.cellMat[i, j].GetComponent<SpriteRenderer>().color != Color.red)
+                    if (refGrid.cellMat[i, j].refMyTile.color != Color.red)
                     {
                         LookCell.Add(refGrid.cellMat[i, j]);
-                        refGrid.cellMat[i, j].GetComponent<SpriteRenderer>().color = Color.red;
+                        refGrid.cellMat[i, j].refMyTile.color = Color.red;
                     }
                     
                     
@@ -227,7 +227,7 @@ public class Enemy : MonoBehaviour
         foreach (var cell in LookCell)
         {
             
-            cell.GetComponent<SpriteRenderer>().color = Color.white;
+            cell.refMyTile.color = Color.white;
         }
     }
 

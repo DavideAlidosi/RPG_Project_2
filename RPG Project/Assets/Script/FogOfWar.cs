@@ -16,7 +16,7 @@ public class FogOfWar : MonoBehaviour {
     {
         refGrid = FindObjectOfType<Grid>();
         refGC = FindObjectOfType<GameControl>();
-        RefreshEnemyList();
+        //RefreshEnemyList();
     }
 
     public void Fog(Vector2 pos,int vista)
@@ -52,8 +52,12 @@ public class FogOfWar : MonoBehaviour {
                 }
                 if (Mathf.Abs(i - _x) + Mathf.Abs(y - _y) <= (vista))
                 {
-                    SpriteRenderer sr = refGrid.cellMat[i, y].gameObject.GetComponent<SpriteRenderer>();
-                    sr.color = Color.blue;
+                    SpriteRenderer sr = refGrid.cellMat[i, y].refMyTile;
+                    if (sr != null)
+                    {
+                        sr.color = Color.blue;
+                    }
+                    
                     refGrid.cellMat[i, y].isFree = true;
                     destroyCell.Add(refGrid.cellMat[i, y]);
 
@@ -63,7 +67,7 @@ public class FogOfWar : MonoBehaviour {
                         
                         //enemyCell = grid.cellMat[i, y];
                         refGrid.cellMat[i, y].isFree = false;
-                        refGrid.cellMat[i, y].GetComponent<SpriteRenderer>().color = Color.red;
+                        refGrid.cellMat[i, y].refMyTile.color = Color.red;
                     }
                     
                 }
@@ -79,10 +83,9 @@ public class FogOfWar : MonoBehaviour {
         }
 
         //Coloring the adjacent of enemy
-        if (enemyCell != null)
-        {
-            
-            RefreshEnemyList();
+        RefreshEnemyList();
+        if (enemyCell.Count > 0)
+        {         
             GetEnemy();
         }
         
@@ -122,7 +125,7 @@ public class FogOfWar : MonoBehaviour {
             
             cell.isFree = false;
             
-            cell.GetComponent<SpriteRenderer>().color = Color.white;
+            cell.refMyTile.color = Color.white;
             
 
         }
@@ -133,7 +136,13 @@ public class FogOfWar : MonoBehaviour {
         foreach (var cell in destroyCell)
         {
             cell.isFree = false;
-            cell.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+            if (cell.refMyTile.color == null)
+            {
+                continue;
+                
+            }
+            cell.refMyTile.color = Color.white;
+
         }
         destroyCell.Clear();        
     }
@@ -148,25 +157,25 @@ public class FogOfWar : MonoBehaviour {
             if (refGrid.cellMat[newI + 1, newJ].isFree)
             {
                 //refGrid.cellMat[newI + 1, newJ].isCombat = true;
-                refGrid.cellMat[newI + 1, newJ].GetComponent<SpriteRenderer>().color = Color.red;
+                refGrid.cellMat[newI + 1, newJ].refMyTile.color = Color.red;
             }
 
             if (refGrid.cellMat[newI - 1, newJ].isFree)
             {
                 //refGrid.cellMat[newI - 1, newJ].isCombat = true;
-                refGrid.cellMat[newI - 1, newJ].GetComponent<SpriteRenderer>().color = Color.red;
+                refGrid.cellMat[newI - 1, newJ].refMyTile.color = Color.red;
             }
 
             if (refGrid.cellMat[newI, newJ + 1].isFree)
             {
                 //refGrid.cellMat[newI, newJ + 1].isCombat = true;
-                refGrid.cellMat[newI, newJ + 1].GetComponent<SpriteRenderer>().color = Color.red;
+                refGrid.cellMat[newI, newJ + 1].refMyTile.color = Color.red;
             }
 
             if (refGrid.cellMat[newI, newJ - 1].isFree)
             {
                 //refGrid.cellMat[newI, newJ - 1].isCombat = true;
-                refGrid.cellMat[newI, newJ - 1].GetComponent<SpriteRenderer>().color = Color.red;
+                refGrid.cellMat[newI, newJ - 1].refMyTile.color = Color.red;
             }
         }
     }
@@ -176,7 +185,7 @@ public class FogOfWar : MonoBehaviour {
         int range = 10;
         int playerX = refGrid.playerLinking.GetComponentInParent<Cell>().myI;
         int playerY = refGrid.playerLinking.GetComponentInParent<Cell>().myJ;
-        for (int i = (playerX - range); i < (playerX + range); i++)
+        /*for (int i = (playerX - range); i < (playerX + range); i++)
         {
             for (int j = (playerY - range); j < (playerY + range); j++)
             {
@@ -193,6 +202,11 @@ public class FogOfWar : MonoBehaviour {
                     enemyCell.Add(refGrid.cellMat[i, j]);
                 }
             }
+        }   */
+        Enemy[] tmpEnemy = FindObjectsOfType<Enemy>();
+        foreach (var enemy in tmpEnemy)
+        {
+            enemyCell.Add(enemy.GetComponentInParent<Cell>());
         }
     }
 

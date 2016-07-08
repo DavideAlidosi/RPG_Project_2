@@ -49,7 +49,7 @@ public class Grid : MonoBehaviour {
                 
                 */n++;
 
-                if (n == 3654)
+                if (n == 3668)
                 {
                     GameObject newCellGO = Instantiate(cell);
                     cellMat[i, j] = newCellGO.GetComponent<Cell>();
@@ -117,12 +117,12 @@ public class Grid : MonoBehaviour {
 
     public void CreateGrid()
     {
-        int range = 10;
+        int range = 9;
         int playerX = playerLinking.GetComponentInParent<Cell>().myI;
         int playerY = playerLinking.GetComponentInParent<Cell>().myJ;
 
         refTT = FindObjectOfType<TileTester>();
-        
+        refTT.Inserisci(playerX, playerY);
         for (int i = (playerX - range); i < (playerX + range); i++)
         {
             for (int j = (playerY - range); j < (playerY + range); j++)
@@ -135,7 +135,7 @@ public class Grid : MonoBehaviour {
                     continue;
                 if (j > Grid.ROW - 1)
                     continue;
-                if (cellMat[i,j] == null)
+                if (cellMat[i,j] == null )
                 {
                     
                     GameObject newCellGO = Instantiate(cell);
@@ -145,14 +145,18 @@ public class Grid : MonoBehaviour {
                     cellMat[i, j].myJ = j;
                     newCellGO.name = i + " " + j;
                     refTT.Inserisci(i, j);
-                    //Debug.Log(cellMat[i, j].GetComponent<SpriteRenderer>().sprite.name);
+                    /*if (cellMat[i,j].GetComponent<SpriteRenderer>().sprite.name != null)
+                    {
+                        Debug.Log(cellMat[i, j].GetComponent<SpriteRenderer>().sprite.name);
+                    }
                     //if (cellMat[i,j].GetComponent<SpriteRenderer>().sprite.name == "White" )
                     {
+                        
                         //cellMat[i, j].GetComponent<SpriteRenderer>().sprite = null;
-                    }
+                    }*/
                 }
 
-                if (i == 46 & j == 62 && !cellMat[i,j].spawned)
+                if (i == 32 && j == 58 && !cellMat[i,j].spawned)
                 {
                     GameObject newEnemy = Instantiate(enemy);
                     newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
@@ -167,9 +171,9 @@ public class Grid : MonoBehaviour {
 
     public void CreateGridEnemy(int enemyX, int enemyY)
     {
-        int range = 10;
-        
-        
+        int range = 5;
+
+        refTT = FindObjectOfType<TileTester>();
         for (int i = (enemyX - range); i < (enemyX + range); i++)
         {
             for (int j = (enemyY - range); j < (enemyY + range); j++)
@@ -190,7 +194,9 @@ public class Grid : MonoBehaviour {
                     cellMat[i, j].myI = i;
                     cellMat[i, j].myJ = j;
                     newCellGO.name = i + " " + j;
-                    
+
+                    refTT.Inserisci(i, j);
+
                 }
             }
         }

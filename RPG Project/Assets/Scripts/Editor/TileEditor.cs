@@ -9,7 +9,7 @@ using System.IO;
 // @todo:make sure to tell them to use the layer
 
 
-[ExecuteInEditMode]
+    [ExecuteInEditMode]
 public class TileEditorWindow : EditorWindow
 {
     const int Mode_Tiles = 0;

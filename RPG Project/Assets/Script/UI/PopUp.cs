@@ -49,9 +49,9 @@ public class PopUp : MonoBehaviour {
             this.GetComponentInChildren<Enemy>().ResetLookingCell();
             foreach (var cell in FindObjectOfType<FogOfWar>().destroyCell)
             {
-                if (cell.GetComponent<SpriteRenderer>().color != Color.red)
+                if (cell.refMyTile.color != Color.red)
                 {
-                    cell.GetComponent<SpriteRenderer>().color = Color.blue;
+                    cell.refMyTile.color = Color.blue;
                 }
                 
                 
