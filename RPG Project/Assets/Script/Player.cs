@@ -19,7 +19,7 @@ public class Player : MonoBehaviour {
     void Awake()
     {
         str = 5;
-        cos = 5;
+        cos = 9;
         hp = cos*4;
         agi = 5;
     }
