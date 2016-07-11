@@ -26,6 +26,7 @@ public class ButtonController : MonoBehaviour
     void OnEnable()
     {
         enemies = FindObjectsOfType<Enemy>();
+        
         foreach (var enemy in enemies)
         {
             if (enemy.isNear)
@@ -37,6 +38,10 @@ public class ButtonController : MonoBehaviour
             {
                 bttnAtt.interactable = false;
             }
+        }
+        if (enemies.Length == 0)
+        {
+            bttnAtt.interactable = false;
         }
     }
     void OnDisable()
@@ -54,5 +59,10 @@ public class ButtonController : MonoBehaviour
                 bttnAtt.interactable = false;
             }
         }
+        if (enemies.Length == 0)
+        {
+            bttnAtt.interactable = false;
+
+        }     
     }
 }

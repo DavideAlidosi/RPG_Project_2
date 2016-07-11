@@ -47,11 +47,18 @@ public class Cell : MonoBehaviour {
         if (this.isFree && !GetComponentInChildren<Player>())
         {
             if (gcRef.phase == GamePhase.Movimento)
-            {  
-                if (!gcRef.movementCell.Contains(this.gameObject))
+            {
+                if (gcRef.queueMoveCell.Contains(this.gameObject))
                 {
-                    gcRef.movementCell.Add(this.gameObject);
-                    sBox.color = Color.yellow;
+
+
+                    if (!gcRef.movementCell.Contains(this.gameObject))
+                    {
+                        gcRef.movementCell.Add(this.gameObject);
+                        sBox.color = Color.yellow;
+                        gcRef.queueMoveCell.Clear();
+                        gcRef.Adjacent(this.gameObject);
+                    }
                 }
             }
         }
@@ -76,17 +83,24 @@ public class Cell : MonoBehaviour {
                 sBox.color = Color.green;
                 gcRef.phase++;
 
+                gcRef.queueMoveCell.Clear();
                 gcRef.firstCell = this.gameObject;
                 pos = new Vector2(myI, myJ);
                 refFog.Fog(pos,4);
                 refFog.AStar();
+                gcRef.movementCell.Add(this.gameObject);
+                gcRef.Adjacent(this.gameObject);
+                this.isMove = true;
             }
             
 
         }
         else if(gcRef.phase == GamePhase.Movimento)
         {
-            if (isFree)
+            int countList = gcRef.movementCell.Count;
+            
+            
+            if (isFree && gcRef.movementCell.Contains(this.gameObject))
             {
                 refFog.ResetEnemyStatus();
                 gcRef.phase = GamePhase.Azione;

@@ -13,6 +13,7 @@ public class GameControl : MonoBehaviour {
     public TextMesh enemyTxt;
     public TextMesh playerTxt;
 
+    public List<GameObject> queueMoveCell = new List<GameObject>();
 
 
     public List<GameObject> movementCell = new List<GameObject>();
@@ -88,7 +89,7 @@ public class GameControl : MonoBehaviour {
             playerTxt.text = "-"+(strAtt * 2).ToString()+" HP"; 
             playerTxt.transform.parent = enemyCell.transform;
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
-            playerTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
+            playerTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
             playerTxt.transform.localPosition = new Vector3(0, 1, 1);
 
 
@@ -104,7 +105,7 @@ public class GameControl : MonoBehaviour {
             playerTxt.text = "MISS";
             playerTxt.transform.parent = enemyCell.transform;
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
-            playerTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
+            playerTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
             playerTxt.transform.localPosition = new Vector3(0, 1, 1);
             Debug.Log("Player " +playerCell +" ha missato");
         }
@@ -125,8 +126,8 @@ public class GameControl : MonoBehaviour {
             enemyTxt.text = "-" + (strAtt * 2).ToString() + " HP";
             enemyTxt.transform.parent = playerCell.transform;
             enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
-            enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
-            enemyTxt.transform.localPosition = new Vector3(0, 0.5f, 1);
+            enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
+            enemyTxt.transform.localPosition = new Vector3(0, 1f, 1);
 
 
             Debug.Log("Enemy "+enemyCell+" Colpo andato a segno");
@@ -142,8 +143,8 @@ public class GameControl : MonoBehaviour {
             enemyTxt.text = "MISS";
             enemyTxt.transform.parent = playerCell.transform;
             enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
-            enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
-            enemyTxt.transform.localPosition = new Vector3(0, 0.5f, 1);
+            enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
+            enemyTxt.transform.localPosition = new Vector3(0, 1f, 1);
         }
         Invoke("SetTextToNull", 1.5f);
     }
@@ -160,7 +161,23 @@ public class GameControl : MonoBehaviour {
         int j = cell.GetComponent<Cell>().myJ;
         if (refGrid.cellMat[i + 1, j].isFree)
         {
+            queueMoveCell.Add(refGrid.cellMat[i + 1, j].gameObject);
             refGrid.cellMat[i + 1, j].isMove = true;
+        }
+        if (refGrid.cellMat[i - 1, j].isFree)
+        {
+            queueMoveCell.Add(refGrid.cellMat[i - 1, j].gameObject);
+            refGrid.cellMat[i - 1, j].isMove = true;
+        }
+        if (refGrid.cellMat[i, j + 1].isFree)
+        {
+            queueMoveCell.Add(refGrid.cellMat[i, j + 1].gameObject);
+            refGrid.cellMat[i, j + 1].isMove = true;
+        }
+        if (refGrid.cellMat[i, j - 1].isFree)
+        {
+            queueMoveCell.Add(refGrid.cellMat[i, j - 1].gameObject);
+            refGrid.cellMat[i, j - 1].isMove = true;
         }
     }
 }

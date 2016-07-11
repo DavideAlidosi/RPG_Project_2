@@ -165,6 +165,8 @@ public class Grid : MonoBehaviour {
                     newEnemy.transform.localPosition = new Vector3(0, 0, 1);
                     cellMat[i, j].spawned = true;
                 }
+
+                
             }
         }
     }
