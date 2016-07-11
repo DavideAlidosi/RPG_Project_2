@@ -9,6 +9,7 @@ public class Cell : MonoBehaviour {
     Vector2 pos;
     public bool isWall = true;
     public bool isCombat = false;
+    public bool isMove = false;
 
     public SpriteRenderer refMyTile;
 
@@ -46,9 +47,12 @@ public class Cell : MonoBehaviour {
         if (this.isFree && !GetComponentInChildren<Player>())
         {
             if (gcRef.phase == GamePhase.Movimento)
-            {
-                sBox.color = Color.yellow;
-                gcRef.movementCell.Add(this.gameObject);
+            {  
+                if (!gcRef.movementCell.Contains(this.gameObject))
+                {
+                    gcRef.movementCell.Add(this.gameObject);
+                    sBox.color = Color.yellow;
+                }
             }
         }
     }

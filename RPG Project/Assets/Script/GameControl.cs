@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public enum GamePhase {Selezione, Movimento,Azione,Combattimento,TurnoNemici,FineTurno }
 public class GameControl : MonoBehaviour {
@@ -9,11 +10,17 @@ public class GameControl : MonoBehaviour {
     public GameObject playerCell;
     public GameObject enemyCell;
 
+    public TextMesh enemyTxt;
+    public TextMesh playerTxt;
+
+
+
     public List<GameObject> movementCell = new List<GameObject>();
 
     Player plRef;
     FogOfWar fogRef;
     MenuPopUp refMPU;
+    Grid refGrid;
 
 
     // Use this for initialization
@@ -21,11 +28,12 @@ public class GameControl : MonoBehaviour {
         plRef = FindObjectOfType<Player>();
         fogRef = FindObjectOfType<FogOfWar>();
         refMPU = FindObjectOfType<MenuPopUp>();
+        refGrid = FindObjectOfType<Grid>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (phase == GamePhase.Azione)
+        if (phase == GamePhase.Azione || phase == GamePhase.Movimento)
         {
             if (Input.GetMouseButtonUp(1))
             {
@@ -75,6 +83,15 @@ public class GameControl : MonoBehaviour {
         if (dice < totale)
         {
             Debug.Log("Player "+playerCell+ " Colpo andato a segno");
+
+            
+            playerTxt.text = "-"+(strAtt * 2).ToString()+" HP"; 
+            playerTxt.transform.parent = enemyCell.transform;
+            playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
+            playerTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
+            playerTxt.transform.localPosition = new Vector3(0, 1, 1);
+
+
             enemyCell.GetComponentInChildren<Enemy>().hp -= strAtt * 2;
             if (enemyCell.GetComponentInChildren<Enemy>().hp <= 0)
             {
@@ -84,9 +101,14 @@ public class GameControl : MonoBehaviour {
         }
         else
         {
+            playerTxt.text = "MISS";
+            playerTxt.transform.parent = enemyCell.transform;
+            playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
+            playerTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
+            playerTxt.transform.localPosition = new Vector3(0, 1, 1);
             Debug.Log("Player " +playerCell +" ha missato");
         }
-        
+        Invoke("SetTextToNull", 1.5f);
     }
 
     public void CombatEnemy()
@@ -99,6 +121,14 @@ public class GameControl : MonoBehaviour {
 
         if (dice < totale)
         {
+
+            enemyTxt.text = "-" + (strAtt * 2).ToString() + " HP";
+            enemyTxt.transform.parent = playerCell.transform;
+            enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
+            enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
+            enemyTxt.transform.localPosition = new Vector3(0, 0.5f, 1);
+
+
             Debug.Log("Enemy "+enemyCell+" Colpo andato a segno");
             playerCell.GetComponentInChildren<Player>().hp -= strAtt * 2;
             if (playerCell.GetComponentInChildren<Player>().hp <= 0)
@@ -109,6 +139,28 @@ public class GameControl : MonoBehaviour {
         else
         {
             Debug.Log("Enemy "+enemyCell+" ha missato");
+            enemyTxt.text = "MISS";
+            enemyTxt.transform.parent = playerCell.transform;
+            enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
+            enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 10;
+            enemyTxt.transform.localPosition = new Vector3(0, 0.5f, 1);
+        }
+        Invoke("SetTextToNull", 1.5f);
+    }
+
+    void SetTextToNull()
+    {
+        playerTxt.text = "";
+        enemyTxt.text = "";
+    }
+
+    public void Adjacent(GameObject cell)
+    {
+        int i = cell.GetComponent<Cell>().myI;
+        int j = cell.GetComponent<Cell>().myJ;
+        if (refGrid.cellMat[i + 1, j].isFree)
+        {
+            refGrid.cellMat[i + 1, j].isMove = true;
         }
     }
 }
