@@ -75,6 +75,7 @@ public class Player : MonoBehaviour {
         }
         gcRef.phase = GamePhase.Selezione;
         gcRef.ResetToSelectionPhase();
+        fogRef.LightRadius();
     }
 
     public void TestWait()
@@ -82,6 +83,7 @@ public class Player : MonoBehaviour {
         Debug.Log("aspetto");
         gcRef.phase = GamePhase.TurnoNemici;
         gcRef.ResetToSelectionPhase();
+        fogRef.LightRadius();
     }
 
     public void TestUse()

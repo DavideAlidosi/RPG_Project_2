@@ -47,7 +47,7 @@ public class TileTester : MonoBehaviour
                 }
                 
                 //refGrid.cellMat[x, y].gameObject.GetComponent<SpriteRenderer>().sprite = td.go.GetComponent<SpriteRenderer>().sprite;
-                td.go.GetComponent<SpriteRenderer>().color = Color.white;
+                td.go.GetComponent<SpriteRenderer>().color = Color.gray;
                 refGrid.cellMat[x, y].refMyTile = td.go.GetComponent<SpriteRenderer>();
             }
         }

@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
         str = 4;
         cos = 3;
         hp = cos * 4;
-        agi = Random.Range(1, 10);
+        agi = Random.Range(1, 5);
         vista = 4;
 
     }

@@ -160,13 +160,49 @@ public class Grid : MonoBehaviour {
                 {
                     GameObject newEnemy = Instantiate(enemy);
                     newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-
+                    //newEnemy.SetActive(false);
+                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
                     newEnemy.transform.parent = cellMat[i, j].transform;
                     newEnemy.transform.localPosition = new Vector3(0, 0, 1);
                     cellMat[i, j].spawned = true;
+                    
                 }
 
-                
+                if (i == 21 && j == 64 && !cellMat[i, j].spawned)
+                {
+                    GameObject newEnemy = Instantiate(enemy);
+                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
+                    //newEnemy.SetActive(false);
+                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
+                    newEnemy.transform.parent = cellMat[i, j].transform;
+                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
+                    cellMat[i, j].spawned = true;
+
+                }
+
+                if (i == 54 && j == 63 && !cellMat[i, j].spawned)
+                {
+                    GameObject newEnemy = Instantiate(enemy);
+                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
+                    //newEnemy.SetActive(false);
+                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
+                    newEnemy.transform.parent = cellMat[i, j].transform;
+                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
+                    cellMat[i, j].spawned = true;
+
+                }
+                if (i == 78 && j == 64 && !cellMat[i, j].spawned)
+                {
+                    GameObject newEnemy = Instantiate(enemy);
+                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
+                    //newEnemy.SetActive(false);
+                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
+                    newEnemy.transform.parent = cellMat[i, j].transform;
+                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
+                    cellMat[i, j].spawned = true;
+
+                }
+
             }
         }
     }
@@ -192,6 +228,7 @@ public class Grid : MonoBehaviour {
                 {
                     GameObject newCellGO = Instantiate(cell);
                     cellMat[i, j] = newCellGO.GetComponent<Cell>();
+                    
                     newCellGO.transform.position = new Vector3(j, i, 0);
                     cellMat[i, j].myI = i;
                     cellMat[i, j].myJ = j;

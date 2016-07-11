@@ -40,6 +40,8 @@ public class Cell : MonoBehaviour {
         }*/
 
         
+
+        
     }
     // Start cell selecting code
     void OnMouseEnter()
@@ -86,6 +88,7 @@ public class Cell : MonoBehaviour {
                 gcRef.queueMoveCell.Clear();
                 gcRef.firstCell = this.gameObject;
                 pos = new Vector2(myI, myJ);
+                refFog.LightRadius();
                 refFog.Fog(pos,4);
                 refFog.AStar();
                 gcRef.movementCell.Add(this.gameObject);
