@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public bool isPlayerVisible = false;
     Grid refGrid;
     int vista;
+    int move;
     GameControl refGC;
     public Cell refMyCell;
     public Cell nearestCell;
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
         hp = cos * 4;
         agi = Random.Range(1, 5);
         vista = 4;
+        move = 2;
 
     }
 
@@ -132,7 +134,7 @@ public class Enemy : MonoBehaviour
                 if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= (rangeMove))
                 {
                     moveCell.Add(refGrid.cellMat[i, j]);
-                    refGrid.cellMat[i, j].GetComponent<SpriteRenderer>().color = Color.gray;
+                    //refGrid.cellMat[i, j].GetComponent<SpriteRenderer>().color = Color.gray;
                 }
             }
         }
@@ -190,9 +192,9 @@ public class Enemy : MonoBehaviour
                     continue;
                 if (j < 0)
                     continue;
-                if (i > Grid.COL-1)
+                if (i > Grid.COL - 1)
                     continue;
-                if (j > Grid.ROW-1)
+                if (j > Grid.ROW - 1)
                     continue;
 
                 if (refGrid.cellMat[i, j].GetComponentInChildren<Enemy>())
@@ -203,20 +205,39 @@ public class Enemy : MonoBehaviour
                 {
                     continue;
                 }
+
+                
                 if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= vista)
                 {
-                    if (refGrid.cellMat[i, j].refMyTile.color != Color.red)
+                    if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
+                    {
+                        if (refGrid.cellMat[i, j].refMyTile.color == Color.green)
+                        {
+                            refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.5f, 0);
+                            LookCell.Add(refGrid.cellMat[i, j]);
+
+                        }
+                        else
+                        {
+                            LookCell.Add(refGrid.cellMat[i, j]);
+                            refGrid.cellMat[i, j].refMyTile.color = Color.yellow;
+                        }
+
+                    }
+                }
+                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= move)
+                {
+                    refGrid.cellMat[i, j].refMyTile.color = Color.red;
+                    if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
                     {
                         LookCell.Add(refGrid.cellMat[i, j]);
-                        refGrid.cellMat[i, j].refMyTile.color = Color.red;
+                        refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.2f, 0);
+
                     }
-                    
-                    
+
+
 
                 }
-                
-               
-
 
             }
         }

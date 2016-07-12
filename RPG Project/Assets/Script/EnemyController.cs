@@ -34,10 +34,7 @@ public class EnemyController : MonoBehaviour {
             if (enemy.isNear)
             {
                 refGC.CombatEnemy();
-                if (refGC.playerCell.GetComponentInChildren<Player>().hp > 0)
-                {
-                    refGC.CombatPlayer();
-                }
+                
             }
         }
         refGrid.CreateGrid();

@@ -51,8 +51,9 @@ public class PopUp : MonoBehaviour {
             {
                 if (cell.refMyTile.color != Color.red)
                 {
-                    cell.refMyTile.color = Color.blue;
+                    cell.refMyTile.color = Color.green;
                 }
+                
                 
                 
             }

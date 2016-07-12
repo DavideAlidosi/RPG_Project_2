@@ -13,6 +13,8 @@ public class GameControl : MonoBehaviour {
     public TextMesh enemyTxt;
     public TextMesh playerTxt;
 
+    public GameObject cellCombat;
+
     public List<GameObject> queueMoveCell = new List<GameObject>();
 
 
@@ -41,6 +43,11 @@ public class GameControl : MonoBehaviour {
                 plRef.MovePlayer(firstCell.GetComponent<Cell>().myI, firstCell.GetComponent<Cell>().myJ);
                 phase = GamePhase.Selezione;
                 ResetToSelectionPhase();
+                foreach (var enemyCell in fogRef.enemyCell)
+                {
+                    enemyCell.GetComponentInParent<Cell>().refMyTile.color = Color.white;
+                }
+                fogRef.enemyCell.Clear();
 
             }
         }
@@ -179,5 +186,32 @@ public class GameControl : MonoBehaviour {
             queueMoveCell.Add(refGrid.cellMat[i, j - 1].gameObject);
             refGrid.cellMat[i, j - 1].isMove = true;
         }
+    }
+
+    public bool CheckCombat(GameObject cellToCheck)
+    {
+        int i = cellToCheck.GetComponent<Cell>().myI;
+        int j = cellToCheck.GetComponent<Cell>().myJ;
+        if (refGrid.cellMat[i + 1, j].GetComponentInChildren<Enemy>())
+        {
+            Debug.Log("puttana di tua madre");
+            return true;
+        }
+        if (refGrid.cellMat[i - 1, j].GetComponentInChildren<Enemy>())
+        {
+            Debug.Log("porcoddio");
+            return true;
+        }
+        if (refGrid.cellMat[i, j + 1].GetComponentInChildren<Enemy>())
+        {
+            Debug.Log("nicholas merda");
+            return true;
+        }
+        if (refGrid.cellMat[i, j - 1].GetComponentInChildren<Enemy>())
+        {
+            Debug.Log("vi ammazzo tutti e due");
+            return true;
+        }
+        return false;
     }
 }

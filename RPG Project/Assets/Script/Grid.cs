@@ -60,48 +60,7 @@ public class Grid : MonoBehaviour {
                     cellMat[i, j].isSpawnCell = true;
                     
                     
-                }/*
-                
-                if (n == 250)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
                 }
-                if (n == 254)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-                    
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                }
-
-                if (n == 298)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                }
-                if (n == 349)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                }
-                if (n == 379)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                }*/
             }
         }
 
@@ -122,7 +81,7 @@ public class Grid : MonoBehaviour {
         int playerY = playerLinking.GetComponentInParent<Cell>().myJ;
 
         refTT = FindObjectOfType<TileTester>();
-        refTT.Inserisci(playerX, playerY);
+        
         for (int i = (playerX - range); i < (playerX + range); i++)
         {
             for (int j = (playerY - range); j < (playerY + range); j++)
@@ -145,6 +104,11 @@ public class Grid : MonoBehaviour {
                     cellMat[i, j].myJ = j;
                     newCellGO.name = i + " " + j;
                     refTT.Inserisci(i, j);
+                    if (i == playerX && j == playerY)
+                    {
+                        cellMat[i, j].refMyTile.color = Color.white;
+                        continue;
+                    }
                     /*if (cellMat[i,j].GetComponent<SpriteRenderer>().sprite.name != null)
                     {
                         Debug.Log(cellMat[i, j].GetComponent<SpriteRenderer>().sprite.name);
@@ -155,6 +119,7 @@ public class Grid : MonoBehaviour {
                         //cellMat[i, j].GetComponent<SpriteRenderer>().sprite = null;
                     }*/
                 }
+                
 
                 if (i == 32 && j == 58 && !cellMat[i,j].spawned)
                 {
@@ -205,6 +170,7 @@ public class Grid : MonoBehaviour {
 
             }
         }
+        refTT.Inserisci(playerX, playerY);
     }
 
     public void CreateGridEnemy(int enemyX, int enemyY)

@@ -57,7 +57,7 @@ public class FogOfWar : MonoBehaviour {
                     SpriteRenderer sr = refGrid.cellMat[i, y].refMyTile;
                     if (sr != null)
                     {
-                        sr.color = Color.blue;
+                        sr.color = Color.green;
                     }
                     
                     refGrid.cellMat[i, y].isFree = true;
@@ -69,7 +69,7 @@ public class FogOfWar : MonoBehaviour {
                         
                         //enemyCell = grid.cellMat[i, y];
                         refGrid.cellMat[i, y].isFree = false;
-                        refGrid.cellMat[i, y].refMyTile.color = Color.red;
+                        refGrid.cellMat[i, y].refMyTile.color = Color.yellow;
                     }
                     
                 }
@@ -77,7 +77,7 @@ public class FogOfWar : MonoBehaviour {
                 /*if (Mathf.Abs(i - _x) + Mathf.Abs(y - _y) <= (vista / 2))
                 {
                     SpriteRenderer sr = refGrid.cellMat[i, y].refMyTile;
-                    sr.color = Color.blue;
+                    sr.color = Color.green;
                 }*/
 
 
@@ -89,13 +89,14 @@ public class FogOfWar : MonoBehaviour {
         if (enemyCell.Count > 0)
         {         
             GetEnemy();
+            
         }
-        
+
         //remove all cell from this list for optimization
 
-        enemyCell.Clear();
-        
-        
+        //enemyCell.Clear();
+
+
     }
     // NON E' ASTAR  ma ricolora le celle in bianco e le rende di nuovo non libere
     public void AStar()
@@ -149,6 +150,8 @@ public class FogOfWar : MonoBehaviour {
         destroyCell.Clear();        
     }
 
+    
+    //Coloring the cell in the edge of player movement 
     void GetEnemy()
     {
         
@@ -159,28 +162,30 @@ public class FogOfWar : MonoBehaviour {
             if (refGrid.cellMat[newI + 1, newJ] != null && refGrid.cellMat[newI + 1, newJ].isFree)
             {
                 //refGrid.cellMat[newI + 1, newJ].isCombat = true;
-                refGrid.cellMat[newI + 1, newJ].refMyTile.color = Color.red;
+                refGrid.cellMat[newI , newJ].refMyTile.color = Color.red;
             }
 
             if (refGrid.cellMat[newI - 1, newJ] != null && refGrid.cellMat[newI - 1, newJ].isFree)
             {
                 //refGrid.cellMat[newI - 1, newJ].isCombat = true;
-                refGrid.cellMat[newI - 1, newJ].refMyTile.color = Color.red;
+                refGrid.cellMat[newI, newJ].refMyTile.color = Color.red;
             }
 
             if (refGrid.cellMat[newI, newJ + 1] != null && refGrid.cellMat[newI, newJ + 1].isFree)
             {
                 //refGrid.cellMat[newI, newJ + 1].isCombat = true;
-                refGrid.cellMat[newI, newJ + 1].refMyTile.color = Color.red;
+                refGrid.cellMat[newI, newJ].refMyTile.color = Color.red;
             }
 
             if (refGrid.cellMat[newI, newJ - 1] != null && refGrid.cellMat[newI, newJ - 1].isFree)
             {
                 //refGrid.cellMat[newI, newJ - 1].isCombat = true;
-                refGrid.cellMat[newI, newJ - 1].refMyTile.color = Color.red;
+                refGrid.cellMat[newI, newJ].refMyTile.color = Color.red;
             }
         }
     }
+
+
 
     void RefreshEnemyList()
     {

@@ -43,11 +43,11 @@ public class TileTester : MonoBehaviour
                 if (td.go.GetComponent<SpriteRenderer>().sprite == free || td.go.GetComponent<SpriteRenderer>().sprite == free2)
                 {
                     //Debug.Log(td.go);
-                    refGrid.cellMat[x, y].isWall = false;
+                    refGrid.cellMat[x, y].isWall = false;    
                 }
-                
+
                 //refGrid.cellMat[x, y].gameObject.GetComponent<SpriteRenderer>().sprite = td.go.GetComponent<SpriteRenderer>().sprite;
-                td.go.GetComponent<SpriteRenderer>().color = Color.gray;
+                td.go.GetComponent<SpriteRenderer>().color = Color.gray ;
                 refGrid.cellMat[x, y].refMyTile = td.go.GetComponent<SpriteRenderer>();
             }
         }
