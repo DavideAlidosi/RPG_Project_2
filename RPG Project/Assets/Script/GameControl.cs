@@ -24,6 +24,7 @@ public class GameControl : MonoBehaviour {
     FogOfWar fogRef;
     MenuPopUp refMPU;
     Grid refGrid;
+    EnemyController refEnemyC;
 
 
     // Use this for initialization
@@ -32,6 +33,7 @@ public class GameControl : MonoBehaviour {
         fogRef = FindObjectOfType<FogOfWar>();
         refMPU = FindObjectOfType<MenuPopUp>();
         refGrid = FindObjectOfType<Grid>();
+        refEnemyC = FindObjectOfType<EnemyController>();
     }
 	
 	// Update is called once per frame
@@ -213,5 +215,20 @@ public class GameControl : MonoBehaviour {
             return true;
         }
         return false;
+    }
+
+    public void EndPlayerPhase(int _myI, int _myJ)
+    {
+        fogRef.ResetEnemyStatus();
+        phase = GamePhase.Selezione;
+        ResetToSelectionPhase();
+
+        plRef.MovePlayer(_myI, _myJ);
+        fogRef.GetEnemyNearPlayer(_myI, _myJ);
+        
+        playerCell = refGrid.cellMat[_myI,_myJ].gameObject;
+        fogRef.LightRadius();
+        refEnemyC.EnemyTurn();
+        fogRef.enemyCell.Clear();
     }
 }

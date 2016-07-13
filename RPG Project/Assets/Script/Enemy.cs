@@ -177,7 +177,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
+    //coloring the cell when mouse is over
     public void LookingCell()
     {
         int myI = refMyCell.myI;
@@ -206,7 +206,26 @@ public class Enemy : MonoBehaviour
                     continue;
                 }
 
-                
+                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= move)
+                {
+                    //refGrid.cellMat[i, j].refMyTile.color = Color.red;
+                    if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
+                    {
+                        
+                        if (refGrid.cellMat[i, j].refMyTile.color == Color.green)
+                        {
+                            LookCell.Add(refGrid.cellMat[i, j]);
+                            refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.2f, 0);
+                        }
+                        else
+                        {
+                            LookCell.Add(refGrid.cellMat[i, j]);
+                            refGrid.cellMat[i, j].refMyTile.color = Color.red;
+                        }
+                    }
+                    continue;
+
+                }
                 if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= vista)
                 {
                     if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
@@ -225,19 +244,7 @@ public class Enemy : MonoBehaviour
 
                     }
                 }
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= move)
-                {
-                    refGrid.cellMat[i, j].refMyTile.color = Color.red;
-                    if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
-                    {
-                        LookCell.Add(refGrid.cellMat[i, j]);
-                        refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.2f, 0);
-
-                    }
-
-
-
-                }
+                
 
             }
         }

@@ -26,7 +26,7 @@ public class PopUp : MonoBehaviour {
             refShowTool.hpTxt.text = "HP : " + GetComponentInChildren<Player>().hp;
         }
 
-        if (GetComponentInChildren<Enemy>())
+        if (GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color != Color.clear)
         {
             ActivateTooltip();
             refShowTool.strTxt.text = "Str : " + GetComponentInChildren<Enemy>().str;
@@ -44,7 +44,7 @@ public class PopUp : MonoBehaviour {
     {
         
         DeactivateTooltip();
-        if (this.GetComponentInChildren<Enemy>())
+        if (this.GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color != Color.clear)
         {
             this.GetComponentInChildren<Enemy>().ResetLookingCell();
             foreach (var cell in FindObjectOfType<FogOfWar>().destroyCell)

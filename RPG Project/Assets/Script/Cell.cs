@@ -24,10 +24,10 @@ public class Cell : MonoBehaviour {
     // Use this for initialization
     void Start () {
         gcRef = FindObjectOfType<GameControl>();
-        playerRef = FindObjectOfType<Player>();
-        refFog = FindObjectOfType<FogOfWar>();
-        enemyRef = FindObjectOfType<EnemyController>();
-        refMPU = FindObjectOfType<MenuPopUp>();
+        //playerRef = FindObjectOfType<Player>();
+        //refFog = FindObjectOfType<FogOfWar>();
+        
+        //refMPU = FindObjectOfType<MenuPopUp>();
         
         
     }
@@ -76,11 +76,11 @@ public class Cell : MonoBehaviour {
     void OnMouseUp()
     {
 
-        gcRef = FindObjectOfType<GameControl>();
+        
         playerRef = FindObjectOfType<Player>();
         refFog = FindObjectOfType<FogOfWar>();
-        
-        refMPU = FindObjectOfType<MenuPopUp>();
+        enemyRef = FindObjectOfType<EnemyController>();
+        //refMPU = FindObjectOfType<MenuPopUp>();
         if (gcRef.phase == GamePhase.Selezione)
         {
             
@@ -110,7 +110,7 @@ public class Cell : MonoBehaviour {
             
             if (isFree && gcRef.movementCell.Contains(this.gameObject))
             {
-                refFog.ResetEnemyStatus();
+                /*refFog.ResetEnemyStatus();
                 gcRef.phase = GamePhase.Selezione;
                 gcRef.ResetToSelectionPhase();
                 
@@ -120,21 +120,28 @@ public class Cell : MonoBehaviour {
                 gcRef.playerCell = this.gameObject;
                 refFog.LightRadius();
                 enemyRef.EnemyTurn();
-                refFog.enemyCell.Clear();
+                refFog.enemyCell.Clear();*/
+                gcRef.EndPlayerPhase(myI, myJ);
 
             }
             if (GetComponentInChildren<Enemy>())
             {
-                Debug.Log("testputtanalamadonna");
                 
-                if (gcRef.cellCombat !=null)
+                
+                if (gcRef.cellCombat != null)
                 {
                     playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
                     gcRef.playerCell = gcRef.cellCombat;
                 }
                 gcRef.phase = GamePhase.Selezione;
+                refFog.ResetEnemyStatus();
+                gcRef.ResetToSelectionPhase();
+                refFog.GetEnemyNearPlayer(this.myI, this.myJ);
+                refFog.LightRadius();
+                refFog.enemyCell.Clear();
                 gcRef.CombatPlayer();
-                
+                enemyRef.EnemyTurn();
+
             }
         }
         else if (gcRef.phase == GamePhase.Combattimento)
@@ -148,5 +155,6 @@ public class Cell : MonoBehaviour {
                 refMPU.Deactivate();
             }
         }
+        gcRef.cellCombat = null;
     }
 }

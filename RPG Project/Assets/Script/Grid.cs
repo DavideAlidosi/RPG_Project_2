@@ -94,6 +94,7 @@ public class Grid : MonoBehaviour {
                     continue;
                 if (j > Grid.ROW - 1)
                     continue;
+                
                 if (cellMat[i,j] == null )
                 {
                     
@@ -190,6 +191,8 @@ public class Grid : MonoBehaviour {
                     continue;
                 if (j > Grid.ROW - 1)
                     continue;
+                
+                
                 if (cellMat[i, j] == null)
                 {
                     GameObject newCellGO = Instantiate(cell);
