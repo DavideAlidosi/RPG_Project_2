@@ -16,7 +16,7 @@ public struct TileData
     */
 public class TileLoader : MonoBehaviour
 {
-    
+
     public List<TileData> LoadAllTilesInScene(string tag)
     {
         List<TileData> allTileDatas = new List<TileData>();
@@ -30,8 +30,6 @@ public class TileLoader : MonoBehaviour
                 td.cell_x = Mathf.RoundToInt(go.transform.position.x);
                 td.cell_y = Mathf.RoundToInt(go.transform.position.y);
                 allTileDatas.Add(td);
-
-               
             }
         }
         return allTileDatas;
