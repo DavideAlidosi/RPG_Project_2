@@ -7,8 +7,8 @@ public class Grid : MonoBehaviour {
 
     public GameObject cell;
     public Player playerLinking;
-    
 
+    Vector2 posPlayer;
 
     public Cell[,] cellMat;
     GameControl refGC;
@@ -48,9 +48,9 @@ public class Grid : MonoBehaviour {
                 newCellGO.name = i + " " + j;
                 
                 */n++;
-
+                //refTT.InsertGameObject(i,j);
                 if (n == 3668)
-                {
+                {/*
                     GameObject newCellGO = Instantiate(cell);
                     cellMat[i, j] = newCellGO.GetComponent<Cell>();
                     cellMat[i, j].myI = i;
@@ -59,14 +59,29 @@ public class Grid : MonoBehaviour {
                     newCellGO.name = i + " " + j;
                     cellMat[i, j].isSpawnCell = true;
                     
-                    
+                    */
                 }
             }
         }
 
+        posPlayer = refTT.InsertGameObject();
+        int cellX = (int)posPlayer.x;
+        int cellY = (int)posPlayer.y;
+        GameObject newCellGO = Instantiate(cell);
+        cellMat[cellX, cellY] = newCellGO.GetComponent<Cell>();
+        cellMat[cellX, cellY].myI = cellX;
+        cellMat[cellX, cellY].myJ = cellY;
+        newCellGO.transform.position = new Vector3(cellY, cellX, 0);
+        newCellGO.name = cellX + " " + cellY;
+        cellMat[cellX, cellY].isSpawnCell = true;
+
+
+
+        Debug.Log(posPlayer);
         Debug.Log(Time.realtimeSinceStartup);
-        playerLinking.SpawnPlayer();
-        CreateGrid(); 
+        playerLinking.SpawnPlayer(posPlayer);
+        CreateGrid();
+        playerLinking.GetComponentInChildren<FogOfWar>().LightRadius();
 	}
 	
 	// Update is called once per frame
@@ -86,6 +101,7 @@ public class Grid : MonoBehaviour {
         {
             for (int j = (playerY - range); j < (playerY + range); j++)
             {
+                
                 if (i < 0)
                     continue;
                 if (j < 0)
@@ -105,6 +121,7 @@ public class Grid : MonoBehaviour {
                     cellMat[i, j].myJ = j;
                     newCellGO.name = i + " " + j;
                     refTT.Inserisci(i, j);
+                    refTT.InsertWall(i, j);
                     if (i == playerX && j == playerY)
                     {
                         cellMat[i, j].refMyTile.color = Color.white;
@@ -122,7 +139,7 @@ public class Grid : MonoBehaviour {
                 }
                 
 
-                if (i == 32 && j == 58 && !cellMat[i,j].spawned)
+                /*if (i == 32 && j == 58 && !cellMat[i,j].spawned)
                 {
                     GameObject newEnemy = Instantiate(enemy);
                     newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
@@ -167,7 +184,7 @@ public class Grid : MonoBehaviour {
                     newEnemy.transform.localPosition = new Vector3(0, 0, 1);
                     cellMat[i, j].spawned = true;
 
-                }
+                }*/
 
             }
         }

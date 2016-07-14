@@ -35,24 +35,26 @@ public class Player : MonoBehaviour {
 	    
 	}
 
-    public void SpawnPlayer()
+    public void SpawnPlayer(Vector2 posPlayer)
     {
         gridRef = FindObjectOfType<Grid>();
 
-        for (int i = 0; i < Grid.COL; i++)
+        /*for (int i = 0; i < Grid.COL; i++)
         {
             for (int j = 0; j < Grid.ROW; j++)
             {
                 if (gridRef.cellMat[i, j] == null) continue;
                 
                 if (gridRef.cellMat[i, j].isSpawnCell)
-                {                   
-                    this.transform.parent = gridRef.cellMat[i, j].transform;
-                    this.transform.localPosition = new Vector3(0, 0, 1);
+                {          */    
+                         
+        this.transform.parent = gridRef.cellMat[(int)posPlayer.x, (int)posPlayer.y].transform;
+        this.transform.localPosition = new Vector3(0, 0, 1);
+        
 
-                }
+                /*)
             }
-        }
+        }*/
     }
 
     public void MovePlayer(int iCell, int jCell)

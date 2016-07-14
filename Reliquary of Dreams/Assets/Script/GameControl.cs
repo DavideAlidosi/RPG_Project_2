@@ -230,5 +230,6 @@ public class GameControl : MonoBehaviour {
         fogRef.LightRadius();
         refEnemyC.EnemyTurn();
         fogRef.enemyCell.Clear();
+        //refGrid.CreateGrid();
     }
 }

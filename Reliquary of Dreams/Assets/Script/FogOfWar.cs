@@ -18,7 +18,7 @@ public class FogOfWar : MonoBehaviour {
         refGrid = FindObjectOfType<Grid>();
         refGC = FindObjectOfType<GameControl>();
         //RefreshEnemyList();
-        LightRadius();
+        //LightRadius();
     }
 
     public void Fog(Vector2 pos,int vista)

@@ -1,0 +1,1116 @@
+fileFormatVersion: 2
+guid: b573dab8642dbb842890a32a31bf3e68
+timeCreated: 1468504755
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 01_Oggetti-200x200_D_0
+    21300002: 01_Oggetti-200x200_D_1
+    21300004: 01_Oggetti-200x200_D_2
+    21300006: 01_Oggetti-200x200_D_3
+    21300008: 01_Oggetti-200x200_D_4
+    21300010: 01_Oggetti-200x200_D_5
+    21300012: 01_Oggetti-200x200_D_6
+    21300014: 01_Oggetti-200x200_D_7
+    21300016: 01_Oggetti-200x200_D_8
+    21300018: 01_Oggetti-200x200_D_9
+    21300020: 01_Oggetti-200x200_D_10
+    21300022: 01_Oggetti-200x200_D_11
+    21300024: 01_Oggetti-200x200_D_12
+    21300026: 01_Oggetti-200x200_D_13
+    21300028: 01_Oggetti-200x200_D_14
+    21300030: 01_Oggetti-200x200_D_15
+    21300032: 01_Oggetti-200x200_D_16
+    21300034: 01_Oggetti-200x200_D_17
+    21300036: 01_Oggetti-200x200_D_18
+    21300038: 01_Oggetti-200x200_D_19
+    21300040: 01_Oggetti-200x200_D_20
+    21300042: 01_Oggetti-200x200_D_21
+    21300044: 01_Oggetti-200x200_D_22
+    21300046: 01_Oggetti-200x200_D_23
+    21300048: 01_Oggetti-200x200_D_24
+    21300050: 01_Oggetti-200x200_D_25
+    21300052: 01_Oggetti-200x200_D_26
+    21300054: 01_Oggetti-200x200_D_27
+    21300056: 01_Oggetti-200x200_D_28
+    21300058: 01_Oggetti-200x200_D_29
+    21300060: 01_Oggetti-200x200_D_30
+    21300062: 01_Oggetti-200x200_D_31
+    21300064: 01_Oggetti-200x200_D_32
+    21300066: 01_Oggetti-200x200_D_33
+    21300068: 01_Oggetti-200x200_D_34
+    21300070: 01_Oggetti-200x200_D_35
+    21300072: 01_Oggetti-200x200_D_36
+    21300074: 01_Oggetti-200x200_D_37
+    21300076: 01_Oggetti-200x200_D_38
+    21300078: 01_Oggetti-200x200_D_39
+    21300080: 01_Oggetti-200x200_D_40
+    21300082: 01_Oggetti-200x200_D_41
+    21300084: 01_Oggetti-200x200_D_42
+    21300086: 01_Oggetti-200x200_D_43
+    21300088: 01_Oggetti-200x200_D_44
+    21300090: 01_Oggetti-200x200_D_45
+    21300092: 01_Oggetti-200x200_D_46
+    21300094: 01_Oggetti-200x200_D_47
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 01_Oggetti-200x200_D_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 42}
+        - {x: -29, y: 24}
+        - {x: -34, y: 21}
+        - {x: -34, y: -23}
+        - {x: -32, y: -36}
+        - {x: -24, y: -50}
+        - {x: 48, y: -50}
+        - {x: 48, y: 50}
+        - {x: 21, y: 50}
+        - {x: 18, y: 47}
+    - name: 01_Oggetti-200x200_D_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 48}
+        - {x: -49, y: -50}
+        - {x: 20, y: -50}
+        - {x: 22, y: -39}
+        - {x: 22, y: 48}
+    - name: 01_Oggetti-200x200_D_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 2, y: -50}
+        - {x: 2, y: 49}
+        - {x: 1, y: 50}
+    - name: 01_Oggetti-200x200_D_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 50}
+        - {x: -50, y: 32}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 50}
+      - - {x: -23, y: 48}
+        - {x: -31, y: 48}
+        - {x: -50, y: 40}
+        - {x: -50, y: 31}
+        - {x: -22, y: 31}
+        - {x: -19, y: 34}
+        - {x: -19, y: 46}
+    - name: 01_Oggetti-200x200_D_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 48}
+        - {x: 48, y: 50}
+      - - {x: 31, y: 47}
+        - {x: 20, y: 47}
+        - {x: 19, y: 45}
+        - {x: 19, y: 32}
+        - {x: 22, y: 31}
+        - {x: 50, y: 31}
+        - {x: 50, y: 39}
+        - {x: 48, y: 41}
+    - name: 01_Oggetti-200x200_D_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 48}
+        - {x: -3, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 48}
+        - {x: 48, y: 50}
+        - {x: -1, y: 50}
+    - name: 01_Oggetti-200x200_D_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: -50}
+        - {x: -43, y: -50}
+        - {x: -43, y: -38}
+        - {x: -46, y: -35}
+        - {x: -50, y: -35}
+      - - {x: -41, y: 25}
+        - {x: -41, y: -50}
+        - {x: 39, y: -50}
+        - {x: 39, y: 25}
+        - {x: 37, y: 27}
+        - {x: -39, y: 27}
+      - - {x: 46, y: -3}
+        - {x: 41, y: -11}
+        - {x: 41, y: -50}
+        - {x: 49, y: -50}
+        - {x: 50, y: -15}
+        - {x: 50, y: -3}
+      - - {x: -47, y: 5}
+        - {x: -50, y: 5}
+        - {x: -50, y: -27}
+        - {x: -45, y: -27}
+        - {x: -43, y: -25}
+        - {x: -43, y: 2}
+      - - {x: 42, y: 30}
+        - {x: 42, y: 1}
+        - {x: 45, y: 0}
+        - {x: 48, y: 0}
+        - {x: 49, y: 2}
+        - {x: 49, y: 26}
+        - {x: 45, y: 31}
+      - - {x: 37, y: 35}
+        - {x: 35, y: 37}
+        - {x: -43, y: 37}
+        - {x: -50, y: 30}
+        - {x: -50, y: 14}
+        - {x: -47, y: 14}
+        - {x: -42, y: 16}
+        - {x: 37, y: 27}
+    - name: 01_Oggetti-200x200_D_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: -44}
+        - {x: -30, y: -50}
+        - {x: 48, y: -50}
+        - {x: 48, y: 50}
+        - {x: -27, y: 50}
+        - {x: -34, y: 7}
+    - name: 01_Oggetti-200x200_D_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 50}
+        - {x: -49, y: -25}
+        - {x: -47, y: -45}
+        - {x: -41, y: -48}
+        - {x: 10, y: -48}
+        - {x: 19, y: -47}
+        - {x: 20, y: -44}
+        - {x: 20, y: 50}
+    - name: 01_Oggetti-200x200_D_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -49}
+        - {x: -49, y: -50}
+        - {x: 49, y: -50}
+        - {x: 50, y: -49}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -48}
+        - {x: -49, y: -49}
+        - {x: 0, y: -49}
+        - {x: 2, y: -47}
+        - {x: 2, y: 50}
+    - name: 01_Oggetti-200x200_D_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 50}
+        - {x: -3, y: -48}
+        - {x: -1, y: -50}
+        - {x: 48, y: -50}
+        - {x: 50, y: -48}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -50}
+        - {x: 38, y: -47}
+        - {x: -32, y: -47}
+        - {x: -33, y: -50}
+      - - {x: 39, y: -26}
+        - {x: -39, y: -20}
+        - {x: -46, y: -20}
+        - {x: -48, y: -22}
+        - {x: -48, y: -32}
+        - {x: -43, y: -38}
+        - {x: 43, y: -38}
+        - {x: 48, y: -30}
+        - {x: 48, y: -24}
+        - {x: 47, y: -23}
+      - - {x: -41, y: 50}
+        - {x: -41, y: -25}
+        - {x: -40, y: -28}
+        - {x: 36, y: -28}
+        - {x: 39, y: -25}
+        - {x: 39, y: 50}
+      - - {x: 40, y: 50}
+        - {x: 40, y: -24}
+        - {x: 49, y: -24}
+        - {x: 49, y: 50}
+      - - {x: -48, y: -3}
+        - {x: -43, y: -3}
+        - {x: -42, y: -2}
+        - {x: -42, y: 25}
+        - {x: -43, y: 50}
+        - {x: -50, y: 50}
+        - {x: -50, y: 28}
+    - name: 01_Oggetti-200x200_D_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 50}
+        - {x: -50, y: 49}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 47}
+        - {x: 49, y: 50}
+    - name: 01_Oggetti-200x200_D_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 48}
+        - {x: 48, y: 50}
+    - name: 01_Oggetti-200x200_D_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 50}
+        - {x: -50, y: 49}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 49}
+        - {x: 49, y: 50}
+    - name: 01_Oggetti-200x200_D_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 50}
+        - {x: -50, y: 32}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 50}
+      - - {x: -23, y: 48}
+        - {x: -31, y: 48}
+        - {x: -50, y: 40}
+        - {x: -50, y: 31}
+        - {x: -22, y: 31}
+        - {x: -19, y: 34}
+        - {x: -19, y: 46}
+    - name: 01_Oggetti-200x200_D_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 48}
+        - {x: 48, y: 50}
+      - - {x: 31, y: 47}
+        - {x: 20, y: 47}
+        - {x: 19, y: 45}
+        - {x: 19, y: 32}
+        - {x: 22, y: 31}
+        - {x: 50, y: 31}
+        - {x: 50, y: 39}
+        - {x: 48, y: 41}
+    - name: 01_Oggetti-200x200_D_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 50}
+        - {x: -49, y: 48}
+        - {x: -49, y: -50}
+        - {x: 10, y: -50}
+        - {x: 10, y: 49}
+        - {x: 8, y: 50}
+    - name: 01_Oggetti-200x200_D_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 50}
+        - {x: -48, y: -50}
+        - {x: 11, y: -50}
+        - {x: 11, y: 50}
+    - name: 01_Oggetti-200x200_D_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 47}
+        - {x: 47, y: 50}
+    - name: 01_Oggetti-200x200_D_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -47}
+        - {x: -49, y: -48}
+        - {x: 48, y: -48}
+        - {x: 50, y: -46}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -47}
+        - {x: -42, y: -50}
+        - {x: 45, y: -50}
+        - {x: 50, y: -46}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -48}
+        - {x: -49, y: -49}
+        - {x: 49, y: -49}
+        - {x: 50, y: -48}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: -50}
+        - {x: 10, y: 50}
+        - {x: -49, y: 50}
+        - {x: -49, y: -50}
+    - name: 01_Oggetti-200x200_D_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: -50}
+        - {x: 11, y: 50}
+        - {x: -48, y: 50}
+        - {x: -48, y: -50}
+    - name: 01_Oggetti-200x200_D_31
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -50}
+        - {x: 48, y: -50}
+        - {x: 50, y: -47}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 47}
+        - {x: -2, y: 43}
+        - {x: -9, y: 37}
+        - {x: -9, y: -24}
+        - {x: 5, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 48}
+        - {x: 25, y: 48}
+    - name: 01_Oggetti-200x200_D_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 48}
+        - {x: -50, y: 48}
+        - {x: -50, y: -50}
+        - {x: -5, y: -50}
+        - {x: 7, y: 6}
+        - {x: 7, y: 40}
+        - {x: -6, y: 47}
+    - name: 01_Oggetti-200x200_D_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 37}
+        - {x: -10, y: 33}
+        - {x: -10, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: 43}
+        - {x: 13, y: 43}
+    - name: 01_Oggetti-200x200_D_35
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 43}
+        - {x: -50, y: 43}
+        - {x: -50, y: -50}
+        - {x: 7, y: -50}
+        - {x: 8, y: -31}
+        - {x: 8, y: 33}
+    - name: 01_Oggetti-200x200_D_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 41}
+        - {x: -40, y: 39}
+        - {x: -50, y: 22}
+        - {x: -50, y: -50}
+        - {x: -42, y: -50}
+        - {x: 27, y: 30}
+        - {x: 27, y: 36}
+        - {x: 24, y: 41}
+      - - {x: -23, y: 27}
+        - {x: -38, y: 14}
+        - {x: -38, y: -50}
+        - {x: 33, y: -50}
+        - {x: 33, y: 12}
+        - {x: 21, y: 27}
+      - - {x: 33, y: 27}
+        - {x: 27, y: 27}
+        - {x: 27, y: 6}
+        - {x: 38, y: -50}
+        - {x: 47, y: -50}
+        - {x: 47, y: 6}
+        - {x: 44, y: 21}
+    - name: 01_Oggetti-200x200_D_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 50}
+        - {x: -49, y: -50}
+        - {x: 10, y: -50}
+        - {x: 10, y: 50}
+      - - {x: 49, y: -50}
+        - {x: 48, y: -47}
+        - {x: 44, y: -47}
+        - {x: 43, y: -50}
+      - - {x: 48, y: -2}
+        - {x: 37, y: -13}
+        - {x: 37, y: -41}
+        - {x: 39, y: -47}
+        - {x: 48, y: -47}
+        - {x: 50, y: -23}
+        - {x: 50, y: -2}
+    - name: 01_Oggetti-200x200_D_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 15}
+        - {x: 25, y: 13}
+        - {x: 25, y: 15}
+        - {x: -25, y: 15}
+        - {x: -50, y: 4}
+        - {x: -50, y: -44}
+        - {x: -45, y: -50}
+        - {x: 48, y: -50}
+        - {x: 50, y: -34}
+        - {x: 50, y: -1}
+        - {x: 34, y: 15}
+      - - {x: 8, y: 27}
+        - {x: -11, y: 27}
+        - {x: -22, y: 25}
+        - {x: -33, y: 18}
+        - {x: -50, y: -1}
+        - {x: -50, y: -9}
+        - {x: -43, y: -8}
+        - {x: -9, y: 0}
+        - {x: 28, y: 15}
+        - {x: 28, y: 25}
+      - - {x: -48, y: 50}
+        - {x: -48, y: 48}
+        - {x: -46, y: 46}
+        - {x: 9, y: 46}
+        - {x: 11, y: 48}
+        - {x: 11, y: 50}
+    - name: 01_Oggetti-200x200_D_39
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 18}
+        - {x: 26, y: 16}
+        - {x: 26, y: 11}
+        - {x: 29, y: 8}
+        - {x: 25, y: 11}
+        - {x: 19, y: 15}
+        - {x: 33, y: 27}
+        - {x: -25, y: 27}
+        - {x: -50, y: 2}
+        - {x: -50, y: -50}
+        - {x: 50, y: -50}
+        - {x: 50, y: -1}
+        - {x: 33, y: 19}
+    - name: 01_Oggetti-200x200_D_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 50}
+        - {x: -9, y: 26}
+        - {x: -9, y: -40}
+        - {x: -2, y: -43}
+        - {x: 21, y: -46}
+        - {x: 50, y: -46}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 23}
+        - {x: -9, y: 50}
+        - {x: -50, y: 50}
+        - {x: -50, y: -46}
+        - {x: -23, y: -46}
+        - {x: -11, y: -44}
+        - {x: 4, y: -40}
+        - {x: 5, y: -38}
+    - name: 01_Oggetti-200x200_D_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 50}
+        - {x: -10, y: -43}
+        - {x: 50, y: -43}
+        - {x: 50, y: 50}
+      - - {x: -12, y: -35}
+        - {x: -10, y: -37}
+        - {x: -7, y: -36}
+        - {x: -7, y: -33}
+        - {x: -9, y: -31}
+        - {x: -12, y: -32}
+      - - {x: -20, y: -29}
+        - {x: -16, y: -33}
+        - {x: -13, y: -32}
+        - {x: -13, y: -29}
+        - {x: -15, y: -22}
+        - {x: -17, y: -21}
+        - {x: -20, y: -22}
+    - name: 01_Oggetti-200x200_D_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 50}
+        - {x: -50, y: -43}
+        - {x: -11, y: -43}
+        - {x: 9, y: -42}
+        - {x: 11, y: -32}
+        - {x: 11, y: 35}
+        - {x: 9, y: 50}
+    - name: 01_Oggetti-200x200_D_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: -20}
+        - {x: -44, y: -24}
+        - {x: -44, y: -34}
+        - {x: 42, y: -34}
+        - {x: 45, y: -26}
+        - {x: 45, y: -21}
+        - {x: 43, y: -20}
+      - - {x: -50, y: 50}
+        - {x: -50, y: -18}
+        - {x: -47, y: -23}
+        - {x: -44, y: -22}
+        - {x: -43, y: -15}
+        - {x: -43, y: 50}
+      - - {x: -38, y: 50}
+        - {x: -38, y: -19}
+        - {x: 33, y: -19}
+        - {x: 33, y: 50}
+      - - {x: 38, y: 50}
+        - {x: 38, y: -16}
+        - {x: 41, y: -19}
+        - {x: 45, y: -19}
+        - {x: 47, y: -17}
+        - {x: 47, y: 50}
+    - name: 01_Oggetti-200x200_D_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: -50}
+        - {x: 10, y: 50}
+        - {x: -49, y: 50}
+        - {x: -49, y: -50}
+      - - {x: 44, y: 50}
+        - {x: 44, y: 34}
+        - {x: 46, y: 31}
+        - {x: 48, y: 26}
+        - {x: 50, y: 26}
+        - {x: 50, y: 50}
+    - name: 01_Oggetti-200x200_D_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 11}
+        - {x: -26, y: -10}
+        - {x: 16, y: -10}
+        - {x: 42, y: -3}
+        - {x: 42, y: 19}
+        - {x: -48, y: 37}
+        - {x: -50, y: 37}
+        - {x: -50, y: 21}
+      - - {x: -15, y: 5}
+        - {x: -17, y: 3}
+        - {x: -17, y: 0}
+        - {x: -15, y: -2}
+        - {x: -6, y: -2}
+        - {x: -4, y: 0}
+        - {x: -4, y: 1}
+        - {x: -7, y: 4}
+      - - {x: -44, y: 50}
+        - {x: -43, y: 42}
+        - {x: -28, y: 13}
+        - {x: -18, y: 7}
+        - {x: 31, y: 7}
+        - {x: 50, y: 18}
+        - {x: 50, y: 48}
+        - {x: 49, y: 50}
+    - name: 01_Oggetti-200x200_D_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 2}
+        - {x: -17, y: -1}
+        - {x: -24, y: 5}
+        - {x: -13, y: 3}
+        - {x: 11, y: 3}
+        - {x: 19, y: 5}
+        - {x: 31, y: 12}
+        - {x: 44, y: 26}
+        - {x: 50, y: 35}
+        - {x: 50, y: 50}
+        - {x: -50, y: 50}
+        - {x: -50, y: 13}
+        - {x: -47, y: 10}
+        - {x: -37, y: 2}
+        - {x: -20, y: -11}
+        - {x: 19, y: -11}
+        - {x: 50, y: 7}
+        - {x: 50, y: 13}
+        - {x: 34, y: 12}
+      - - {x: -18, y: 0}
+        - {x: -15, y: 1}
+        - {x: -15, y: 4}
+        - {x: -18, y: 5}
+        - {x: -20, y: 3}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
