@@ -7,6 +7,7 @@ public class CameraControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        playerPosition = FindObjectOfType<Player>().gameObject;
         zPos = playerPosition.transform.position;
         zPos += new Vector3(0, 0, -10);
 	}
