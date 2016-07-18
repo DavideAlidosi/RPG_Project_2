@@ -16,7 +16,7 @@ public class Grid : MonoBehaviour {
     TileTester refTT;
 
 
-    Transform ciao;
+    
 
     public const int ROW = 100;
     public const int COL = 100;
@@ -63,8 +63,9 @@ public class Grid : MonoBehaviour {
                 }
             }
         }
-
-        posPlayer = refTT.InsertGameObject();
+        // alla fine della creazione della matrice inizializzata a null prendiamo il tile con tag gameobject troviamo la X e la Y
+        // corrispondenti alla posizione scelta e creiamo una cella inserendola nella matrice
+        posPlayer = refTT.InsertPlayerGameObject();
         int cellX = (int)posPlayer.x;
         int cellY = (int)posPlayer.y;
         GameObject newCellGO = Instantiate(cell);
@@ -76,18 +77,21 @@ public class Grid : MonoBehaviour {
         cellMat[cellX, cellY].isSpawnCell = true;
 
 
-
+        // una volta data la posizione del player si creerà la griglia attorno a se
         Debug.Log(posPlayer);
         Debug.Log(Time.realtimeSinceStartup);
         playerLinking.SpawnPlayer(posPlayer);
         CreateGrid();
         playerLinking.GetComponentInChildren<FogOfWar>().LightRadius();
-	}
+        playerLinking.GetComponentInChildren<FogOfWar>().RefreshEnemyList();
+    }
 	
 	// Update is called once per frame
 	void Update () {
         
 	}
+
+    // Crea la griglia logica attorno al player ad ogni click di range caselle
 
     public void CreateGrid()
     {
@@ -122,59 +126,14 @@ public class Grid : MonoBehaviour {
                     newCellGO.name = i + " " + j;
                     refTT.Inserisci(i, j);
                     refTT.InsertWall(i, j);
+                    refTT.InsertDoor(i, j);
                     if (i == playerX && j == playerY)
                     {
                         cellMat[i, j].refMyTile.color = Color.white;
                         continue;
                     }
-                    /*if (cellMat[i,j].GetComponent<SpriteRenderer>().sprite.name != null)
-                    {
-                        Debug.Log(cellMat[i, j].GetComponent<SpriteRenderer>().sprite.name);
-                    }
-                    //if (cellMat[i,j].GetComponent<SpriteRenderer>().sprite.name == "White" )
-                    {
-                        
-                        //cellMat[i, j].GetComponent<SpriteRenderer>().sprite = null;
-                    }*/
                 }
-                
-
-                /*if (i == 32 && j == 58 && !cellMat[i,j].spawned)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-                    //newEnemy.SetActive(false);
-                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                    cellMat[i, j].spawned = true;
-                    
-                }
-
-                if (i == 21 && j == 64 && !cellMat[i, j].spawned)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-                    //newEnemy.SetActive(false);
-                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                    cellMat[i, j].spawned = true;
-
-                }
-
-                if (i == 54 && j == 63 && !cellMat[i, j].spawned)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-                    //newEnemy.SetActive(false);
-                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                    cellMat[i, j].spawned = true;
-
-                }
-                if (i == 78 && j == 64 && !cellMat[i, j].spawned)
+                /*if (i == 20 && j == 29 && !cellMat[i, j].spawned)
                 {
                     GameObject newEnemy = Instantiate(enemy);
                     newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
@@ -185,12 +144,15 @@ public class Grid : MonoBehaviour {
                     cellMat[i, j].spawned = true;
 
                 }*/
-
             }
         }
+
+        refTT.InsertEnemyGO();
         refTT.Inserisci(playerX, playerY);
+        
     }
 
+    // Crea la griglia logica attorno al nemico ad ogni click di range caselle
     public void CreateGridEnemy(int enemyX, int enemyY)
     {
         int range = 5;

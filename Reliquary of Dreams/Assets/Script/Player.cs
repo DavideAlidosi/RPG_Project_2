@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
     public SpriteRenderer sr;
@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
     GameControl gcRef;
     FogOfWar fogRef;
     MenuPopUp refMPU;
+
+    public List<Item> itemPlayer = new List<Item>();
 
     public int str;
     public int cos;
@@ -27,8 +29,11 @@ public class Player : MonoBehaviour {
         gcRef = FindObjectOfType<GameControl>();
         fogRef = FindObjectOfType<FogOfWar>();
         refMPU = FindObjectOfType<MenuPopUp>();
+
         
-	}
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

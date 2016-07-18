@@ -123,7 +123,7 @@ public class GameControl : MonoBehaviour {
 
     public void CombatEnemy()
     {
-        int strAtt = enemyCell.GetComponentInChildren<Enemy>().str;
+        int strAtt = enemyCell.GetComponentInChildren<Enemy>().str;        
         int agiDef = playerCell.GetComponentInChildren<Player>().agi;
 
         int totale = 50 + (strAtt * 5) - (agiDef * 2);
@@ -194,22 +194,22 @@ public class GameControl : MonoBehaviour {
     {
         int i = cellToCheck.GetComponent<Cell>().myI;
         int j = cellToCheck.GetComponent<Cell>().myJ;
-        if (refGrid.cellMat[i + 1, j].GetComponentInChildren<Enemy>())
+        if (refGrid.cellMat[i + 1, j].GetComponentInChildren<Enemy>() || refGrid.cellMat[i + 1, j].GetComponent<Door>())
         {
             Debug.Log("puttana di tua madre");
             return true;
         }
-        if (refGrid.cellMat[i - 1, j].GetComponentInChildren<Enemy>())
+        if (refGrid.cellMat[i - 1, j].GetComponentInChildren<Enemy>() || refGrid.cellMat[i - 1, j].GetComponent<Door>())
         {
             Debug.Log("porcoddio");
             return true;
         }
-        if (refGrid.cellMat[i, j + 1].GetComponentInChildren<Enemy>())
+        if (refGrid.cellMat[i, j + 1].GetComponentInChildren<Enemy>() || refGrid.cellMat[i , j + 1].GetComponent<Door>())
         {
             Debug.Log("nicholas merda");
             return true;
         }
-        if (refGrid.cellMat[i, j - 1].GetComponentInChildren<Enemy>())
+        if (refGrid.cellMat[i, j - 1].GetComponentInChildren<Enemy>() || refGrid.cellMat[i , j - 1].GetComponent<Door>() )
         {
             Debug.Log("vi ammazzo tutti e due");
             return true;
@@ -225,11 +225,11 @@ public class GameControl : MonoBehaviour {
 
         plRef.MovePlayer(_myI, _myJ);
         fogRef.GetEnemyNearPlayer(_myI, _myJ);
-        
+		refGrid.CreateGrid();
         playerCell = refGrid.cellMat[_myI,_myJ].gameObject;
         fogRef.LightRadius();
         refEnemyC.EnemyTurn();
         fogRef.enemyCell.Clear();
-        //refGrid.CreateGrid();
+        
     }
 }

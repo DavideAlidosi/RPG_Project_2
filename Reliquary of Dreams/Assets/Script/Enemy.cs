@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     {
 
         refGrid = FindObjectOfType<Grid>();
-        refMyCell = GetComponentInParent<Cell>();
+        
         refGC = FindObjectOfType<GameControl>();
         str = 4;
         cos = 3;
@@ -41,13 +41,6 @@ public class Enemy : MonoBehaviour
     {
 
     }
-
-    public void Test()
-    {
-        Debug.Log("Test");
-    }
-
-
 
     public void ManhattanSearch()
     {
@@ -88,7 +81,7 @@ public class Enemy : MonoBehaviour
 
 
                     }
-                    //refGrid.cellMat[i, j].GetComponent<SpriteRenderer>().color = ciao;
+                    
                 }
             }
         }
@@ -177,7 +170,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //coloring the cell when mouse is over
+    //coloring the cell when mouse is over the enemy
     public void LookingCell()
     {
         int myI = refMyCell.myI;

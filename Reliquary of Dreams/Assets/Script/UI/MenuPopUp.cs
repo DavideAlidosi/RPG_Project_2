@@ -4,7 +4,9 @@ using UnityEngine.UI;
 
 public class MenuPopUp : MonoBehaviour {
     public GameObject menuPanel;
-    
+
+    bool isActive = false;
+    public Image inventory;
 
     
 	// Use this for initialization
@@ -18,8 +20,7 @@ public class MenuPopUp : MonoBehaviour {
         
 
     }
-
-
+    
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,5 +35,20 @@ public class MenuPopUp : MonoBehaviour {
     public void Deactivate()
     {
         menuPanel.SetActive(false);
+    }
+
+    public void ConsumableInventory()
+    {
+        if (!isActive)
+        {
+            inventory.gameObject.SetActive(true);
+            isActive = true;
+        }
+        else
+        {
+            inventory.gameObject.SetActive(false);
+            isActive = false;
+        }
+        
     }
 }

@@ -36,6 +36,8 @@ public class TileTester : MonoBehaviour
             }
 
         }
+
+        
         //Debug.Log(s);
     }
 
@@ -52,10 +54,8 @@ public class TileTester : MonoBehaviour
                 //if (td.go.GetComponent<SpriteRenderer>().sprite == free || td.go.GetComponent<SpriteRenderer>().sprite == free2)
                 {
                     //Debug.Log(td.go);
-                    refGrid.cellMat[x, y].isWall = false;    
+                    refGrid.cellMat[x, y].isWall = false;
                 }
-
-
                 //refGrid.cellMat[x, y].gameObject.GetComponent<SpriteRenderer>().sprite = td.go.GetComponent<SpriteRenderer>().sprite;
                 td.go.GetComponent<SpriteRenderer>().color = Color.gray ;
                 refGrid.cellMat[x, y].refMyTile = td.go.GetComponent<SpriteRenderer>();
@@ -86,7 +86,7 @@ public class TileTester : MonoBehaviour
         }
     }
 
-    public Vector2 InsertGameObject()
+    public Vector2 InsertPlayerGameObject()
     {
         TileLoader tl = FindObjectOfType<TileLoader>();
         List<TileData> allTileDatas = tl.LoadAllTilesInScene("GameObject");
@@ -94,12 +94,71 @@ public class TileTester : MonoBehaviour
         refGrid = FindObjectOfType<Grid>();
         foreach (var td in allTileDatas)
         {
-                if (td.go.GetComponent<Player>())
-                {
-                    return new Vector2(td.cell_y, td.cell_x);
-                }
+            if (td.go.GetComponent<Player>())
+            {
+                return new Vector2(td.cell_y, td.cell_x);
+            }
+
+           
         }
         return new Vector2(0, 0);
     }
+
+    public void InsertEnemyGO()
+    {
+        TileLoader tl = FindObjectOfType<TileLoader>();
+        List<TileData> allTileDatas = tl.LoadAllTilesInScene("GameObject");
+
+        refGrid = FindObjectOfType<Grid>();
+        foreach (var td in allTileDatas)
+        {
+            if (td.go.GetComponent<Enemy>())
+            {
+                Debug.Log(td.cell_y + "" + td.cell_x);
+                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+
+                //newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
+                //newEnemy.SetActive(false);
+                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+                
+                td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
+                
+                
+                td.go.transform.localPosition = new Vector3(0, 0, 1);
+                //cellMat[i, j].spawned = true;
+                td.go.GetComponent<Enemy>().refMyCell = refGrid.cellMat[td.cell_y, td.cell_x];
+            }
+        }
+        
+    }
+    public void InsertDoor(int x, int y)
+    {
+        TileLoader tl = FindObjectOfType<TileLoader>();
+        List<TileData> allTileDatas = tl.LoadAllTilesInScene("Door");
+        refGrid = FindObjectOfType<Grid>();
+
+        foreach (var td in allTileDatas)
+        {
+            if (td.cell_x == y && td.cell_y == x)
+            {
+                
+                    
+                    refGrid.cellMat[x, y].isWall = true;
+                    refGrid.cellMat[x, y].isDoor = true;
+                    refGrid.cellMat[x, y].gameObject.AddComponent<Door>();
+                    
+                
+
+
+                //refGrid.cellMat[x, y].gameObject.GetComponent<SpriteRenderer>().sprite = td.go.GetComponent<SpriteRenderer>().sprite;
+                td.go.GetComponent<SpriteRenderer>().color = Color.white;
+                refGrid.cellMat[x, y].refMyTile = td.go.GetComponent<SpriteRenderer>();
+
+            }
+        }
+      
+    }
+
+
 }
 

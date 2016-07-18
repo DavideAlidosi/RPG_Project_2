@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Cell : MonoBehaviour {
     public int myI, myJ;
@@ -10,6 +11,7 @@ public class Cell : MonoBehaviour {
     public bool isWall = true;
     public bool isCombat = false;
     public bool isMove = false;
+	public bool isDoor = false;
 
     public SpriteRenderer refMyTile;
 
@@ -21,11 +23,14 @@ public class Cell : MonoBehaviour {
     public Player playerRef;
     public MenuPopUp refMPU;
 
+
+
+
     // Use this for initialization
     void Start () {
         gcRef = FindObjectOfType<GameControl>();
         //playerRef = FindObjectOfType<Player>();
-        //refFog = FindObjectOfType<FogOfWar>();
+        refFog = FindObjectOfType<FogOfWar>();
         
         //refMPU = FindObjectOfType<MenuPopUp>();
         
@@ -34,10 +39,7 @@ public class Cell : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        /*if (isWall)
-        {
-            GetComponent<SpriteRenderer>().color = Color.black;
-        }*/
+        
 
         
 
@@ -50,7 +52,14 @@ public class Cell : MonoBehaviour {
         {
             if (gcRef.phase == GamePhase.Movimento)
             {
-                if (gcRef.queueMoveCell.Contains(this.gameObject))
+				refFog.Pathfinding(myI,myJ);
+				refFog.ChooseMinPath();
+
+                if (gcRef.CheckCombat(this.gameObject))
+                {
+                    gcRef.cellCombat = this.gameObject;
+                }
+                /*if (gcRef.queueMoveCell.Contains(this.gameObject))
                 {
 
 
@@ -66,7 +75,7 @@ public class Cell : MonoBehaviour {
                         gcRef.queueMoveCell.Clear();
                         gcRef.Adjacent(this.gameObject);
                     }
-                }
+                }*/
             }
         }
     }
@@ -108,7 +117,7 @@ public class Cell : MonoBehaviour {
             int countList = gcRef.movementCell.Count;
             
             
-            if (isFree && gcRef.movementCell.Contains(this.gameObject))
+            if (isFree)
             {
                 /*refFog.ResetEnemyStatus();
                 gcRef.phase = GamePhase.Selezione;
@@ -143,6 +152,30 @@ public class Cell : MonoBehaviour {
                 enemyRef.EnemyTurn();
 
             }
+            if (GetComponent<Door>())
+            {
+
+                if (gcRef.cellCombat != null)
+                {
+                    gcRef.EndPlayerPhase(myI, myJ);
+                    playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
+                    GetComponent<Door>().FindMyAdjacent(myI, myJ);
+                    isWall = false;
+                    GetComponent<Door>().adjacent.isWall = false;
+                    gcRef.phase = GamePhase.Selezione;
+                    gcRef.ResetToSelectionPhase();
+                    refFog.LightRadius();
+                }
+                Debug.Log("Porta");
+                
+                
+                
+               
+                
+                
+                
+
+            }
         }
         else if (gcRef.phase == GamePhase.Combattimento)
         {
@@ -157,4 +190,8 @@ public class Cell : MonoBehaviour {
         }
         gcRef.cellCombat = null;
     }
+
+
+
+
 }

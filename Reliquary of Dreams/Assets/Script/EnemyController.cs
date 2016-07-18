@@ -22,13 +22,22 @@ public class EnemyController : MonoBehaviour {
     public void EnemyTurn()
     {
         enemies = FindObjectsOfType<Enemy>();
+        
+        for (int i = 0; i < enemies.Length-1; i++)
+        {
+            Debug.Log(enemies[i]+"CIAO");
+        }
         foreach (var enemy in enemies)
         {
+            enemy.refMyCell = GetComponentInParent<Cell>();
+            //refGC.enemyCell = enemy.refMyCell.gameObject;
+            Debug.Log(GetComponentInParent<Cell>());
+            
             refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
             enemy.ManhattanSearch();
             enemy.SearchPlayer();
             enemy.MoveEnemy();
-            refGC.enemyCell = enemy.refMyCell.gameObject;
+            
             refFog.GetPlayerNearEnemy(enemy.GetComponentInParent<Cell>().myI, enemy.GetComponentInParent<Cell>().myJ);
             
             if (enemy.isNear)
