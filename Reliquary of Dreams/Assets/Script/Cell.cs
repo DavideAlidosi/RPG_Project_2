@@ -21,7 +21,7 @@ public class Cell : MonoBehaviour {
     public FogOfWar refFog;
     GameControl gcRef;
     public Player playerRef;
-    public MenuPopUp refMPU;
+   
 
 
 
@@ -119,17 +119,7 @@ public class Cell : MonoBehaviour {
             
             if (isFree)
             {
-                /*refFog.ResetEnemyStatus();
-                gcRef.phase = GamePhase.Selezione;
-                gcRef.ResetToSelectionPhase();
                 
-                playerRef.MovePlayer(myI,myJ);
-                refFog.GetEnemyNearPlayer(this.myI,this.myJ);
-                //refMPU.Activate();
-                gcRef.playerCell = this.gameObject;
-                refFog.LightRadius();
-                enemyRef.EnemyTurn();
-                refFog.enemyCell.Clear();*/
                 gcRef.EndPlayerPhase(myI, myJ);
 
             }
@@ -177,18 +167,7 @@ public class Cell : MonoBehaviour {
 
             }
         }
-        else if (gcRef.phase == GamePhase.Combattimento)
-        {
-            
-            if (GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().isNear)
-            {
-                
-                Destroy(GetComponentInChildren<Enemy>().gameObject);
-                gcRef.phase = GamePhase.Selezione;
-                refMPU.Deactivate();
-            }
-        }
-        gcRef.cellCombat = null;
+        
     }
 
 

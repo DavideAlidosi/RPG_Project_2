@@ -121,9 +121,9 @@ public class GameControl : MonoBehaviour {
         Invoke("SetTextToNull", 1.5f);
     }
 
-    public void CombatEnemy()
+    public void CombatEnemy(Enemy e)
     {
-        int strAtt = enemyCell.GetComponentInChildren<Enemy>().str;        
+        int strAtt = e.str;        
         int agiDef = playerCell.GetComponentInChildren<Player>().agi;
 
         int totale = 50 + (strAtt * 5) - (agiDef * 2);
@@ -219,17 +219,46 @@ public class GameControl : MonoBehaviour {
 
     public void EndPlayerPhase(int _myI, int _myJ)
     {
+        phase = GamePhase.Azione;
         fogRef.ResetEnemyStatus();
-        phase = GamePhase.Selezione;
+        
         ResetToSelectionPhase();
-
-        plRef.MovePlayer(_myI, _myJ);
+        StartCoroutine(plRef.MovePlayer());
+        StartCoroutine(EndPlayerPhases(_myI, _myJ));
+        //plRef.MovePlayer(_myI, _myJ);
         fogRef.GetEnemyNearPlayer(_myI, _myJ);
-		refGrid.CreateGrid();
-        playerCell = refGrid.cellMat[_myI,_myJ].gameObject;
-        fogRef.LightRadius();
-        refEnemyC.EnemyTurn();
+		//refGrid.CreateGrid();
+        //playerCell = refGrid.cellMat[_myI,_myJ].gameObject;
+        //fogRef.LightRadius();
+        
+        
         fogRef.enemyCell.Clear();
         
+    }
+
+    public IEnumerator EndPlayerPhases(int _myI, int _myJ)
+    {
+        bool isMovingPlayer = true;
+        bool isMovingEnemy = false;
+        while (isMovingPlayer)
+        {
+
+
+            foreach (var cell in fogRef.pathProva)
+            {
+                playerCell = refGrid.cellMat[_myI, _myJ].gameObject;
+                fogRef.LightRadius();
+                yield return new WaitForSeconds(0.5f);
+            }
+            isMovingPlayer = false;
+            isMovingEnemy = true;
+        }
+        while (isMovingEnemy)
+        {
+            refEnemyC.EnemyTurn();
+            yield return new WaitForSeconds(0.5f);
+            isMovingEnemy = false;
+            phase = GamePhase.Selezione;
+        }
     }
 }
