@@ -260,10 +260,14 @@ public class GameControl : MonoBehaviour {
         }
         while (isMovingEnemy)
         {
-            refEnemyC.EnemyTurn();
-            yield return new WaitForSeconds(0.5f);
+            StartCoroutine(refEnemyC.EnemyTurn());
+            
+            
+            //yield return new WaitForSeconds(0.5f);
             isMovingEnemy = false;
-            phase = GamePhase.Selezione;
+
         }
+        
+        //phase = GamePhase.Selezione;
     }
 }

@@ -13,12 +13,14 @@ public class Enemy : MonoBehaviour
     public bool isPlayerVisible = false;
     Grid refGrid;
     public int vista;
-    int move;
+    
+    public int move;
     GameControl refGC;
     public Cell refMyCell;
     public Cell nearestCell;
     public List<Cell> moveCell = new List<Cell>();
-    public List<Cell> LookCell = new List<Cell>();
+    public List<Cell> lookCell = new List<Cell>();
+    public List<Cell> canMoveCell = new List<Cell>();
 
     // Use this for initialization
     void Start()
@@ -39,7 +41,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void ManhattanSearch()
@@ -63,7 +65,7 @@ public class Enemy : MonoBehaviour
                     continue;
                 if (j > Grid.ROW-1)
                     continue;
-                LookCell.Add(refGrid.cellMat[i, j]);
+                lookCell.Add(refGrid.cellMat[i, j]);
                 if (refGrid.cellMat[i, j].isWall)
                 {
                     continue;
@@ -133,27 +135,35 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void SearchPlayer()
+    public Cell SearchPlayer()
     {
         //Cell nearestCell;
         int playerX = refGC.playerCell.GetComponent<Cell>().myI;
         int playerY = refGC.playerCell.GetComponent<Cell>().myJ;
         int distance = 1000;
-
+        
+        canMoveCell.Clear();
         if (isPlayerVisible)
         {
             foreach (var cell in moveCell)
             {
-
-
-                if (distance > Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ))
+                if (Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ) >= (move))
                 {
-                    distance = Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ);
-                    nearestCell = cell;
-
+                    
+                    if (distance > Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ))
+                    {
+                        distance = Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ);
+                        nearestCell = cell;
+                        
+                        
+                    }
                 }
+
+                
             }
         }
+        Debug.Log(nearestCell);
+        return nearestCell;
 
     }
 
@@ -175,7 +185,7 @@ public class Enemy : MonoBehaviour
     {
         int myI = refMyCell.myI;
         int myJ = refMyCell.myJ;
-        LookCell.Clear();
+        lookCell.Clear();
 
         for (int i = (myI - vista); i <= (myI + vista); i++)
         {
@@ -207,12 +217,12 @@ public class Enemy : MonoBehaviour
                         
                         if (refGrid.cellMat[i, j].refMyTile.color == Color.green)
                         {
-                            LookCell.Add(refGrid.cellMat[i, j]);
+                            lookCell.Add(refGrid.cellMat[i, j]);
                             refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.2f, 0);
                         }
                         else
                         {
-                            LookCell.Add(refGrid.cellMat[i, j]);
+                            lookCell.Add(refGrid.cellMat[i, j]);
                             refGrid.cellMat[i, j].refMyTile.color = Color.red;
                         }
                     }
@@ -226,12 +236,12 @@ public class Enemy : MonoBehaviour
                         if (refGrid.cellMat[i, j].refMyTile.color == Color.green)
                         {
                             refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.5f, 0);
-                            LookCell.Add(refGrid.cellMat[i, j]);
+                            lookCell.Add(refGrid.cellMat[i, j]);
 
                         }
                         else
                         {
-                            LookCell.Add(refGrid.cellMat[i, j]);
+                            lookCell.Add(refGrid.cellMat[i, j]);
                             refGrid.cellMat[i, j].refMyTile.color = Color.yellow;
                         }
 
@@ -245,7 +255,7 @@ public class Enemy : MonoBehaviour
 
     public void ResetLookingCell()
     {
-        foreach (var cell in LookCell)
+        foreach (var cell in lookCell)
         {
             
             cell.refMyTile.color = Color.white;

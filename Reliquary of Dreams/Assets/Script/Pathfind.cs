@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class Pathfind : MonoBehaviour {
 
     Grid refGrid;
-    List<Vector3> pathList = new List<Vector3>();
+    public List<Vector3> pathList = new List<Vector3>();
     public List<Cell> pathCell = new List<Cell>();
 
     void Start()
@@ -53,6 +53,12 @@ public class Pathfind : MonoBehaviour {
         if (!refGrid.cellMat[newI + posI, newJ + posJ].isWall)
         {
             isFind = true;
+            refGrid.cellMat[newI + posI, newJ + posJ].isFree = true;
+        }
+        if (refGrid.cellMat[newI + posI, newJ + posJ].GetComponentInChildren<Enemy>())
+        {
+            isFind = false;
+            refGrid.cellMat[newI + posI, newJ + posJ].isFree = false; 
 
         }
 
@@ -61,6 +67,7 @@ public class Pathfind : MonoBehaviour {
 
     bool InManhattan(int range, int xDest, int yDest, int xStart, int yStart)
     {
+        
         bool inMan = false;
         if (Mathf.Abs(xStart - xDest) + Mathf.Abs(yStart - yDest) <= (range))
         {
@@ -73,11 +80,12 @@ public class Pathfind : MonoBehaviour {
     public void Pathfinding(int _myI, int _myJ)
     {
 
-        int destX = _myI;
-        int destY = _myJ;
-        int startX = GetComponentInParent<Cell>().myI;
-        int startY = GetComponentInParent<Cell>().myJ;
+        int destX = GetComponentInParent<Cell>().myI;  
+        int destY = GetComponentInParent<Cell>().myJ;  
+        int startX = _myI;
+        int startY = _myJ;
         int count = 0;
+        Debug.Log(destX+" "+destY);
 
         pathList.Clear();
 
@@ -102,7 +110,7 @@ public class Pathfind : MonoBehaviour {
 
         if (v.x != startX || v.y != startY)
         {
-            if (v.z < 8)
+            if (v.z < 5)
             {
 
 
@@ -166,11 +174,11 @@ public class Pathfind : MonoBehaviour {
         }
     }
 
-    public void ChooseMinPath()
+    public void ChooseMinPath(List<Cell> _moveCell)
     {
 
-        int startX = GetComponentInParent<Cell>().myI;
-        int startY = GetComponentInParent<Cell>().myJ;
+        int startX = GetComponent<Enemy>().nearestCell.myI; /*refGrid.playerLinking.GetComponentInParent<Cell>().myI;*/
+        int startY = GetComponent<Enemy>().nearestCell.myJ;
         int countStart = 0;
         foreach (var item in pathList)
         {
@@ -225,9 +233,9 @@ public class Pathfind : MonoBehaviour {
                 }
             }
         }
-        foreach (var item in pathCell)
+        foreach (var cell in _moveCell)
         {
-            item.sBox.color = Color.yellow;
+            cell.isFree = false;
         }
 
     }

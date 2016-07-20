@@ -307,8 +307,9 @@ public class FogOfWar : MonoBehaviour {
         int _y = GetComponentInParent<Cell>().myJ;
 
         ClearLight();
+        ReachableCells(vista, lightCell);
 
-        /*for (int i = (_x - vista); i <= (_x + vista); i++)
+        for (int i = (_x - vista); i <= (_x + vista); i++)
         {
             for (int y = (_y - vista); y <= (_y + vista); y++)
             {
@@ -329,17 +330,18 @@ public class FogOfWar : MonoBehaviour {
                 }
                 if (Mathf.Abs(i - _x) + Mathf.Abs(y - _y) <= (vista))
                 {
-                    refGrid.cellMat[i, y].refMyTile.color = Color.white;
-                    lightCell.Add(refGrid.cellMat[i, y]);
+                    //refGrid.cellMat[i, y].refMyTile.color = Color.white;
+                    //lightCell.Add(refGrid.cellMat[i, y]);
                     if (refGrid.cellMat[i,y].GetComponentInChildren<Enemy>())
                     {
                         refGrid.cellMat[i, y].GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                        refGrid.cellMat[i, y].refMyTile.color = Color.white;
                     }
                 }
             }
-        }*/
-		ReachableCells (vista , lightCell);
-		foreach (var cell in lightCell) {
+        }
+
+        foreach (var cell in lightCell) {
             if (cell.refMyTile != null)
             {
 
@@ -348,6 +350,8 @@ public class FogOfWar : MonoBehaviour {
                 if (cell.GetComponentInChildren<Enemy>())
                 {
                     cell.GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                    cell.isFree = false;
+                    
                 }
             }
 
@@ -424,6 +428,10 @@ public class FogOfWar : MonoBehaviour {
 			isFind = true;
 			
 		}
+        if (refGrid.cellMat[newI + posI, newJ + posJ].GetComponentInChildren<Enemy>())
+        {
+            isFind = false;
+        }
 
 		return isFind;
 	}
