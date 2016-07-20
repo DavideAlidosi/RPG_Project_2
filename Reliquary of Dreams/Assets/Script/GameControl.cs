@@ -47,6 +47,10 @@ public class GameControl : MonoBehaviour {
                 ResetToSelectionPhase();
                 foreach (var enemyCell in fogRef.enemyCell)
                 {
+                    if (enemyCell == null)
+                    {
+                        continue;
+                    }
                     enemyCell.GetComponentInParent<Cell>().refMyTile.color = Color.white;
                 }
                 fogRef.enemyCell.Clear();
@@ -224,7 +228,7 @@ public class GameControl : MonoBehaviour {
         
         ResetToSelectionPhase();
         StartCoroutine(plRef.MovePlayer());
-        StartCoroutine(EndPlayerPhases(_myI, _myJ));
+        StartCoroutine(CEndPlayerPhases(_myI, _myJ));
         //plRef.MovePlayer(_myI, _myJ);
         fogRef.GetEnemyNearPlayer(_myI, _myJ);
 		//refGrid.CreateGrid();
@@ -236,7 +240,7 @@ public class GameControl : MonoBehaviour {
         
     }
 
-    public IEnumerator EndPlayerPhases(int _myI, int _myJ)
+    public IEnumerator CEndPlayerPhases(int _myI, int _myJ)
     {
         bool isMovingPlayer = true;
         bool isMovingEnemy = false;
@@ -251,6 +255,7 @@ public class GameControl : MonoBehaviour {
                 yield return new WaitForSeconds(0.5f);
             }
             isMovingPlayer = false;
+
             isMovingEnemy = true;
         }
         while (isMovingEnemy)

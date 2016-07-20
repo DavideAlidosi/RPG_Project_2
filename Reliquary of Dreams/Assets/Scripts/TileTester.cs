@@ -126,7 +126,7 @@ public class TileTester : MonoBehaviour
 
                     td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
 
-
+                    td.go.GetComponent<Enemy>().refMyCell = refGrid.cellMat[x, y];
 
                     td.go.transform.localPosition = new Vector3(0, 0, 1);
                     //cellMat[i, j].spawned = true;

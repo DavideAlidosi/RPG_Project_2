@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     public bool isNear = false;
     public bool isPlayerVisible = false;
     Grid refGrid;
-    int vista;
+    public int vista;
     int move;
     GameControl refGC;
     public Cell refMyCell;

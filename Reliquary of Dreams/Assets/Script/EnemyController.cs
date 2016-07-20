@@ -23,10 +23,11 @@ public class EnemyController : MonoBehaviour {
     {
         enemies = FindObjectsOfType<Enemy>();
         refFog = FindObjectOfType<FogOfWar>();
+        Pathfind path = GetComponent<Pathfind>();
         
         foreach (var enemy in enemies)
         {
-            
+
             
             enemy.refMyCell = enemy.GetComponentInParent<Cell>();
             if (enemy.refMyCell == null)
@@ -35,10 +36,14 @@ public class EnemyController : MonoBehaviour {
             Debug.Log(enemy.GetComponentInParent<Cell>());
             
             refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
+            
             enemy.ManhattanSearch();
             enemy.SearchPlayer();
             enemy.MoveEnemy();
+
+            //
             
+
             refFog.GetPlayerNearEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
             
             if (enemy.isNear)
@@ -48,7 +53,7 @@ public class EnemyController : MonoBehaviour {
             }
         }
         refGrid.CreateGrid();
-        refGC.phase = GamePhase.Selezione;
+        //refGC.phase = GamePhase.Selezione;
     }
 
     
