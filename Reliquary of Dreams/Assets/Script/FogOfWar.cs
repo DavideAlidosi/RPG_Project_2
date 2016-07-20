@@ -577,7 +577,8 @@ public class FogOfWar : MonoBehaviour {
 		foreach (var item in pathProva) {
 			item.sBox.color = Color.yellow;
 		}
-	}
+        
+    }
 
 
 }
