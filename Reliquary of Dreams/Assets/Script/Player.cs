@@ -73,37 +73,19 @@ public class Player : MonoBehaviour {
         
     }
 
-    public void TestCombat()
+    public IEnumerator MovePlayer()
     {
-        gcRef.CombatPlayer();
-        if (gcRef.enemyCell.GetComponentInChildren<Enemy>().hp > 0)
+        Grid refGrid = FindObjectOfType<Grid>();
+        
+        foreach (var item in GetComponentInChildren<FogOfWar>().pathProva)
         {
-            gcRef.CombatEnemy();
+            int iCell = item.myI;
+            int jCell = item.myJ;
+            this.transform.parent = gridRef.cellMat[iCell, jCell].transform;
+            this.transform.localPosition = new Vector3(0, 0, 1);
+            refGrid.CreateGrid();
+            yield return new WaitForSeconds(0.5f);
         }
-        gcRef.phase = GamePhase.Selezione;
-        gcRef.ResetToSelectionPhase();
-        fogRef.LightRadius();
-    }
-
-    public void TestWait()
-    {
-        Debug.Log("aspetto");
-        gcRef.phase = GamePhase.TurnoNemici;
-        gcRef.ResetToSelectionPhase();
-        fogRef.LightRadius();
-    }
-
-    public void TestUse()
-    {
-        Debug.Log("usa usa");
-        gcRef.phase = GamePhase.Selezione;
-        gcRef.ResetToSelectionPhase();
-    }
-    public void TestItem()
-    {
-        Debug.Log("Lista oggetti");
-        gcRef.phase = GamePhase.Selezione;
-        gcRef.ResetToSelectionPhase();
     }
     
 }

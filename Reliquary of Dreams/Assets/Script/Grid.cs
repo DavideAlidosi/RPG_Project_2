@@ -127,6 +127,7 @@ public class Grid : MonoBehaviour {
                     refTT.Inserisci(i, j);
                     refTT.InsertWall(i, j);
                     refTT.InsertDoor(i, j);
+                    refTT.InsertEnemyGO(i,j);
                     if (i == playerX && j == playerY)
                     {
                         cellMat[i, j].refMyTile.color = Color.white;
@@ -147,7 +148,7 @@ public class Grid : MonoBehaviour {
             }
         }
 
-        refTT.InsertEnemyGO();
+        
         refTT.Inserisci(playerX, playerY);
         
     }
@@ -182,8 +183,11 @@ public class Grid : MonoBehaviour {
                     cellMat[i, j].myJ = j;
                     newCellGO.name = i + " " + j;
 
+                    
                     refTT.Inserisci(i, j);
-
+                    refTT.InsertWall(i, j);
+                    refTT.InsertDoor(i, j);
+                    refTT.InsertEnemyGO(i, j);
                 }
             }
         }
