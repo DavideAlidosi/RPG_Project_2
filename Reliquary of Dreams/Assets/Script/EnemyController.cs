@@ -22,31 +22,34 @@ public class EnemyController : MonoBehaviour {
     public void EnemyTurn()
     {
         enemies = FindObjectsOfType<Enemy>();
+        refFog = FindObjectOfType<FogOfWar>();
         
-        for (int i = 0; i < enemies.Length-1; i++)
-        {
-            Debug.Log(enemies[i]+"CIAO");
-        }
         foreach (var enemy in enemies)
         {
-            enemy.refMyCell = GetComponentInParent<Cell>();
-            //refGC.enemyCell = enemy.refMyCell.gameObject;
-            Debug.Log(GetComponentInParent<Cell>());
+            
+            
+            enemy.refMyCell = enemy.GetComponentInParent<Cell>();
+            if (enemy.refMyCell == null)
+                continue;
+            refGC.enemyCell = enemy.refMyCell.gameObject;
+            Debug.Log(enemy.GetComponentInParent<Cell>());
             
             refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
             enemy.ManhattanSearch();
             enemy.SearchPlayer();
             enemy.MoveEnemy();
             
-            refFog.GetPlayerNearEnemy(enemy.GetComponentInParent<Cell>().myI, enemy.GetComponentInParent<Cell>().myJ);
+            refFog.GetPlayerNearEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
             
             if (enemy.isNear)
             {
-                refGC.CombatEnemy();
+                refGC.CombatEnemy(enemy);
                 
             }
         }
         refGrid.CreateGrid();
         refGC.phase = GamePhase.Selezione;
     }
+
+    
 }

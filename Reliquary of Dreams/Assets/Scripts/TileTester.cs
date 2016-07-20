@@ -104,7 +104,7 @@ public class TileTester : MonoBehaviour
         return new Vector2(0, 0);
     }
 
-    public void InsertEnemyGO()
+    public void InsertEnemyGO(int x, int y)
     {
         TileLoader tl = FindObjectOfType<TileLoader>();
         List<TileData> allTileDatas = tl.LoadAllTilesInScene("GameObject");
@@ -114,19 +114,24 @@ public class TileTester : MonoBehaviour
         {
             if (td.go.GetComponent<Enemy>())
             {
-                Debug.Log(td.cell_y + "" + td.cell_x);
-                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+                if (td.cell_x == y && td.cell_y == x)
+                {
+                    Debug.Log(td.cell_y + " " + td.cell_x);
+                    td.go.GetComponent<SpriteRenderer>().color = Color.clear;
 
-                //newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-                //newEnemy.SetActive(false);
-                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
-                
-                td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
-                
-                
-                td.go.transform.localPosition = new Vector3(0, 0, 1);
-                //cellMat[i, j].spawned = true;
-                td.go.GetComponent<Enemy>().refMyCell = refGrid.cellMat[td.cell_y, td.cell_x];
+                    
+                        //newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
+                        //newEnemy.SetActive(false);
+                   
+
+                    td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
+
+
+
+                    td.go.transform.localPosition = new Vector3(0, 0, 1);
+                    //cellMat[i, j].spawned = true;
+                    //td.go.GetComponent<Enemy>().refMyCell = refGrid.cellMat[td.cell_y, td.cell_x];
+                }
             }
         }
         
