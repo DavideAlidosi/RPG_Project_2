@@ -10,12 +10,6 @@ public class ChangeScene : MonoBehaviour{
 
 	}
 
-    // start screen class
-    public void StartGame()
-    {
-        SceneManager.LoadScene("Caggianelli");
-    }
-
 
     public void QuitGame()
     {
