@@ -92,6 +92,7 @@ public class Player : MonoBehaviour {
             refGrid.CreateGrid();
             yield return new WaitForSeconds(0.5f);
         }
+        gcRef.playerCell = GetComponentInParent<Cell>().gameObject;
     }
     
 }

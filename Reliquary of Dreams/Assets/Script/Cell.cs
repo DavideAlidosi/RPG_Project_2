@@ -46,8 +46,21 @@ public class Cell : MonoBehaviour {
         
     }
     // Start cell selecting code
+    void OnMouseExit()
+    {
+        if (gcRef.phase == GamePhase.Movimento)
+        {
+            gcRef.enemyCell = null;
+        }
+        
+    }
     void OnMouseEnter()
     {
+        if (this.GetComponentInChildren<Enemy>())
+        {
+            
+            gcRef.enemyCell = this.gameObject;
+        }
         if (this.isFree && !GetComponentInChildren<Player>())
         {
             if (gcRef.phase == GamePhase.Movimento)
@@ -59,6 +72,8 @@ public class Cell : MonoBehaviour {
                 {
                     gcRef.cellCombat = this.gameObject;
                 }
+
+                
                 /*if (gcRef.queueMoveCell.Contains(this.gameObject))
                 {
 
@@ -98,7 +113,7 @@ public class Cell : MonoBehaviour {
 
                 sBox.color = Color.green;
                 gcRef.phase++;
-
+                gcRef.cellCombat = null;
                 gcRef.queueMoveCell.Clear();
                 gcRef.firstCell = this.gameObject;
                 pos = new Vector2(myI, myJ);
@@ -125,21 +140,24 @@ public class Cell : MonoBehaviour {
             }
             if (GetComponentInChildren<Enemy>())
             {
+
                 
-                
-                if (gcRef.cellCombat != null)
+                if (gcRef.cellCombat != null || refFog.isPlayerNearEnemy(myI, myJ))
                 {
-                    playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
-                    gcRef.playerCell = gcRef.cellCombat;
+                    //playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
+                    
+                    gcRef.EndPlayerPhaseWCombat(myI, myJ);
+                    //gcRef.playerCell = gcRef.cellCombat;
                 }
-                gcRef.phase = GamePhase.Selezione;
+                
+                /*gcRef.phase = GamePhase.Selezione;
                 refFog.ResetEnemyStatus();
                 gcRef.ResetToSelectionPhase();
                 refFog.GetEnemyNearPlayer(this.myI, this.myJ);
                 refFog.LightRadius();
                 refFog.enemyCell.Clear();
                 gcRef.CombatPlayer();
-                enemyRef.EnemyTurn();
+                enemyRef.EnemyTurn();*/
 
             }
             if (GetComponent<Door>())

@@ -26,7 +26,7 @@ public class Pathfind : MonoBehaviour {
         reachable.Add(c);
         int playerX = reachable[0].myI;
         int playerY = reachable[0].myJ;
-        c.sBox.color = Color.green;
+       
 
         if (!reachable.Contains(refGrid.cellMat[c.myI + 1, c.myJ]) && IsAdjacent(c, 1, 0) && InManhattan(range, c.myI + 1, c.myJ, playerX, playerY))
         {

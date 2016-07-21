@@ -56,11 +56,11 @@ public class EnemyController : MonoBehaviour {
             //
             
 
-            refFog.GetPlayerNearEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
+            //refFog.GetPlayerNearEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
             
-            if (enemy.isNear)
+            //if (enemy.isNear)
             {
-                refGC.CombatEnemy(enemy);
+               // refGC.CombatEnemy(enemy);
                 
             }
             yield return new WaitForSeconds(0.5f);
@@ -79,7 +79,14 @@ public class EnemyController : MonoBehaviour {
             other.transform.localPosition = new Vector3(0, 0, 1);
             yield return new WaitForSeconds(0.2f);
         }
-        
+
+        refFog.GetPlayerNearEnemy(other.refMyCell.myI, other.refMyCell.myJ);
+        if (other.isNear)
+        {
+            refGC.CombatEnemy(other);
+
+        }
+        yield return new WaitForSeconds(0.2f);
     }
 
 

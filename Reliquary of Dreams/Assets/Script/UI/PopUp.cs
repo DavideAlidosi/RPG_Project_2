@@ -43,6 +43,7 @@ public class PopUp : MonoBehaviour {
 
             this.GetComponentInChildren<Enemy>().LookingCell();
             
+            
 
         }
 
