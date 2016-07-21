@@ -26,6 +26,7 @@ public class Pathfind : MonoBehaviour {
         reachable.Add(c);
         int playerX = reachable[0].myI;
         int playerY = reachable[0].myJ;
+        c.sBox.color = Color.green;
 
         if (!reachable.Contains(refGrid.cellMat[c.myI + 1, c.myJ]) && IsAdjacent(c, 1, 0) && InManhattan(range, c.myI + 1, c.myJ, playerX, playerY))
         {
@@ -176,9 +177,10 @@ public class Pathfind : MonoBehaviour {
 
     public void ChooseMinPath(List<Cell> _moveCell)
     {
-
-        int startX = GetComponent<Enemy>().nearestCell.myI; /*refGrid.playerLinking.GetComponentInParent<Cell>().myI;*/
-        int startY = GetComponent<Enemy>().nearestCell.myJ;
+        Cell cellNearest = GetComponent<Enemy>().SearchPlayer();
+        int startX = cellNearest.myI;
+        int startY = cellNearest.myJ;/*refGrid.playerLinking.GetComponentInParent<Cell>().myJ;*/
+        Debug.Log(GetComponent<Enemy>().nearestCell);
         int countStart = 0;
         foreach (var item in pathList)
         {

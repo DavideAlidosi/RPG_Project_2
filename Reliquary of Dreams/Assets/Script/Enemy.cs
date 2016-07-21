@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour
         int myI = refMyCell.myI;
         int myJ = refMyCell.myJ;
         moveCell.Clear();
+        lookCell.Clear();
         isPlayerVisible = false;
 
         //Color ciao = new Color(Random.value, Random.value, Random.value);
@@ -140,6 +141,7 @@ public class Enemy : MonoBehaviour
         //Cell nearestCell;
         int playerX = refGC.playerCell.GetComponent<Cell>().myI;
         int playerY = refGC.playerCell.GetComponent<Cell>().myJ;
+       
         int distance = 1000;
         
         canMoveCell.Clear();
@@ -147,22 +149,23 @@ public class Enemy : MonoBehaviour
         {
             foreach (var cell in moveCell)
             {
-                if (Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ) >= (move))
-                {
+                
+                
                     
-                    if (distance > Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ))
-                    {
-                        distance = Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ);
-                        nearestCell = cell;
+                if (distance > Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ))
+                {
+                        
+                    distance = Mathf.Abs(playerX - cell.myI) + Mathf.Abs(playerY - cell.myJ);
+                    nearestCell = cell;
                         
                         
-                    }
                 }
+                
 
                 
             }
         }
-        Debug.Log(nearestCell);
+        
         return nearestCell;
 
     }

@@ -90,6 +90,11 @@ public class FogOfWar : MonoBehaviour {
 		foreach (var cell in destroyCell) {
 			cell.refMyTile.color = Color.green;
 			cell.isFree = true;
+            if (cell.GetComponentInChildren<Enemy>())
+            {
+                cell.isFree = false;
+                cell.refMyTile.color = Color.red;
+            }
 		}
 
         //Coloring the adjacent of enemy
@@ -309,7 +314,7 @@ public class FogOfWar : MonoBehaviour {
         ClearLight();
         ReachableCells(vista, lightCell);
 
-        for (int i = (_x - vista); i <= (_x + vista); i++)
+        /*for (int i = (_x - vista); i <= (_x + vista); i++)
         {
             for (int y = (_y - vista); y <= (_y + vista); y++)
             {
@@ -334,12 +339,12 @@ public class FogOfWar : MonoBehaviour {
                     //lightCell.Add(refGrid.cellMat[i, y]);
                     if (refGrid.cellMat[i,y].GetComponentInChildren<Enemy>())
                     {
-                        refGrid.cellMat[i, y].GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-                        refGrid.cellMat[i, y].refMyTile.color = Color.white;
+                        //refGrid.cellMat[i, y].GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                        //refGrid.cellMat[i, y].refMyTile.color = Color.white;
                     }
                 }
             }
-        }
+        }*/
 
         foreach (var cell in lightCell) {
             if (cell.refMyTile != null)
@@ -430,7 +435,7 @@ public class FogOfWar : MonoBehaviour {
 		}
         if (refGrid.cellMat[newI + posI, newJ + posJ].GetComponentInChildren<Enemy>())
         {
-            isFind = false;
+            isFind = true;
         }
 
 		return isFind;
