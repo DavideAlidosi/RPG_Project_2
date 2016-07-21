@@ -7,33 +7,39 @@ public class StatPlus : MonoBehaviour
     public Text pointText;
     public Text numberText;
     private int number = 1;
+    ChangeScene refChange;
     public void ClickPlus()
     {
-        if (number < 10)
-        {   
-            number++;
-            numberText.text = "" + number;                       
-        {
-        if (point < 25 && point > 0)
-        {
-            point--;                   
-            pointText.text = "" + point;
-        }
-    }
-  }
-}
-    
-       public void ClickMinus()
-    {
-        if (number > 1)
-        {
-            number--;
-            numberText.text = "" + number;
+        refChange = FindObjectOfType<ChangeScene>();
 
-          if (point > 0 && point < 24)
+        if (refChange.point < 25 && refChange.point > 0)
+        {
+            
+            if (number < 10)
             {
-                point++;
-                pointText.text = "" + point;
+                number++;
+                numberText.text = "" + number;
+                refChange.point--;
+                pointText.text = "" + refChange.point;
+            }
+        }   
+    
+    }
+
+    
+    public void ClickMinus()
+    {
+        refChange = FindObjectOfType<ChangeScene>();
+        
+
+          if (refChange.point >= 0 && refChange.point < 24 && number != 1)
+            {
+                refChange.point++;
+                pointText.text = "" + refChange.point;
+            if (number > 1)
+            {
+                number--;
+                numberText.text = "" + number;
             }
         }
     }
