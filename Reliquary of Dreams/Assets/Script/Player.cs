@@ -15,6 +15,9 @@ public class Player : MonoBehaviour {
     public int cos;
     public int hp;
     public int agi;
+    public int intS;
+    public int per;
+    public int forS;
 
 
     // Use this for initialization
@@ -24,6 +27,9 @@ public class Player : MonoBehaviour {
         cos = 9;
         hp = cos*4;
         agi = 5;
+        intS = 1;
+        per = 1;
+        forS = 1;
     }
 	void Start () {
         gcRef = FindObjectOfType<GameControl>();
