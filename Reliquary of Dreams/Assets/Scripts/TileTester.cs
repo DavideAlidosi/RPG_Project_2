@@ -136,6 +136,27 @@ public class TileTester : MonoBehaviour
         }
         
     }
+    public bool InsertText(int x, int y)
+    {
+        TileLoader tl = FindObjectOfType<TileLoader>();
+        List<TileData> allTileDatas = tl.LoadAllTilesInScene("GameObject");
+        bool textIt = false;
+        refGrid = FindObjectOfType<Grid>();
+        foreach (var td in allTileDatas)
+        {
+            if (td.go.GetComponent<StoryText>())
+            {
+                if (td.cell_x == y && td.cell_y == x)
+                {
+                    Debug.Log(td.cell_y + " " + td.cell_x);
+                    td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+                    textIt = true;
+                }
+            }
+        }
+        return textIt;
+
+    }
     public void InsertDoor(int x, int y)
     {
         TileLoader tl = FindObjectOfType<TileLoader>();

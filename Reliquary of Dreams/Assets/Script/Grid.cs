@@ -128,6 +128,10 @@ public class Grid : MonoBehaviour {
                     refTT.InsertWall(i, j);
                     refTT.InsertDoor(i, j);
                     refTT.InsertEnemyGO(i,j);
+                    if (refTT.InsertText(i, j))
+                    {
+                        FindObjectOfType<StoryText>().SpamText();
+                    } 
                     if (i == playerX && j == playerY)
                     {
                         cellMat[i, j].refMyTile.color = Color.white;
@@ -151,6 +155,7 @@ public class Grid : MonoBehaviour {
         
         refTT.Inserisci(playerX, playerY);
         
+
     }
 
     // Crea la griglia logica attorno al nemico ad ogni click di range caselle
@@ -188,6 +193,7 @@ public class Grid : MonoBehaviour {
                     refTT.InsertWall(i, j);
                     refTT.InsertDoor(i, j);
                     refTT.InsertEnemyGO(i, j);
+                    Debug.Log(refTT.InsertText(i, j));
                 }
             }
         }
