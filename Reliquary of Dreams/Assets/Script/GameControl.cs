@@ -91,6 +91,7 @@ public class GameControl : MonoBehaviour {
     {
         int strAtt = playerCell.GetComponentInChildren<Player>().str;
         int agiDef = enemyCell.GetComponentInChildren<Enemy>().agi;
+        int cosDef = enemyCell.GetComponentInChildren<Enemy>().cos;
 
         int totale = 50 + (strAtt * 5) - (agiDef * 2);
 
@@ -100,7 +101,8 @@ public class GameControl : MonoBehaviour {
             Debug.Log("Player "+playerCell+ " Colpo andato a segno");
 
             
-            playerTxt.text = "-"+(strAtt * 2).ToString()+" HP"; 
+            playerTxt.text = "-"+((strAtt * 2)-cosDef).ToString()+" HP";
+            
             playerTxt.transform.parent = enemyCell.transform;
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             playerTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
@@ -128,16 +130,18 @@ public class GameControl : MonoBehaviour {
 
     public void CombatEnemy(Enemy e)
     {
-        int strAtt = e.str;        
+        int strAtt = e.str ;        
         int agiDef = playerCell.GetComponentInChildren<Player>().agi;
+        int cosDef = playerCell.GetComponentInChildren<Player>().cos;
 
         int totale = 50 + (strAtt * 5) - (agiDef * 2);
         int dice = Random.Range(1, 101);
 
         if (dice < totale)
         {
-
-            enemyTxt.text = "-" + (strAtt * 2).ToString() + " HP";
+            Debug.Log(strAtt+" "+ cosDef);
+            Debug.Log((strAtt * 2) - cosDef);
+            enemyTxt.text = "-" + ((strAtt * 2)-cosDef).ToString() + " HP";
             enemyTxt.transform.parent = playerCell.transform;
             enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
@@ -145,7 +149,7 @@ public class GameControl : MonoBehaviour {
 
 
             Debug.Log("Enemy "+enemyCell+" Colpo andato a segno");
-            playerCell.GetComponentInChildren<Player>().hp -= strAtt * 2;
+            playerCell.GetComponentInChildren<Player>().hp -= (strAtt * 2)-cosDef;
             if (playerCell.GetComponentInChildren<Player>().hp <= 0)
             {
                 Destroy(playerCell.GetComponentInChildren<Player>().gameObject);
