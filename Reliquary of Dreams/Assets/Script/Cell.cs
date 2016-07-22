@@ -137,6 +137,7 @@ public class Cell : MonoBehaviour {
                 
                 gcRef.EndPlayerPhase(myI, myJ);
 
+
             }
             if (GetComponentInChildren<Enemy>())
             {
@@ -184,6 +185,7 @@ public class Cell : MonoBehaviour {
                 
 
             }
+            
         }
         
     }

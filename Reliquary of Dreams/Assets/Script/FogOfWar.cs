@@ -629,6 +629,16 @@ public class FogOfWar : MonoBehaviour {
         
     }
 
+    public void ClearPath()
+    {
+        foreach (var item in pathProva)
+        {
+            item.sBox.color = Color.clear;
+        }
+
+        pathProva.Clear();
+    }
+
 
 }
 

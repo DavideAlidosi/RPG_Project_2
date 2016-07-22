@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public enum GamePhase {Selezione, Movimento,Azione,Combattimento,TurnoNemici,FineTurno }
+public enum GamePhase {Selezione, Movimento,Azione,Combattimento,TurnoNemici,Dialoghi }
 public class GameControl : MonoBehaviour {
     public GamePhase phase = GamePhase.Selezione;
     public GameObject firstCell;
@@ -53,6 +53,7 @@ public class GameControl : MonoBehaviour {
                     }
                     enemyCell.GetComponentInParent<Cell>().refMyTile.color = Color.white;
                 }
+                fogRef.ClearPath();
                 fogRef.enemyCell.Clear();
 
             }
@@ -231,6 +232,7 @@ public class GameControl : MonoBehaviour {
         ResetToSelectionPhase();
         StartCoroutine(plRef.MovePlayer());
         StartCoroutine(CEndPlayerPhases(_myI, _myJ));
+
         //plRef.MovePlayer(_myI, _myJ);
         //fogRef.GetEnemyNearPlayer(_myI, _myJ);
         //refGrid.CreateGrid();
@@ -296,14 +298,17 @@ public class GameControl : MonoBehaviour {
             isMovingEnemy = false;
 
         }
-        
+        fogRef.ClearPath();
+
         //phase = GamePhase.Selezione;
+
     }
 
     public IEnumerator CEndPlayerPhasesWCombat(int _myI, int _myJ)
     {
         bool isMovingPlayer = true;
         bool isMovingEnemy = false;
+        
         while (isMovingPlayer)
         {
 
@@ -315,14 +320,15 @@ public class GameControl : MonoBehaviour {
                 yield return new WaitForSeconds(0.5f);
             }
             isMovingPlayer = false;
-            fogRef.pathProva.Clear();
+            
             if (enemyCell != null)
             {
                 CombatPlayer();
                 yield return new WaitForSeconds(0.5f);
             }
-
+            fogRef.ClearPath();
             isMovingEnemy = true;
+            
         }
         while (isMovingEnemy)
         {
@@ -333,7 +339,8 @@ public class GameControl : MonoBehaviour {
             isMovingEnemy = false;
 
         }
-
+        
         //phase = GamePhase.Selezione;
+
     }
 }

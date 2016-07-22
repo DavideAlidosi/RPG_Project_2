@@ -5,6 +5,7 @@ enum TextLevel { N1,N2,N3,N4,N5,N6,N7,N8 }
 
 public class StoryText : MonoBehaviour {
 
+    GameControl refGC = FindObjectOfType<GameControl>();
     TextLevel text = TextLevel.N1;
 	// Use this for initialization
 	void Start () {
