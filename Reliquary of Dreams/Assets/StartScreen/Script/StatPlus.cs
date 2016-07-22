@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.UI;
 public class StatPlus : MonoBehaviour
 {
-    private int point = 24;
     public Text pointText;
     public Text numberText;
     private int number = 1;
@@ -20,7 +19,7 @@ public class StatPlus : MonoBehaviour
                 number++;
                 numberText.text = "" + number;
                 refChange.point--;
-                pointText.text = "" + refChange.point;
+                pointText.text = "Pt: " + refChange.point;
             }
         }   
     
@@ -35,7 +34,7 @@ public class StatPlus : MonoBehaviour
           if (refChange.point >= 0 && refChange.point < 24 && number != 1)
             {
                 refChange.point++;
-                pointText.text = "" + refChange.point;
+                pointText.text = "Pt: " + refChange.point;
             if (number > 1)
             {
                 number--;
