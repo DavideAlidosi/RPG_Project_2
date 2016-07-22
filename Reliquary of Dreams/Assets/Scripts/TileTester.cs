@@ -136,11 +136,11 @@ public class TileTester : MonoBehaviour
         }
         
     }
-    public bool InsertText(int x, int y)
+    public GameObject InsertText(int x, int y)
     {
         TileLoader tl = FindObjectOfType<TileLoader>();
         List<TileData> allTileDatas = tl.LoadAllTilesInScene("GameObject");
-        bool textIt = false;
+        GameObject textIt = null;
         refGrid = FindObjectOfType<Grid>();
         foreach (var td in allTileDatas)
         {
@@ -150,7 +150,7 @@ public class TileTester : MonoBehaviour
                 {
                     Debug.Log(td.cell_y + " " + td.cell_x);
                     td.go.GetComponent<SpriteRenderer>().color = Color.clear;
-                    textIt = true;
+                    textIt = td.go;
                 }
             }
         }

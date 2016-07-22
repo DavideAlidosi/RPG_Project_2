@@ -2,11 +2,17 @@
 using System.Collections;
 using UnityEngine.UI;
 
+public enum TextLevel { T1, T2, T3, T4, T5, T6, T7, T8 }
+
 public class MenuPopUp : MonoBehaviour {
     public GameObject menuPanel;
 
     bool isActive = false;
     public Image inventory;
+    public Text dialoghi;
+    public GameObject panelDialoghi;
+
+    public TextLevel dialogoN = TextLevel.T1;
 
     
 	// Use this for initialization

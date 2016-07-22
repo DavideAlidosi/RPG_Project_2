@@ -128,9 +128,9 @@ public class Grid : MonoBehaviour {
                     refTT.InsertWall(i, j);
                     refTT.InsertDoor(i, j);
                     refTT.InsertEnemyGO(i,j);
-                    if (refTT.InsertText(i, j))
+                    if (refTT.InsertText(i, j) != null)
                     {
-                        FindObjectOfType<StoryText>().SpamText();
+                        refTT.InsertText(i, j).GetComponent<StoryText>().SpamText();
                     } 
                     if (i == playerX && j == playerY)
                     {
@@ -193,7 +193,10 @@ public class Grid : MonoBehaviour {
                     refTT.InsertWall(i, j);
                     refTT.InsertDoor(i, j);
                     refTT.InsertEnemyGO(i, j);
-                    Debug.Log(refTT.InsertText(i, j));
+                    if (refTT.InsertText(i, j) != null)
+                    {
+                        refTT.InsertText(i, j).GetComponent<StoryText>().SpamText();
+                    }
                 }
             }
         }

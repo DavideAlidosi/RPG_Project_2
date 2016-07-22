@@ -1,38 +1,65 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-enum TextLevel { N1,N2,N3,N4,N5,N6,N7,N8 }
+
 
 public class StoryText : MonoBehaviour {
 
-    GameControl refGC = FindObjectOfType<GameControl>();
-    TextLevel text = TextLevel.N1;
+    MenuPopUp refMenu;
+    GameControl refGC;
+    
 	// Use this for initialization
 	void Start () {
-        
+        refGC = FindObjectOfType<GameControl>();
+        refMenu = FindObjectOfType<MenuPopUp>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
+        
 	}
 
     public void SpamText()
     {
-        if (text == TextLevel.N1)
+        refMenu.panelDialoghi.SetActive(true);
+        if (refMenu.dialogoN == TextLevel.T1)
         {
-            Debug.Log("Ciaoaoaoaoaoa");
-            text++;
+            refGC.phase = GamePhase.Dialoghi;
+            refMenu.dialogoN++;
+
+            PrimoDialogo();
         }
-        else if (text == TextLevel.N2)
+        else if (refMenu.dialogoN == TextLevel.T2)
         {
-            text++;
-            Debug.Log("prprprpr");
+            refMenu.dialogoN++;
+            refGC.phase = GamePhase.Dialoghi;
+            SecondoDialogo();
+
         }
-        else if (text == TextLevel.N3)
+        else if (refMenu.dialogoN == TextLevel.T3)
         {
-            text++;
+            refMenu.dialogoN++;
             Debug.Log("f1f1f1f");
         }
+    }
+
+    void PrimoDialogo()
+    {
+        
+        refMenu.dialoghi.text = "IASDHFOIAUSDHFIOAUSHDFOIUASHDFIUADSHFAUISD";
+    }
+
+    void SecondoDialogo()
+    {
+        refMenu.dialoghi.text = "PIPPO FA LE PIPPE A PIPPA";
+    }
+
+
+    public void StopDialogo()
+    {
+        refMenu = FindObjectOfType<MenuPopUp>();
+        refGC = FindObjectOfType<GameControl>();
+        refMenu.panelDialoghi.SetActive(false);
+        refGC.phase = GamePhase.Selezione;
     }
 }
