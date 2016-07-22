@@ -343,7 +343,7 @@ public class FogOfWar : MonoBehaviour {
 
     public void LightRadius()
     {
-        int vista = 6;
+        int vista = GetComponent<Player>().per;
         int _x = GetComponentInParent<Cell>().myI;
         int _y = GetComponentInParent<Cell>().myJ;
 
@@ -519,7 +519,7 @@ public class FogOfWar : MonoBehaviour {
 
 		if (v.x != startX || v.y != startY) 
 		{
-			if (v.z < 8) {
+			if (v.z < 15) {
 				
 				
 				if (refGrid.cellMat [(int)v.x + 1, (int)v.y].isFree && !IsContainedInList(tempVUp)) {

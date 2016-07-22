@@ -92,16 +92,26 @@ public class GameControl : MonoBehaviour {
         int strAtt = playerCell.GetComponentInChildren<Player>().str;
         int agiDef = enemyCell.GetComponentInChildren<Enemy>().agi;
         int cosDef = enemyCell.GetComponentInChildren<Enemy>().cos;
+        int forAtt = playerCell.GetComponentInChildren<Player>().forS;
 
         int totale = 50 + (strAtt * 5) - (agiDef * 2);
 
         int dice = Random.Range(1, 101);
         if (dice < totale)
         {
+            int molt = 1;
             Debug.Log("Player "+playerCell+ " Colpo andato a segno");
-
-            
-            playerTxt.text = "-"+((strAtt * 2)-cosDef).ToString()+" HP";
+            int damage = (strAtt * 2) - cosDef;
+            if (damage < 1)
+            {
+                damage = 1;
+            }
+            int crit = Mathf.FloorToInt(forAtt * 2.5f);
+            if (Random.Range(1, 101) < crit)
+            {
+                molt = 2; 
+            }
+            playerTxt.text = "-"+(damage * molt).ToString()+" HP";
             
             playerTxt.transform.parent = enemyCell.transform;
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
@@ -133,15 +143,27 @@ public class GameControl : MonoBehaviour {
         int strAtt = e.str ;        
         int agiDef = playerCell.GetComponentInChildren<Player>().agi;
         int cosDef = playerCell.GetComponentInChildren<Player>().cos;
+        int forAtt = e.forS;
 
         int totale = 50 + (strAtt * 5) - (agiDef * 2);
         int dice = Random.Range(1, 101);
 
         if (dice < totale)
         {
-            Debug.Log(strAtt+" "+ cosDef);
-            Debug.Log((strAtt * 2) - cosDef);
-            enemyTxt.text = "-" + ((strAtt * 2)-cosDef).ToString() + " HP";
+            int damage = (strAtt * 2) - cosDef;
+            int molt = 1;
+            if (damage < 1)
+            {
+                damage = 1;
+            }
+
+            
+            int crit = Mathf.FloorToInt(forAtt * 2.5f);
+            if (Random.Range(1, 101) < crit)
+            {
+                molt = 2;
+            }
+            enemyTxt.text = "-" + (damage * molt).ToString() + " HP";
             enemyTxt.transform.parent = playerCell.transform;
             enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
@@ -149,7 +171,7 @@ public class GameControl : MonoBehaviour {
 
 
             Debug.Log("Enemy "+enemyCell+" Colpo andato a segno");
-            playerCell.GetComponentInChildren<Player>().hp -= (strAtt * 2)-cosDef;
+            playerCell.GetComponentInChildren<Player>().hp -= damage;
             if (playerCell.GetComponentInChildren<Player>().hp <= 0)
             {
                 Destroy(playerCell.GetComponentInChildren<Player>().gameObject);

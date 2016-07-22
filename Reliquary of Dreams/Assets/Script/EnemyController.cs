@@ -37,11 +37,13 @@ public class EnemyController : MonoBehaviour {
             
             
             refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
+            path.ReachableCells((enemy.agi), enemy.lookCell);
             enemy.ManhattanSearch();
             if (enemy.isPlayerVisible)
             {
                 //path.ReachableCells(enemy.vista, enemy.moveCell);
-                path.ReachableCells(enemy.move+1, enemy.moveCell);
+                path.ReachableCells((enemy.per) +1, enemy.moveCell);
+
                 Cell nearestToPlayer = enemy.SearchPlayer();
                 path.Pathfinding(refGrid.playerLinking.GetComponentInParent<Cell>().myI, refGrid.playerLinking.GetComponentInParent<Cell>().myJ);
                 path.ChooseMinPath(enemy.moveCell);

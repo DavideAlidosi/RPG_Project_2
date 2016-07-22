@@ -118,7 +118,7 @@ public class Cell : MonoBehaviour {
                 gcRef.firstCell = this.gameObject;
                 pos = new Vector2(myI, myJ);
                 refFog.LightRadius();
-                refFog.Fog(pos,4);
+                refFog.Fog(pos,playerRef.agi);
                 refFog.AStar();
                 gcRef.movementCell.Add(this.gameObject);
                 gcRef.Adjacent(this.gameObject);

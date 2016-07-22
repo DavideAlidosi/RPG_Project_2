@@ -40,8 +40,8 @@ public class Enemy : MonoBehaviour
         per = 1;
         forS = 1;
         agi = Random.Range(1, 5);
-        vista = 4;
-        move = 2;
+        //vista = 4;
+        //move = 2;
 
     }
 
@@ -56,14 +56,14 @@ public class Enemy : MonoBehaviour
         int myI = refMyCell.myI;
         int myJ = refMyCell.myJ;
         moveCell.Clear();
-        lookCell.Clear();
+        
         isPlayerVisible = false;
 
         //Color ciao = new Color(Random.value, Random.value, Random.value);
-        
-        for (int i = (myI - vista); i <= (myI + vista); i++)
+
+        /*for (int i = (myI - agi); i <= (myI + agi); i++)
         {
-            for (int j = (myJ - vista); j <= (myJ + vista); j++)
+            for (int j = (myJ - agi); j <= (myJ + agi); j++)
             {
                 if (i < 0)
                     continue;
@@ -83,7 +83,7 @@ public class Enemy : MonoBehaviour
                 {
                     continue;
                 }
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= (vista))
+                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= (agi))
                 {
                     if (refGrid.cellMat[i, j].GetComponentInChildren<Player>())
                     {
@@ -94,11 +94,28 @@ public class Enemy : MonoBehaviour
                     
                 }
             }
-        }
+        }*/
 
+        foreach (var cell in lookCell)
+        {
+            if (cell.GetComponentInChildren<Enemy>())
+            {
+                continue;
+            }
+            if (Mathf.Abs(cell.myI - myI) + Mathf.Abs(cell.myJ - myJ) <= (agi))
+            {
+                if (refGrid.cellMat[cell.myI, cell.myJ].GetComponentInChildren<Player>())
+                {
+                    isPlayerVisible = true;
+
+
+                }
+
+            }
+        }
         if (isPlayerVisible)
         {
-            RangeMove();
+            moveCell.Clear();
         }
     }
 
@@ -109,9 +126,9 @@ public class Enemy : MonoBehaviour
         moveCell.Clear();
 
         int rangeMove = 2;
-        for (int i = (myI - vista); i <= (myI + rangeMove); i++)
+        for (int i = (myI - per); i <= (myI + per); i++)
         {
-            for (int j = (myJ - vista); j <= (myJ + rangeMove); j++)
+            for (int j = (myJ - per); j <= (myJ + per); j++)
             {
                 if (i < 0)
                     continue;
@@ -134,10 +151,10 @@ public class Enemy : MonoBehaviour
                 {
                     continue;
                 }
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= (rangeMove))
+                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= (per))
                 {
                     moveCell.Add(refGrid.cellMat[i, j]);
-                    //refGrid.cellMat[i, j].GetComponent<SpriteRenderer>().color = Color.gray;
+                    refGrid.cellMat[i, j].sBox.color = Color.gray;
                 }
             }
         }
@@ -197,9 +214,9 @@ public class Enemy : MonoBehaviour
         int myJ = refMyCell.myJ;
         lookCell.Clear();
 
-        for (int i = (myI - vista); i <= (myI + vista); i++)
+        for (int i = (myI - agi); i <= (myI + agi); i++)
         {
-            for (int j = (myJ - vista); j <= (myJ + vista); j++)
+            for (int j = (myJ - agi ); j <= (myJ + agi); j++)
             {
                 if (i < 0)
                     continue;
@@ -219,7 +236,7 @@ public class Enemy : MonoBehaviour
                     continue;
                 }
 
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= move)
+                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= agi)
                 {
                     //refGrid.cellMat[i, j].refMyTile.color = Color.red;
                     if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
@@ -239,7 +256,7 @@ public class Enemy : MonoBehaviour
                     continue;
 
                 }
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= vista)
+                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= per)
                 {
                     if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
                     {

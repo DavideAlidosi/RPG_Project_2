@@ -33,6 +33,7 @@ public class StoryText : MonoBehaviour {
         {
             refMenu.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
+
             SecondoDialogo();
 
         }

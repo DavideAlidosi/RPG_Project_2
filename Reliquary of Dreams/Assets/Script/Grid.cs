@@ -95,7 +95,7 @@ public class Grid : MonoBehaviour {
 
     public void CreateGrid()
     {
-        int range = 9;
+        int range = 10;
         int playerX = playerLinking.GetComponentInParent<Cell>().myI;
         int playerY = playerLinking.GetComponentInParent<Cell>().myJ;
 
@@ -161,7 +161,7 @@ public class Grid : MonoBehaviour {
     // Crea la griglia logica attorno al nemico ad ogni click di range caselle
     public void CreateGridEnemy(int enemyX, int enemyY)
     {
-        int range = 5;
+        int range = 10;
 
         refTT = FindObjectOfType<TileTester>();
         for (int i = (enemyX - range); i < (enemyX + range); i++)
