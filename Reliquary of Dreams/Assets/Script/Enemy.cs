@@ -210,82 +210,79 @@ public class Enemy : MonoBehaviour
     //coloring the cell when mouse is over the enemy
     public void LookingCell()
     {
+        List<Cell> enemyMoveCell = new List<Cell>();
+
         int myI = refMyCell.myI;
         int myJ = refMyCell.myJ;
         lookCell.Clear();
 
-        for (int i = (myI - agi); i <= (myI + agi); i++)
+        GetComponent<Pathfind>().ReachableCells(per, lookCell);
+        GetComponent<Pathfind>().ReachableCells(agi, enemyMoveCell);
+
+        foreach (var cell in enemyMoveCell)
         {
-            for (int j = (myJ - agi ); j <= (myJ + agi); j++)
+            if (cell.refMyTile.color == Color.gray)
             {
-                if (i < 0)
-                    continue;
-                if (j < 0)
-                    continue;
-                if (i > Grid.COL - 1)
-                    continue;
-                if (j > Grid.ROW - 1)
-                    continue;
-
-                if (refGrid.cellMat[i, j].GetComponentInChildren<Enemy>())
-                {
-                    continue;
-                }
-                if (refGrid.cellMat[i, j].isWall)
-                {
-                    continue;
-                }
-
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= agi)
-                {
-                    //refGrid.cellMat[i, j].refMyTile.color = Color.red;
-                    if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
-                    {
-                        
-                        if (refGrid.cellMat[i, j].refMyTile.color == Color.green)
-                        {
-                            lookCell.Add(refGrid.cellMat[i, j]);
-                            refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.2f, 0);
-                        }
-                        else
-                        {
-                            lookCell.Add(refGrid.cellMat[i, j]);
-                            refGrid.cellMat[i, j].refMyTile.color = Color.red;
-                        }
-                    }
-                    continue;
-
-                }
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= per)
-                {
-                    if (refGrid.cellMat[i, j].refMyTile.color != Color.yellow)
-                    {
-                        if (refGrid.cellMat[i, j].refMyTile.color == Color.green)
-                        {
-                            refGrid.cellMat[i, j].refMyTile.color = new Color(0, 0.5f, 0);
-                            lookCell.Add(refGrid.cellMat[i, j]);
-
-                        }
-                        else
-                        {
-                            lookCell.Add(refGrid.cellMat[i, j]);
-                            refGrid.cellMat[i, j].refMyTile.color = Color.yellow;
-                        }
-
-                    }
-                }
-                
-
+                continue;
             }
+            if (cell.refMyTile.color == Color.green)
+            {
+                cell.refMyTile.color = new Color(0, 0.2f, 0);
+            }
+            else
+            {
+                cell.refMyTile.color = Color.red;
+            }
+            
+
         }
+
+        foreach (var cell  in lookCell)
+        {
+            if (cell.refMyTile.color == Color.red)
+            {
+                continue;
+            }
+            if (cell.refMyTile.color == new Color(0, 0.2f, 0))
+            {
+                continue;
+            }
+            if (cell.refMyTile.color == Color.gray)
+            {
+                continue;
+            }
+            if (cell.GetComponentInChildren<Enemy>())
+            {
+                continue;
+            }
+            else if (cell.refMyTile.color == Color.green)
+            {
+                cell.refMyTile.color = new Color(0, 0.5f, 0);
+            }
+            else 
+            {
+                cell.refMyTile.color = Color.yellow;
+            }
+            
+            
+        }
+
+        
     }
 
     public void ResetLookingCell()
     {
         foreach (var cell in lookCell)
         {
+            if (cell.GetComponentInChildren<Enemy>())
+            {
+                continue;
+            }
+            if (cell.refMyTile.color != Color.gray)
+            {
+                cell.refMyTile.color = Color.white;
+            }
             
-            cell.refMyTile.color = Color.white;
         }
     }
 

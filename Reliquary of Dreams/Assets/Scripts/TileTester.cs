@@ -16,6 +16,16 @@ public class TileTester : MonoBehaviour
     public void Awake()
     {
         TileLoader tl = FindObjectOfType<TileLoader>();
+        allTileDatas = tl.LoadAllTilesInScene("Enviroment");
+        foreach (TileData td in allTileDatas)
+        {
+            if (td.go.GetComponent<SpriteRenderer>().color != null)
+            {
+                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+            }
+
+        }
+
         allTileDatas = tl.LoadAllTilesInScene("Wall");
         
         foreach (TileData td in allTileDatas)
@@ -37,7 +47,27 @@ public class TileTester : MonoBehaviour
 
         }
 
+        allTileDatas = tl.LoadAllTilesInScene("Env_Floor");
+        foreach (TileData td in allTileDatas)
+        {
+            if (td.go.GetComponent<SpriteRenderer>().color != null)
+            {
+                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+            }
+
+        }
+        allTileDatas = tl.LoadAllTilesInScene("Env_Wall");
+        foreach (TileData td in allTileDatas)
+        {
+            if (td.go.GetComponent<SpriteRenderer>().color != null)
+            {
+                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+            }
+
+        }
         
+
+
         //Debug.Log(s);
     }
 

@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
         hp = cos*4;
         agi = 5;
         intS = 1;
-        per = 1;
+        per = 5;
         forS = 1;
     }
 	void Start () {
