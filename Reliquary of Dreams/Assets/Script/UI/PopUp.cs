@@ -37,8 +37,8 @@ public class PopUp : MonoBehaviour {
             refShowTool.cosTxt.text = "Cos : " + GetComponentInChildren<Enemy>().cos;
             refShowTool.agiTxt.text = "Agi : " + GetComponentInChildren<Enemy>().agi;
             refShowTool.hpTxt.text = "HP : " + GetComponentInChildren<Enemy>().hp;
-            refShowTool.intTxt.text = "Per : " + GetComponentInChildren<Enemy>().intS;
-            refShowTool.perTxt.text = "Int : " + GetComponentInChildren<Enemy>().per;
+            refShowTool.intTxt.text = "Per : " + GetComponentInChildren<Enemy>().per;
+            refShowTool.perTxt.text = "Int : " + GetComponentInChildren<Enemy>().intS;
             refShowTool.forTxt.text = "For : " + GetComponentInChildren<Enemy>().forS;
 
             this.GetComponentInChildren<Enemy>().LookingCell();
