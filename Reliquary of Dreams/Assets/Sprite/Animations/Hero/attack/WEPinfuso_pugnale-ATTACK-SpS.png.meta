@@ -1,0 +1,490 @@
+fileFormatVersion: 2
+guid: 8d9061514cbaad04ca000c569549ce40
+timeCreated: 1469450035
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WEPinfuso_pugnale-ATTACK-SpS_0
+    21300002: WEPinfuso_pugnale-ATTACK-SpS_1
+    21300004: WEPinfuso_pugnale-ATTACK-SpS_2
+    21300006: WEPinfuso_pugnale-ATTACK-SpS_3
+    21300008: WEPinfuso_pugnale-ATTACK-SpS_4
+    21300010: WEPinfuso_pugnale-ATTACK-SpS_5
+    21300012: WEPinfuso_pugnale-ATTACK-SpS_6
+    21300014: WEPinfuso_pugnale-ATTACK-SpS_7
+    21300016: WEPinfuso_pugnale-ATTACK-SpS_8
+    21300018: WEPinfuso_pugnale-ATTACK-SpS_9
+    21300020: WEPinfuso_pugnale-ATTACK-SpS_10
+    21300022: WEPinfuso_pugnale-ATTACK-SpS_11
+    21300024: WEPinfuso_pugnale-ATTACK-SpS_12
+    21300026: WEPinfuso_pugnale-ATTACK-SpS_13
+    21300028: WEPinfuso_pugnale-ATTACK-SpS_14
+    21300030: WEPinfuso_pugnale-ATTACK-SpS_15
+    21300032: WEPinfuso_pugnale-ATTACK-SpS_16
+    21300034: WEPinfuso_pugnale-ATTACK-SpS_17
+    21300036: WEPinfuso_pugnale-ATTACK-SpS_18
+    21300038: WEPinfuso_pugnale-ATTACK-SpS_19
+    21300040: WEPinfuso_pugnale-ATTACK-SpS_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WEPinfuso_pugnale-ATTACK-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: 32.5}
+        - {x: 26, y: 24.5}
+        - {x: 21, y: 13.5}
+        - {x: 21, y: 5.5}
+        - {x: 22, y: 3.5}
+        - {x: 30, y: 3.5}
+        - {x: 43, y: 7.5}
+        - {x: 48, y: 21.5}
+        - {x: 48, y: 32.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 29.5}
+        - {x: 24, y: 24.5}
+        - {x: 17, y: 8.5}
+        - {x: 17, y: 2.5}
+        - {x: 19, y: 1.5}
+        - {x: 30, y: 1.5}
+        - {x: 43, y: 4.5}
+        - {x: 46, y: 17.5}
+        - {x: 46, y: 29.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 22.5}
+        - {x: 6, y: 9.5}
+        - {x: 6, y: -1.5}
+        - {x: 27, y: -1.5}
+        - {x: 39, y: 14.5}
+        - {x: 39, y: 22.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -2.5}
+        - {x: -4, y: -3.5}
+        - {x: -1, y: -4.5}
+        - {x: 13, y: -4.5}
+        - {x: 30, y: 7.5}
+        - {x: 30, y: 14.5}
+        - {x: 7, y: 14.5}
+        - {x: -6, y: 12.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 11.5}
+        - {x: -16, y: 6.5}
+        - {x: -16, y: -1.5}
+        - {x: -15, y: -4.5}
+        - {x: -7, y: -6.5}
+        - {x: 3, y: -6.5}
+        - {x: 21, y: 1.5}
+        - {x: 21, y: 6.5}
+        - {x: 11, y: 11.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 10.5}
+        - {x: -20, y: 8.5}
+        - {x: -20, y: -2.5}
+        - {x: -12, y: -7.5}
+        - {x: -2, y: -7.5}
+        - {x: 15, y: -3.5}
+        - {x: 17, y: -0.5}
+        - {x: 17, y: 4.5}
+        - {x: 4, y: 10.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 10.5}
+        - {x: -7, y: 10.5}
+        - {x: -16, y: 6.5}
+        - {x: -16, y: -1.5}
+        - {x: -15, y: -3.5}
+        - {x: -9, y: -7.5}
+        - {x: 1, y: -7.5}
+        - {x: 20, y: -4.5}
+        - {x: 21, y: -1.5}
+        - {x: 21, y: 4.5}
+        - {x: 18, y: 5.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -3.5}
+        - {x: -1, y: -8.5}
+        - {x: 16, y: -8.5}
+        - {x: 31, y: -3.5}
+        - {x: 31, y: 9.5}
+        - {x: -6, y: 9.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 10.5}
+        - {x: 22, y: 10.5}
+        - {x: 6, y: 4.5}
+        - {x: 6, y: -8.5}
+        - {x: 43, y: -8.5}
+        - {x: 44, y: 1.5}
+        - {x: 44, y: 2.5}
+        - {x: 40, y: 6.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 11.5}
+        - {x: 17, y: 6.5}
+        - {x: 17, y: -1.5}
+        - {x: 25, y: -6.5}
+        - {x: 34, y: -6.5}
+        - {x: 53, y: -2.5}
+        - {x: 55, y: 0.5}
+        - {x: 55, y: 8.5}
+        - {x: 43, y: 11.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 12.5}
+        - {x: 25, y: 8.5}
+        - {x: 24, y: 5.5}
+        - {x: 24, y: -0.5}
+        - {x: 31, y: -5.5}
+        - {x: 44, y: -5.5}
+        - {x: 61, y: -2.5}
+        - {x: 61, y: 8.5}
+        - {x: 48, y: 12.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50, y: 12.5}
+        - {x: 35, y: 12.5}
+        - {x: 26, y: 8.5}
+        - {x: 26, y: -5.5}
+        - {x: 63, y: -5.5}
+        - {x: 63, y: 8.5}
+        - {x: 61, y: 9.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 12.5}
+        - {x: 28, y: 7.5}
+        - {x: 28, y: 1.5}
+        - {x: 29, y: -1.5}
+        - {x: 36, y: -5.5}
+        - {x: 45, y: -5.5}
+        - {x: 64, y: -1.5}
+        - {x: 65, y: -0.5}
+        - {x: 65, y: 8.5}
+        - {x: 54, y: 12.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: 12.5}
+        - {x: 29, y: 7.5}
+        - {x: 29, y: 0.5}
+        - {x: 30, y: -1.5}
+        - {x: 34, y: -5.5}
+        - {x: 50, y: -5.5}
+        - {x: 66, y: 0.5}
+        - {x: 66, y: 5.5}
+        - {x: 62, y: 9.5}
+        - {x: 50, y: 12.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34, y: 13.5}
+        - {x: 29, y: 7.5}
+        - {x: 29, y: -3.5}
+        - {x: 34, y: -5.5}
+        - {x: 52, y: -5.5}
+        - {x: 67, y: 2.5}
+        - {x: 67, y: 7.5}
+        - {x: 57, y: 13.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 12.5}
+        - {x: 31, y: 11.5}
+        - {x: 30, y: 5.5}
+        - {x: 30, y: 0.5}
+        - {x: 36, y: -5.5}
+        - {x: 51, y: -5.5}
+        - {x: 67, y: 0.5}
+        - {x: 67, y: 8.5}
+        - {x: 61, y: 12.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 13.5}
+        - {x: 40, y: 13.5}
+        - {x: 30, y: 9.5}
+        - {x: 29, y: 6.5}
+        - {x: 29, y: -0.5}
+        - {x: 36, y: -4.5}
+        - {x: 52, y: -4.5}
+        - {x: 66, y: 1.5}
+        - {x: 66, y: 7.5}
+        - {x: 63, y: 11.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34, y: 14.5}
+        - {x: 27, y: 12.5}
+        - {x: 26, y: 8.5}
+        - {x: 26, y: 2.5}
+        - {x: 34, y: -3.5}
+        - {x: 44, y: -3.5}
+        - {x: 63, y: 0.5}
+        - {x: 64, y: 2.5}
+        - {x: 64, y: 8.5}
+        - {x: 53, y: 14.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 18.5}
+        - {x: 24, y: 13.5}
+        - {x: 23, y: 9.5}
+        - {x: 23, y: 3.5}
+        - {x: 30, y: -0.5}
+        - {x: 40, y: -0.5}
+        - {x: 58, y: 6.5}
+        - {x: 60, y: 9.5}
+        - {x: 60, y: 18.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: 27.5}
+        - {x: 32, y: 24.5}
+        - {x: 21, y: 11.5}
+        - {x: 21, y: 6.5}
+        - {x: 22, y: 3.5}
+        - {x: 38, y: 3.5}
+        - {x: 53, y: 20.5}
+        - {x: 53, y: 27.5}
+    - name: WEPinfuso_pugnale-ATTACK-SpS_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 5.5}
+        - {x: 22, y: 3.5}
+        - {x: 36, y: 3.5}
+        - {x: 48, y: 19.5}
+        - {x: 48, y: 32.5}
+        - {x: 38, y: 32.5}
+        - {x: 21, y: 28.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
