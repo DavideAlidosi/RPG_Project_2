@@ -24,29 +24,38 @@ public class Grid : MonoBehaviour {
     public GameObject enemy;
 
 	// Use this for initialization
+    void awake()
+    {
+
+    }
 	void Start () {
 
+        cellMat = new Cell[ROW, COL];
 
+        
         refTT = FindObjectOfType<TileTester>();
         refEC = FindObjectOfType<EnemyController>();
         refGC = FindObjectOfType<GameControl>();
         playerLinking = FindObjectOfType<Player>(); ;
         
-        cellMat = new Cell[ROW, COL];
+        
+        // alla fine della creazione della matrice inizializzata a null prendiamo il tile con tag gameobject troviamo la X e la Y
+        // corrispondenti alla posizione scelta e creiamo una cella inserendola nella matrice
+        posPlayer = refTT.InsertPlayerGameObject();
+
+
+        int cellX = (int)posPlayer.x;
+        int cellY = (int)posPlayer.y;
 
         for (int i = 0; i < ROW; i++)
         {
             for (int j = 0; j < COL; j++)
             {
-                cellMat[i, j] = null;
                 
+                cellMat[i, j] = null;
+
             }
         }
-        // alla fine della creazione della matrice inizializzata a null prendiamo il tile con tag gameobject troviamo la X e la Y
-        // corrispondenti alla posizione scelta e creiamo una cella inserendola nella matrice
-        posPlayer = refTT.InsertPlayerGameObject();
-        int cellX = (int)posPlayer.x;
-        int cellY = (int)posPlayer.y;
         GameObject newCellGO = Instantiate(cell);
         cellMat[cellX, cellY] = newCellGO.GetComponent<Cell>();
         cellMat[cellX, cellY].myI = cellX;
@@ -57,12 +66,16 @@ public class Grid : MonoBehaviour {
 
 
         // una volta data la posizione del player si creerà la griglia attorno a se
-        Debug.Log(posPlayer);
-        Debug.Log(Time.realtimeSinceStartup);
+        
         playerLinking.SpawnPlayer(posPlayer);
         CreateGrid();
+        
+        
+
         playerLinking.GetComponentInChildren<FogOfWar>().LightRadius();
         playerLinking.GetComponentInChildren<FogOfWar>().RefreshEnemyList();
+
+
     }
 	
 	// Update is called once per frame
@@ -116,18 +129,7 @@ public class Grid : MonoBehaviour {
                         cellMat[i, j].refMyTile.color = Color.white;
                         continue;
                     }
-                }
-                /*if (i == 20 && j == 29 && !cellMat[i, j].spawned)
-                {
-                    GameObject newEnemy = Instantiate(enemy);
-                    newEnemy.GetComponent<Enemy>().str = Random.Range(2, 6);
-                    //newEnemy.SetActive(false);
-                    newEnemy.GetComponent<SpriteRenderer>().color = Color.clear;
-                    newEnemy.transform.parent = cellMat[i, j].transform;
-                    newEnemy.transform.localPosition = new Vector3(0, 0, 1);
-                    cellMat[i, j].spawned = true;
-
-                }*/
+                }                
             }
         }
 

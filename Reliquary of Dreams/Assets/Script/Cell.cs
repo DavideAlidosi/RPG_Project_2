@@ -31,10 +31,10 @@ public class Cell : MonoBehaviour {
         gcRef = FindObjectOfType<GameControl>();
         //playerRef = FindObjectOfType<Player>();
         refFog = FindObjectOfType<FogOfWar>();
-        
+
         //refMPU = FindObjectOfType<MenuPopUp>();
-        
-        
+
+
     }
 	
 	// Update is called once per frame
@@ -72,30 +72,11 @@ public class Cell : MonoBehaviour {
                 {
                     gcRef.cellCombat = this.gameObject;
                 }
-
-                
-                /*if (gcRef.queueMoveCell.Contains(this.gameObject))
-                {
-
-
-                    if (!gcRef.movementCell.Contains(this.gameObject))
-                    {
-                        gcRef.movementCell.Add(this.gameObject);
-                        GameObject temp =  gcRef.movementCell[gcRef.movementCell.Count - 1];
-                        if (gcRef.CheckCombat(temp))
-                        {
-                            gcRef.cellCombat = temp;
-                        }
-                        sBox.color = Color.yellow;
-                        gcRef.queueMoveCell.Clear();
-                        gcRef.Adjacent(this.gameObject);
-                    }
-                }*/
             }
         }
     }
 
-    // End cell highlight code
+    
 
     void OnMouseUp()
     {
@@ -121,7 +102,7 @@ public class Cell : MonoBehaviour {
                 refFog.Fog(pos,playerRef.agi);
                 refFog.AStar();
                 gcRef.movementCell.Add(this.gameObject);
-                gcRef.Adjacent(this.gameObject);
+                //gcRef.Adjacent(this.gameObject);
                 this.isMove = true;
             }
             
@@ -170,15 +151,11 @@ public class Cell : MonoBehaviour {
 
 
                 }
-                Debug.Log("Porta");
                 
-                
-                
-               
-                
-                
-                
-
+            }
+            if (GetComponentInChildren<NextScene>())
+            {
+                FindObjectOfType<NextScene>().NextLevel();
             }
             
         }

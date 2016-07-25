@@ -86,7 +86,7 @@ public class Pathfind : MonoBehaviour {
         int startX = _myI;
         int startY = _myJ;
         int count = 0;
-        Debug.Log(destX+" "+destY);
+        
 
         pathList.Clear();
 

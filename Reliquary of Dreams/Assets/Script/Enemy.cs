@@ -52,44 +52,7 @@ public class Enemy : MonoBehaviour
         moveCell.Clear();
         
         isPlayerVisible = false;
-
-        //Color ciao = new Color(Random.value, Random.value, Random.value);
-
-        /*for (int i = (myI - agi); i <= (myI + agi); i++)
-        {
-            for (int j = (myJ - agi); j <= (myJ + agi); j++)
-            {
-                if (i < 0)
-                    continue;
-                if (j < 0)
-                    continue;
-                if (i > Grid.COL-1)
-                    continue;
-                if (j > Grid.ROW-1)
-                    continue;
-                lookCell.Add(refGrid.cellMat[i, j]);
-                if (refGrid.cellMat[i, j].isWall)
-                {
-                    continue;
-                }
-
-                if (refGrid.cellMat[i, j].GetComponentInChildren<Enemy>())
-                {
-                    continue;
-                }
-                if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= (agi))
-                {
-                    if (refGrid.cellMat[i, j].GetComponentInChildren<Player>())
-                    {
-                        isPlayerVisible = true;
-
-
-                    }
-                    
-                }
-            }
-        }*/
-
+        
         foreach (var cell in lookCell)
         {
             if (cell.GetComponentInChildren<Enemy>())

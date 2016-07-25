@@ -48,23 +48,12 @@ public class EnemyController : MonoBehaviour {
                 path.ChooseMinPath(enemy.moveCell);
                 StartCoroutine(moveEnemy(enemy));
             }
-            
-
-            
-            
-            //enemy.MoveEnemy();
-
-            //
-            
-
-            //refFog.GetPlayerNearEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
-            
-            //if (enemy.isNear)
-            {
-               // refGC.CombatEnemy(enemy);
-                
-            }
+           
             yield return new WaitForSeconds(0.5f);
+            foreach (var cell in enemy.lookCell)
+            {
+                cell.isFree = false;
+            }
         }
         refGrid.CreateGrid();
         refGC.phase = GamePhase.Selezione;

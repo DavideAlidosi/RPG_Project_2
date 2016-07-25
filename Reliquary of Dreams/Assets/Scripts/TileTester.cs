@@ -85,7 +85,7 @@ public class TileTester : MonoBehaviour
         TileLoader tl = FindObjectOfType<TileLoader>();
         List<TileData> allTileDatas = tl.LoadAllTilesInScene("Floor");
         refGrid = FindObjectOfType<Grid>();
-        foreach (TileData td in allTileDatas)
+        /*foreach (TileData td in allTileDatas)
         {
             //refGrid.cellMat[x, y].gameObject.GetComponent<SpriteRenderer>().sprite = null;
             if (td.cell_x == y && td.cell_y == x)
@@ -99,14 +99,25 @@ public class TileTester : MonoBehaviour
                 td.go.GetComponent<SpriteRenderer>().color = Color.gray ;
                 refGrid.cellMat[x, y].refMyTile = td.go.GetComponent<SpriteRenderer>();
             }
+        }*/
+        for (int i = allTileDatas.Count - 1; i > 1; i--)
+        {
+            if (allTileDatas[i].cell_x == y && allTileDatas[i].cell_y == x)
+            {
+                refGrid.cellMat[x, y].isWall = false;
+                allTileDatas[i].go.GetComponent<SpriteRenderer>().color = Color.gray;
+                refGrid.cellMat[x, y].refMyTile = allTileDatas[i].go.GetComponent<SpriteRenderer>();
+                allTileDatas.RemoveAt(i);
+            }
         }
+
     }
     public void InsertWall(int x, int y)
     {
         TileLoader tl = FindObjectOfType<TileLoader>();
         List<TileData> allTileDatas = tl.LoadAllTilesInScene("Wall");
         refGrid = FindObjectOfType<Grid>();
-        foreach (TileData td in allTileDatas)
+        /*foreach (TileData td in allTileDatas)
         {
             //refGrid.cellMat[x, y].gameObject.GetComponent<SpriteRenderer>().sprite = null;
             if (td.cell_x == y && td.cell_y == x)
@@ -121,6 +132,18 @@ public class TileTester : MonoBehaviour
                 //refGrid.cellMat[x, y].gameObject.GetComponent<SpriteRenderer>().sprite = td.go.GetComponent<SpriteRenderer>().sprite;
                 td.go.GetComponent<SpriteRenderer>().color = Color.white;
                 refGrid.cellMat[x, y].refMyTile = td.go.GetComponent<SpriteRenderer>();
+            }
+        }*/
+
+        for (int i = allTileDatas.Count-1; i > 1 ; i--)
+        {
+            if (allTileDatas[i].cell_x == y && allTileDatas[i].cell_y == x)
+            {  
+                refGrid.cellMat[x, y].isWall = true;
+               
+                allTileDatas[i].go.GetComponent<SpriteRenderer>().color = Color.white;
+                refGrid.cellMat[x, y].refMyTile = allTileDatas[i].go.GetComponent<SpriteRenderer>();
+                allTileDatas.RemoveAt(i);
             }
         }
     }
@@ -155,7 +178,7 @@ public class TileTester : MonoBehaviour
             {
                 if (td.cell_x == y && td.cell_y == x)
                 {
-                    Debug.Log(td.cell_y + " " + td.cell_x);
+                    
                     td.go.GetComponent<SpriteRenderer>().color = Color.clear;
 
                     
@@ -170,6 +193,14 @@ public class TileTester : MonoBehaviour
                     td.go.transform.localPosition = new Vector3(0, 0, 1);
                     //cellMat[i, j].spawned = true;
                     //td.go.GetComponent<Enemy>().refMyCell = refGrid.cellMat[td.cell_y, td.cell_x];
+                }
+            }
+            if (td.go.GetComponent<NextScene>())
+            {
+                if (td.cell_x == y && td.cell_y == x)
+                {
+                    td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
+                    td.go.transform.localPosition = new Vector3(0, 0, 1);
                 }
             }
         }

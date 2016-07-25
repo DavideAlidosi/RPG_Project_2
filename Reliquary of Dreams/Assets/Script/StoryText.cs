@@ -12,8 +12,8 @@ public class StoryText : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         refGC = FindObjectOfType<GameControl>();
-        refMenu = FindObjectOfType<MenuPopUp>();
-        refStoryTeller = FindObjectOfType<StoryTeller>();
+        
+        
     }
 	
 	// Update is called once per frame
@@ -23,6 +23,9 @@ public class StoryText : MonoBehaviour {
 
     public void SpamText()
     {
+        refStoryTeller = FindObjectOfType<StoryTeller>();
+        refMenu = FindObjectOfType<MenuPopUp>();
+        refGC = FindObjectOfType<GameControl>();
         refMenu.panelDialoghi.SetActive(true);
         if (refStoryTeller.dialogoN == TextLevel.T1)
         {
@@ -42,6 +45,7 @@ public class StoryText : MonoBehaviour {
             refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             TerzoDialogo();
+            
 
         }
         else if (refStoryTeller.dialogoN == TextLevel.T4)

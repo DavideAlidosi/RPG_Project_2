@@ -29,93 +29,28 @@ public class FogOfWar : MonoBehaviour {
         int _x = (int)pos.x;
         int _y = (int)pos.y;
 
-        Vector2[] directions = new Vector2[4];
+        
 
-        /*directions[0] = new Vector2(-1, 0);
-        directions[1] = new Vector2(0, -1);
-        directions[2] = new Vector2(1, 0);
-        directions[3] = new Vector2(0, 1);*/
-
-        /*for (int i = (_x - vista); i <= (_x + vista); i++)
-        {
-            for (int y = (_y - vista); y <= (_y + vista); y++)
-            {
-
-
-                if (i < 0)
-                    continue;
-                if (y < 0)
-                    continue;
-                if (i > Grid.COL-1)
-                    continue;
-                if (y > Grid.ROW-1)
-                    continue;
-
-                if (refGrid.cellMat[i,y].isWall)
-                {
-                    continue;
-                }
-                if (Mathf.Abs(i - _x) + Mathf.Abs(y - _y) <= (vista))
-                {
-                    SpriteRenderer sr = refGrid.cellMat[i, y].refMyTile;
-                    if (sr != null)
-                    {
-                        sr.color = Color.green;
-                    }
-                    
-                    refGrid.cellMat[i, y].isFree = true;
-                    destroyCell.Add(refGrid.cellMat[i, y]);
-
-                    //coloring the enemy cell and toggle the status free
-                    if (refGrid.cellMat[i,y].GetComponentInChildren<Enemy>())
-                    {
-                        
-                        //enemyCell = grid.cellMat[i, y];
-                        refGrid.cellMat[i, y].isFree = false;
-                        refGrid.cellMat[i, y].refMyTile.color = Color.yellow;
-                    }
-                    
-                }
-                //Per rendere le celle meno visibili
-                if (Mathf.Abs(i - _x) + Mathf.Abs(y - _y) <= (vista / 2))
-                {
-                    SpriteRenderer sr = refGrid.cellMat[i, y].refMyTile;
-                    sr.color = Color.green;
-                }
-
-
-            }
-        }*/
+        
 		ReachableCells (vista, destroyCell);
 		foreach (var cell in destroyCell) {
 			cell.refMyTile.color = Color.green;
 			cell.isFree = true;
+            
             if (cell.GetComponentInChildren<Enemy>())
             {
                 cell.isFree = false;
                 cell.refMyTile.color = Color.red;
             }
 		}
-
-        //Coloring the adjacent of enemy
-        /*RefreshEnemyList();
-        if (enemyCell.Count > 0)
-        {         
-            GetEnemy();
-            
-        }*/
-
-        //remove all cell from this list for optimization
-
-        //enemyCell.Clear();
+        
 
 
     }
     // NON E' ASTAR  ma ricolora le celle in bianco e le rende di nuovo non libere
     public void AStar()
     {
-        List<Cell> controlled = new List<Cell>();
-        
+                
         foreach (var cell in destroyCell)
         {
             
@@ -123,9 +58,7 @@ public class FogOfWar : MonoBehaviour {
                 continue;
             if (cell.myJ < 0)
                 continue;
-            //if (cell.myI > 18)
-                
-            //if (cell.myJ > 18)
+            
                 
 
             if (refGrid.cellMat[cell.myI+1,cell.myJ].isFree)            
@@ -350,37 +283,7 @@ public class FogOfWar : MonoBehaviour {
         ClearLight();
         ReachableCells(vista, lightCell);
 
-        /*for (int i = (_x - vista); i <= (_x + vista); i++)
-        {
-            for (int y = (_y - vista); y <= (_y + vista); y++)
-            {
-
-
-                if (i < 0)
-                    continue;
-                if (y < 0)
-                    continue;
-                if (i > Grid.COL - 1)
-                    continue;
-                if (y > Grid.ROW - 1)
-                    continue;
-
-                if (refGrid.cellMat[i, y] == null  || refGrid.cellMat[i, y].isWall)
-                {
-                    continue;
-                }
-                if (Mathf.Abs(i - _x) + Mathf.Abs(y - _y) <= (vista))
-                {
-                    //refGrid.cellMat[i, y].refMyTile.color = Color.white;
-                    //lightCell.Add(refGrid.cellMat[i, y]);
-                    if (refGrid.cellMat[i,y].GetComponentInChildren<Enemy>())
-                    {
-                        //refGrid.cellMat[i, y].GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-                        //refGrid.cellMat[i, y].refMyTile.color = Color.white;
-                    }
-                }
-            }
-        }*/
+       
 
         foreach (var cell in lightCell) {
             if (cell.refMyTile != null)
@@ -403,20 +306,7 @@ public class FogOfWar : MonoBehaviour {
 
     public void ClearLight()
     {
-		// Foreach prima del manufacturing
-        /*if (lightCell != null)
-        {
-            foreach (var cell in lightCell)
-            {
-                cell.refMyTile.color = Color.grey;
-                if (cell.GetComponentInChildren<Enemy>())
-                {
-                    cell.GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.clear;
-                }
-               
-            }
-
-        }*/
+		
 
 		foreach (var cell in lightCell) {
 			cell.refMyTile.color = Color.grey;
@@ -440,6 +330,8 @@ public class FogOfWar : MonoBehaviour {
 
 	void Apri(Cell c, int range , List<Cell> reachable)
 	{
+        refGrid = FindObjectOfType<Grid>();
+        
 		reachable.Add (c);
 		int playerX = reachable [0].myI;
 		int playerY = reachable [0].myJ;
@@ -461,7 +353,8 @@ public class FogOfWar : MonoBehaviour {
 
 	bool IsAdjacent(Cell c, int posI, int posJ)
 	{
-		int newI = c.myI;
+        refGrid = FindObjectOfType<Grid>();
+        int newI = c.myI;
 		int newJ = c.myJ;
 		bool isFind = false;
 		if (!refGrid.cellMat[newI + posI, newJ + posJ].isWall)
@@ -519,7 +412,7 @@ public class FogOfWar : MonoBehaviour {
 
 		if (v.x != startX || v.y != startY) 
 		{
-			if (v.z < 20) {
+			if (v.z < 15) {
 				
 				
 				if (refGrid.cellMat [(int)v.x + 1, (int)v.y].isFree && !IsContainedInList(tempVUp)) {
