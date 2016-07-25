@@ -123,6 +123,7 @@ public class GameControl : MonoBehaviour {
             if (enemyCell.GetComponentInChildren<Enemy>().hp <= 0)
             {
                 Destroy(enemyCell.GetComponentInChildren<Enemy>().gameObject);
+                playerCell.GetComponentInChildren<Player>().exp += 100; 
                 
             }
         }

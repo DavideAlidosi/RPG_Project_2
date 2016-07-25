@@ -2,17 +2,20 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public enum TextLevel { T1, T2, T3, T4, T5, T6, T7, T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22 }
+
 
 public class MenuPopUp : MonoBehaviour {
     public GameObject menuPanel;
+    public GameObject levelUpPanel;
 
-    bool isActive = false;
+    bool isActiveCons = false;
+    bool isActiveEquip = false;
     public Image inventory;
     public Text dialoghi;
     public GameObject panelDialoghi;
+    public GameObject Equip;
 
-    public TextLevel dialogoN = TextLevel.T1;
+    
 
     
 	// Use this for initialization
@@ -45,16 +48,30 @@ public class MenuPopUp : MonoBehaviour {
 
     public void ConsumableInventory()
     {
-        if (!isActive)
+        if (!isActiveCons)
         {
             inventory.gameObject.SetActive(true);
-            isActive = true;
+            isActiveCons = true;
         }
         else
         {
             inventory.gameObject.SetActive(false);
-            isActive = false;
+            isActiveCons = false;
         }
         
+    }
+
+    public void EquipMenu()
+    {
+        if (!isActiveEquip)
+        {
+            Equip.SetActive(true);
+            isActiveEquip = true;
+        }
+        else
+        {
+            Equip.gameObject.SetActive(false);
+            isActiveEquip = false;
+        }
     }
 }

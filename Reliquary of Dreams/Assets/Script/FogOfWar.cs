@@ -519,7 +519,7 @@ public class FogOfWar : MonoBehaviour {
 
 		if (v.x != startX || v.y != startY) 
 		{
-			if (v.z < 10) {
+			if (v.z < 20) {
 				
 				
 				if (refGrid.cellMat [(int)v.x + 1, (int)v.y].isFree && !IsContainedInList(tempVUp)) {

@@ -74,7 +74,7 @@ public class Grid : MonoBehaviour {
 
     public void CreateGrid()
     {
-        int range = 10;
+        int range = 12;
         int playerX = playerLinking.GetComponentInParent<Cell>().myI;
         int playerY = playerLinking.GetComponentInParent<Cell>().myJ;
 

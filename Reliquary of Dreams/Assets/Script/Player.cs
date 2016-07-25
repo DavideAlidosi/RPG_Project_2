@@ -12,6 +12,8 @@ public class Player : MonoBehaviour {
 
     public List<Item> itemPlayer = new List<Item>();
 
+    public int exp = 0;
+    public int expForLevel = 1000;
     public int str;
     public int cos;
     public int hp;
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour {
     public int intS;
     public int per;
     public int forS;
+    public int level = 1;
 
 
     // Use this for initialization
@@ -52,7 +55,12 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+        if (exp > expForLevel)
+        {
+            level++;
+            expForLevel += 1000;
+            refMPU.levelUpPanel.SetActive(true);
+        }
 	}
 
     public void SpawnPlayer(Vector2 posPlayer)

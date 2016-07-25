@@ -7,11 +7,13 @@ public class StoryText : MonoBehaviour {
 
     MenuPopUp refMenu;
     GameControl refGC;
+    StoryTeller refStoryTeller;
     
 	// Use this for initialization
 	void Start () {
         refGC = FindObjectOfType<GameControl>();
         refMenu = FindObjectOfType<MenuPopUp>();
+        refStoryTeller = FindObjectOfType<StoryTeller>();
     }
 	
 	// Update is called once per frame
@@ -22,155 +24,155 @@ public class StoryText : MonoBehaviour {
     public void SpamText()
     {
         refMenu.panelDialoghi.SetActive(true);
-        if (refMenu.dialogoN == TextLevel.T1)
+        if (refStoryTeller.dialogoN == TextLevel.T1)
         {
             refGC.phase = GamePhase.Dialoghi;
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             PrimoDialogo();
         }
-        else if (refMenu.dialogoN == TextLevel.T2)
+        else if (refStoryTeller.dialogoN == TextLevel.T2)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             SecondoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T3)
+        else if (refStoryTeller.dialogoN == TextLevel.T3)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             TerzoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T4)
+        else if (refStoryTeller.dialogoN == TextLevel.T4)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             QuartoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T5)
+        else if (refStoryTeller.dialogoN == TextLevel.T5)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             QuintoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T6)
+        else if (refStoryTeller.dialogoN == TextLevel.T6)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             SestoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T7)
+        else if (refStoryTeller.dialogoN == TextLevel.T7)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             SettimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T8)
+        else if (refStoryTeller.dialogoN == TextLevel.T8)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             OttavoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T9)
+        else if (refStoryTeller.dialogoN == TextLevel.T9)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             NonoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T10)
+        else if (refStoryTeller.dialogoN == TextLevel.T10)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             DecimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T11)
+        else if (refStoryTeller.dialogoN == TextLevel.T11)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             UndicesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T12)
+        else if (refStoryTeller.dialogoN == TextLevel.T12)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             DodicesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T13)
+        else if (refStoryTeller.dialogoN == TextLevel.T13)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             TredicesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T14)
+        else if (refStoryTeller.dialogoN == TextLevel.T14)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             QuattordicesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T15)
+        else if (refStoryTeller.dialogoN == TextLevel.T15)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             QuindicesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T16)
+        else if (refStoryTeller.dialogoN == TextLevel.T16)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             SedicesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T17)
+        else if (refStoryTeller.dialogoN == TextLevel.T17)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             DiciasettesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T18)
+        else if (refStoryTeller.dialogoN == TextLevel.T18)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             DiciottesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T19)
+        else if (refStoryTeller.dialogoN == TextLevel.T19)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             DiciannovesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T20)
+        else if (refStoryTeller.dialogoN == TextLevel.T20)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             VentesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T21)
+        else if (refStoryTeller.dialogoN == TextLevel.T21)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             VentunesimoDialogo();
 
         }
-        else if (refMenu.dialogoN == TextLevel.T22)
+        else if (refStoryTeller.dialogoN == TextLevel.T22)
         {
-            refMenu.dialogoN++;
+            refStoryTeller.dialogoN++;
             refGC.phase = GamePhase.Dialoghi;
             VentiduesimoDialogo();
 
