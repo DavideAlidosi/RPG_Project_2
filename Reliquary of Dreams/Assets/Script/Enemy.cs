@@ -32,14 +32,8 @@ public class Enemy : MonoBehaviour
 
         refGrid = FindObjectOfType<Grid>();
         
-        refGC = FindObjectOfType<GameControl>();
-        str = 4;
-        cos = 3;
-        hp = cos * 4;
-        intS = 1;
-        per = 1;
-        forS = 1;
-        agi = Random.Range(1, 5);
+        refGC = FindObjectOfType<GameControl>();        
+        hp = cos * 4;      
         //vista = 4;
         //move = 2;
 
