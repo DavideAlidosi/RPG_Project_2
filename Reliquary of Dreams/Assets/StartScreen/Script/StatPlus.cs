@@ -42,6 +42,7 @@ public class StatPlus : MonoBehaviour
                         pointText.text = "Pt: " + refChange.point;
                     }
                 }
+
             }
 
             if (numberText.name == "PuntiForza")
