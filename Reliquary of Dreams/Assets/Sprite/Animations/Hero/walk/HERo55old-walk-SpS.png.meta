@@ -1,0 +1,1038 @@
+fileFormatVersion: 2
+guid: f4d2f29e3724e984f9360f7e02f26c56
+timeCreated: 1469450894
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HERo55old-walk-SpS_0
+    21300002: HERo55old-walk-SpS_1
+    21300004: HERo55old-walk-SpS_2
+    21300006: HERo55old-walk-SpS_3
+    21300008: HERo55old-walk-SpS_4
+    21300010: HERo55old-walk-SpS_5
+    21300012: HERo55old-walk-SpS_6
+    21300014: HERo55old-walk-SpS_7
+    21300016: HERo55old-walk-SpS_8
+    21300018: HERo55old-walk-SpS_9
+    21300020: HERo55old-walk-SpS_10
+    21300022: HERo55old-walk-SpS_11
+    21300024: HERo55old-walk-SpS_12
+    21300026: HERo55old-walk-SpS_13
+    21300028: HERo55old-walk-SpS_14
+    21300030: HERo55old-walk-SpS_15
+    21300032: HERo55old-walk-SpS_16
+    21300034: HERo55old-walk-SpS_17
+    21300036: HERo55old-walk-SpS_18
+    21300038: HERo55old-walk-SpS_19
+    21300040: HERo55old-walk-SpS_20
+    21300042: HERo55old-walk-SpS_21
+    21300044: HERo55old-walk-SpS_22
+    21300046: HERo55old-walk-SpS_23
+    21300048: HERo55old-walk-SpS_24
+    21300050: HERo55old-walk-SpS_25
+    21300052: HERo55old-walk-SpS_26
+    21300054: HERo55old-walk-SpS_27
+    21300056: HERo55old-walk-SpS_28
+    21300058: HERo55old-walk-SpS_29
+    21300060: HERo55old-walk-SpS_30
+    21300062: HERo55old-walk-SpS_31
+    21300064: HERo55old-walk-SpS_32
+    21300066: HERo55old-walk-SpS_33
+    21300068: HERo55old-walk-SpS_34
+    21300070: HERo55old-walk-SpS_35
+    21300072: HERo55old-walk-SpS_36
+    21300074: HERo55old-walk-SpS_37
+    21300076: HERo55old-walk-SpS_38
+    21300078: HERo55old-walk-SpS_39
+    21300080: HERo55old-walk-SpS_40
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HERo55old-walk-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 58.5}
+        - {x: -33, y: 20.5}
+        - {x: -33, y: -44.5}
+        - {x: 37, y: -44.5}
+        - {x: 37, y: 28.5}
+        - {x: 19, y: 58.5}
+    - name: HERo55old-walk-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 27.5}
+        - {x: 16, y: 58.5}
+        - {x: -3, y: 58.5}
+        - {x: -18, y: 49.5}
+        - {x: -25, y: 33.5}
+        - {x: -33, y: -2.5}
+        - {x: -33, y: -42.5}
+        - {x: -29, y: -44.5}
+        - {x: -22, y: -44.5}
+        - {x: -19, y: -43.5}
+        - {x: -14, y: -44.5}
+        - {x: 33, y: -44.5}
+    - name: HERo55old-walk-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 59.5}
+        - {x: -6, y: 59.5}
+        - {x: -17, y: 55.5}
+        - {x: -31, y: -11.5}
+        - {x: -31, y: -40.5}
+        - {x: -27, y: -45.5}
+        - {x: 33, y: -45.5}
+        - {x: 34, y: -43.5}
+        - {x: 34, y: 21.5}
+    - name: HERo55old-walk-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 60.5}
+        - {x: -9, y: 60.5}
+        - {x: -17, y: 54.5}
+        - {x: -29, y: 0.5}
+        - {x: -29, y: -45.5}
+        - {x: -26, y: -46.5}
+        - {x: 20, y: -46.5}
+        - {x: 22, y: -40.5}
+        - {x: 36, y: -24.5}
+        - {x: 36, y: 30.5}
+    - name: HERo55old-walk-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: -34.5}
+        - {x: 36, y: 30.5}
+        - {x: 21, y: 60.5}
+        - {x: -11, y: 60.5}
+        - {x: -25, y: 50.5}
+        - {x: -28, y: 20.5}
+        - {x: -28, y: -46.5}
+        - {x: -16, y: -46.5}
+        - {x: -13, y: -44.5}
+        - {x: -13, y: -41.5}
+        - {x: 4, y: -46.5}
+        - {x: 21, y: -46.5}
+    - name: HERo55old-walk-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: -22.5}
+        - {x: 36, y: -7.5}
+        - {x: 27, y: 31.5}
+        - {x: 15, y: 57.5}
+        - {x: 12, y: 60.5}
+        - {x: -11, y: 60.5}
+        - {x: -28, y: 20.5}
+        - {x: -28, y: -41.5}
+        - {x: -19, y: -46.5}
+        - {x: -13, y: -46.5}
+        - {x: -9, y: -44.5}
+        - {x: -2, y: -46.5}
+        - {x: 16, y: -46.5}
+    - name: HERo55old-walk-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -32.5}
+        - {x: -7, y: -36.5}
+        - {x: -3, y: -46.5}
+        - {x: 2, y: -46.5}
+        - {x: 35, y: -26.5}
+        - {x: 35, y: 13.5}
+        - {x: 33, y: 22.5}
+        - {x: 14, y: 60.5}
+        - {x: 0, y: 60.5}
+        - {x: -17, y: 48.5}
+        - {x: -29, y: 11.5}
+        - {x: -29, y: -29.5}
+        - {x: -22, y: -46.5}
+        - {x: -6, y: -46.5}
+        - {x: -4, y: -44.5}
+        - {x: -7, y: -41.5}
+        - {x: -8, y: -29.5}
+        - {x: -3, y: -24.5}
+    - name: HERo55old-walk-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: -13.5}
+        - {x: 22, y: -14.5}
+        - {x: 28, y: -22.5}
+        - {x: 33, y: -20.5}
+        - {x: 33, y: -8.5}
+        - {x: 24, y: 46.5}
+        - {x: 14, y: 60.5}
+        - {x: 1, y: 60.5}
+        - {x: -20, y: 46.5}
+        - {x: -31, y: 5.5}
+        - {x: -31, y: -37.5}
+        - {x: -22, y: -45.5}
+        - {x: -1, y: -45.5}
+        - {x: 2, y: -43.5}
+        - {x: 22, y: -21.5}
+        - {x: 22, y: -14.5}
+        - {x: 20, y: -12.5}
+    - name: HERo55old-walk-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 59.5}
+        - {x: 17, y: 60.5}
+        - {x: -7, y: 60.5}
+        - {x: -32, y: 16.5}
+        - {x: -32, y: -33.5}
+        - {x: -20, y: -44.5}
+        - {x: -12, y: -45.5}
+        - {x: 6, y: -45.5}
+        - {x: 32, y: -26.5}
+        - {x: 32, y: 3.5}
+    - name: HERo55old-walk-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 2.5}
+        - {x: 17, y: 59.5}
+        - {x: -3, y: 59.5}
+        - {x: -23, y: 45.5}
+        - {x: -33, y: -6.5}
+        - {x: -33, y: -21.5}
+        - {x: -27, y: -31.5}
+        - {x: -23, y: -28.5}
+        - {x: -19, y: -36.5}
+        - {x: -14, y: -44.5}
+        - {x: -9, y: -45.5}
+        - {x: 2, y: -45.5}
+        - {x: 4, y: -42.5}
+        - {x: 5, y: -38.5}
+        - {x: 30, y: -27.5}
+    - name: HERo55old-walk-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: -17.5}
+        - {x: 29, y: -34.5}
+        - {x: 29, y: 44.5}
+        - {x: 18, y: 59.5}
+        - {x: -4, y: 59.5}
+        - {x: -27, y: 45.5}
+        - {x: -34, y: 11.5}
+        - {x: -34, y: -39.5}
+        - {x: -27, y: -45.5}
+        - {x: 8, y: -45.5}
+        - {x: 10, y: -44.5}
+        - {x: 8, y: -40.5}
+        - {x: 5, y: -37.5}
+        - {x: 15, y: -24.5}
+    - name: HERo55old-walk-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: -9.5}
+        - {x: 20, y: 47.5}
+        - {x: 14, y: 58.5}
+        - {x: 0, y: 58.5}
+        - {x: -22, y: 43.5}
+        - {x: -35, y: 1.5}
+        - {x: -35, y: -22.5}
+        - {x: -29, y: -27.5}
+        - {x: -26, y: -26.5}
+        - {x: -25, y: -37.5}
+        - {x: -9, y: -45.5}
+        - {x: 8, y: -45.5}
+        - {x: 13, y: -44.5}
+        - {x: 11, y: -40.5}
+        - {x: 8, y: -37.5}
+        - {x: 28, y: -24.5}
+    - name: HERo55old-walk-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 57.5}
+        - {x: 0, y: 57.5}
+        - {x: -11, y: 44.5}
+        - {x: -15, y: 39.5}
+        - {x: -13, y: 32.5}
+        - {x: -31, y: 7.5}
+        - {x: -36, y: -5.5}
+        - {x: -36, y: -21.5}
+        - {x: -30, y: -26.5}
+        - {x: -27, y: -25.5}
+        - {x: -26, y: -18.5}
+        - {x: -17, y: -14.5}
+        - {x: -23, y: -19.5}
+        - {x: -26, y: -22.5}
+        - {x: -28, y: -27.5}
+        - {x: -28, y: -37.5}
+        - {x: -5, y: -45.5}
+        - {x: 11, y: -45.5}
+        - {x: 16, y: -42.5}
+        - {x: 14, y: -40.5}
+        - {x: 27, y: -35.5}
+        - {x: 27, y: 44.5}
+    - name: HERo55old-walk-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 56.5}
+        - {x: -37, y: 1.5}
+        - {x: -37, y: -18.5}
+        - {x: -31, y: -28.5}
+        - {x: -28, y: -24.5}
+        - {x: -24, y: -15.5}
+        - {x: -15, y: -12.5}
+        - {x: -24, y: -19.5}
+        - {x: -27, y: -22.5}
+        - {x: -29, y: -27.5}
+        - {x: -29, y: -33.5}
+        - {x: -21, y: -40.5}
+        - {x: 3, y: -44.5}
+        - {x: 26, y: -44.5}
+        - {x: 26, y: 21.5}
+        - {x: 15, y: 56.5}
+    - name: HERo55old-walk-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 56.5}
+        - {x: -18, y: 45.5}
+        - {x: -37, y: -4.5}
+        - {x: -37, y: -20.5}
+        - {x: -33, y: -25.5}
+        - {x: -30, y: -25.5}
+        - {x: -28, y: -23.5}
+        - {x: -24, y: -15.5}
+        - {x: -28, y: -24.5}
+        - {x: -37, y: -32.5}
+        - {x: -37, y: -35.5}
+        - {x: -21, y: -43.5}
+        - {x: 25, y: -43.5}
+        - {x: 26, y: -40.5}
+        - {x: 26, y: 18.5}
+        - {x: 16, y: 56.5}
+    - name: HERo55old-walk-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 56.5}
+        - {x: -16, y: 39.5}
+        - {x: -37, y: 1.5}
+        - {x: -37, y: -20.5}
+        - {x: -30, y: -42.5}
+        - {x: 26, y: -42.5}
+        - {x: 26, y: 56.5}
+    - name: HERo55old-walk-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 56.5}
+        - {x: -36, y: 3.5}
+        - {x: -36, y: -23.5}
+        - {x: -30, y: -26.5}
+        - {x: -27, y: -25.5}
+        - {x: -9, y: -10.5}
+        - {x: -7, y: -8.5}
+        - {x: -11, y: -12.5}
+        - {x: -28, y: -26.5}
+        - {x: -28, y: -41.5}
+        - {x: 27, y: -41.5}
+        - {x: 27, y: 21.5}
+        - {x: 25, y: 43.5}
+        - {x: 13, y: 56.5}
+    - name: HERo55old-walk-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 41.5}
+        - {x: 13, y: 57.5}
+        - {x: -7, y: 57.5}
+        - {x: -19, y: 50.5}
+        - {x: -35, y: 1.5}
+        - {x: -35, y: -18.5}
+        - {x: -29, y: -27.5}
+        - {x: -26, y: -26.5}
+        - {x: -25, y: -38.5}
+        - {x: -21, y: -41.5}
+        - {x: -16, y: -38.5}
+        - {x: 1, y: -41.5}
+        - {x: 29, y: -41.5}
+    - name: HERo55old-walk-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 57.5}
+        - {x: -21, y: 41.5}
+        - {x: -34, y: 10.5}
+        - {x: -34, y: -23.5}
+        - {x: -19, y: -42.5}
+        - {x: -17, y: -42.5}
+        - {x: 32, y: -41.5}
+        - {x: 32, y: 6.5}
+        - {x: 15, y: 57.5}
+    - name: HERo55old-walk-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 57.5}
+        - {x: -33, y: 15.5}
+        - {x: -33, y: -28.5}
+        - {x: -27, y: -31.5}
+        - {x: -23, y: -28.5}
+        - {x: -22, y: -40.5}
+        - {x: -17, y: -43.5}
+        - {x: 34, y: -43.5}
+        - {x: 34, y: 11.5}
+        - {x: 13, y: 57.5}
+    - name: HERo55old-walk-SpS_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 58.5}
+        - {x: -29, y: 14.5}
+        - {x: -32, y: 6.5}
+        - {x: -32, y: -29.5}
+        - {x: -24, y: -39.5}
+        - {x: -18, y: -44.5}
+        - {x: 12, y: -44.5}
+        - {x: 35, y: -36.5}
+        - {x: 35, y: 1.5}
+        - {x: 13, y: 58.5}
+    - name: HERo55old-walk-SpS_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: -45.5}
+        - {x: 30, y: -45.5}
+        - {x: 33, y: -44.5}
+        - {x: 33, y: 5.5}
+        - {x: 27, y: 41.5}
+        - {x: 17, y: 58.5}
+        - {x: -26, y: 58.5}
+        - {x: -31, y: 57.5}
+    - name: HERo55old-walk-SpS_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: -34.5}
+        - {x: 34, y: -22.5}
+        - {x: 35, y: -18.5}
+        - {x: 35, y: -10.5}
+        - {x: 33, y: -7.5}
+        - {x: 21, y: 41.5}
+        - {x: 14, y: 59.5}
+        - {x: -6, y: 59.5}
+        - {x: -15, y: 56.5}
+        - {x: -29, y: -6.5}
+        - {x: -29, y: -26.5}
+        - {x: -21, y: -34.5}
+        - {x: -16, y: -31.5}
+        - {x: -17, y: -31.5}
+        - {x: -18, y: -34.5}
+        - {x: -18, y: -38.5}
+        - {x: -14, y: -45.5}
+        - {x: -11, y: -46.5}
+        - {x: -8, y: -46.5}
+        - {x: -5, y: -43.5}
+        - {x: 23, y: -41.5}
+        - {x: 30, y: -38.5}
+    - name: HERo55old-walk-SpS_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -3.5}
+        - {x: -28, y: -31.5}
+        - {x: -21, y: -46.5}
+        - {x: 21, y: -46.5}
+        - {x: 36, y: -37.5}
+        - {x: 36, y: 21.5}
+        - {x: 26, y: 43.5}
+        - {x: 11, y: 60.5}
+        - {x: -3, y: 60.5}
+        - {x: -17, y: 48.5}
+    - name: HERo55old-walk-SpS_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: -3.5}
+        - {x: 23, y: 42.5}
+        - {x: 12, y: 60.5}
+        - {x: 2, y: 60.5}
+        - {x: -18, y: 47.5}
+        - {x: -28, y: -10.5}
+        - {x: -28, y: -21.5}
+        - {x: -23, y: -28.5}
+        - {x: -18, y: -33.5}
+        - {x: -15, y: -32.5}
+        - {x: -15, y: -27.5}
+        - {x: -14, y: -31.5}
+        - {x: -17, y: -35.5}
+        - {x: -17, y: -38.5}
+        - {x: -10, y: -46.5}
+        - {x: -5, y: -46.5}
+        - {x: -3, y: -41.5}
+        - {x: 16, y: -41.5}
+        - {x: 37, y: -22.5}
+    - name: HERo55old-walk-SpS_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 60.5}
+        - {x: -19, y: 47.5}
+        - {x: -29, y: -10.5}
+        - {x: -29, y: -47.5}
+        - {x: 32, y: -47.5}
+        - {x: 36, y: -30.5}
+        - {x: 36, y: 9.5}
+        - {x: 14, y: 60.5}
+    - name: HERo55old-walk-SpS_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 60.5}
+        - {x: -16, y: 60.5}
+        - {x: -22, y: 58.5}
+        - {x: -31, y: 25.5}
+        - {x: -31, y: -36.5}
+        - {x: -21, y: -47.5}
+        - {x: 12, y: -47.5}
+        - {x: 32, y: -23.5}
+        - {x: 33, y: -21.5}
+        - {x: 33, y: 12.5}
+    - name: HERo55old-walk-SpS_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 60.5}
+        - {x: -1, y: 60.5}
+        - {x: -23, y: 44.5}
+        - {x: -33, y: -8.5}
+        - {x: -33, y: -20.5}
+        - {x: -27, y: -33.5}
+        - {x: -3, y: -47.5}
+        - {x: 18, y: -47.5}
+        - {x: 30, y: -25.5}
+        - {x: 30, y: 21.5}
+        - {x: 20, y: 59.5}
+    - name: HERo55old-walk-SpS_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 60.5}
+        - {x: -20, y: 43.5}
+        - {x: -35, y: -5.5}
+        - {x: -35, y: -34.5}
+        - {x: -18, y: -47.5}
+        - {x: 17, y: -47.5}
+        - {x: 28, y: -37.5}
+        - {x: 28, y: 49.5}
+        - {x: 15, y: 60.5}
+    - name: HERo55old-walk-SpS_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 59.5}
+        - {x: -36, y: 14.5}
+        - {x: -36, y: -31.5}
+        - {x: -33, y: -36.5}
+        - {x: -12, y: -46.5}
+        - {x: 27, y: -46.5}
+        - {x: 27, y: 48.5}
+        - {x: 24, y: 59.5}
+    - name: HERo55old-walk-SpS_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 59.5}
+        - {x: -1, y: 59.5}
+        - {x: -25, y: 33.5}
+        - {x: -36, y: -1.5}
+        - {x: -36, y: -28.5}
+        - {x: 5, y: -46.5}
+        - {x: 25, y: -46.5}
+        - {x: 27, y: -29.5}
+        - {x: 27, y: 32.5}
+        - {x: 16, y: 57.5}
+    - name: HERo55old-walk-SpS_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 58.5}
+        - {x: -36, y: 8.5}
+        - {x: -36, y: -35.5}
+        - {x: -31, y: -46.5}
+        - {x: 28, y: -46.5}
+        - {x: 28, y: 32.5}
+        - {x: 13, y: 58.5}
+    - name: HERo55old-walk-SpS_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 57.5}
+        - {x: -35, y: 33.5}
+        - {x: -35, y: -46.5}
+        - {x: 30, y: -46.5}
+        - {x: 30, y: 34.5}
+        - {x: 21, y: 57.5}
+    - name: HERo55old-walk-SpS_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -21.5}
+        - {x: -31, y: -37.5}
+        - {x: -27, y: -46.5}
+        - {x: 30, y: -46.5}
+        - {x: 31, y: -45.5}
+        - {x: 31, y: 48.5}
+        - {x: 19, y: 56.5}
+        - {x: -6, y: 56.5}
+        - {x: -35, y: 20.5}
+    - name: HERo55old-walk-SpS_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: -4.5}
+        - {x: 17, y: 11.5}
+        - {x: 20, y: 5.5}
+        - {x: 23, y: 2.5}
+        - {x: 26, y: 2.5}
+        - {x: 32, y: 5.5}
+        - {x: 32, y: 29.5}
+        - {x: 13, y: 56.5}
+        - {x: 1, y: 56.5}
+        - {x: -14, y: 49.5}
+        - {x: -35, y: 14.5}
+        - {x: -35, y: -34.5}
+        - {x: -32, y: -46.5}
+        - {x: 32, y: -46.5}
+        - {x: 32, y: -40.5}
+        - {x: 30, y: -10.5}
+    - name: HERo55old-walk-SpS_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: -9.5}
+        - {x: 23, y: -0.5}
+        - {x: 17, y: 12.5}
+        - {x: 21, y: 2.5}
+        - {x: 29, y: 1.5}
+        - {x: 32, y: 7.5}
+        - {x: 32, y: 25.5}
+        - {x: 14, y: 56.5}
+        - {x: -4, y: 56.5}
+        - {x: -15, y: 51.5}
+        - {x: -35, y: 11.5}
+        - {x: -35, y: 9.5}
+        - {x: -27, y: 0.5}
+        - {x: -24, y: 0.5}
+        - {x: -19, y: 4.5}
+        - {x: -22, y: 0.5}
+        - {x: -27, y: 0.5}
+        - {x: -35, y: 4.5}
+        - {x: -35, y: -42.5}
+        - {x: -33, y: -45.5}
+        - {x: 31, y: -45.5}
+        - {x: 31, y: -40.5}
+        - {x: 28, y: -37.5}
+        - {x: 30, y: -22.5}
+    - name: HERo55old-walk-SpS_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -44.5}
+        - {x: 33, y: -44.5}
+        - {x: 33, y: 4.5}
+        - {x: 31, y: 31.5}
+        - {x: 13, y: 57.5}
+        - {x: -5, y: 57.5}
+        - {x: -35, y: 24.5}
+    - name: HERo55old-walk-SpS_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -44.5}
+        - {x: 36, y: -44.5}
+        - {x: 36, y: 17.5}
+        - {x: 21, y: 57.5}
+        - {x: -25, y: 57.5}
+        - {x: -35, y: 37.5}
+    - name: HERo55old-walk-SpS_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 57.5}
+        - {x: -34, y: 36.5}
+        - {x: -34, y: -44.5}
+        - {x: 38, y: -44.5}
+        - {x: 38, y: 40.5}
+        - {x: 14, y: 57.5}
+    - name: HERo55old-walk-SpS_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 33.5}
+        - {x: 16, y: 57.5}
+        - {x: -5, y: 57.5}
+        - {x: -16, y: 51.5}
+        - {x: -34, y: -6.5}
+        - {x: -34, y: -38.5}
+        - {x: -28, y: -44.5}
+        - {x: -23, y: -44.5}
+        - {x: -21, y: -43.5}
+        - {x: 24, y: -44.5}
+        - {x: 38, y: -39.5}
+        - {x: 38, y: -30.5}
+    - name: HERo55old-walk-SpS_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 33.5}
+        - {x: 16, y: 57.5}
+        - {x: -5, y: 57.5}
+        - {x: -16, y: 51.5}
+        - {x: -34, y: -6.5}
+        - {x: -34, y: -38.5}
+        - {x: -28, y: -44.5}
+        - {x: -23, y: -44.5}
+        - {x: -21, y: -43.5}
+        - {x: 24, y: -44.5}
+        - {x: 38, y: -39.5}
+        - {x: 38, y: -30.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: da97534b03c299349bee0de985b9a8d8
+timeCreated: 1469449899
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WEPspada_infusa-DEATH-SpS_0
+    21300002: WEPspada_infusa-DEATH-SpS_1
+    21300004: WEPspada_infusa-DEATH-SpS_2
+    21300006: WEPspada_infusa-DEATH-SpS_3
+    21300008: WEPspada_infusa-DEATH-SpS_4
+    21300010: WEPspada_infusa-DEATH-SpS_5
+    21300012: WEPspada_infusa-DEATH-SpS_6
+    21300014: WEPspada_infusa-DEATH-SpS_7
+    21300016: WEPspada_infusa-DEATH-SpS_8
+    21300018: WEPspada_infusa-DEATH-SpS_9
+    21300020: WEPspada_infusa-DEATH-SpS_10
+    21300022: WEPspada_infusa-DEATH-SpS_11
+    21300024: WEPspada_infusa-DEATH-SpS_12
+    21300026: WEPspada_infusa-DEATH-SpS_13
+    21300028: WEPspada_infusa-DEATH-SpS_14
+    21300030: WEPspada_infusa-DEATH-SpS_15
+    21300032: WEPspada_infusa-DEATH-SpS_16
+    21300034: WEPspada_infusa-DEATH-SpS_17
+    21300036: WEPspada_infusa-DEATH-SpS_18
+    21300038: WEPspada_infusa-DEATH-SpS_19
+    21300040: WEPspada_infusa-DEATH-SpS_20
+    21300042: WEPspada_infusa-DEATH-SpS_21
+    21300044: WEPspada_infusa-DEATH-SpS_22
+    21300046: WEPspada_infusa-DEATH-SpS_23
+    21300048: WEPspada_infusa-DEATH-SpS_24
+    21300050: WEPspada_infusa-DEATH-SpS_25
+    21300052: WEPspada_infusa-DEATH-SpS_26
+    21300054: WEPspada_infusa-DEATH-SpS_27
+    21300056: WEPspada_infusa-DEATH-SpS_28
+    21300058: WEPspada_infusa-DEATH-SpS_29
+    21300060: WEPspada_infusa-DEATH-SpS_30
+    21300062: WEPspada_infusa-DEATH-SpS_31
+    21300064: WEPspada_infusa-DEATH-SpS_32
+    21300066: WEPspada_infusa-DEATH-SpS_33
+    21300068: WEPspada_infusa-DEATH-SpS_34
+    21300070: WEPspada_infusa-DEATH-SpS_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WEPspada_infusa-DEATH-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 17.5}
+        - {x: 21, y: 17.5}
+        - {x: 15, y: 14.5}
+        - {x: 15, y: 7.5}
+        - {x: 22, y: -0.5}
+        - {x: 61, y: -0.5}
+        - {x: 62, y: 1.5}
+        - {x: 62, y: 5.5}
+        - {x: 60, y: 6.5}
+    - name: WEPspada_infusa-DEATH-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: 9.5}
+        - {x: 23, y: 18.5}
+        - {x: 22, y: 18.5}
+        - {x: 16, y: 11.5}
+        - {x: 16, y: 4.5}
+        - {x: 22, y: 1.5}
+        - {x: 63, y: 1.5}
+        - {x: 64, y: 4.5}
+        - {x: 64, y: 7.5}
+    - name: WEPspada_infusa-DEATH-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 21.5}
+        - {x: 19, y: 18.5}
+        - {x: 19, y: 11.5}
+        - {x: 21, y: 6.5}
+        - {x: 23, y: 4.5}
+        - {x: 40, y: 4.5}
+        - {x: 66, y: 9.5}
+        - {x: 67, y: 10.5}
+        - {x: 67, y: 18.5}
+        - {x: 54, y: 21.5}
+    - name: WEPspada_infusa-DEATH-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: 28.5}
+        - {x: 23, y: 24.5}
+        - {x: 23, y: 8.5}
+        - {x: 56, y: 8.5}
+        - {x: 70, y: 19.5}
+        - {x: 70, y: 28.5}
+    - name: WEPspada_infusa-DEATH-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56, y: 38.5}
+        - {x: 31, y: 31.5}
+        - {x: 26, y: 24.5}
+        - {x: 26, y: 15.5}
+        - {x: 31, y: 13.5}
+        - {x: 46, y: 13.5}
+        - {x: 71, y: 33.5}
+        - {x: 71, y: 38.5}
+    - name: WEPspada_infusa-DEATH-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: 46.5}
+        - {x: 61, y: 46.5}
+        - {x: 27, y: 33.5}
+        - {x: 27, y: 18.5}
+        - {x: 32, y: 17.5}
+        - {x: 43, y: 17.5}
+        - {x: 70, y: 40.5}
+        - {x: 70, y: 43.5}
+    - name: WEPspada_infusa-DEATH-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: 48.5}
+        - {x: 31, y: 35.5}
+        - {x: 29, y: 30.5}
+        - {x: 29, y: 17.5}
+        - {x: 44, y: 17.5}
+        - {x: 70, y: 43.5}
+        - {x: 70, y: 47.5}
+        - {x: 69, y: 48.5}
+    - name: WEPspada_infusa-DEATH-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61, y: 48.5}
+        - {x: 31, y: 31.5}
+        - {x: 30, y: 29.5}
+        - {x: 30, y: 15.5}
+        - {x: 45, y: 15.5}
+        - {x: 69, y: 43.5}
+        - {x: 69, y: 47.5}
+        - {x: 67, y: 48.5}
+    - name: WEPspada_infusa-DEATH-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 47.5}
+        - {x: 30, y: 27.5}
+        - {x: 30, y: 12.5}
+        - {x: 34, y: 11.5}
+        - {x: 46, y: 11.5}
+        - {x: 68, y: 42.5}
+        - {x: 68, y: 47.5}
+    - name: WEPspada_infusa-DEATH-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: 47.5}
+        - {x: 34, y: 23.5}
+        - {x: 31, y: 20.5}
+        - {x: 31, y: 11.5}
+        - {x: 32, y: 8.5}
+        - {x: 46, y: 8.5}
+        - {x: 66, y: 24.5}
+        - {x: 66, y: 47.5}
+    - name: WEPspada_infusa-DEATH-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 49.5}
+        - {x: 31, y: 23.5}
+        - {x: 31, y: 9.5}
+        - {x: 49, y: 9.5}
+        - {x: 56, y: 22.5}
+        - {x: 64, y: 41.5}
+        - {x: 64, y: 49.5}
+    - name: WEPspada_infusa-DEATH-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55, y: 53.5}
+        - {x: 31, y: 33.5}
+        - {x: 31, y: 14.5}
+        - {x: 32, y: 13.5}
+        - {x: 36, y: 11.5}
+        - {x: 42, y: 11.5}
+        - {x: 48, y: 15.5}
+        - {x: 62, y: 49.5}
+        - {x: 62, y: 53.5}
+    - name: WEPspada_infusa-DEATH-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 53.5}
+        - {x: 57, y: 58.5}
+        - {x: 56, y: 59.5}
+        - {x: 52, y: 59.5}
+        - {x: 31, y: 27.5}
+        - {x: 31, y: 20.5}
+        - {x: 35, y: 14.5}
+        - {x: 40, y: 14.5}
+        - {x: 47, y: 20.5}
+        - {x: 47, y: 23.5}
+    - name: WEPspada_infusa-DEATH-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 64.5}
+        - {x: 43, y: 59.5}
+        - {x: 29, y: 28.5}
+        - {x: 29, y: 23.5}
+        - {x: 32, y: 18.5}
+        - {x: 41, y: 18.5}
+        - {x: 49, y: 21.5}
+        - {x: 52, y: 49.5}
+        - {x: 52, y: 64.5}
+    - name: WEPspada_infusa-DEATH-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: 68.5}
+        - {x: 40, y: 68.5}
+        - {x: 28, y: 37.5}
+        - {x: 28, y: 24.5}
+        - {x: 33, y: 21.5}
+        - {x: 40, y: 21.5}
+        - {x: 46, y: 26.5}
+        - {x: 47, y: 57.5}
+        - {x: 47, y: 67.5}
+    - name: WEPspada_infusa-DEATH-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 71.5}
+        - {x: 34, y: 67.5}
+        - {x: 27, y: 40.5}
+        - {x: 27, y: 31.5}
+        - {x: 31, y: 23.5}
+        - {x: 38, y: 23.5}
+        - {x: 44, y: 27.5}
+        - {x: 44, y: 60.5}
+        - {x: 43, y: 69.5}
+        - {x: 41, y: 71.5}
+    - name: WEPspada_infusa-DEATH-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 73.5}
+        - {x: 26, y: 47.5}
+        - {x: 26, y: 28.5}
+        - {x: 31, y: 25.5}
+        - {x: 39, y: 25.5}
+        - {x: 43, y: 31.5}
+        - {x: 43, y: 53.5}
+        - {x: 39, y: 73.5}
+    - name: WEPspada_infusa-DEATH-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 75.5}
+        - {x: 29, y: 75.5}
+        - {x: 25, y: 56.5}
+        - {x: 25, y: 28.5}
+        - {x: 29, y: 27.5}
+        - {x: 39, y: 27.5}
+        - {x: 42, y: 31.5}
+        - {x: 42, y: 44.5}
+        - {x: 37, y: 73.5}
+    - name: WEPspada_infusa-DEATH-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 73.5}
+        - {x: 26, y: 63.5}
+        - {x: 26, y: 26.5}
+        - {x: 29, y: 25.5}
+        - {x: 38, y: 25.5}
+        - {x: 42, y: 29.5}
+        - {x: 42, y: 67.5}
+        - {x: 39, y: 73.5}
+    - name: WEPspada_infusa-DEATH-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 78.5}
+        - {x: 21, y: 78.5}
+        - {x: 21, y: 57.5}
+        - {x: 22, y: 35.5}
+        - {x: 29, y: 30.5}
+        - {x: 34, y: 30.5}
+        - {x: 39, y: 33.5}
+        - {x: 40, y: 38.5}
+        - {x: 40, y: 42.5}
+        - {x: 30, y: 73.5}
+    - name: WEPspada_infusa-DEATH-SpS_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 75.5}
+        - {x: 24, y: 52.5}
+        - {x: 24, y: 31.5}
+        - {x: 29, y: 27.5}
+        - {x: 34, y: 27.5}
+        - {x: 39, y: 29.5}
+        - {x: 41, y: 31.5}
+        - {x: 41, y: 49.5}
+        - {x: 35, y: 75.5}
+    - name: WEPspada_infusa-DEATH-SpS_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 76.5}
+        - {x: 25, y: 76.5}
+        - {x: 24, y: 73.5}
+        - {x: 24, y: 29.5}
+        - {x: 27, y: 28.5}
+        - {x: 37, y: 28.5}
+        - {x: 40, y: 33.5}
+        - {x: 40, y: 41.5}
+        - {x: 33, y: 75.5}
+    - name: WEPspada_infusa-DEATH-SpS_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 72.5}
+        - {x: 24, y: 39.5}
+        - {x: 24, y: 30.5}
+        - {x: 28, y: 26.5}
+        - {x: 36, y: 26.5}
+        - {x: 41, y: 29.5}
+        - {x: 41, y: 53.5}
+        - {x: 37, y: 71.5}
+        - {x: 34, y: 74.5}
+        - {x: 32, y: 74.5}
+    - name: WEPspada_infusa-DEATH-SpS_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 78.5}
+        - {x: 18, y: 44.5}
+        - {x: 22, y: 31.5}
+        - {x: 37, y: 31.5}
+        - {x: 38, y: 32.5}
+        - {x: 38, y: 63.5}
+        - {x: 29, y: 78.5}
+    - name: WEPspada_infusa-DEATH-SpS_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 37.5}
+        - {x: 22, y: 31.5}
+        - {x: 37, y: 31.5}
+        - {x: 39, y: 34.5}
+        - {x: 39, y: 46.5}
+        - {x: 27, y: 76.5}
+        - {x: 25, y: 78.5}
+        - {x: 23, y: 78.5}
+        - {x: 20, y: 77.5}
+    - name: WEPspada_infusa-DEATH-SpS_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 34.5}
+        - {x: 26, y: 30.5}
+        - {x: 39, y: 30.5}
+        - {x: 39, y: 50.5}
+        - {x: 36, y: 66.5}
+        - {x: 28, y: 78.5}
+        - {x: 24, y: 78.5}
+        - {x: 22, y: 77.5}
+    - name: WEPspada_infusa-DEATH-SpS_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: 72.5}
+        - {x: 34, y: 72.5}
+        - {x: 29, y: 49.5}
+        - {x: 29, y: 26.5}
+        - {x: 33, y: 24.5}
+        - {x: 40, y: 24.5}
+        - {x: 45, y: 28.5}
+        - {x: 45, y: 45.5}
+        - {x: 41, y: 70.5}
+    - name: WEPspada_infusa-DEATH-SpS_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67, y: 50.5}
+        - {x: 60, y: 50.5}
+        - {x: 40, y: 31.5}
+        - {x: 40, y: 8.5}
+        - {x: 44, y: 6.5}
+        - {x: 52, y: 6.5}
+        - {x: 56, y: 10.5}
+        - {x: 56, y: 15.5}
+        - {x: 67, y: 42.5}
+    - name: WEPspada_infusa-DEATH-SpS_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78, y: 14.5}
+        - {x: 44, y: -4.5}
+        - {x: 44, y: -16.5}
+        - {x: 48, y: -17.5}
+        - {x: 59, y: -17.5}
+        - {x: 76, y: -2.5}
+        - {x: 84, y: 9.5}
+        - {x: 84, y: 14.5}
+    - name: WEPspada_infusa-DEATH-SpS_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: -19.5}
+        - {x: 42, y: -21.5}
+        - {x: 38, y: -27.5}
+        - {x: 38, y: -34.5}
+        - {x: 42, y: -38.5}
+        - {x: 68, y: -38.5}
+        - {x: 85, y: -26.5}
+        - {x: 85, y: -19.5}
+    - name: WEPspada_infusa-DEATH-SpS_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: -31.5}
+        - {x: 33, y: -37.5}
+        - {x: 33, y: -48.5}
+        - {x: 64, y: -48.5}
+        - {x: 81, y: -47.5}
+        - {x: 81, y: -35.5}
+        - {x: 42, y: -31.5}
+    - name: WEPspada_infusa-DEATH-SpS_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71, y: -34.5}
+        - {x: 39, y: -34.5}
+        - {x: 36, y: -41.5}
+        - {x: 36, y: -48.5}
+        - {x: 39, y: -51.5}
+        - {x: 52, y: -51.5}
+        - {x: 82, y: -45.5}
+        - {x: 84, y: -43.5}
+        - {x: 84, y: -40.5}
+        - {x: 81, y: -35.5}
+    - name: WEPspada_infusa-DEATH-SpS_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: -49.5}
+        - {x: 44, y: -53.5}
+        - {x: 57, y: -53.5}
+        - {x: 88, y: -45.5}
+        - {x: 88, y: -40.5}
+        - {x: 86, y: -37.5}
+        - {x: 44, y: -37.5}
+        - {x: 41, y: -42.5}
+    - name: WEPspada_infusa-DEATH-SpS_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: -37.5}
+        - {x: 50, y: -37.5}
+        - {x: 45, y: -42.5}
+        - {x: 45, y: -48.5}
+        - {x: 47, y: -53.5}
+        - {x: 52, y: -54.5}
+        - {x: 59, y: -54.5}
+        - {x: 88, y: -44.5}
+        - {x: 92, y: -42.5}
+    - name: WEPspada_infusa-DEATH-SpS_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: -34.5}
+        - {x: 50, y: -36.5}
+        - {x: 46, y: -42.5}
+        - {x: 46, y: -49.5}
+        - {x: 52, y: -53.5}
+        - {x: 58, y: -53.5}
+        - {x: 93, y: -41.5}
+        - {x: 93, y: -34.5}
+    - name: WEPspada_infusa-DEATH-SpS_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: -33.5}
+        - {x: 46, y: -36.5}
+        - {x: 46, y: -49.5}
+        - {x: 53, y: -53.5}
+        - {x: 63, y: -53.5}
+        - {x: 93, y: -39.5}
+        - {x: 93, y: -34.5}
+        - {x: 92, y: -33.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

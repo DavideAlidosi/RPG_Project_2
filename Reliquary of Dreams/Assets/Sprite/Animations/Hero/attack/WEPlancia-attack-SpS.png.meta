@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 93860d52ded6bb44bb5129c8794cb55d
+timeCreated: 1469450058
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WEPlancia-attack-SpS_0
+    21300002: WEPlancia-attack-SpS_1
+    21300004: WEPlancia-attack-SpS_2
+    21300006: WEPlancia-attack-SpS_3
+    21300008: WEPlancia-attack-SpS_4
+    21300010: WEPlancia-attack-SpS_5
+    21300012: WEPlancia-attack-SpS_6
+    21300014: WEPlancia-attack-SpS_7
+    21300016: WEPlancia-attack-SpS_8
+    21300018: WEPlancia-attack-SpS_9
+    21300020: WEPlancia-attack-SpS_10
+    21300022: WEPlancia-attack-SpS_11
+    21300024: WEPlancia-attack-SpS_12
+    21300026: WEPlancia-attack-SpS_13
+    21300028: WEPlancia-attack-SpS_14
+    21300030: WEPlancia-attack-SpS_15
+    21300032: WEPlancia-attack-SpS_16
+    21300034: WEPlancia-attack-SpS_17
+    21300036: WEPlancia-attack-SpS_18
+    21300038: WEPlancia-attack-SpS_19
+    21300040: WEPlancia-attack-SpS_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WEPlancia-attack-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: 60.5}
+        - {x: 17, y: 21.5}
+        - {x: -1, y: -11.5}
+        - {x: -1, y: -18.5}
+        - {x: 7, y: -18.5}
+        - {x: 39, y: 1.5}
+        - {x: 78, y: 52.5}
+        - {x: 78, y: 60.5}
+    - name: WEPlancia-attack-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 66, y: 54.5}
+        - {x: -7, y: -6.5}
+        - {x: -7, y: -17.5}
+        - {x: -1, y: -17.5}
+        - {x: 37, y: -6.5}
+        - {x: 78, y: 40.5}
+        - {x: 78, y: 54.5}
+    - name: WEPlancia-attack-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 39.5}
+        - {x: -22, y: -0.5}
+        - {x: -22, y: -14.5}
+        - {x: -5, y: -14.5}
+        - {x: 74, y: 21.5}
+        - {x: 76, y: 28.5}
+        - {x: 76, y: 39.5}
+    - name: WEPlancia-attack-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 21.5}
+        - {x: 7, y: 17.5}
+        - {x: -37, y: -0.5}
+        - {x: -37, y: -8.5}
+        - {x: 9, y: -8.5}
+        - {x: 70, y: 12.5}
+        - {x: 70, y: 20.5}
+        - {x: 69, y: 21.5}
+    - name: WEPlancia-attack-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 8.5}
+        - {x: -48, y: 6.5}
+        - {x: -48, y: -1.5}
+        - {x: -46, y: -4.5}
+        - {x: 61, y: -4.5}
+        - {x: 61, y: 8.5}
+    - name: WEPlancia-attack-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52, y: 9.5}
+        - {x: -52, y: 2.5}
+        - {x: -47, y: 0.5}
+        - {x: -13, y: -6.5}
+        - {x: 35, y: -8.5}
+        - {x: 56, y: -8.5}
+        - {x: 57, y: -6.5}
+        - {x: 57, y: 1.5}
+        - {x: 48, y: 9.5}
+    - name: WEPlancia-attack-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 8.5}
+        - {x: -44, y: 8.5}
+        - {x: -48, y: 5.5}
+        - {x: -48, y: -0.5}
+        - {x: -20, y: -7.5}
+        - {x: 60, y: -7.5}
+        - {x: 61, y: -6.5}
+        - {x: 61, y: 1.5}
+        - {x: 39, y: 7.5}
+    - name: WEPlancia-attack-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 7.5}
+        - {x: -38, y: 6.5}
+        - {x: -38, y: -6.5}
+        - {x: 71, y: -6.5}
+        - {x: 71, y: 4.5}
+        - {x: 58, y: 7.5}
+    - name: WEPlancia-attack-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79, y: 8.5}
+        - {x: -3, y: 8.5}
+        - {x: -21, y: 6.5}
+        - {x: -25, y: 3.5}
+        - {x: -25, y: 1.5}
+        - {x: -22, y: -2.5}
+        - {x: 15, y: -4.5}
+        - {x: 81, y: -4.5}
+        - {x: 84, y: -0.5}
+        - {x: 84, y: 4.5}
+    - name: WEPlancia-attack-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 9.5}
+        - {x: -14, y: 8.5}
+        - {x: -14, y: -3.5}
+        - {x: 94, y: -3.5}
+        - {x: 95, y: -0.5}
+        - {x: 95, y: 9.5}
+    - name: WEPlancia-attack-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 11.5}
+        - {x: -8, y: 0.5}
+        - {x: 0, y: -1.5}
+        - {x: 99, y: -1.5}
+        - {x: 101, y: 1.5}
+        - {x: 101, y: 9.5}
+        - {x: 100, y: 11.5}
+    - name: WEPlancia-attack-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 11.5}
+        - {x: -6, y: 3.5}
+        - {x: 3, y: -1.5}
+        - {x: 34, y: -2.5}
+        - {x: 102, y: -2.5}
+        - {x: 103, y: -1.5}
+        - {x: 103, y: 11.5}
+    - name: WEPlancia-attack-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 11.5}
+        - {x: -4, y: 7.5}
+        - {x: -4, y: 4.5}
+        - {x: 0, y: 2.5}
+        - {x: 5, y: 1.5}
+        - {x: 25, y: -1.5}
+        - {x: 104, y: -1.5}
+        - {x: 105, y: -0.5}
+        - {x: 105, y: 7.5}
+        - {x: 91, y: 11.5}
+    - name: WEPlancia-attack-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 11.5}
+        - {x: -3, y: 10.5}
+        - {x: -3, y: -1.5}
+        - {x: 106, y: -1.5}
+        - {x: 106, y: 10.5}
+        - {x: 103, y: 11.5}
+    - name: WEPlancia-attack-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 11.5}
+        - {x: -2, y: 9.5}
+        - {x: -2, y: -1.5}
+        - {x: 106, y: -1.5}
+        - {x: 106, y: 10.5}
+        - {x: 102, y: 11.5}
+    - name: WEPlancia-attack-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 11.5}
+        - {x: -2, y: 9.5}
+        - {x: -2, y: 3.5}
+        - {x: 0, y: -1.5}
+        - {x: 103, y: -1.5}
+        - {x: 107, y: 2.5}
+        - {x: 107, y: 10.5}
+        - {x: 99, y: 11.5}
+    - name: WEPlancia-attack-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 12.5}
+        - {x: -3, y: 2.5}
+        - {x: 14, y: -1.5}
+        - {x: 102, y: -1.5}
+        - {x: 106, y: 3.5}
+        - {x: 106, y: 12.5}
+    - name: WEPlancia-attack-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 13.5}
+        - {x: -6, y: 11.5}
+        - {x: -6, y: 4.5}
+        - {x: 14, y: -0.5}
+        - {x: 102, y: -0.5}
+        - {x: 103, y: 0.5}
+        - {x: 103, y: 9.5}
+        - {x: 95, y: 13.5}
+    - name: WEPlancia-attack-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 23.5}
+        - {x: -8, y: 6.5}
+        - {x: -8, y: -0.5}
+        - {x: 46, y: -0.5}
+        - {x: 79, y: 3.5}
+        - {x: 99, y: 16.5}
+        - {x: 99, y: 23.5}
+    - name: WEPlancia-attack-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 1.5}
+        - {x: -5, y: -12.5}
+        - {x: 13, y: -12.5}
+        - {x: 88, y: 38.5}
+        - {x: 88, y: 48.5}
+        - {x: 72, y: 48.5}
+        - {x: -2, y: 11.5}
+    - name: WEPlancia-attack-SpS_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: 60.5}
+        - {x: 17, y: 21.5}
+        - {x: -1, y: -11.5}
+        - {x: -1, y: -18.5}
+        - {x: 7, y: -18.5}
+        - {x: 39, y: 1.5}
+        - {x: 78, y: 52.5}
+        - {x: 78, y: 60.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

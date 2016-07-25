@@ -1,0 +1,879 @@
+fileFormatVersion: 2
+guid: aa879e9a34148f345ac1d1bf91cb2c4a
+timeCreated: 1469450966
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WEPpugnale-walk-SpS_0
+    21300002: WEPpugnale-walk-SpS_1
+    21300004: WEPpugnale-walk-SpS_2
+    21300006: WEPpugnale-walk-SpS_3
+    21300008: WEPpugnale-walk-SpS_4
+    21300010: WEPpugnale-walk-SpS_5
+    21300012: WEPpugnale-walk-SpS_6
+    21300014: WEPpugnale-walk-SpS_7
+    21300016: WEPpugnale-walk-SpS_8
+    21300018: WEPpugnale-walk-SpS_9
+    21300020: WEPpugnale-walk-SpS_10
+    21300022: WEPpugnale-walk-SpS_11
+    21300024: WEPpugnale-walk-SpS_12
+    21300026: WEPpugnale-walk-SpS_13
+    21300028: WEPpugnale-walk-SpS_14
+    21300030: WEPpugnale-walk-SpS_15
+    21300032: WEPpugnale-walk-SpS_16
+    21300034: WEPpugnale-walk-SpS_17
+    21300036: WEPpugnale-walk-SpS_18
+    21300038: WEPpugnale-walk-SpS_19
+    21300040: WEPpugnale-walk-SpS_20
+    21300042: WEPpugnale-walk-SpS_21
+    21300044: WEPpugnale-walk-SpS_22
+    21300046: WEPpugnale-walk-SpS_23
+    21300048: WEPpugnale-walk-SpS_24
+    21300050: WEPpugnale-walk-SpS_25
+    21300052: WEPpugnale-walk-SpS_26
+    21300054: WEPpugnale-walk-SpS_27
+    21300056: WEPpugnale-walk-SpS_28
+    21300058: WEPpugnale-walk-SpS_29
+    21300060: WEPpugnale-walk-SpS_30
+    21300062: WEPpugnale-walk-SpS_31
+    21300064: WEPpugnale-walk-SpS_32
+    21300066: WEPpugnale-walk-SpS_33
+    21300068: WEPpugnale-walk-SpS_34
+    21300070: WEPpugnale-walk-SpS_35
+    21300072: WEPpugnale-walk-SpS_36
+    21300074: WEPpugnale-walk-SpS_37
+    21300076: WEPpugnale-walk-SpS_38
+    21300078: WEPpugnale-walk-SpS_39
+    21300080: WEPpugnale-walk-SpS_40
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WEPpugnale-walk-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 14.5}
+        - {x: 15, y: 11.5}
+        - {x: 15, y: 5.5}
+        - {x: 25, y: 0.5}
+        - {x: 45, y: 0.5}
+        - {x: 46, y: 3.5}
+        - {x: 46, y: 7.5}
+        - {x: 40, y: 14.5}
+    - name: WEPpugnale-walk-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 14.5}
+        - {x: 15, y: 10.5}
+        - {x: 15, y: 5.5}
+        - {x: 25, y: 0.5}
+        - {x: 40, y: 0.5}
+        - {x: 47, y: 2.5}
+        - {x: 47, y: 6.5}
+        - {x: 41, y: 14.5}
+    - name: WEPpugnale-walk-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 14.5}
+        - {x: 16, y: 13.5}
+        - {x: 16, y: 1.5}
+        - {x: 48, y: 1.5}
+        - {x: 48, y: 10.5}
+        - {x: 43, y: 14.5}
+    - name: WEPpugnale-walk-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 14.5}
+        - {x: 17, y: 10.5}
+        - {x: 17, y: 5.5}
+        - {x: 27, y: 1.5}
+        - {x: 48, y: 1.5}
+        - {x: 49, y: 6.5}
+        - {x: 49, y: 11.5}
+        - {x: 43, y: 14.5}
+    - name: WEPpugnale-walk-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 15.5}
+        - {x: 18, y: 13.5}
+        - {x: 18, y: 4.5}
+        - {x: 19, y: 2.5}
+        - {x: 50, y: 2.5}
+        - {x: 50, y: 10.5}
+        - {x: 46, y: 15.5}
+    - name: WEPpugnale-walk-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: 15.5}
+        - {x: 19, y: 15.5}
+        - {x: 18, y: 13.5}
+        - {x: 18, y: 6.5}
+        - {x: 20, y: 2.5}
+        - {x: 39, y: 2.5}
+        - {x: 49, y: 3.5}
+        - {x: 50, y: 5.5}
+        - {x: 50, y: 12.5}
+    - name: WEPpugnale-walk-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: 15.5}
+        - {x: 19, y: 15.5}
+        - {x: 17, y: 13.5}
+        - {x: 17, y: 8.5}
+        - {x: 19, y: 3.5}
+        - {x: 29, y: 1.5}
+        - {x: 44, y: 1.5}
+        - {x: 48, y: 2.5}
+        - {x: 49, y: 4.5}
+        - {x: 49, y: 11.5}
+    - name: WEPpugnale-walk-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 15.5}
+        - {x: 18, y: 15.5}
+        - {x: 15, y: 11.5}
+        - {x: 15, y: 5.5}
+        - {x: 25, y: 0.5}
+        - {x: 43, y: 0.5}
+        - {x: 47, y: 1.5}
+        - {x: 47, y: 6.5}
+        - {x: 44, y: 13.5}
+    - name: WEPpugnale-walk-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 15.5}
+        - {x: 14, y: 15.5}
+        - {x: 12, y: 11.5}
+        - {x: 12, y: 6.5}
+        - {x: 24, y: -1.5}
+        - {x: 42, y: -1.5}
+        - {x: 43, y: 0.5}
+        - {x: 43, y: 4.5}
+        - {x: 38, y: 11.5}
+    - name: WEPpugnale-walk-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 16.5}
+        - {x: 11, y: 16.5}
+        - {x: 10, y: 13.5}
+        - {x: 10, y: 6.5}
+        - {x: 21, y: -1.5}
+        - {x: 33, y: -3.5}
+        - {x: 38, y: -3.5}
+        - {x: 38, y: 3.5}
+        - {x: 32, y: 13.5}
+    - name: WEPpugnale-walk-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 17.5}
+        - {x: 7, y: 16.5}
+        - {x: 7, y: 4.5}
+        - {x: 21, y: -5.5}
+        - {x: 34, y: -5.5}
+        - {x: 34, y: 6.5}
+        - {x: 22, y: 17.5}
+    - name: WEPpugnale-walk-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 10.5}
+        - {x: 16, y: -2.5}
+        - {x: 25, y: -6.5}
+        - {x: 30, y: -6.5}
+        - {x: 32, y: -5.5}
+        - {x: 32, y: 4.5}
+        - {x: 29, y: 12.5}
+        - {x: 14, y: 17.5}
+        - {x: 8, y: 17.5}
+        - {x: 5, y: 13.5}
+    - name: WEPpugnale-walk-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 17.5}
+        - {x: 3, y: 10.5}
+        - {x: 12, y: -5.5}
+        - {x: 30, y: -5.5}
+        - {x: 30, y: 7.5}
+        - {x: 17, y: 17.5}
+    - name: WEPpugnale-walk-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 17.5}
+        - {x: 2, y: 15.5}
+        - {x: 2, y: 5.5}
+        - {x: 18, y: -5.5}
+        - {x: 29, y: -5.5}
+        - {x: 29, y: 5.5}
+        - {x: 10, y: 17.5}
+    - name: WEPpugnale-walk-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 17.5}
+        - {x: 5, y: 17.5}
+        - {x: 0, y: 15.5}
+        - {x: 0, y: 8.5}
+        - {x: 12, y: -3.5}
+        - {x: 22, y: -4.5}
+        - {x: 28, y: -4.5}
+        - {x: 28, y: 2.5}
+        - {x: 23, y: 12.5}
+    - name: WEPpugnale-walk-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 17.5}
+        - {x: -1, y: 16.5}
+        - {x: -1, y: 6.5}
+        - {x: 14, y: -4.5}
+        - {x: 26, y: -4.5}
+        - {x: 26, y: 7.5}
+        - {x: 13, y: 17.5}
+    - name: WEPpugnale-walk-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 17.5}
+        - {x: 1, y: 17.5}
+        - {x: -2, y: 16.5}
+        - {x: -2, y: 10.5}
+        - {x: 7, y: -5.5}
+        - {x: 24, y: -5.5}
+        - {x: 24, y: 6.5}
+        - {x: 22, y: 11.5}
+    - name: WEPpugnale-walk-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 8.5}
+        - {x: 1, y: -0.5}
+        - {x: 12, y: -7.5}
+        - {x: 22, y: -7.5}
+        - {x: 22, y: 3.5}
+        - {x: 19, y: 10.5}
+        - {x: 7, y: 18.5}
+        - {x: -2, y: 18.5}
+    - name: WEPpugnale-walk-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 18.5}
+        - {x: -3, y: 16.5}
+        - {x: -3, y: 8.5}
+        - {x: 3, y: 0.5}
+        - {x: 13, y: -9.5}
+        - {x: 17, y: -9.5}
+        - {x: 20, y: -7.5}
+        - {x: 20, y: 7.5}
+        - {x: 5, y: 18.5}
+    - name: WEPpugnale-walk-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 18.5}
+        - {x: -3, y: 15.5}
+        - {x: -3, y: 8.5}
+        - {x: 0, y: 2.5}
+        - {x: 8, y: -8.5}
+        - {x: 12, y: -10.5}
+        - {x: 17, y: -10.5}
+        - {x: 18, y: -6.5}
+        - {x: 18, y: 1.5}
+        - {x: 5, y: 18.5}
+    - name: WEPpugnale-walk-SpS_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 18.5}
+        - {x: -2, y: 18.5}
+        - {x: -3, y: 16.5}
+        - {x: -3, y: -3.5}
+        - {x: 10, y: -11.5}
+        - {x: 16, y: -11.5}
+        - {x: 17, y: -9.5}
+        - {x: 17, y: 2.5}
+    - name: WEPpugnale-walk-SpS_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 18.5}
+        - {x: -2, y: 18.5}
+        - {x: -3, y: 17.5}
+        - {x: -3, y: -2.5}
+        - {x: 9, y: -11.5}
+        - {x: 16, y: -11.5}
+        - {x: 16, y: 0.5}
+        - {x: 9, y: 16.5}
+    - name: WEPpugnale-walk-SpS_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 3.5}
+        - {x: 3, y: -12.5}
+        - {x: 14, y: -12.5}
+        - {x: 14, y: 4.5}
+        - {x: 9, y: 17.5}
+        - {x: 6, y: 18.5}
+        - {x: -4, y: 18.5}
+        - {x: -5, y: 17.5}
+    - name: WEPpugnale-walk-SpS_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 18.5}
+        - {x: -4, y: 18.5}
+        - {x: -6, y: 14.5}
+        - {x: -6, y: 12.5}
+        - {x: -4, y: -1.5}
+        - {x: 4, y: -12.5}
+        - {x: 10, y: -12.5}
+        - {x: 12, y: -11.5}
+        - {x: 12, y: 6.5}
+        - {x: 9, y: 17.5}
+    - name: WEPpugnale-walk-SpS_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 18.5}
+        - {x: -7, y: 0.5}
+        - {x: -2, y: -12.5}
+        - {x: 9, y: -12.5}
+        - {x: 10, y: -11.5}
+        - {x: 10, y: 9.5}
+        - {x: 8, y: 18.5}
+    - name: WEPpugnale-walk-SpS_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 18.5}
+        - {x: -7, y: 18.5}
+        - {x: -7, y: -0.5}
+        - {x: -4, y: -12.5}
+        - {x: 8, y: -12.5}
+        - {x: 9, y: -11.5}
+        - {x: 9, y: 6.5}
+        - {x: 6, y: 17.5}
+    - name: WEPpugnale-walk-SpS_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 4.5}
+        - {x: -6, y: -1.5}
+        - {x: 3, y: -12.5}
+        - {x: 11, y: -12.5}
+        - {x: 11, y: 4.5}
+        - {x: 8, y: 18.5}
+        - {x: -5, y: 18.5}
+        - {x: -7, y: 16.5}
+    - name: WEPpugnale-walk-SpS_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 17.5}
+        - {x: -6, y: 4.5}
+        - {x: 7, y: -11.5}
+        - {x: 13, y: -11.5}
+        - {x: 15, y: -10.5}
+        - {x: 15, y: 7.5}
+        - {x: 5, y: 17.5}
+    - name: WEPpugnale-walk-SpS_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 16.5}
+        - {x: -4, y: 9.5}
+        - {x: 3, y: -6.5}
+        - {x: 12, y: -9.5}
+        - {x: 18, y: -9.5}
+        - {x: 21, y: -7.5}
+        - {x: 21, y: 3.5}
+        - {x: 7, y: 16.5}
+    - name: WEPpugnale-walk-SpS_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 15.5}
+        - {x: -2, y: 12.5}
+        - {x: -2, y: 3.5}
+        - {x: 14, y: -6.5}
+        - {x: 24, y: -6.5}
+        - {x: 26, y: -3.5}
+        - {x: 26, y: 6.5}
+        - {x: 13, y: 15.5}
+    - name: WEPpugnale-walk-SpS_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 15.5}
+        - {x: 0, y: 7.5}
+        - {x: 13, y: -2.5}
+        - {x: 20, y: -3.5}
+        - {x: 29, y: -3.5}
+        - {x: 29, y: 9.5}
+        - {x: 28, y: 15.5}
+    - name: WEPpugnale-walk-SpS_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 15.5}
+        - {x: 5, y: 15.5}
+        - {x: 2, y: 14.5}
+        - {x: 2, y: 2.5}
+        - {x: 15, y: -3.5}
+        - {x: 31, y: -3.5}
+        - {x: 31, y: 2.5}
+        - {x: 27, y: 11.5}
+    - name: WEPpugnale-walk-SpS_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 16.5}
+        - {x: 7, y: 16.5}
+        - {x: 3, y: 15.5}
+        - {x: 3, y: 7.5}
+        - {x: 12, y: -4.5}
+        - {x: 32, y: -4.5}
+        - {x: 32, y: 4.5}
+        - {x: 26, y: 10.5}
+    - name: WEPpugnale-walk-SpS_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 6.5}
+        - {x: 6, y: 4.5}
+        - {x: 23, y: -5.5}
+        - {x: 30, y: -5.5}
+        - {x: 32, y: -4.5}
+        - {x: 32, y: 2.5}
+        - {x: 31, y: 5.5}
+        - {x: 16, y: 17.5}
+        - {x: 5, y: 17.5}
+    - name: WEPpugnale-walk-SpS_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 17.5}
+        - {x: 6, y: 16.5}
+        - {x: 6, y: 11.5}
+        - {x: 13, y: -6.5}
+        - {x: 31, y: -6.5}
+        - {x: 31, y: 6.5}
+        - {x: 13, y: 17.5}
+    - name: WEPpugnale-walk-SpS_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 8.5}
+        - {x: 14, y: 1.5}
+        - {x: 24, y: -6.5}
+        - {x: 32, y: -6.5}
+        - {x: 32, y: 5.5}
+        - {x: 30, y: 12.5}
+        - {x: 15, y: 18.5}
+        - {x: 7, y: 18.5}
+    - name: WEPpugnale-walk-SpS_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 17.5}
+        - {x: 8, y: 14.5}
+        - {x: 8, y: 9.5}
+        - {x: 19, y: -2.5}
+        - {x: 28, y: -5.5}
+        - {x: 34, y: -5.5}
+        - {x: 34, y: 7.5}
+        - {x: 18, y: 17.5}
+    - name: WEPpugnale-walk-SpS_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 16.5}
+        - {x: 10, y: 5.5}
+        - {x: 25, y: -4.5}
+        - {x: 38, y: -4.5}
+        - {x: 38, y: 8.5}
+        - {x: 26, y: 16.5}
+    - name: WEPpugnale-walk-SpS_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 16.5}
+        - {x: 12, y: 12.5}
+        - {x: 12, y: 7.5}
+        - {x: 24, y: -1.5}
+        - {x: 36, y: -2.5}
+        - {x: 39, y: -2.5}
+        - {x: 42, y: 0.5}
+        - {x: 40, y: 6.5}
+        - {x: 36, y: 11.5}
+    - name: WEPpugnale-walk-SpS_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 3.5}
+        - {x: 24, y: -0.5}
+        - {x: 44, y: -0.5}
+        - {x: 45, y: 2.5}
+        - {x: 41, y: 13.5}
+        - {x: 32, y: 15.5}
+        - {x: 18, y: 15.5}
+        - {x: 14, y: 12.5}
+    - name: WEPpugnale-walk-SpS_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 946
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 14.5}
+        - {x: 15, y: 11.5}
+        - {x: 15, y: 5.5}
+        - {x: 25, y: 0.5}
+        - {x: 45, y: 0.5}
+        - {x: 46, y: 3.5}
+        - {x: 46, y: 7.5}
+        - {x: 40, y: 14.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

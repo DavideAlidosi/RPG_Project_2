@@ -1,0 +1,766 @@
+fileFormatVersion: 2
+guid: 6eec0c5a34c48ca449c34eabb00d09fc
+timeCreated: 1469449846
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WEPlancia-death-SpS_0
+    21300002: WEPlancia-death-SpS_1
+    21300004: WEPlancia-death-SpS_2
+    21300006: WEPlancia-death-SpS_3
+    21300008: WEPlancia-death-SpS_4
+    21300010: WEPlancia-death-SpS_5
+    21300012: WEPlancia-death-SpS_6
+    21300014: WEPlancia-death-SpS_7
+    21300016: WEPlancia-death-SpS_8
+    21300018: WEPlancia-death-SpS_9
+    21300020: WEPlancia-death-SpS_10
+    21300022: WEPlancia-death-SpS_11
+    21300024: WEPlancia-death-SpS_12
+    21300026: WEPlancia-death-SpS_13
+    21300028: WEPlancia-death-SpS_14
+    21300030: WEPlancia-death-SpS_15
+    21300032: WEPlancia-death-SpS_16
+    21300034: WEPlancia-death-SpS_17
+    21300036: WEPlancia-death-SpS_18
+    21300038: WEPlancia-death-SpS_19
+    21300040: WEPlancia-death-SpS_20
+    21300042: WEPlancia-death-SpS_21
+    21300044: WEPlancia-death-SpS_22
+    21300046: WEPlancia-death-SpS_23
+    21300048: WEPlancia-death-SpS_24
+    21300050: WEPlancia-death-SpS_25
+    21300052: WEPlancia-death-SpS_26
+    21300054: WEPlancia-death-SpS_27
+    21300056: WEPlancia-death-SpS_28
+    21300058: WEPlancia-death-SpS_29
+    21300060: WEPlancia-death-SpS_30
+    21300062: WEPlancia-death-SpS_31
+    21300064: WEPlancia-death-SpS_32
+    21300066: WEPlancia-death-SpS_33
+    21300068: WEPlancia-death-SpS_34
+    21300070: WEPlancia-death-SpS_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WEPlancia-death-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 19.5}
+        - {x: -16, y: 19.5}
+        - {x: -16, y: 12.5}
+        - {x: -8, y: 7.5}
+        - {x: 22, y: -1.5}
+        - {x: 67, y: -5.5}
+        - {x: 91, y: -5.5}
+        - {x: 91, y: 1.5}
+        - {x: 90, y: 5.5}
+    - name: WEPlancia-death-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 18.5}
+        - {x: -13, y: 18.5}
+        - {x: -15, y: 17.5}
+        - {x: -15, y: 13.5}
+        - {x: -12, y: 8.5}
+        - {x: 42, y: -1.5}
+        - {x: 93, y: -1.5}
+        - {x: 93, y: 7.5}
+        - {x: 71, y: 15.5}
+    - name: WEPlancia-death-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 20.5}
+        - {x: -10, y: 16.5}
+        - {x: -12, y: 12.5}
+        - {x: -12, y: 6.5}
+        - {x: 96, y: 6.5}
+        - {x: 96, y: 19.5}
+        - {x: 93, y: 20.5}
+    - name: WEPlancia-death-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 35.5}
+        - {x: -8, y: 14.5}
+        - {x: -8, y: 4.5}
+        - {x: 10, y: 4.5}
+        - {x: 45, y: 7.5}
+        - {x: 98, y: 25.5}
+        - {x: 98, y: 35.5}
+    - name: WEPlancia-death-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: 51.5}
+        - {x: 83, y: 50.5}
+        - {x: 32, y: 28.5}
+        - {x: -2, y: 10.5}
+        - {x: -3, y: 8.5}
+        - {x: -3, y: 4.5}
+        - {x: -1, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 89, y: 33.5}
+        - {x: 97, y: 44.5}
+        - {x: 97, y: 51.5}
+    - name: WEPlancia-death-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3646
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: 61.5}
+        - {x: 30, y: 39.5}
+        - {x: 0, y: 9.5}
+        - {x: 0, y: 2.5}
+        - {x: 13, y: 2.5}
+        - {x: 90, y: 46.5}
+        - {x: 95, y: 55.5}
+        - {x: 95, y: 61.5}
+    - name: WEPlancia-death-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 6.5}
+        - {x: 3, y: 0.5}
+        - {x: 20, y: 0.5}
+        - {x: 93, y: 55.5}
+        - {x: 93, y: 66.5}
+        - {x: 81, y: 66.5}
+        - {x: 35, y: 43.5}
+    - name: WEPlancia-death-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79, y: 67.5}
+        - {x: 22, y: 37.5}
+        - {x: 6, y: 7.5}
+        - {x: 6, y: -4.5}
+        - {x: 16, y: -4.5}
+        - {x: 43, y: 15.5}
+        - {x: 91, y: 60.5}
+        - {x: 91, y: 67.5}
+    - name: WEPlancia-death-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 0.5}
+        - {x: 9, y: -9.5}
+        - {x: 17, y: -9.5}
+        - {x: 55, y: 16.5}
+        - {x: 88, y: 60.5}
+        - {x: 88, y: 68.5}
+        - {x: 79, y: 68.5}
+        - {x: 24, y: 29.5}
+    - name: WEPlancia-death-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: 69.5}
+        - {x: 57, y: 57.5}
+        - {x: 11, y: -7.5}
+        - {x: 11, y: -14.5}
+        - {x: 30, y: -14.5}
+        - {x: 85, y: 57.5}
+        - {x: 85, y: 69.5}
+    - name: WEPlancia-death-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73, y: 73.5}
+        - {x: 55, y: 59.5}
+        - {x: 14, y: -8.5}
+        - {x: 14, y: -13.5}
+        - {x: 15, y: -15.5}
+        - {x: 22, y: -15.5}
+        - {x: 46, y: 11.5}
+        - {x: 81, y: 64.5}
+        - {x: 81, y: 73.5}
+    - name: WEPlancia-death-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3196
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 66, y: 79.5}
+        - {x: 57, y: 75.5}
+        - {x: 17, y: -2.5}
+        - {x: 17, y: -15.5}
+        - {x: 25, y: -15.5}
+        - {x: 55, y: 21.5}
+        - {x: 76, y: 67.5}
+        - {x: 76, y: 79.5}
+    - name: WEPlancia-death-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 85.5}
+        - {x: 23, y: 39.5}
+        - {x: 21, y: 19.5}
+        - {x: 21, y: -14.5}
+        - {x: 31, y: -14.5}
+        - {x: 32, y: -13.5}
+        - {x: 69, y: 65.5}
+        - {x: 69, y: 85.5}
+    - name: WEPlancia-death-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: 79.5}
+        - {x: 60, y: 92.5}
+        - {x: 49, y: 92.5}
+        - {x: 24, y: 16.5}
+        - {x: 24, y: -11.5}
+        - {x: 26, y: -12.5}
+        - {x: 30, y: -12.5}
+        - {x: 33, y: -9.5}
+        - {x: 49, y: 31.5}
+        - {x: 58, y: 65.5}
+    - name: WEPlancia-death-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44, y: 97.5}
+        - {x: 41, y: 95.5}
+        - {x: 26, y: 50.5}
+        - {x: 26, y: -9.5}
+        - {x: 35, y: -9.5}
+        - {x: 37, y: -7.5}
+        - {x: 52, y: 44.5}
+        - {x: 52, y: 97.5}
+    - name: WEPlancia-death-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 100.5}
+        - {x: 28, y: 69.5}
+        - {x: 28, y: -7.5}
+        - {x: 34, y: -7.5}
+        - {x: 40, y: -3.5}
+        - {x: 46, y: 42.5}
+        - {x: 46, y: 99.5}
+        - {x: 45, y: 100.5}
+    - name: WEPlancia-death-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 102.5}
+        - {x: 28, y: 0.5}
+        - {x: 30, y: -5.5}
+        - {x: 37, y: -5.5}
+        - {x: 41, y: -3.5}
+        - {x: 41, y: 102.5}
+    - name: WEPlancia-death-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2746
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -4.5}
+        - {x: 39, y: -4.5}
+        - {x: 40, y: -3.5}
+        - {x: 40, y: 60.5}
+        - {x: 38, y: 102.5}
+        - {x: 36, y: 104.5}
+        - {x: 25, y: 104.5}
+        - {x: 25, y: 6.5}
+    - name: WEPlancia-death-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 102.5}
+        - {x: 28, y: -6.5}
+        - {x: 38, y: -6.5}
+        - {x: 42, y: 12.5}
+        - {x: 42, y: 100.5}
+        - {x: 38, y: 102.5}
+    - name: WEPlancia-death-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 106.5}
+        - {x: 14, y: 62.5}
+        - {x: 19, y: 14.5}
+        - {x: 33, y: -0.5}
+        - {x: 43, y: -0.5}
+        - {x: 43, y: 75.5}
+        - {x: 25, y: 106.5}
+    - name: WEPlancia-death-SpS_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 104.5}
+        - {x: 25, y: 25.5}
+        - {x: 30, y: -4.5}
+        - {x: 37, y: -4.5}
+        - {x: 39, y: -2.5}
+        - {x: 39, y: 104.5}
+    - name: WEPlancia-death-SpS_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 105.5}
+        - {x: 21, y: 21.5}
+        - {x: 33, y: -2.5}
+        - {x: 40, y: -2.5}
+        - {x: 40, y: 89.5}
+        - {x: 28, y: 105.5}
+    - name: WEPlancia-death-SpS_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 103.5}
+        - {x: 26, y: 103.5}
+        - {x: 26, y: -0.5}
+        - {x: 28, y: -5.5}
+        - {x: 33, y: -5.5}
+        - {x: 37, y: -1.5}
+        - {x: 39, y: 17.5}
+        - {x: 39, y: 95.5}
+    - name: WEPlancia-death-SpS_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2296
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 106.5}
+        - {x: 11, y: 72.5}
+        - {x: 28, y: 0.5}
+        - {x: 43, y: 0.5}
+        - {x: 43, y: 36.5}
+        - {x: 25, y: 106.5}
+    - name: WEPlancia-death-SpS_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 106.5}
+        - {x: 13, y: 61.5}
+        - {x: 33, y: 0.5}
+        - {x: 42, y: 0.5}
+        - {x: 42, y: 25.5}
+        - {x: 32, y: 106.5}
+    - name: WEPlancia-death-SpS_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34, y: -1.5}
+        - {x: 41, y: -1.5}
+        - {x: 41, y: 24.5}
+        - {x: 30, y: 100.5}
+        - {x: 27, y: 106.5}
+        - {x: 16, y: 106.5}
+        - {x: 16, y: 24.5}
+    - name: WEPlancia-death-SpS_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: 101.5}
+        - {x: 31, y: -6.5}
+        - {x: 32, y: -7.5}
+        - {x: 41, y: -7.5}
+        - {x: 44, y: 10.5}
+        - {x: 44, y: 98.5}
+        - {x: 39, y: 101.5}
+    - name: WEPlancia-death-SpS_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78, y: 77.5}
+        - {x: 67, y: 77.5}
+        - {x: 29, y: 10.5}
+        - {x: 29, y: -21.5}
+        - {x: 38, y: -21.5}
+        - {x: 61, y: 19.5}
+        - {x: 79, y: 60.5}
+        - {x: 79, y: 75.5}
+    - name: WEPlancia-death-SpS_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -28.5}
+        - {x: 19, y: -35.5}
+        - {x: 34, y: -35.5}
+        - {x: 107, y: 21.5}
+        - {x: 107, y: 32.5}
+        - {x: 96, y: 32.5}
+        - {x: 41, y: 0.5}
+    - name: WEPlancia-death-SpS_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1846
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88, y: -12.5}
+        - {x: 9, y: -29.5}
+        - {x: 7, y: -30.5}
+        - {x: 7, y: -42.5}
+        - {x: 99, y: -42.5}
+        - {x: 113, y: -21.5}
+        - {x: 113, y: -13.5}
+        - {x: 110, y: -12.5}
+    - name: WEPlancia-death-SpS_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -32.5}
+        - {x: 1, y: -37.5}
+        - {x: 1, y: -46.5}
+        - {x: 89, y: -46.5}
+        - {x: 107, y: -43.5}
+        - {x: 110, y: -40.5}
+        - {x: 110, y: -32.5}
+    - name: WEPlancia-death-SpS_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: -34.5}
+        - {x: 4, y: -40.5}
+        - {x: 4, y: -49.5}
+        - {x: 112, y: -49.5}
+        - {x: 112, y: -34.5}
+    - name: WEPlancia-death-SpS_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79, y: -33.5}
+        - {x: 49, y: -35.5}
+        - {x: 13, y: -45.5}
+        - {x: 9, y: -48.5}
+        - {x: 9, y: -50.5}
+        - {x: 10, y: -53.5}
+        - {x: 54, y: -53.5}
+        - {x: 95, y: -50.5}
+        - {x: 117, y: -41.5}
+        - {x: 117, y: -33.5}
+    - name: WEPlancia-death-SpS_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: -31.5}
+        - {x: 16, y: -46.5}
+        - {x: 13, y: -49.5}
+        - {x: 13, y: -56.5}
+        - {x: 71, y: -56.5}
+        - {x: 118, y: -41.5}
+        - {x: 121, y: -39.5}
+        - {x: 121, y: -31.5}
+    - name: WEPlancia-death-SpS_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: -27.5}
+        - {x: 105, y: -27.5}
+        - {x: 61, y: -34.5}
+        - {x: 18, y: -46.5}
+        - {x: 15, y: -51.5}
+        - {x: 15, y: -56.5}
+        - {x: 48, y: -56.5}
+        - {x: 101, y: -47.5}
+        - {x: 121, y: -36.5}
+        - {x: 121, y: -28.5}
+    - name: WEPlancia-death-SpS_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1396
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 106, y: -25.5}
+        - {x: 58, y: -34.5}
+        - {x: 15, y: -48.5}
+        - {x: 15, y: -57.5}
+        - {x: 48, y: -57.5}
+        - {x: 120, y: -50.5}
+        - {x: 121, y: -40.5}
+        - {x: 121, y: -27.5}
+        - {x: 120, y: -25.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
