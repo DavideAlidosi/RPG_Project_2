@@ -31,7 +31,7 @@ public class Grid : MonoBehaviour {
         refEC = FindObjectOfType<EnemyController>();
         refGC = FindObjectOfType<GameControl>();
         playerLinking = FindObjectOfType<Player>(); ;
-        int n = 1;
+        
         cellMat = new Cell[ROW, COL];
 
         for (int i = 0; i < ROW; i++)
@@ -39,28 +39,7 @@ public class Grid : MonoBehaviour {
             for (int j = 0; j < COL; j++)
             {
                 cellMat[i, j] = null;
-                /*GameObject newCellGO = GameObject.Find("Cell (" + n + ")");
-                //GameObject newCellGO = Instantiate(cell);
-                newCellGO.transform.position = new Vector3(j, i, 0);
-                cellMat[i, j] = newCellGO.GetComponent<Cell>();
-                cellMat[i, j].myI = i;
-                cellMat[i, j].myJ = j;
-                newCellGO.name = i + " " + j;
                 
-                */n++;
-                //refTT.InsertGameObject(i,j);
-                if (n == 3668)
-                {/*
-                    GameObject newCellGO = Instantiate(cell);
-                    cellMat[i, j] = newCellGO.GetComponent<Cell>();
-                    cellMat[i, j].myI = i;
-                    cellMat[i, j].myJ = j;
-                    newCellGO.transform.position = new Vector3(j, i, 0);
-                    newCellGO.name = i + " " + j;
-                    cellMat[i, j].isSpawnCell = true;
-                    
-                    */
-                }
             }
         }
         // alla fine della creazione della matrice inizializzata a null prendiamo il tile con tag gameobject troviamo la X e la Y
