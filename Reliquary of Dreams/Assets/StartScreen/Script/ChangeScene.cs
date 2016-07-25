@@ -7,7 +7,17 @@ public class ChangeScene : MonoBehaviour
 {
     public Text pointText;
     public int point = 24;
-       
+    public int forza;
+    public int agilita;
+    public int cost;
+    public int intel;
+    public int perc;
+    public int fortuna;
+
+    public bool changeStat = true;
+    public GameObject alert;
+
+
 
     public void ChangeToScene (string sceneToChangeTo) {
         
@@ -37,6 +47,12 @@ public class ChangeScene : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void RemoveIt()
+    {
+        alert.SetActive(false);
+        changeStat = true;
     }
 
 }

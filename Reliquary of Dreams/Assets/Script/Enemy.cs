@@ -102,7 +102,7 @@ public class Enemy : MonoBehaviour
             {
                 continue;
             }
-            if (Mathf.Abs(cell.myI - myI) + Mathf.Abs(cell.myJ - myJ) <= (agi))
+            if (Mathf.Abs(cell.myI - myI) + Mathf.Abs(cell.myJ - myJ) <= (per))
             {
                 if (refGrid.cellMat[cell.myI, cell.myJ].GetComponentInChildren<Player>())
                 {
@@ -125,7 +125,7 @@ public class Enemy : MonoBehaviour
         int myJ = refMyCell.myJ;
         moveCell.Clear();
 
-        int rangeMove = 2;
+       
         for (int i = (myI - per); i <= (myI + per); i++)
         {
             for (int j = (myJ - per); j <= (myJ + per); j++)

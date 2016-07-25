@@ -25,8 +25,8 @@ public class PopUp : MonoBehaviour {
             refShowTool.cosTxt.text = "Cos : " + GetComponentInChildren<Player>().cos;
             refShowTool.agiTxt.text = "Agi : " + GetComponentInChildren<Player>().agi;
             refShowTool.hpTxt.text = "HP : " + GetComponentInChildren<Player>().hp;
-            refShowTool.intTxt.text = "Per : " + GetComponentInChildren<Player>().intS;
-            refShowTool.perTxt.text = "Int : " + GetComponentInChildren<Player>().per;
+            refShowTool.intTxt.text = "Per : " + GetComponentInChildren<Player>().per;
+            refShowTool.perTxt.text = "Int : " + GetComponentInChildren<Player>().intS;
             refShowTool.forTxt.text = "For : " + GetComponentInChildren<Player>().forS;
         }
 

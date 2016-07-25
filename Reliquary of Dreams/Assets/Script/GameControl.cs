@@ -119,7 +119,7 @@ public class GameControl : MonoBehaviour {
             playerTxt.transform.localPosition = new Vector3(0, 1, 1);
 
 
-            enemyCell.GetComponentInChildren<Enemy>().hp -= strAtt * 2;
+            enemyCell.GetComponentInChildren<Enemy>().hp -= damage;
             if (enemyCell.GetComponentInChildren<Enemy>().hp <= 0)
             {
                 Destroy(enemyCell.GetComponentInChildren<Enemy>().gameObject);

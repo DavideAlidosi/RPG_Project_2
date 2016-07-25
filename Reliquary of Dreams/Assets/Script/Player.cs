@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
     GameControl gcRef;
     FogOfWar fogRef;
     MenuPopUp refMPU;
+    Singleton stat;
 
     public List<Item> itemPlayer = new List<Item>();
 
@@ -23,13 +24,14 @@ public class Player : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
-        str = 5;
-        cos = 9;
+        stat = FindObjectOfType<Singleton>();
+        str = stat.forza;
+        cos = stat.cost;
         hp = cos*4;
-        agi = 5;
-        intS = 1;
-        per = 5;
-        forS = 1;
+        agi = stat.agilita;
+        intS = stat.intel;
+        per = stat.perc;
+        forS = stat.fortuna;
     }
 	void Start () {
         gcRef = FindObjectOfType<GameControl>();
