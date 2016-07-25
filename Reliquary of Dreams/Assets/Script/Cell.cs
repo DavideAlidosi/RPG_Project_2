@@ -151,14 +151,7 @@ public class Cell : MonoBehaviour {
                     //gcRef.playerCell = gcRef.cellCombat;
                 }
                 
-                /*gcRef.phase = GamePhase.Selezione;
-                refFog.ResetEnemyStatus();
-                gcRef.ResetToSelectionPhase();
-                refFog.GetEnemyNearPlayer(this.myI, this.myJ);
-                refFog.LightRadius();
-                refFog.enemyCell.Clear();
-                gcRef.CombatPlayer();
-                enemyRef.EnemyTurn();*/
+                
 
             }
             if (GetComponent<Door>())
@@ -167,13 +160,15 @@ public class Cell : MonoBehaviour {
                 if (gcRef.cellCombat != null)
                 {
                     gcRef.EndPlayerPhase(myI, myJ);
-                    playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
+                    
                     GetComponent<Door>().FindMyAdjacent(myI, myJ);
                     isWall = false;
                     GetComponent<Door>().adjacent.isWall = false;
-                    gcRef.phase = GamePhase.Selezione;
-                    gcRef.ResetToSelectionPhase();
-                    refFog.LightRadius();
+                    GetComponent<Door>().adjacent_2.isWall = false;
+                    GetComponent<Door>().adjacent_1.isWall = false;
+
+
+
                 }
                 Debug.Log("Porta");
                 

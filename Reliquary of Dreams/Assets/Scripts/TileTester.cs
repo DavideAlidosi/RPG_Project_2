@@ -47,7 +47,7 @@ public class TileTester : MonoBehaviour
 
         }
 
-        allTileDatas = tl.LoadAllTilesInScene("Env_Floor");
+        /*allTileDatas = tl.LoadAllTilesInScene("Env_Floor");
         foreach (TileData td in allTileDatas)
         {
             if (td.go.GetComponent<SpriteRenderer>().color != null)
@@ -56,7 +56,16 @@ public class TileTester : MonoBehaviour
             }
 
         }
-        allTileDatas = tl.LoadAllTilesInScene("Env_Wall");
+        /*allTileDatas = tl.LoadAllTilesInScene("Env_Wall");
+        foreach (TileData td in allTileDatas)
+        {
+            if (td.go.GetComponent<SpriteRenderer>().color != null)
+            {
+                td.go.GetComponent<SpriteRenderer>().color = Color.clear;
+            }
+
+        }*/
+        allTileDatas = tl.LoadAllTilesInScene("Door");
         foreach (TileData td in allTileDatas)
         {
             if (td.go.GetComponent<SpriteRenderer>().color != null)
@@ -65,7 +74,7 @@ public class TileTester : MonoBehaviour
             }
 
         }
-        
+
 
 
         //Debug.Log(s);
