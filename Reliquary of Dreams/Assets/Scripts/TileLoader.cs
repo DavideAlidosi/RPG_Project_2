@@ -4,36 +4,39 @@ using System.Collections.Generic;
 
 
 
-    public struct TileData
-    {
-        public GameObject go;
-        public int cell_x;
-        public int cell_y;
-    }
+public struct TileData
+{
+    public GameObject go;
+    public int cell_x;
+    public int cell_y;
+    public Cell myCell;
+}
 
     /*
      * Loads all tiles found in the current scene.
      */
-    public class TileLoader : MonoBehaviour
+public class TileLoader : MonoBehaviour
+{
+
+    public List<TileData> LoadAllTilesInScene(string tag)
     {
-
-        public List<TileData> LoadAllTilesInScene(string tag)
+        List<TileData> allTileDatas = new List<TileData>();
+        GameObject[] allGos = FindObjectsOfType<GameObject>();
+        foreach (GameObject go in allGos)
         {
-            List<TileData> allTileDatas = new List<TileData>();
-            GameObject[] allGos = FindObjectsOfType<GameObject>();
-            foreach (GameObject go in allGos)
+            if (go.CompareTag(tag))
             {
-                if (go.CompareTag(tag))
-                {
-                    TileData td = new TileData();
-                    td.go = go;
-                    td.cell_x = Mathf.RoundToInt(go.transform.position.x);
-                    td.cell_y = Mathf.RoundToInt(go.transform.position.y);
-                    allTileDatas.Add(td);
-                }
+                TileData td = new TileData();
+                td.go = go;
+                td.cell_x = Mathf.RoundToInt(go.transform.position.x);
+                td.cell_y = Mathf.RoundToInt(go.transform.position.y);
+                allTileDatas.Add(td);
             }
-            return allTileDatas;
         }
-
+        return allTileDatas;
     }
+
+    
+
+}
 

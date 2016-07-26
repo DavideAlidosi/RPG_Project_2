@@ -21,6 +21,8 @@ public class Cell : MonoBehaviour {
     public FogOfWar refFog;
     GameControl gcRef;
     public Player playerRef;
+
+    public GameObject refMyTileGO;
    
 
 
@@ -28,9 +30,9 @@ public class Cell : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        gcRef = FindObjectOfType<GameControl>();
+        //gcRef = FindObjectOfType<GameControl>();
         //playerRef = FindObjectOfType<Player>();
-        refFog = FindObjectOfType<FogOfWar>();
+        //refFog = FindObjectOfType<FogOfWar>();
 
         //refMPU = FindObjectOfType<MenuPopUp>();
 
@@ -48,6 +50,7 @@ public class Cell : MonoBehaviour {
     // Start cell selecting code
     void OnMouseExit()
     {
+        gcRef = FindObjectOfType<GameControl>();
         if (gcRef.phase == GamePhase.Movimento)
         {
             gcRef.enemyCell = null;
@@ -56,6 +59,8 @@ public class Cell : MonoBehaviour {
     }
     void OnMouseEnter()
     {
+        refFog = FindObjectOfType<FogOfWar>();
+        gcRef = FindObjectOfType<GameControl>();
         if (this.GetComponentInChildren<Enemy>())
         {
             
@@ -81,7 +86,7 @@ public class Cell : MonoBehaviour {
     void OnMouseUp()
     {
 
-        
+        gcRef = FindObjectOfType<GameControl>();
         playerRef = FindObjectOfType<Player>();
         refFog = FindObjectOfType<FogOfWar>();
         enemyRef = FindObjectOfType<EnemyController>();

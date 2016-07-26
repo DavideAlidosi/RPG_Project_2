@@ -53,27 +53,36 @@ public class Grid : MonoBehaviour {
             {
                 
                 cellMat[i, j] = null;
-
+                GameObject newCellGO = Instantiate(cell);
+                newCellGO.AddComponent<Cell>();
+                //newCellGO.AddComponent<BoxCollider2D>();
+                //newCellGO.AddComponent<PopUp>();
+                cellMat[i, j] = newCellGO.GetComponent<Cell>();
+                cellMat[i, j].myI = i;
+                cellMat[i, j].myJ = j;
+                newCellGO.name = i + " " + j;
+                newCellGO.transform.position = new Vector3(j, i, 0);
             }
         }
-        GameObject newCellGO = Instantiate(cell);
+        /*GameObject newCellGO = Instantiate(cell);
         cellMat[cellX, cellY] = newCellGO.GetComponent<Cell>();
         cellMat[cellX, cellY].myI = cellX;
         cellMat[cellX, cellY].myJ = cellY;
         newCellGO.transform.position = new Vector3(cellY, cellX, 0);
         newCellGO.name = cellX + " " + cellY;
-        cellMat[cellX, cellY].isSpawnCell = true;
+        cellMat[cellX, cellY].isSpawnCell = true;*/
 
 
         // una volta data la posizione del player si creerà la griglia attorno a se
+        cellMat[cellX, cellY].gameObject.AddComponent<BoxCollider2D>();
         
         playerLinking.SpawnPlayer(posPlayer);
         CreateGrid();
         
         
 
-        playerLinking.GetComponentInChildren<FogOfWar>().LightRadius();
-        playerLinking.GetComponentInChildren<FogOfWar>().RefreshEnemyList();
+        //playerLinking.GetComponentInChildren<FogOfWar>().LightRadius();
+        //playerLinking.GetComponentInChildren<FogOfWar>().RefreshEnemyList();
 
 
     }
@@ -84,10 +93,10 @@ public class Grid : MonoBehaviour {
 	}
 
     // Crea la griglia logica attorno al player ad ogni click di range caselle
-
+    // TESTING
     public void CreateGrid()
     {
-        int range = 12;
+        /*int range = 9;
         int playerX = playerLinking.GetComponentInParent<Cell>().myI;
         int playerY = playerLinking.GetComponentInParent<Cell>().myJ;
 
@@ -134,8 +143,8 @@ public class Grid : MonoBehaviour {
         }
 
         
-        refTT.Inserisci(playerX, playerY);
-        
+        refTT.Inserisci(playerX, playerY);*/
+        refTT.NewInsert();
 
     }
 

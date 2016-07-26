@@ -108,9 +108,11 @@ public class Player : MonoBehaviour {
             this.transform.parent = gridRef.cellMat[iCell, jCell].transform;
             this.transform.localPosition = new Vector3(0, 0, 1);
             refGrid.CreateGrid();
+
             yield return new WaitForSeconds(0.5f);
         }
         gcRef.playerCell = GetComponentInParent<Cell>().gameObject;
+        
     }
     
 }

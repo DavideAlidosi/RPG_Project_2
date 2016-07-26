@@ -58,18 +58,6 @@ public class GameControl : MonoBehaviour {
 
             }
         }
-
-        if (phase == GamePhase.TurnoNemici)
-        {
-            /*Enemy[] enemies = FindObjectsOfType<Enemy>();
-            foreach (var enemy in enemies)
-            {
-                enemy.ManhattanSearch();
-                enemy.SearchPlayer();
-                enemy.MoveEnemy();
-            }*/
-            //phase = GamePhase.Selezione;
-        }
         
     }
 

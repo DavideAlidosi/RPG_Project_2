@@ -34,7 +34,8 @@ public class FogOfWar : MonoBehaviour {
         
 		ReachableCells (vista, destroyCell);
 		foreach (var cell in destroyCell) {
-			cell.refMyTile.color = Color.green;
+            cell.refMyTile.color = Color.green;
+            
 			cell.isFree = true;
             
             if (cell.GetComponentInChildren<Enemy>())
@@ -90,7 +91,10 @@ public class FogOfWar : MonoBehaviour {
                 continue;
                 
             }
-            cell.refMyTile.color = Color.white;
+            //foreach (var item in cell.sBox.gameObject.GetComponentsInChildren<SpriteRenderer>())
+            {
+                //item.color = Color.green;
+            }
 
         }
         destroyCell.Clear();        
@@ -309,7 +313,8 @@ public class FogOfWar : MonoBehaviour {
 		
 
 		foreach (var cell in lightCell) {
-			cell.refMyTile.color = Color.grey;
+            cell.refMyTile.color = Color.grey;
+            //cell.refMyTileGO.GetComponent<SpriteRenderer>().color = Color.grey;
 			if (cell.GetComponentInChildren<Enemy>())
 			{
 				cell.GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.clear;
@@ -412,7 +417,7 @@ public class FogOfWar : MonoBehaviour {
 
 		if (v.x != startX || v.y != startY) 
 		{
-			if (v.z < 15) {
+			if (v.z < 10) {
 				
 				
 				if (refGrid.cellMat [(int)v.x + 1, (int)v.y].isFree && !IsContainedInList(tempVUp)) {
