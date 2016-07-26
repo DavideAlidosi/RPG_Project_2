@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 public enum GamePhase {Selezione, Movimento,Azione,Combattimento,TurnoNemici,Dialoghi }
-public class GameControl : MonoBehaviour {
+public class GameControl : MonoBehaviour
+{
     public GamePhase phase = GamePhase.Selezione;
     public GameObject firstCell;
     public GameObject playerCell;
@@ -28,16 +29,18 @@ public class GameControl : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         plRef = FindObjectOfType<Player>();
         fogRef = FindObjectOfType<FogOfWar>();
         refMPU = FindObjectOfType<MenuPopUp>();
         refGrid = FindObjectOfType<Grid>();
         refEnemyC = FindObjectOfType<EnemyController>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (phase == GamePhase.Azione || phase == GamePhase.Movimento)
         {
             if (Input.GetMouseButtonUp(1))
@@ -58,7 +61,7 @@ public class GameControl : MonoBehaviour {
 
             }
         }
-        
+
     }
 
     public void ResetToSelectionPhase()
@@ -75,7 +78,7 @@ public class GameControl : MonoBehaviour {
         movementCell.Clear();
     }
 
-    public void CombatPlayer ()
+    public void CombatPlayer()
     {
         int strAtt = playerCell.GetComponentInChildren<Player>().str;
         int agiDef = enemyCell.GetComponentInChildren<Enemy>().agi;
@@ -88,7 +91,7 @@ public class GameControl : MonoBehaviour {
         if (dice < totale)
         {
             int molt = 1;
-            Debug.Log("Player "+playerCell+ " Colpo andato a segno");
+            Debug.Log("Player " + playerCell + " Colpo andato a segno");
             int damage = (strAtt * 2) - cosDef;
             if (damage < 1)
             {
@@ -97,10 +100,10 @@ public class GameControl : MonoBehaviour {
             int crit = Mathf.FloorToInt(forAtt * 2.5f);
             if (Random.Range(1, 101) < crit)
             {
-                molt = 2; 
+                molt = 2;
             }
-            playerTxt.text = "-"+(damage * molt).ToString()+" HP";
-            
+            playerTxt.text = "-" + (damage * molt).ToString() + " HP";
+
             playerTxt.transform.parent = enemyCell.transform;
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             playerTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
@@ -111,8 +114,8 @@ public class GameControl : MonoBehaviour {
             if (enemyCell.GetComponentInChildren<Enemy>().hp <= 0)
             {
                 Destroy(enemyCell.GetComponentInChildren<Enemy>().gameObject);
-                playerCell.GetComponentInChildren<Player>().exp += 100; 
-                
+                playerCell.GetComponentInChildren<Player>().exp += 100;
+
             }
         }
         else
@@ -122,14 +125,14 @@ public class GameControl : MonoBehaviour {
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             playerTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
             playerTxt.transform.localPosition = new Vector3(0, 1, 1);
-            Debug.Log("Player " +playerCell +" ha missato");
+            Debug.Log("Player " + playerCell + " ha missato");
         }
         Invoke("SetTextToNull", 1.5f);
     }
 
     public void CombatEnemy(Enemy e)
     {
-        int strAtt = e.str ;        
+        int strAtt = e.str;
         int agiDef = playerCell.GetComponentInChildren<Player>().agi;
         int cosDef = playerCell.GetComponentInChildren<Player>().cos;
         int forAtt = e.forS;
@@ -146,7 +149,7 @@ public class GameControl : MonoBehaviour {
                 damage = 1;
             }
 
-            
+
             int crit = Mathf.FloorToInt(forAtt * 2.5f);
             if (Random.Range(1, 101) < crit)
             {
@@ -159,7 +162,7 @@ public class GameControl : MonoBehaviour {
             enemyTxt.transform.localPosition = new Vector3(0, 1f, 1);
 
 
-            Debug.Log("Enemy "+enemyCell+" Colpo andato a segno");
+            Debug.Log("Enemy " + enemyCell + " Colpo andato a segno");
             playerCell.GetComponentInChildren<Player>().hp -= damage;
             if (playerCell.GetComponentInChildren<Player>().hp <= 0)
             {
@@ -168,7 +171,7 @@ public class GameControl : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Enemy "+enemyCell+" ha missato");
+            Debug.Log("Enemy " + enemyCell + " ha missato");
             enemyTxt.text = "MISS";
             enemyTxt.transform.parent = playerCell.transform;
             enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
@@ -216,22 +219,22 @@ public class GameControl : MonoBehaviour {
         int j = cellToCheck.GetComponent<Cell>().myJ;
         if (refGrid.cellMat[i + 1, j].GetComponentInChildren<Enemy>() || refGrid.cellMat[i + 1, j].GetComponent<Door>())
         {
-            
+
             return true;
         }
         if (refGrid.cellMat[i - 1, j].GetComponentInChildren<Enemy>() || refGrid.cellMat[i - 1, j].GetComponent<Door>())
         {
-            
+
             return true;
         }
-        if (refGrid.cellMat[i, j + 1].GetComponentInChildren<Enemy>() || refGrid.cellMat[i , j + 1].GetComponent<Door>())
+        if (refGrid.cellMat[i, j + 1].GetComponentInChildren<Enemy>() || refGrid.cellMat[i, j + 1].GetComponent<Door>())
         {
-            
+
             return true;
         }
-        if (refGrid.cellMat[i, j - 1].GetComponentInChildren<Enemy>() || refGrid.cellMat[i , j - 1].GetComponent<Door>() )
+        if (refGrid.cellMat[i, j - 1].GetComponentInChildren<Enemy>() || refGrid.cellMat[i, j - 1].GetComponent<Door>())
         {
-            
+
             return true;
         }
         enemyCell = null;
@@ -243,7 +246,7 @@ public class GameControl : MonoBehaviour {
         phase = GamePhase.Azione;
 
         fogRef.ResetEnemyStatus();
-        
+
         ResetToSelectionPhase();
         StartCoroutine(plRef.MovePlayer());
         StartCoroutine(CEndPlayerPhases(_myI, _myJ));
@@ -253,10 +256,10 @@ public class GameControl : MonoBehaviour {
         //refGrid.CreateGrid();
         //playerCell = refGrid.cellMat[_myI,_myJ].gameObject;
         //fogRef.LightRadius();
-        
-        
+
+
         fogRef.enemyCell.Clear();
-        
+
     }
     public void EndPlayerPhaseWCombat(int _myI, int _myJ)
     {
@@ -265,7 +268,7 @@ public class GameControl : MonoBehaviour {
         fogRef.ResetEnemyStatus();
 
         ResetToSelectionPhase();
-        
+
         StartCoroutine(plRef.MovePlayer());
         StartCoroutine(CEndPlayerPhasesWCombat(_myI, _myJ));
         //plRef.MovePlayer(_myI, _myJ);
@@ -276,7 +279,7 @@ public class GameControl : MonoBehaviour {
 
 
         fogRef.enemyCell.Clear();
-        
+
 
     }
 
@@ -299,21 +302,21 @@ public class GameControl : MonoBehaviour {
             if (enemyCell != null)
             {
                 //CombatPlayer();
-                yield return new WaitForSeconds(0.5f);
-            }
 
+            }
+            FindText(_myI, _myJ);
             isMovingEnemy = true;
         }
         while (isMovingEnemy)
         {
             StartCoroutine(refEnemyC.EnemyTurn());
-            
-            
+
+
             //yield return new WaitForSeconds(0.5f);
             isMovingEnemy = false;
 
         }
-        fogRef.ClearPath();
+        //fogRef.ClearPath();
 
         //phase = GamePhase.Selezione;
 
@@ -323,7 +326,7 @@ public class GameControl : MonoBehaviour {
     {
         bool isMovingPlayer = true;
         bool isMovingEnemy = false;
-        
+
         while (isMovingPlayer)
         {
 
@@ -335,7 +338,7 @@ public class GameControl : MonoBehaviour {
                 yield return new WaitForSeconds(0.5f);
             }
             isMovingPlayer = false;
-            
+
             if (enemyCell != null)
             {
                 CombatPlayer();
@@ -343,7 +346,7 @@ public class GameControl : MonoBehaviour {
             }
             fogRef.ClearPath();
             isMovingEnemy = true;
-            
+
         }
         while (isMovingEnemy)
         {
@@ -354,8 +357,36 @@ public class GameControl : MonoBehaviour {
             isMovingEnemy = false;
 
         }
-        
+
         //phase = GamePhase.Selezione;
 
+    }
+
+    public void FindText(int playerX, int playerY)
+    {
+        int range = 10;
+        for (int i = (playerX - range); i < (playerX + range); i++)
+        {
+            for (int j = (playerY - range); j < (playerY + range); j++)
+            {
+                if (i<1)
+                {
+                    continue;
+                }
+                if (j < 1)
+                {
+                    continue;
+                }
+                if (refGrid.cellMat[i,j].GetComponentInChildren<StoryText>())
+                {
+                    if (!refGrid.cellMat[i, j].GetComponentInChildren<StoryText>().find)
+                    {
+                        refGrid.cellMat[i, j].GetComponentInChildren<StoryText>().find = true;
+                        refGrid.cellMat[i, j].GetComponentInChildren<StoryText>().SpamText();
+                    }
+                    
+                }
+            }
+        }
     }
 }

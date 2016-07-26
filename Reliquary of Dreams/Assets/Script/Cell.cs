@@ -19,10 +19,12 @@ public class Cell : MonoBehaviour {
 
     public EnemyController enemyRef;
     public FogOfWar refFog;
-    GameControl gcRef;
+    public GameControl gcRef;
     public Player playerRef;
 
-    public GameObject refMyTileGO;
+    public List<SpriteRenderer> myTile = new List<SpriteRenderer>();
+
+
    
 
 
@@ -50,17 +52,21 @@ public class Cell : MonoBehaviour {
     // Start cell selecting code
     void OnMouseExit()
     {
-        gcRef = FindObjectOfType<GameControl>();
-        if (gcRef.phase == GamePhase.Movimento)
+        if (gcRef != null)
         {
-            gcRef.enemyCell = null;
+            if (gcRef.phase == GamePhase.Movimento)
+            {
+                gcRef.enemyCell = null;
+            }
         }
+        //gcRef = FindObjectOfType<GameControl>();
+        
         
     }
     void OnMouseEnter()
     {
-        refFog = FindObjectOfType<FogOfWar>();
-        gcRef = FindObjectOfType<GameControl>();
+        //refFog = FindObjectOfType<FogOfWar>();
+        //gcRef = FindObjectOfType<GameControl>();
         if (this.GetComponentInChildren<Enemy>())
         {
             
@@ -86,85 +92,91 @@ public class Cell : MonoBehaviour {
     void OnMouseUp()
     {
 
-        gcRef = FindObjectOfType<GameControl>();
+        //gcRef = FindObjectOfType<GameControl>();
         playerRef = FindObjectOfType<Player>();
-        refFog = FindObjectOfType<FogOfWar>();
+        //refFog = FindObjectOfType<FogOfWar>();
         enemyRef = FindObjectOfType<EnemyController>();
         //refMPU = FindObjectOfType<MenuPopUp>();
-        if (gcRef.phase == GamePhase.Selezione)
+        if (gcRef != null)
         {
-            
-            if (GetComponentInChildren<Player>())
+
+
+            if (gcRef.phase == GamePhase.Selezione)
             {
 
-                sBox.color = Color.green;
-                gcRef.phase++;
-                gcRef.cellCombat = null;
-                gcRef.queueMoveCell.Clear();
-                gcRef.firstCell = this.gameObject;
-                pos = new Vector2(myI, myJ);
-                refFog.LightRadius();
-                refFog.Fog(pos,playerRef.agi);
-                refFog.AStar();
-                gcRef.movementCell.Add(this.gameObject);
-                //gcRef.Adjacent(this.gameObject);
-                this.isMove = true;
-            }
-            
-
-        }
-        else if(gcRef.phase == GamePhase.Movimento)
-        {
-            int countList = gcRef.movementCell.Count;
-            
-            
-            if (isFree)
-            {
-                
-                gcRef.EndPlayerPhase(myI, myJ);
-
-
-            }
-            if (GetComponentInChildren<Enemy>())
-            {
-
-                
-                if (gcRef.cellCombat != null || refFog.isPlayerNearEnemy(myI, myJ))
+                if (GetComponentInChildren<Player>())
                 {
-                    //playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
-                    
-                    gcRef.EndPlayerPhaseWCombat(myI, myJ);
-                    //gcRef.playerCell = gcRef.cellCombat;
+
+                    sBox.color = Color.green;
+
+                    gcRef.phase++;
+                    gcRef.cellCombat = null;
+                    gcRef.queueMoveCell.Clear();
+                    gcRef.firstCell = this.gameObject;
+                    pos = new Vector2(myI, myJ);
+                    refFog.LightRadius();
+                    refFog.Fog(pos, playerRef.agi);
+                    refFog.AStar();
+                    gcRef.movementCell.Add(this.gameObject);
+                    ////gcRef.Adjacent(this.gameObject);
+                    //this.isMove = true;
                 }
-                
-                
+
 
             }
-            if (GetComponent<Door>())
+            else if (gcRef.phase == GamePhase.Movimento)
             {
+                int countList = gcRef.movementCell.Count;
 
-                if (gcRef.cellCombat != null)
+
+                if (isFree)
                 {
+
                     gcRef.EndPlayerPhase(myI, myJ);
-                    
-                    GetComponent<Door>().FindMyAdjacent(myI, myJ);
-                    isWall = false;
-                    GetComponent<Door>().adjacent.isWall = false;
-                    GetComponent<Door>().adjacent_2.isWall = false;
-                    GetComponent<Door>().adjacent_1.isWall = false;
+
+
+                }
+                if (GetComponentInChildren<Enemy>())
+                {
+
+
+                    if (gcRef.cellCombat != null || refFog.isPlayerNearEnemy(myI, myJ))
+                    {
+                        //playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
+
+                        gcRef.EndPlayerPhaseWCombat(myI, myJ);
+                        //gcRef.playerCell = gcRef.cellCombat;
+                    }
 
 
 
                 }
-                
+                if (GetComponent<Door>())
+                {
+                    
+
+                    if (gcRef.cellCombat != null)
+                    {
+                        gcRef.EndPlayerPhase(myI, myJ);
+
+                        GetComponent<Door>().FindMyAdjacent(myI, myJ);
+                        isWall = false;
+                        GetComponent<Door>().adjacent.isWall = false;
+                        GetComponent<Door>().adjacent_2.isWall = false;
+                        GetComponent<Door>().adjacent_1.isWall = false;
+
+
+
+                    }
+
+                }
+                if (GetComponentInChildren<NextScene>())
+                {
+                    FindObjectOfType<NextScene>().NextLevel();
+                }
+
             }
-            if (GetComponentInChildren<NextScene>())
-            {
-                FindObjectOfType<NextScene>().NextLevel();
-            }
-            
-        }
-        
+        }   
     }
 
 

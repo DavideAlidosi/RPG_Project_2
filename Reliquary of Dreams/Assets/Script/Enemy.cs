@@ -178,6 +178,7 @@ public class Enemy : MonoBehaviour
 
         foreach (var cell in enemyMoveCell)
         {
+            
             if (cell.refMyTile.color == Color.gray)
             {
                 continue;
@@ -185,23 +186,28 @@ public class Enemy : MonoBehaviour
             if (cell.refMyTile.color == Color.green)
             {
                 cell.refMyTile.color = new Color(0, 0.2f, 0);
+                
             }
             else
             {
                 cell.refMyTile.color = Color.red;
+                
             }
             
+
 
         }
 
         foreach (var cell  in lookCell)
         {
+            cell.isFree = false;
             if (cell.refMyTile.color == Color.red)
             {
                 continue;
             }
             if (cell.refMyTile.color == new Color(0, 0.2f, 0))
             {
+                cell.isFree = true; 
                 continue;
             }
             if (cell.refMyTile.color == Color.gray)
@@ -215,10 +221,13 @@ public class Enemy : MonoBehaviour
             else if (cell.refMyTile.color == Color.green)
             {
                 cell.refMyTile.color = new Color(0, 0.5f, 0);
+                cell.isFree = true;
+
             }
             else 
             {
                 cell.refMyTile.color = Color.yellow;
+                
             }
             
             
@@ -238,6 +247,7 @@ public class Enemy : MonoBehaviour
             if (cell.refMyTile.color != Color.gray)
             {
                 cell.refMyTile.color = Color.white;
+                
             }
             
         }

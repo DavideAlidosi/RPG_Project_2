@@ -55,6 +55,7 @@ public class Pathfind : MonoBehaviour {
         {
             isFind = true;
             refGrid.cellMat[newI + posI, newJ + posJ].isFree = true;
+           
         }
         if (refGrid.cellMat[newI + posI, newJ + posJ].GetComponentInChildren<Enemy>())
         {
@@ -168,8 +169,7 @@ public class Pathfind : MonoBehaviour {
                 if (v.z < pathList[i].z)
                 {
                     pathList.RemoveAt(i);
-                    Debug.Log(v);
-                    Debug.Log(pathList[i]);
+                    
                 }
             }
         }
@@ -180,7 +180,7 @@ public class Pathfind : MonoBehaviour {
         Cell cellNearest = GetComponent<Enemy>().SearchPlayer();
         int startX = cellNearest.myI;
         int startY = cellNearest.myJ;/*refGrid.playerLinking.GetComponentInParent<Cell>().myJ;*/
-        Debug.Log(GetComponent<Enemy>().nearestCell);
+        
         int countStart = 0;
         foreach (var item in pathList)
         {

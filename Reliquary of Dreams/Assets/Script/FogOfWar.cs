@@ -34,14 +34,23 @@ public class FogOfWar : MonoBehaviour {
         
 		ReachableCells (vista, destroyCell);
 		foreach (var cell in destroyCell) {
-            cell.refMyTile.color = Color.green;
+            //cell.refMyTile.color = Color.green;
+
+            foreach (var sprite in cell.myTile)
+            {
+                sprite.color = Color.green;
+            }
             
 			cell.isFree = true;
             
             if (cell.GetComponentInChildren<Enemy>())
             {
                 cell.isFree = false;
-                cell.refMyTile.color = Color.red;
+                foreach (var sprite in cell.myTile)
+                {
+                    sprite.color = Color.red;
+                }
+                //cell.refMyTile.color = Color.red;
             }
 		}
         
@@ -91,9 +100,10 @@ public class FogOfWar : MonoBehaviour {
                 continue;
                 
             }
-            //foreach (var item in cell.sBox.gameObject.GetComponentsInChildren<SpriteRenderer>())
+            
+            foreach (var sprite in cell.myTile)
             {
-                //item.color = Color.green;
+                sprite.color = Color.white;
             }
 
         }
@@ -293,8 +303,12 @@ public class FogOfWar : MonoBehaviour {
             if (cell.refMyTile != null)
             {
 
+                foreach (var sprite in cell.myTile)
+                {
+                    sprite.color = Color.white;
 
-                cell.refMyTile.color = Color.white;
+                    //cell.refMyTile.color = Color.white;
+                }
                 if (cell.GetComponentInChildren<Enemy>())
                 {
                     cell.GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.white;
@@ -313,7 +327,12 @@ public class FogOfWar : MonoBehaviour {
 		
 
 		foreach (var cell in lightCell) {
-            cell.refMyTile.color = Color.grey;
+            foreach (var sprite in cell.myTile)
+            {
+                sprite.color = Color.grey;
+                //cell.refMyTile.color = Color.grey;
+            }
+            
             //cell.refMyTileGO.GetComponent<SpriteRenderer>().color = Color.grey;
 			if (cell.GetComponentInChildren<Enemy>())
 			{
@@ -335,7 +354,7 @@ public class FogOfWar : MonoBehaviour {
 
 	void Apri(Cell c, int range , List<Cell> reachable)
 	{
-        refGrid = FindObjectOfType<Grid>();
+        //refGrid = FindObjectOfType<Grid>();
         
 		reachable.Add (c);
 		int playerX = reachable [0].myI;
@@ -358,7 +377,7 @@ public class FogOfWar : MonoBehaviour {
 
 	bool IsAdjacent(Cell c, int posI, int posJ)
 	{
-        refGrid = FindObjectOfType<Grid>();
+        //refGrid = FindObjectOfType<Grid>();
         int newI = c.myI;
 		int newJ = c.myJ;
 		bool isFind = false;
@@ -406,7 +425,7 @@ public class FogOfWar : MonoBehaviour {
 	
 	void Apri(List<Vector3> pathList,Vector3 v,int startX, int startY)
 	{
-		Grid refGrid = FindObjectOfType<Grid> ();
+		//Grid refGrid = FindObjectOfType<Grid> ();
 		pathList.Add (v);
 		//Debug.Log("X : "+startX+" Y : "+startY);
 		//Debug.Log("VX : "+v.x+" VY : "+v.y);
@@ -417,7 +436,7 @@ public class FogOfWar : MonoBehaviour {
 
 		if (v.x != startX || v.y != startY) 
 		{
-			if (v.z < 10) {
+			if (v.z < 12) {
 				
 				
 				if (refGrid.cellMat [(int)v.x + 1, (int)v.y].isFree && !IsContainedInList(tempVUp)) {
@@ -485,8 +504,9 @@ public class FogOfWar : MonoBehaviour {
 		}
 		int tempCount = countStart;
 		foreach (var item in pathProva) {
-			item.sBox.color = Color.clear;
-		}
+            item.sBox.color = Color.clear;
+            
+        }
 		pathProva.Clear ();
 		for (int i = 0; i < countStart; i++) 
 		{
@@ -522,7 +542,8 @@ public class FogOfWar : MonoBehaviour {
 			}
 		}
 		foreach (var item in pathProva) {
-			item.sBox.color = Color.yellow;
+            item.sBox.color = Color.yellow;
+            
 		}
         
     }

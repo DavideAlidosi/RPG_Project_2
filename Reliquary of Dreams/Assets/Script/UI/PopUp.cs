@@ -10,14 +10,14 @@ public class PopUp : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        refShowTool = FindObjectOfType<ShowTool>();
-        tooltipPanel = refShowTool.GetComponent<Image>();
-        DeactivateTooltip();
+        
+        
     }
 
     void OnMouseEnter()
     {
-        
+        refShowTool = FindObjectOfType<ShowTool>();
+        tooltipPanel = refShowTool.GetComponent<Image>();
         if (GetComponentInChildren<Player>())
         {
             ActivateTooltip();

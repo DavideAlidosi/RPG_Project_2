@@ -13,7 +13,7 @@ public class Grid : MonoBehaviour {
     public Cell[,] cellMat;
     GameControl refGC;
     EnemyController refEC;
-    TileTester refTT;
+    public TileTester refTT;
 
 
     
@@ -54,7 +54,9 @@ public class Grid : MonoBehaviour {
                 
                 cellMat[i, j] = null;
                 GameObject newCellGO = Instantiate(cell);
-                newCellGO.AddComponent<Cell>();
+                
+                //newCellGO.AddComponent<PopUp>();
+                //newCellGO.AddComponent<BoxCollider2D>();
                 //newCellGO.AddComponent<BoxCollider2D>();
                 //newCellGO.AddComponent<PopUp>();
                 cellMat[i, j] = newCellGO.GetComponent<Cell>();
@@ -74,10 +76,11 @@ public class Grid : MonoBehaviour {
 
 
         // una volta data la posizione del player si creerà la griglia attorno a se
-        cellMat[cellX, cellY].gameObject.AddComponent<BoxCollider2D>();
+        //cellMat[cellX, cellY].gameObject.AddComponent<BoxCollider2D>();
         
         playerLinking.SpawnPlayer(posPlayer);
         CreateGrid();
+        
         
         
 
@@ -145,7 +148,10 @@ public class Grid : MonoBehaviour {
         
         refTT.Inserisci(playerX, playerY);*/
         refTT.NewInsert();
+        
 
+        
+        
     }
 
     // Crea la griglia logica attorno al nemico ad ogni click di range caselle

@@ -8,6 +8,7 @@ public class StoryText : MonoBehaviour {
     MenuPopUp refMenu;
     GameControl refGC;
     StoryTeller refStoryTeller;
+    public bool find = false;
     
 	// Use this for initialization
 	void Start () {

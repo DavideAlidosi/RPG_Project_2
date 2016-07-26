@@ -17,8 +17,12 @@ public class TileTester : MonoBehaviour
     List<TileData> allTileDatasWall;
     List<TileData> allTileDatasDoor;
     List<TileData> allTileDatasGO;
+    FogOfWar refFog;
+    GameControl refGC;
     public void Awake()
     {
+        refFog = FindObjectOfType<FogOfWar>();
+        refGC = FindObjectOfType<GameControl>();
         TileLoader tl = FindObjectOfType<TileLoader>();
         allTileDatas = tl.LoadAllTilesInScene("Enviroment");
         foreach (TileData td in allTileDatas)
@@ -259,14 +263,73 @@ public class TileTester : MonoBehaviour
 
         foreach (var td in allTileDatasFloor)
         {
-            refGrid.cellMat[td.cell_x, td.cell_y].refMyTile = td.go.GetComponent<SpriteRenderer>();
-            refGrid.cellMat[td.cell_x, td.cell_y].refMyTile.color = Color.white;
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile = td.go.GetComponent<SpriteRenderer>();
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile.color = Color.gray;
+            refGrid.cellMat[td.cell_y, td.cell_x].myTile.Add(td.go.GetComponent<SpriteRenderer>());
+            refGrid.cellMat[td.cell_y, td.cell_x].isWall = false;
+            refGrid.cellMat[td.cell_y, td.cell_x].refFog = refFog;
+            refGrid.cellMat[td.cell_y, td.cell_x].gcRef = refGC;
         }
         foreach (var td in allTileDatasWall)
         {
-            refGrid.cellMat[td.cell_x, td.cell_y].refMyTile = td.go.GetComponent<SpriteRenderer>();
-            refGrid.cellMat[td.cell_x, td.cell_y].refMyTile.color = Color.white;
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile = td.go.GetComponent<SpriteRenderer>();
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile.color = Color.white;
+            refGrid.cellMat[td.cell_y, td.cell_x].myTile.Add(td.go.GetComponent<SpriteRenderer>());
+            refGrid.cellMat[td.cell_y, td.cell_x].isWall = true;
         }
+
+        foreach (var td in allTileDatas)
+        {
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile = td.go.GetComponent<SpriteRenderer>();
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile.color = Color.white;
+            refGrid.cellMat[td.cell_y, td.cell_x].myTile.Add(td.go.GetComponent<SpriteRenderer>());
+            refGrid.cellMat[td.cell_y, td.cell_x].isWall = true;
+        }
+
+        foreach (var td in allTileDatasDoor)
+        {
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile = td.go.GetComponent<SpriteRenderer>();
+            refGrid.cellMat[td.cell_y, td.cell_x].refMyTile.color = Color.white;
+            refGrid.cellMat[td.cell_y, td.cell_x].myTile.Add(td.go.GetComponent<SpriteRenderer>());
+            refGrid.cellMat[td.cell_y, td.cell_x].gameObject.AddComponent<Door>();
+            refGrid.cellMat[td.cell_y, td.cell_x].isDoor = true;
+            refGrid.cellMat[td.cell_y, td.cell_x].refFog = refFog;
+            refGrid.cellMat[td.cell_y, td.cell_x].gcRef = refGC;
+        }
+        
+        foreach (var td in allTileDatasGO)
+        {
+            
+            if (td.go.GetComponent<Player>())
+            {
+                
+                continue;
+            }
+            
+
+            
+            if (td.go.GetComponent<Enemy>())
+            {
+                td.go.GetComponent<Enemy>().refMyCell = refGrid.cellMat[td.cell_y, td.cell_x];
+                td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
+                td.go.transform.localPosition = new Vector3(0, 0, 1);
+            }
+
+            if (td.go.GetComponent<NextScene>())
+            {                
+                td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
+                td.go.transform.localPosition = new Vector3(0, 0, 1);
+            }
+
+            if (td.go.GetComponent<StoryText>())
+            {
+                td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
+                td.go.transform.localPosition = new Vector3(0, 0, 1);
+            }
+            
+
+        }
+        
     }
 
 

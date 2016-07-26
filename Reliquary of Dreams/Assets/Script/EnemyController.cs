@@ -36,8 +36,10 @@ public class EnemyController : MonoBehaviour {
             refGC.enemyCell = enemy.refMyCell.gameObject;
             
             
-            refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
+            //refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
             path.ReachableCells((enemy.per), enemy.lookCell);
+
+            // Movimento nemico ricerca caselle e casella più vicino al player
             enemy.ManhattanSearch();
             if (enemy.isPlayerVisible)
             {
@@ -49,13 +51,17 @@ public class EnemyController : MonoBehaviour {
                 StartCoroutine(moveEnemy(enemy));
             }
            
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
+            foreach (var cell in enemy.moveCell)
+            {
+                cell.isFree = false;
+            }
             foreach (var cell in enemy.lookCell)
             {
                 cell.isFree = false;
             }
         }
-        refGrid.CreateGrid();
+        //refGrid.CreateGrid();
         refGC.phase = GamePhase.Selezione;
     }
 
@@ -67,7 +73,7 @@ public class EnemyController : MonoBehaviour {
             other.refMyCell = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ];
             other.transform.parent = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ].transform;
             other.transform.localPosition = new Vector3(0, 0, 1);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
         }
 
         refFog.GetPlayerNearEnemy(other.refMyCell.myI, other.refMyCell.myJ);
