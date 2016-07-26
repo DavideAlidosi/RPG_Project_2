@@ -5,8 +5,10 @@ public class AnimationTester : MonoBehaviour {
 
     public Animator animator;
     public int speed;
+    public int hp;
 
     bool facingRight = true;
+    bool attack = false;
 
 	void Update () {
 
@@ -26,10 +28,21 @@ public class AnimationTester : MonoBehaviour {
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        transform.Translate(transform.right * currentSpeed * Time.deltaTime); //Definisco il movimento per il tempo
+        if (Input.GetKey(KeyCode.R))
+        {
+            attack = true;
+        }
+        else
+        {
+            attack = false;
+        }
+
+        transform.Translate(transform.right * currentSpeed * Time.deltaTime);
 
         animator.SetInteger("XSpeed", currentSpeed);
+        animator.SetInteger("HP", hp);
         animator.SetBool("FacingRight", facingRight);
+        animator.SetBool("Attack", attack);
 
     }
 }
