@@ -20,7 +20,12 @@ public class ChangeScene : MonoBehaviour
 
 
     public void ChangeToScene (string sceneToChangeTo) {
-        
+
+        if (SceneManager.GetActiveScene().name == "PopUpConfermaStats")
+        {
+            FindObjectOfType<AudioSource>().Stop();
+        }
+
         if (SceneManager.GetActiveScene().name == "StatsDistribution")
         {
             if (point == 0)
