@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: 9e127b72c8c67504aaacf9ed1b345352
+timeCreated: 1469610474
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ENE-nemico 2-IDLE-SpS_0
+    21300002: ENE-nemico 2-IDLE-SpS_1
+    21300004: ENE-nemico 2-IDLE-SpS_2
+    21300006: ENE-nemico 2-IDLE-SpS_3
+    21300008: ENE-nemico 2-IDLE-SpS_4
+    21300010: ENE-nemico 2-IDLE-SpS_5
+    21300012: ENE-nemico 2-IDLE-SpS_6
+    21300014: ENE-nemico 2-IDLE-SpS_7
+    21300016: ENE-nemico 2-IDLE-SpS_8
+    21300018: ENE-nemico 2-IDLE-SpS_9
+    21300020: ENE-nemico 2-IDLE-SpS_10
+    21300022: ENE-nemico 2-IDLE-SpS_11
+    21300024: ENE-nemico 2-IDLE-SpS_12
+    21300026: ENE-nemico 2-IDLE-SpS_13
+    21300028: ENE-nemico 2-IDLE-SpS_14
+    21300030: ENE-nemico 2-IDLE-SpS_15
+    21300032: ENE-nemico 2-IDLE-SpS_16
+    21300034: ENE-nemico 2-IDLE-SpS_17
+    21300036: ENE-nemico 2-IDLE-SpS_18
+    21300038: ENE-nemico 2-IDLE-SpS_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ENE-nemico 2-IDLE-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 66.5}
+        - {x: -34, y: 62.5}
+        - {x: -59, y: 37.5}
+        - {x: -59, y: -19.5}
+        - {x: -58, y: -26.5}
+        - {x: -46, y: -66.5}
+        - {x: 41, y: -66.5}
+        - {x: 62, y: -2.5}
+        - {x: 62, y: 49.5}
+        - {x: 36, y: 66.5}
+    - name: ENE-nemico 2-IDLE-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 66.5}
+        - {x: -59, y: -27.5}
+        - {x: -29, y: -19.5}
+        - {x: -25, y: -12.5}
+        - {x: -27, y: -60.5}
+        - {x: -19, y: -66.5}
+        - {x: 27, y: -66.5}
+        - {x: 62, y: -7.5}
+        - {x: 62, y: 64.5}
+        - {x: 61, y: 66.5}
+    - name: ENE-nemico 2-IDLE-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 66.5}
+        - {x: -33, y: 60.5}
+        - {x: -59, y: 32.5}
+        - {x: -59, y: 16.5}
+        - {x: -45, y: -10.5}
+        - {x: -28, y: -18.5}
+        - {x: -28, y: -61.5}
+        - {x: -24, y: -66.5}
+        - {x: 24, y: -66.5}
+        - {x: 63, y: -5.5}
+        - {x: 63, y: 34.5}
+        - {x: 38, y: 66.5}
+    - name: ENE-nemico 2-IDLE-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: -20.5}
+        - {x: 63, y: 2.5}
+        - {x: 63, y: 29.5}
+        - {x: 57, y: 38.5}
+        - {x: 44, y: 53.5}
+        - {x: 33, y: 66.5}
+        - {x: 16, y: 66.5}
+        - {x: -33, y: 62.5}
+        - {x: -60, y: 36.5}
+        - {x: -60, y: 4.5}
+        - {x: -27, y: -66.5}
+        - {x: 13, y: -66.5}
+        - {x: 20, y: -64.5}
+        - {x: 19, y: -41.5}
+        - {x: 18, y: -14.5}
+        - {x: 29, y: -17.5}
+    - name: ENE-nemico 2-IDLE-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 7.5}
+        - {x: -41, y: -13.5}
+        - {x: -29, y: -15.5}
+        - {x: -34, y: -63.5}
+        - {x: -31, y: -66.5}
+        - {x: 26, y: -66.5}
+        - {x: 64, y: -10.5}
+        - {x: 64, y: 36.5}
+        - {x: 46, y: 66.5}
+        - {x: -36, y: 66.5}
+        - {x: -60, y: 30.5}
+    - name: ENE-nemico 2-IDLE-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 67.5}
+        - {x: 1, y: 67.5}
+        - {x: -42, y: 59.5}
+        - {x: -60, y: 41.5}
+        - {x: -60, y: -1.5}
+        - {x: -27, y: -66.5}
+        - {x: 21, y: -66.5}
+        - {x: 24, y: -65.5}
+        - {x: 65, y: 14.5}
+        - {x: 65, y: 22.5}
+        - {x: 63, y: 29.5}
+    - name: ENE-nemico 2-IDLE-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38, y: 67.5}
+        - {x: -60, y: 44.5}
+        - {x: -60, y: -32.5}
+        - {x: -46, y: -66.5}
+        - {x: 16, y: -66.5}
+        - {x: 20, y: -64.5}
+        - {x: 65, y: 3.5}
+        - {x: 65, y: 30.5}
+        - {x: 44, y: 67.5}
+    - name: ENE-nemico 2-IDLE-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 68.5}
+        - {x: -60, y: 43.5}
+        - {x: -60, y: -10.5}
+        - {x: -34, y: -62.5}
+        - {x: -22, y: -66.5}
+        - {x: 34, y: -66.5}
+        - {x: 66, y: 4.5}
+        - {x: 66, y: 61.5}
+        - {x: 49, y: 68.5}
+    - name: ENE-nemico 2-IDLE-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 69.5}
+        - {x: -38, y: 64.5}
+        - {x: -59, y: 43.5}
+        - {x: -59, y: -30.5}
+        - {x: -44, y: -66.5}
+        - {x: 15, y: -66.5}
+        - {x: 20, y: -64.5}
+        - {x: 66, y: 1.5}
+        - {x: 66, y: 32.5}
+        - {x: 40, y: 69.5}
+    - name: ENE-nemico 2-IDLE-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: -8.5}
+        - {x: -41, y: -17.5}
+        - {x: -32, y: -16.5}
+        - {x: -30, y: -59.5}
+        - {x: -22, y: -66.5}
+        - {x: 23, y: -66.5}
+        - {x: 66, y: -19.5}
+        - {x: 66, y: 46.5}
+        - {x: 40, y: 70.5}
+        - {x: -49, y: 70.5}
+        - {x: -59, y: 44.5}
+    - name: ENE-nemico 2-IDLE-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 71.5}
+        - {x: -35, y: 67.5}
+        - {x: -58, y: 41.5}
+        - {x: -58, y: -66.5}
+        - {x: 25, y: -66.5}
+        - {x: 66, y: -39.5}
+        - {x: 66, y: 35.5}
+        - {x: 48, y: 71.5}
+    - name: ENE-nemico 2-IDLE-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 71.5}
+        - {x: -35, y: 64.5}
+        - {x: -58, y: 44.5}
+        - {x: -58, y: -0.5}
+        - {x: -35, y: -65.5}
+        - {x: -33, y: -66.5}
+        - {x: 20, y: -66.5}
+        - {x: 24, y: -65.5}
+        - {x: 66, y: 16.5}
+        - {x: 66, y: 34.5}
+        - {x: 37, y: 71.5}
+    - name: ENE-nemico 2-IDLE-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 71.5}
+        - {x: 21, y: 68.5}
+        - {x: -35, y: 63.5}
+        - {x: -58, y: 38.5}
+        - {x: -58, y: -25.5}
+        - {x: -44, y: -66.5}
+        - {x: 34, y: -66.5}
+        - {x: 65, y: -12.5}
+        - {x: 65, y: 38.5}
+        - {x: 34, y: 71.5}
+    - name: ENE-nemico 2-IDLE-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58, y: -27.5}
+        - {x: -41, y: -66.5}
+        - {x: 21, y: -66.5}
+        - {x: 64, y: -10.5}
+        - {x: 64, y: 47.5}
+        - {x: 44, y: 71.5}
+        - {x: -42, y: 71.5}
+        - {x: -58, y: 51.5}
+    - name: ENE-nemico 2-IDLE-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: -19.5}
+        - {x: 63, y: 18.5}
+        - {x: 63, y: 32.5}
+        - {x: 49, y: 61.5}
+        - {x: 33, y: 70.5}
+        - {x: 2, y: 70.5}
+        - {x: -36, y: 61.5}
+        - {x: -58, y: 50.5}
+        - {x: -58, y: -30.5}
+        - {x: -45, y: -66.5}
+        - {x: 14, y: -66.5}
+        - {x: 19, y: -63.5}
+        - {x: 19, y: -32.5}
+        - {x: 17, y: -11.5}
+        - {x: 32, y: -17.5}
+    - name: ENE-nemico 2-IDLE-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 69.5}
+        - {x: -58, y: 60.5}
+        - {x: -58, y: 1.5}
+        - {x: -54, y: -16.5}
+        - {x: -32, y: -17.5}
+        - {x: -28, y: -12.5}
+        - {x: -21, y: -2.5}
+        - {x: -28, y: -61.5}
+        - {x: -24, y: -66.5}
+        - {x: 16, y: -66.5}
+        - {x: 23, y: -65.5}
+        - {x: 63, y: 4.5}
+        - {x: 63, y: 37.5}
+        - {x: 47, y: 69.5}
+    - name: ENE-nemico 2-IDLE-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 68.5}
+        - {x: -59, y: 35.5}
+        - {x: -59, y: 1.5}
+        - {x: -27, y: -66.5}
+        - {x: 24, y: -66.5}
+        - {x: 63, y: -1.5}
+        - {x: 63, y: 42.5}
+        - {x: 40, y: 68.5}
+    - name: ENE-nemico 2-IDLE-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 67.5}
+        - {x: -35, y: 66.5}
+        - {x: -59, y: 29.5}
+        - {x: -59, y: 10.5}
+        - {x: -38, y: -14.5}
+        - {x: -29, y: -15.5}
+        - {x: -27, y: -61.5}
+        - {x: -19, y: -66.5}
+        - {x: 27, y: -66.5}
+        - {x: 62, y: -21.5}
+        - {x: 62, y: 49.5}
+        - {x: 48, y: 67.5}
+    - name: ENE-nemico 2-IDLE-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 67.5}
+        - {x: 17, y: 67.5}
+        - {x: -12, y: 65.5}
+        - {x: -41, y: 57.5}
+        - {x: -59, y: 29.5}
+        - {x: -59, y: -1.5}
+        - {x: -38, y: -66.5}
+        - {x: 22, y: -66.5}
+        - {x: 62, y: -37.5}
+        - {x: 62, y: 47.5}
+        - {x: 32, y: 66.5}
+    - name: ENE-nemico 2-IDLE-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43, y: 66.5}
+        - {x: -59, y: 29.5}
+        - {x: -59, y: 11.5}
+        - {x: -45, y: -9.5}
+        - {x: -28, y: -18.5}
+        - {x: -28, y: -61.5}
+        - {x: -20, y: -66.5}
+        - {x: 27, y: -66.5}
+        - {x: 62, y: -19.5}
+        - {x: 62, y: 66.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

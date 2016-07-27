@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 1abe580faf6bdc343b5c20639cb479eb
+timeCreated: 1469610385
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nemico-1-attack-_0
+    21300002: nemico-1-attack-_1
+    21300004: nemico-1-attack-_2
+    21300006: nemico-1-attack-_3
+    21300008: nemico-1-attack-_4
+    21300010: nemico-1-attack-_5
+    21300012: nemico-1-attack-_6
+    21300014: nemico-1-attack-_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nemico-1-attack-_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -42}
+        - {x: 80, y: 55}
+        - {x: 50, y: 87}
+        - {x: -45, y: 87}
+        - {x: -78, y: 75}
+        - {x: -84, y: 63}
+        - {x: -84, y: 46}
+        - {x: -83, y: 43}
+        - {x: -74, y: -3}
+        - {x: -52, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    - name: nemico-1-attack-_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -45}
+        - {x: 80, y: 57}
+        - {x: 43, y: 91}
+        - {x: -79, y: 91}
+        - {x: -80, y: 89}
+        - {x: -80, y: 54}
+        - {x: -41, y: 10}
+        - {x: -35, y: 11}
+        - {x: -54, y: -10}
+        - {x: -62, y: -40}
+        - {x: -45, y: -66}
+        - {x: -23, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    - name: nemico-1-attack-_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -45}
+        - {x: 80, y: 58}
+        - {x: 27, y: 108}
+        - {x: 26, y: 108}
+        - {x: -19, y: 86}
+        - {x: -35, y: 68}
+        - {x: -37, y: 100}
+        - {x: -45, y: 108}
+        - {x: -76, y: 108}
+        - {x: -76, y: -59}
+        - {x: -25, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    - name: nemico-1-attack-_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -54}
+        - {x: 80, y: 81}
+        - {x: 28, y: 128}
+        - {x: -75, y: 128}
+        - {x: -75, y: -66}
+        - {x: -31, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    - name: nemico-1-attack-_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -45}
+        - {x: 80, y: 57}
+        - {x: 48, y: 87}
+        - {x: -10, y: 87}
+        - {x: -17, y: 83}
+        - {x: -31, y: 68}
+        - {x: -53, y: 73}
+        - {x: -80, y: 72}
+        - {x: -86, y: 64}
+        - {x: -86, y: 40}
+        - {x: -35, y: 1}
+        - {x: -28, y: -1}
+        - {x: -54, y: -9}
+        - {x: -62, y: -40}
+        - {x: -45, y: -66}
+        - {x: -23, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    - name: nemico-1-attack-_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -60}
+        - {x: 80, y: 87}
+        - {x: -78, y: 87}
+        - {x: -78, y: -18}
+        - {x: -62, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    - name: nemico-1-attack-_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -60}
+        - {x: 80, y: 87}
+        - {x: -78, y: 87}
+        - {x: -78, y: -18}
+        - {x: -62, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    - name: nemico-1-attack-_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -41}
+        - {x: 7, y: -44}
+        - {x: 6, y: -55}
+        - {x: 3, y: -74}
+        - {x: 45, y: -74}
+        - {x: 71, y: -70}
+        - {x: 80, y: -42}
+        - {x: 80, y: 55}
+        - {x: 50, y: 87}
+        - {x: -45, y: 87}
+        - {x: -78, y: 75}
+        - {x: -84, y: 63}
+        - {x: -84, y: 46}
+        - {x: -83, y: 43}
+        - {x: -74, y: -3}
+        - {x: -52, y: -74}
+        - {x: -14, y: -74}
+        - {x: -1, y: -59}
+        - {x: 7, y: -49}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
