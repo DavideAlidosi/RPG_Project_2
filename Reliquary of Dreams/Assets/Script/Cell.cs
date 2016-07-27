@@ -174,6 +174,21 @@ public class Cell : MonoBehaviour {
                 {
                     FindObjectOfType<NextScene>().NextLevel();
                 }
+                if (GetComponentInChildren<ItemLoader>())
+                {
+                    //Destroy(GetComponent<SpriteRenderer>());
+                    playerRef.itemPlayer.Add(GetComponentInChildren<Item>().gameObject);
+                    if (GetComponentInChildren<ItemLoader>().tag == "GameObject")
+                    {
+                        Destroy(GetComponentInChildren<ItemLoader>().gameObject);
+                    }
+                    if (GetComponentInChildren<Item>().tag == "Untagged")
+                    {
+                        //playerRef.itemPlayer.Add(GetComponentInChildren<Item>().gameObject);
+                    }
+                    //
+                    
+                }
 
             }
         }   

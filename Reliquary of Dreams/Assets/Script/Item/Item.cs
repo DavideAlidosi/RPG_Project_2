@@ -3,7 +3,8 @@ using System.Collections;
 
 public abstract class Item : MonoBehaviour {
 
-    
+    public int n;
+
     // Use this for initialization
     void Start () {
         
@@ -14,6 +15,6 @@ public abstract class Item : MonoBehaviour {
 	
 	}
 
-    protected abstract void Drink();
+    public abstract void Drink();
     
 }

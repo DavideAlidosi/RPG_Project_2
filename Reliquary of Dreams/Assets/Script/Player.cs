@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
     MenuPopUp refMPU;
     Singleton stat;
 
-    public List<Item> itemPlayer = new List<Item>();
+    public List<GameObject> itemPlayer = new List<GameObject>();
 
     public int exp = 0;
     public int expForLevel = 1000;

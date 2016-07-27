@@ -326,7 +326,15 @@ public class TileTester : MonoBehaviour
                 td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
                 td.go.transform.localPosition = new Vector3(0, 0, 1);
             }
-            
+
+            if (td.go.GetComponent<ItemLoader>())
+            {
+                td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
+                td.go.transform.localPosition = new Vector3(0, 0, 1);
+                td.go.GetComponent<ItemLoader>().x = td.cell_y;
+                td.go.GetComponent<ItemLoader>().y = td.cell_x;
+            }
+
 
         }
         

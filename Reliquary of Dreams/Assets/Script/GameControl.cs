@@ -10,6 +10,7 @@ public class GameControl : MonoBehaviour
     public GameObject firstCell;
     public GameObject playerCell;
     public GameObject enemyCell;
+    public GameObject potion;
 
     public TextMesh enemyTxt;
     public TextMesh playerTxt;
@@ -388,5 +389,21 @@ public class GameControl : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void EnemyDrop(Cell c)
+    {
+        StartCoroutine(CDrop(c.myI,c.myJ));
+    }
+
+    IEnumerator CDrop(int x, int y)
+    {
+        yield return new WaitForSeconds(1f);
+        GameObject pot = Instantiate(potion);
+        pot.tag = "GameObject";
+        pot.GetComponent<ItemLoader>().x = x;
+        pot.GetComponent<ItemLoader>().y = y;
+        pot.transform.parent = refGrid.cellMat[x, y].transform;
+        pot.transform.localPosition = Vector3.zero;
     }
 }

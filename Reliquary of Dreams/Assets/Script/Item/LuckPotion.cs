@@ -2,9 +2,14 @@
 using System.Collections;
 using System;
 
-public class StrPotion : Item {
+public class LuckPotion : Item {
 
-   
+    
+    public override void Drink()
+    {
+        FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
+        Destroy(this.gameObject);
+    }
 
     // Use this for initialization
     void Start () {
@@ -15,10 +20,4 @@ public class StrPotion : Item {
 	void Update () {
 	
 	}
-
-    public override void Drink()
-    {
-        FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
-        Destroy(this.gameObject);
-    }
 }
