@@ -4,10 +4,10 @@ using System;
 
 public class StrPotion : Item {
 
-    
+   
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -16,8 +16,9 @@ public class StrPotion : Item {
 	
 	}
 
-    protected override void Drink()
+    public override void Drink()
     {
-        throw new NotImplementedException();
+        FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
+        Destroy(this.gameObject);
     }
 }

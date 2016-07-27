@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: 43d499df48af7114b8658104dbf74537
+timeCreated: 1469610622
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nemico-3-idle--.psd-Sheet_0
+    21300002: nemico-3-idle--.psd-Sheet_1
+    21300004: nemico-3-idle--.psd-Sheet_2
+    21300006: nemico-3-idle--.psd-Sheet_3
+    21300008: nemico-3-idle--.psd-Sheet_4
+    21300010: nemico-3-idle--.psd-Sheet_5
+    21300012: nemico-3-idle--.psd-Sheet_6
+    21300014: nemico-3-idle--.psd-Sheet_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nemico-3-idle--.psd-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 5}
+        - {x: 37, y: 1}
+        - {x: 36, y: 28}
+        - {x: 30, y: 52}
+        - {x: 1, y: 62}
+        - {x: -18, y: 62}
+        - {x: -37, y: 49}
+        - {x: -48, y: 27}
+        - {x: -48, y: 9}
+        - {x: -32, y: 5}
+        - {x: -29, y: -3}
+        - {x: -25, y: -7}
+        - {x: -22, y: -9}
+        - {x: -19, y: -9}
+        - {x: -24, y: -9}
+        - {x: -34, y: 3}
+        - {x: -41, y: 6}
+        - {x: -48, y: -4}
+        - {x: -48, y: -53}
+        - {x: -33, y: -63}
+        - {x: 45, y: -63}
+        - {x: 47, y: -59}
+        - {x: 47, y: 2}
+    - name: nemico-3-idle--.psd-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 2}
+        - {x: 36, y: 26}
+        - {x: 26, y: 46}
+        - {x: 0, y: 60}
+        - {x: -12, y: 60}
+        - {x: -48, y: 30}
+        - {x: -48, y: 13}
+        - {x: -46, y: 7}
+        - {x: -30, y: 7}
+        - {x: -29, y: -3}
+        - {x: -25, y: -7}
+        - {x: -29, y: -4}
+        - {x: -32, y: 3}
+        - {x: -41, y: 6}
+        - {x: -48, y: 4}
+        - {x: -48, y: -62}
+        - {x: 47, y: -62}
+        - {x: 47, y: 3}
+        - {x: 43, y: 6}
+    - name: nemico-3-idle--.psd-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 3}
+        - {x: 36, y: 25}
+        - {x: 26, y: 44}
+        - {x: 6, y: 58}
+        - {x: -17, y: 58}
+        - {x: -36, y: 53}
+        - {x: -48, y: 25}
+        - {x: -48, y: 9}
+        - {x: -40, y: 7}
+        - {x: -30, y: 7}
+        - {x: -29, y: -3}
+        - {x: -26, y: -7}
+        - {x: -29, y: -11}
+        - {x: -29, y: -3}
+        - {x: -33, y: 3}
+        - {x: -35, y: 5}
+        - {x: -40, y: 6}
+        - {x: -48, y: 7}
+        - {x: -48, y: -61}
+        - {x: 46, y: -61}
+        - {x: 47, y: -59}
+        - {x: 47, y: 3}
+        - {x: 43, y: 7}
+    - name: nemico-3-idle--.psd-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 46}
+        - {x: 1, y: 56}
+        - {x: -16, y: 56}
+        - {x: -48, y: 28}
+        - {x: -48, y: -48}
+        - {x: -33, y: -58}
+        - {x: 45, y: -58}
+        - {x: 47, y: -54}
+        - {x: 47, y: 21}
+    - name: nemico-3-idle--.psd-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 55}
+        - {x: -17, y: 55}
+        - {x: -48, y: 28}
+        - {x: -48, y: -55}
+        - {x: 47, y: -55}
+        - {x: 47, y: 13}
+        - {x: 36, y: 51}
+    - name: nemico-3-idle--.psd-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 46}
+        - {x: 1, y: 56}
+        - {x: -16, y: 56}
+        - {x: -48, y: 28}
+        - {x: -48, y: -48}
+        - {x: -33, y: -58}
+        - {x: 45, y: -58}
+        - {x: 47, y: -54}
+        - {x: 47, y: 21}
+    - name: nemico-3-idle--.psd-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 3}
+        - {x: 36, y: 25}
+        - {x: 26, y: 44}
+        - {x: 6, y: 58}
+        - {x: -17, y: 58}
+        - {x: -36, y: 53}
+        - {x: -48, y: 25}
+        - {x: -48, y: 9}
+        - {x: -40, y: 7}
+        - {x: -30, y: 7}
+        - {x: -29, y: -3}
+        - {x: -26, y: -7}
+        - {x: -29, y: -11}
+        - {x: -29, y: -3}
+        - {x: -33, y: 3}
+        - {x: -35, y: 5}
+        - {x: -40, y: 6}
+        - {x: -48, y: 7}
+        - {x: -48, y: -61}
+        - {x: 46, y: -61}
+        - {x: 47, y: -59}
+        - {x: 47, y: 3}
+        - {x: 43, y: 7}
+    - name: nemico-3-idle--.psd-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 2}
+        - {x: 36, y: 26}
+        - {x: 26, y: 46}
+        - {x: 0, y: 60}
+        - {x: -12, y: 60}
+        - {x: -48, y: 30}
+        - {x: -48, y: 13}
+        - {x: -46, y: 7}
+        - {x: -30, y: 7}
+        - {x: -29, y: -3}
+        - {x: -25, y: -7}
+        - {x: -29, y: -4}
+        - {x: -32, y: 3}
+        - {x: -41, y: 6}
+        - {x: -48, y: 4}
+        - {x: -48, y: -62}
+        - {x: 47, y: -62}
+        - {x: 47, y: 3}
+        - {x: 43, y: 6}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

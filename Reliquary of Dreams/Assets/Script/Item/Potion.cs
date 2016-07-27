@@ -4,6 +4,7 @@ using System;
 
 public class Potion : Item {
 
+    
 	// Use this for initialization
 	void Start () {
 	
@@ -14,8 +15,9 @@ public class Potion : Item {
 	
 	}
 
-    protected override void Drink()
+    public override void Drink()
     {
-        throw new NotImplementedException();
+        FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
+        Destroy(this.gameObject);
     }
 }

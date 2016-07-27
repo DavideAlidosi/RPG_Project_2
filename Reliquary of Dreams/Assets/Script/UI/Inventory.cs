@@ -6,26 +6,42 @@ public class Inventory : MonoBehaviour {
     public Button prefab;
     Player refPlayer;
     // Use this for initialization
+    bool isEnable = false;
     
     void Start()
     {
-        
+        refPlayer = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
     void Update() {
-
+        if (isEnable)
+        {
+            
+        }
     }
 
     void OnEnable()
     {
-        refPlayer = FindObjectOfType<Player>();
+        isEnable = true;
+        
+        int n = 0;
         foreach (var item in refPlayer.itemPlayer)
         {
-            Button newButton = Instantiate(prefab);
-            newButton.transform.SetParent(this.gameObject.transform);
 
-             
+            item.GetComponent<Item>().n = n;
+            n++;
+            Button newButton = Instantiate(prefab);
+            newButton.name = item.name;
+            newButton.transform.SetParent(this.gameObject.transform);
+            newButton.GetComponentInChildren<Text>().text = ""+item.gameObject.name;
+            if (item.name == "Potion")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+            
+
+
         }
         
         
@@ -34,9 +50,15 @@ public class Inventory : MonoBehaviour {
 
     void OnDisable()
     {
+        isEnable = false;
         foreach (Transform item in this.gameObject.transform)
         {
             Destroy(item.gameObject);
         }   
+    }
+
+    void Ciao()
+    {
+        Debug.Log("Ciao");
     }
 }

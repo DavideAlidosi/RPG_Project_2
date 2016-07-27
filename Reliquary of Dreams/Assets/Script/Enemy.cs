@@ -45,6 +45,11 @@ public class Enemy : MonoBehaviour
         
     }
 
+    void OnDestroy()
+    {
+        refGC.EnemyDrop(refMyCell);
+    }
+
     public void ManhattanSearch()
     {
         int myI = refMyCell.myI;

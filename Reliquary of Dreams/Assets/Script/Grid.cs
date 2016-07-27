@@ -24,11 +24,8 @@ public class Grid : MonoBehaviour {
     public GameObject enemy;
 
 	// Use this for initialization
-    void awake()
-    {
-
-    }
-	void Start () {
+    
+	void Awake () {
 
         cellMat = new Cell[ROW, COL];
 
