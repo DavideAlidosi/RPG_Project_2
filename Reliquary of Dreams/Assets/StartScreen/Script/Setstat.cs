@@ -11,6 +11,12 @@ public class Setstat : MonoBehaviour
     public Text cos;
     public Text per;
     public Text fortu;
+    public Text forzText;
+    public Text agiText;
+    public Text cosText;
+    public Text perText;
+    public Text fortuText;
+
 
     public void setStatsBandito()
     {
@@ -87,5 +93,10 @@ public class Setstat : MonoBehaviour
         stat.perc = 6;
         stat.fortuna = 3;
 
+    }
+
+    void OnMouseEnter()
+    {
+        forzText.text = "ciao for";
     }
 }
