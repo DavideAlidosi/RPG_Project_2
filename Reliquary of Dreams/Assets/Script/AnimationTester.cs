@@ -3,15 +3,19 @@ using System.Collections;
 
 public class AnimationTester : MonoBehaviour {
 
+    //define the varables
     public Animator animator;
     public int speed;
+
     public int hp;
 
     bool facingRight = true;
+
     bool attack = false;
 
-	void Update () {
-
+    void Update () {
+        
+        //Hero methods
         int currentSpeed = 0;
 
         if (Input.GetKey(KeyCode.D))
