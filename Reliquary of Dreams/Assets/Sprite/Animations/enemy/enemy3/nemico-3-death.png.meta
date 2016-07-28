@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: cac9b59e6935e2348ae7c57199c415e5
+timeCreated: 1469700609
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nemico-3-death_0
+    21300002: nemico-3-death_1
+    21300004: nemico-3-death_2
+    21300006: nemico-3-death_3
+    21300008: nemico-3-death_4
+    21300010: nemico-3-death_5
+    21300012: nemico-3-death_6
+    21300014: nemico-3-death_7
+    21300016: nemico-3-death_8
+    21300018: nemico-3-death_9
+    21300020: nemico-3-death_10
+    21300022: nemico-3-death_11
+    21300024: nemico-3-death_12
+    21300026: nemico-3-death_13
+    21300028: nemico-3-death_14
+    21300030: nemico-3-death_15
+    21300032: nemico-3-death_16
+    21300034: nemico-3-death_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nemico-3-death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 1.5}
+        - {x: 18, y: 1.5}
+        - {x: 16, y: -0.5}
+        - {x: 21, y: 22.5}
+        - {x: 6, y: 32.5}
+        - {x: -12, y: 32.5}
+        - {x: -25, y: 16.5}
+        - {x: -25, y: -28.5}
+        - {x: -21, y: -32.5}
+        - {x: 23, y: -32.5}
+        - {x: 25, y: -31.5}
+        - {x: 25, y: -1.5}
+    - name: nemico-3-death_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 31.5}
+        - {x: -39, y: 11.5}
+        - {x: -39, y: -41.5}
+        - {x: -28, y: -44.5}
+        - {x: 39, y: -44.5}
+        - {x: 39, y: 22.5}
+        - {x: 25, y: 31.5}
+    - name: nemico-3-death_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 31.5}
+        - {x: -39, y: 11.5}
+        - {x: -39, y: -41.5}
+        - {x: -28, y: -44.5}
+        - {x: 39, y: -44.5}
+        - {x: 39, y: 22.5}
+        - {x: 25, y: 31.5}
+    - name: nemico-3-death_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 44.5}
+        - {x: -44, y: -43.5}
+        - {x: -41, y: -44.5}
+        - {x: 17, y: -44.5}
+        - {x: 44, y: -32.5}
+        - {x: 44, y: 23.5}
+        - {x: 24, y: 44.5}
+    - name: nemico-3-death_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 44.5}
+        - {x: -44, y: -43.5}
+        - {x: -41, y: -44.5}
+        - {x: 17, y: -44.5}
+        - {x: 44, y: -32.5}
+        - {x: 44, y: 23.5}
+        - {x: 24, y: 44.5}
+    - name: nemico-3-death_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -36.5}
+        - {x: -18, y: -38.5}
+        - {x: -18, y: -42.5}
+        - {x: -10, y: -44.5}
+        - {x: -3, y: -44.5}
+        - {x: -3, y: -39.5}
+        - {x: -4, y: -36.5}
+      - - {x: 3, y: -44.5}
+        - {x: 9, y: -44.5}
+        - {x: 18, y: -41.5}
+        - {x: 18, y: -38.5}
+        - {x: 17, y: -36.5}
+        - {x: 11, y: -36.5}
+        - {x: 3, y: -39.5}
+      - - {x: 44, y: 23.5}
+        - {x: 22, y: 44.5}
+        - {x: -21, y: 44.5}
+        - {x: -44, y: 23.5}
+        - {x: -44, y: -20.5}
+        - {x: -28, y: -38.5}
+        - {x: 26, y: -38.5}
+        - {x: 42, y: -26.5}
+        - {x: 44, y: -20.5}
+      - - {x: 10, y: 8.5}
+        - {x: -28, y: 8.5}
+        - {x: -29, y: 5.5}
+        - {x: -29, y: -26.5}
+        - {x: -27, y: -28.5}
+        - {x: 13, y: -28.5}
+        - {x: 28, y: -22.5}
+        - {x: 28, y: 0.5}
+        - {x: 24, y: 3.5}
+    - name: nemico-3-death_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: -24.5}
+        - {x: 12, y: -26.5}
+        - {x: 12, y: -29.5}
+        - {x: 14, y: -30.5}
+        - {x: 17, y: -30.5}
+        - {x: 18, y: -29.5}
+        - {x: 18, y: -24.5}
+      - - {x: -26, y: 9.5}
+        - {x: -33, y: 3.5}
+        - {x: -33, y: -18.5}
+        - {x: -32, y: -25.5}
+        - {x: 27, y: -25.5}
+        - {x: 31, y: -14.5}
+        - {x: 31, y: 3.5}
+        - {x: 28, y: 9.5}
+    - name: nemico-3-death_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -26.5}
+        - {x: 21, y: -30.5}
+        - {x: 25, y: -30.5}
+        - {x: 32, y: -25.5}
+        - {x: 32, y: -18.5}
+        - {x: 30, y: -12.5}
+        - {x: 22, y: -12.5}
+        - {x: 19, y: -17.5}
+      - - {x: -24, y: -16.5}
+        - {x: -28, y: -17.5}
+        - {x: -28, y: -25.5}
+        - {x: -21, y: -25.5}
+        - {x: -20, y: -23.5}
+        - {x: -19, y: -19.5}
+        - {x: -20, y: -16.5}
+      - - {x: -36, y: 17.5}
+        - {x: -36, y: -12.5}
+        - {x: -19, y: -22.5}
+        - {x: 8, y: -22.5}
+        - {x: 37, y: -10.5}
+        - {x: 37, y: 17.5}
+    - name: nemico-3-death_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -23.5}
+        - {x: 32, y: -25.5}
+        - {x: 35, y: -24.5}
+        - {x: 35, y: -21.5}
+        - {x: 33, y: -19.5}
+        - {x: 30, y: -20.5}
+      - - {x: -28, y: -22.5}
+        - {x: -26, y: -24.5}
+        - {x: -23, y: -23.5}
+        - {x: -23, y: -20.5}
+        - {x: -25, y: -18.5}
+        - {x: -28, y: -19.5}
+      - - {x: -15, y: 5.5}
+        - {x: -17, y: 2.5}
+        - {x: -17, y: -12.5}
+        - {x: -14, y: -21.5}
+        - {x: 11, y: -21.5}
+        - {x: 16, y: -16.5}
+        - {x: 16, y: 5.5}
+      - - {x: 31, y: -18.5}
+        - {x: 34, y: -17.5}
+        - {x: 34, y: -14.5}
+        - {x: 31, y: -13.5}
+        - {x: 29, y: -15.5}
+      - - {x: -29, y: 14.5}
+        - {x: -34, y: 10.5}
+        - {x: -34, y: -15.5}
+        - {x: -16, y: -15.5}
+        - {x: -11, y: 2.5}
+        - {x: -11, y: 14.5}
+      - - {x: 23, y: 11.5}
+        - {x: 18, y: 11.5}
+        - {x: 16, y: 8.5}
+        - {x: 16, y: 0.5}
+        - {x: 25, y: -8.5}
+        - {x: 31, y: -8.5}
+        - {x: 33, y: -1.5}
+        - {x: 33, y: 10.5}
+        - {x: 32, y: 10.5}
+    - name: nemico-3-death_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: -15.5}
+        - {x: -33, y: -18.5}
+        - {x: -33, y: -21.5}
+        - {x: -32, y: -22.5}
+        - {x: -28, y: -22.5}
+        - {x: -26, y: -17.5}
+        - {x: -28, y: -15.5}
+      - - {x: -37, y: 20.5}
+        - {x: -38, y: 18.5}
+        - {x: -38, y: 4.5}
+        - {x: -33, y: -21.5}
+        - {x: 9, y: -21.5}
+        - {x: 15, y: -12.5}
+        - {x: 15, y: 12.5}
+        - {x: 7, y: 20.5}
+      - - {x: 31, y: -13.5}
+        - {x: 30, y: -16.5}
+        - {x: 30, y: -19.5}
+        - {x: 32, y: -20.5}
+        - {x: 36, y: -20.5}
+        - {x: 38, y: -18.5}
+        - {x: 38, y: -15.5}
+        - {x: 36, y: -13.5}
+      - - {x: 32, y: 21.5}
+        - {x: 19, y: 21.5}
+        - {x: 11, y: 15.5}
+        - {x: 11, y: 1.5}
+        - {x: 18, y: -6.5}
+        - {x: 30, y: -6.5}
+        - {x: 39, y: -0.5}
+        - {x: 39, y: 7.5}
+        - {x: 38, y: 14.5}
+    - name: nemico-3-death_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 2.5}
+        - {x: -13, y: -1.5}
+        - {x: -13, y: -17.5}
+        - {x: -10, y: -20.5}
+        - {x: 11, y: -20.5}
+        - {x: 13, y: -14.5}
+        - {x: 13, y: 0.5}
+        - {x: 8, y: 2.5}
+      - - {x: -27, y: 15.5}
+        - {x: -33, y: 11.5}
+        - {x: -33, y: -13.5}
+        - {x: -21, y: -13.5}
+        - {x: -18, y: -12.5}
+        - {x: -10, y: 5.5}
+        - {x: -10, y: 15.5}
+      - - {x: 15, y: 14.5}
+        - {x: 15, y: -0.5}
+        - {x: 21, y: -5.5}
+        - {x: 27, y: -5.5}
+        - {x: 31, y: -4.5}
+        - {x: 31, y: 12.5}
+        - {x: 27, y: 14.5}
+    - name: nemico-3-death_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 1.5}
+        - {x: 1, y: -3.5}
+        - {x: 0, y: -0.5}
+        - {x: -1, y: 1.5}
+        - {x: -11, y: 1.5}
+        - {x: -13, y: -5.5}
+        - {x: -13, y: -17.5}
+        - {x: -11, y: -20.5}
+        - {x: 11, y: -20.5}
+        - {x: 13, y: -19.5}
+        - {x: 13, y: -1.5}
+        - {x: 7, y: 1.5}
+      - - {x: -26, y: 16.5}
+        - {x: -33, y: 6.5}
+        - {x: -33, y: -10.5}
+        - {x: -29, y: -11.5}
+        - {x: -17, y: -11.5}
+        - {x: -9, y: 7.5}
+        - {x: -9, y: 16.5}
+      - - {x: 14, y: 15.5}
+        - {x: 14, y: 3.5}
+        - {x: 22, y: -4.5}
+        - {x: 27, y: -4.5}
+        - {x: 30, y: -3.5}
+        - {x: 30, y: 11.5}
+        - {x: 27, y: 15.5}
+    - name: nemico-3-death_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 0.5}
+        - {x: -13, y: -1.5}
+        - {x: -13, y: -14.5}
+        - {x: -9, y: -20.5}
+        - {x: 10, y: -20.5}
+        - {x: 13, y: -13.5}
+        - {x: 13, y: -1.5}
+        - {x: 10, y: 0.5}
+      - - {x: -10, y: 17.5}
+        - {x: -17, y: 17.5}
+        - {x: -26, y: 16.5}
+        - {x: -32, y: 6.5}
+        - {x: -32, y: -0.5}
+        - {x: -31, y: -8.5}
+        - {x: -27, y: -10.5}
+        - {x: -20, y: -10.5}
+        - {x: -8, y: 6.5}
+        - {x: -8, y: 14.5}
+      - - {x: 14, y: 16.5}
+        - {x: 13, y: 14.5}
+        - {x: 13, y: 10.5}
+        - {x: 14, y: 4.5}
+        - {x: 22, y: -3.5}
+        - {x: 29, y: -3.5}
+        - {x: 29, y: 12.5}
+        - {x: 27, y: 16.5}
+    - name: nemico-3-death_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: -15.5}
+        - {x: -7, y: -20.5}
+        - {x: 8, y: -20.5}
+        - {x: 13, y: -18.5}
+        - {x: 13, y: -4.5}
+        - {x: 12, y: -0.5}
+        - {x: -8, y: -0.5}
+        - {x: -13, y: -5.5}
+      - - {x: -22, y: 19.5}
+        - {x: -31, y: 12.5}
+        - {x: -31, y: -5.5}
+        - {x: -29, y: -9.5}
+        - {x: -18, y: -9.5}
+        - {x: -7, y: 4.5}
+        - {x: -7, y: 19.5}
+      - - {x: 14, y: 17.5}
+        - {x: 11, y: 14.5}
+        - {x: 11, y: 11.5}
+        - {x: 12, y: 5.5}
+        - {x: 20, y: -2.5}
+        - {x: 25, y: -2.5}
+        - {x: 28, y: -1.5}
+        - {x: 28, y: 14.5}
+        - {x: 19, y: 17.5}
+    - name: nemico-3-death_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: -1.5}
+        - {x: 5, y: -4.5}
+        - {x: -1, y: -1.5}
+        - {x: -7, y: -1.5}
+        - {x: -13, y: -7.5}
+        - {x: -13, y: -11.5}
+        - {x: -12, y: -14.5}
+        - {x: -7, y: -20.5}
+        - {x: 5, y: -20.5}
+        - {x: 13, y: -12.5}
+        - {x: 13, y: -6.5}
+        - {x: 10, y: -1.5}
+      - - {x: -21, y: 19.5}
+        - {x: -29, y: 16.5}
+        - {x: -30, y: 15.5}
+        - {x: -30, y: -4.5}
+        - {x: -29, y: -8.5}
+        - {x: -16, y: -8.5}
+        - {x: -6, y: 10.5}
+        - {x: -6, y: 19.5}
+      - - {x: 11, y: 18.5}
+        - {x: 11, y: 10.5}
+        - {x: 12, y: 7.5}
+        - {x: 22, y: -1.5}
+        - {x: 27, y: -1.5}
+        - {x: 28, y: -0.5}
+        - {x: 28, y: 13.5}
+        - {x: 26, y: 18.5}
+    - name: nemico-3-death_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -3.5}
+        - {x: -8, y: -3.5}
+        - {x: -13, y: -7.5}
+        - {x: -13, y: -13.5}
+        - {x: -12, y: -16.5}
+        - {x: -8, y: -20.5}
+        - {x: 4, y: -20.5}
+        - {x: 11, y: -18.5}
+        - {x: 12, y: -14.5}
+        - {x: 12, y: -7.5}
+        - {x: 11, y: -5.5}
+      - - {x: -9, y: 20.5}
+        - {x: -13, y: 20.5}
+        - {x: -22, y: 19.5}
+        - {x: -29, y: 10.5}
+        - {x: -29, y: -4.5}
+        - {x: -28, y: -5.5}
+        - {x: -20, y: -5.5}
+        - {x: -7, y: 9.5}
+        - {x: -6, y: 13.5}
+        - {x: -6, y: 16.5}
+      - - {x: 17, y: 19.5}
+        - {x: 10, y: 19.5}
+        - {x: 10, y: 7.5}
+        - {x: 17, y: -0.5}
+        - {x: 27, y: -0.5}
+        - {x: 27, y: 15.5}
+        - {x: 24, y: 17.5}
+    - name: nemico-3-death_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -8.5}
+        - {x: -12, y: -9.5}
+        - {x: -12, y: -16.5}
+        - {x: -9, y: -20.5}
+        - {x: 4, y: -20.5}
+        - {x: 9, y: -18.5}
+        - {x: 10, y: -16.5}
+        - {x: 10, y: -8.5}
+      - - {x: -21, y: 20.5}
+        - {x: -28, y: 17.5}
+        - {x: -28, y: -4.5}
+        - {x: -17, y: -4.5}
+        - {x: -5, y: 11.5}
+        - {x: -5, y: 19.5}
+        - {x: -7, y: 20.5}
+      - - {x: 26, y: 13.5}
+        - {x: 23, y: 18.5}
+        - {x: 16, y: 19.5}
+        - {x: 11, y: 19.5}
+        - {x: 9, y: 18.5}
+        - {x: 9, y: 13.5}
+        - {x: 15, y: 2.5}
+        - {x: 22, y: 2.5}
+        - {x: 25, y: 4.5}
+        - {x: 24, y: 8.5}
+        - {x: 21, y: 10.5}
+        - {x: 25, y: 10.5}
+    - name: nemico-3-death_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -9.5}
+        - {x: 2, y: -10.5}
+        - {x: -8, y: -14.5}
+        - {x: -8, y: -19.5}
+        - {x: -5, y: -20.5}
+        - {x: 1, y: -20.5}
+        - {x: 4, y: -18.5}
+        - {x: 9, y: -14.5}
+        - {x: 9, y: -11.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
