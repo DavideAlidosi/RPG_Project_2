@@ -38,21 +38,22 @@ public class EnemyController : MonoBehaviour {
             
             
             //refGrid.CreateGridEnemy(enemy.refMyCell.myI, enemy.refMyCell.myJ);
-            path.ReachableCells((enemy.per), enemy.lookCell);
+            path.ReachableCells((enemy.per+1), enemy.lookCell);
 
             // Movimento nemico ricerca caselle e casella più vicino al player
             enemy.ManhattanSearch();
+            int sec = 0;
             if (enemy.isPlayerVisible)
             {
                 path.ReachableCells((enemy.agi) +1, enemy.moveCell);
-
+                sec += 2;
                 Cell nearestToPlayer = enemy.SearchPlayer();
                 path.Pathfinding(refGrid.playerLinking.GetComponentInParent<Cell>().myI, refGrid.playerLinking.GetComponentInParent<Cell>().myJ);
                 path.ChooseMinPath(enemy.moveCell);
                 StartCoroutine(moveEnemy(enemy));
             }
            
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(sec);
 
             
             foreach (var cell in enemy.moveCell)
@@ -81,7 +82,7 @@ public class EnemyController : MonoBehaviour {
             other.refMyCell = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ];
             other.transform.parent = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ].transform;
             other.transform.localPosition = new Vector3(0, 0, 1);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.2f);
         }
 
         refFog.GetPlayerNearEnemy(other.refMyCell.myI, other.refMyCell.myJ);
