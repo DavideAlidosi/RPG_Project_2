@@ -301,6 +301,6 @@ public class StoryText : MonoBehaviour {
         refMenu = FindObjectOfType<MenuPopUp>();
         refGC = FindObjectOfType<GameControl>();
         refMenu.panelDialoghi.SetActive(false);
-        refGC.phase = GamePhase.Movimento;
+        //refGC.phase = GamePhase.Movimento;
     }
 }

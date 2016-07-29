@@ -67,21 +67,22 @@ public class GameControl : MonoBehaviour
 
     public void ResetToSelectionPhase()
     {
-        fogRef.CleanMove();
-        refMPU.Deactivate();
+        
+        
         firstCell.GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
 
         Vector2 pos;
-        fogRef.LightRadius();
+        
         
         cellCombat = null;
         queueMoveCell.Clear();
         
-        pos = new Vector2(firstCell.GetComponent<Cell>().myI, firstCell.GetComponent<Cell>().myJ);
+        pos = new Vector2(plRef.GetComponentInParent<Cell>().myI, plRef.GetComponentInParent<Cell>().myJ);
 
         fogRef.Fog(pos, plRef.agi);
         fogRef.AStar();
-        movementCell.Add(firstCell);
+        //fogRef.LightRadius();
+        movementCell.Add(plRef.GetComponentInParent<Cell>().gameObject);
 
         //Clear Movment Cell
         for (int i = 0; i < movementCell.Count; i++)
@@ -257,7 +258,7 @@ public class GameControl : MonoBehaviour
     public void EndPlayerPhase(int _myI, int _myJ)
     {
         phase = GamePhase.Azione;
-
+        fogRef.CleanMove();
         fogRef.ResetEnemyStatus();
 
         
@@ -279,7 +280,7 @@ public class GameControl : MonoBehaviour
     public void EndPlayerPhaseWCombat(int _myI, int _myJ)
     {
         phase = GamePhase.Azione;
-
+        fogRef.CleanMove();
         fogRef.ResetEnemyStatus();
 
         
@@ -308,6 +309,7 @@ public class GameControl : MonoBehaviour
 
             foreach (var cell in fogRef.pathProva)
             {
+                Vector2 pos = new Vector2(0,0);
                 playerCell = refGrid.cellMat[_myI, _myJ].gameObject;
                 fogRef.LightRadius();
                 yield return new WaitForSeconds(0.5f);
@@ -320,6 +322,7 @@ public class GameControl : MonoBehaviour
 
             }
             FindText(_myI, _myJ);
+            fogRef.ClearPath();
             isMovingEnemy = true;
         }
         while (isMovingEnemy)

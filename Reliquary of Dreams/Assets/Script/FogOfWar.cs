@@ -95,7 +95,7 @@ public class FogOfWar : MonoBehaviour {
         foreach (var cell in destroyCell)
         {
             cell.isFree = false;
-            if (cell.refMyTile.color == null)
+            /*if (cell.refMyTile.color == null)
             {
                 continue;
                 
@@ -104,7 +104,7 @@ public class FogOfWar : MonoBehaviour {
             foreach (var sprite in cell.myTile)
             {
                 sprite.color = Color.white;
-            }
+            }*/
 
         }
         destroyCell.Clear();        
@@ -293,6 +293,7 @@ public class FogOfWar : MonoBehaviour {
         int vista = GetComponent<Player>().per;
         int _x = GetComponentInParent<Cell>().myI;
         int _y = GetComponentInParent<Cell>().myJ;
+        
 
         ClearLight();
         ReachableCells(vista, lightCell);

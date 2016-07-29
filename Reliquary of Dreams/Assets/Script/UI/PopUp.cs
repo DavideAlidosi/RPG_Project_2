@@ -6,6 +6,7 @@ public class PopUp : MonoBehaviour {
 
     public Image tooltipPanel;
     ShowTool refShowTool;
+    
 
 
     // Use this for initialization
@@ -54,16 +55,19 @@ public class PopUp : MonoBehaviour {
         if (this.GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color != Color.clear)
         {
             this.GetComponentInChildren<Enemy>().ResetLookingCell();
+            
             foreach (var cell in FindObjectOfType<FogOfWar>().destroyCell)
             {
                 if (cell.refMyTile.color != Color.red)
                 {
                     cell.refMyTile.color = Color.green;
                 }
-                
-                
-                
+
+
+
             }
+            
+            
         }
         
     }
