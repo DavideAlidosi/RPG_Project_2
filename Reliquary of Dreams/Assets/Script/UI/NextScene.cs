@@ -18,7 +18,8 @@ public class NextScene : MonoBehaviour {
     public void NextLevel()
     {
         refST = FindObjectOfType<StoryTeller>();
-        Debug.Log("Ciao");
+        
         SceneManager.LoadScene(refST.sceneToLoad);
+        refST.sceneToLoad++;
     }
 }

@@ -97,6 +97,7 @@ public class Setstat : MonoBehaviour
 
     void OnMouseEnter()
     {
+        Debug.Log("CIao");
         forzText.text = "ciao for";
     }
 }
