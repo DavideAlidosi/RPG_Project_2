@@ -122,6 +122,11 @@ public class GameControl : MonoBehaviour
         {
             plRef.forS = plRef.forMax;
         }
+
+        if (phase != GamePhase.Dialoghi)
+        {
+            phase = GamePhase.Movimento;
+        }
     }
 
     public void CombatPlayer()

@@ -24,8 +24,10 @@ public class Inventory : MonoBehaviour {
 
     void OnEnable()
     {
+        
         isEnable = true;
         refPlayer = FindObjectOfType<Player>();
+        refPlayer.gcRef.phase = GamePhase.Azione;
         int n = 0;
         foreach (var item in refPlayer.itemPlayer)
         {
@@ -69,6 +71,7 @@ public class Inventory : MonoBehaviour {
 
     void OnDisable()
     {
+        refPlayer.gcRef.phase = GamePhase.Movimento;
         refMenu = FindObjectOfType<MenuPopUp>();
         refMenu.isActiveCons = false;
         isEnable = false;
@@ -78,8 +81,5 @@ public class Inventory : MonoBehaviour {
         }   
     }
 
-    void Ciao()
-    {
-        Debug.Log("Ciao");
-    }
+    
 }

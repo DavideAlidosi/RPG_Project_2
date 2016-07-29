@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MenuPopUp : MonoBehaviour {
     public GameObject menuPanel;
     public GameObject levelUpPanel;
+    public GameObject equipStat;
 
     public bool isActiveCons = false;
     bool isActiveEquip = false;
@@ -48,14 +49,17 @@ public class MenuPopUp : MonoBehaviour {
 
     public void ConsumableInventory()
     {
+        // BUG
         if (!isActiveCons)
         {
             inventory.gameObject.SetActive(true);
+            equipStat.SetActive(true);
             isActiveCons = true;
         }
         else
         {
             inventory.gameObject.SetActive(false);
+            equipStat.SetActive(false);
             isActiveCons = false;
         }
         

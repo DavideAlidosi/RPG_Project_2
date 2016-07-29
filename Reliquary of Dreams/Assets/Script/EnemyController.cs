@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour {
     public Grid refGrid;
     public FogOfWar refFog;
     public Enemy[] enemies;
-    bool end = false;
+    
     // Use this for initialization
     void Start () {
         refGC = FindObjectOfType<GameControl>();
@@ -29,7 +29,7 @@ public class EnemyController : MonoBehaviour {
         
         foreach (var enemy in enemies)
         {
-            end = false;
+            
             Pathfind path = enemy.GetComponent<Pathfind>();
             enemy.refMyCell = enemy.GetComponentInParent<Cell>();
             if (enemy.refMyCell == null)
@@ -66,7 +66,7 @@ public class EnemyController : MonoBehaviour {
             }
         }
         //refGrid.CreateGrid();
-        refGC.phase = GamePhase.Movimento;
+        //refGC.phase = GamePhase.Movimento;
        
         refGC.ResetToSelectionPhase();
             
@@ -91,7 +91,7 @@ public class EnemyController : MonoBehaviour {
             refGC.CombatEnemy(other);
 
         }
-        end = true;
+        
         //yield return new WaitForSeconds(0.2f);
     }
 
