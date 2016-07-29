@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class LuckPotion : Item {
 
@@ -8,6 +9,7 @@ public class LuckPotion : Item {
     public override void Drink()
     {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
+        GetComponent<Image>().gameObject.SetActive(false);
         Destroy(this.gameObject);
     }
 

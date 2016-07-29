@@ -39,7 +39,23 @@ public class Inventory : MonoBehaviour {
             {
                 newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
             }
-            
+            if (item.name == "PotionMax")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+            if (item.name == "LuckyPotion")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+            if (item.name == "StrengthPotion")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+            if (item.name == "AgilityPotion")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+
 
 
         }

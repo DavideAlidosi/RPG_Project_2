@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class AgiPotion : Item {
     public override void Drink()
     {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
+        GetComponent<Image>().gameObject.SetActive(false);
         Destroy(this.gameObject);
     }
 
