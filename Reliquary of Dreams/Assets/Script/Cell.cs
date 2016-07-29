@@ -172,6 +172,7 @@ public class Cell : MonoBehaviour {
                 }
                 if (GetComponentInChildren<NextScene>())
                 {
+                    Debug.Log("Ciao");
                     FindObjectOfType<NextScene>().NextLevel();
                 }
                 if (GetComponentInChildren<ItemLoader>())

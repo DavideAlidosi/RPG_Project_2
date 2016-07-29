@@ -4,7 +4,7 @@ public enum TextLevel { T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, 
 public class StoryTeller : MonoBehaviour {
     public TextLevel dialogoN = TextLevel.T1;
 
-    public int sceneToLoad = 7;
+    public int sceneToLoad = 2;
     // Use this for initialization
     void Start () {
         DontDestroyOnLoad(this.gameObject);

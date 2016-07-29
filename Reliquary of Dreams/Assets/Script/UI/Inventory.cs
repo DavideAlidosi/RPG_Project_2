@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour {
     
     void Start()
     {
-        refPlayer = FindObjectOfType<Player>();
+        
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class Inventory : MonoBehaviour {
     void OnEnable()
     {
         isEnable = true;
-        
+        refPlayer = FindObjectOfType<Player>();
         int n = 0;
         foreach (var item in refPlayer.itemPlayer)
         {

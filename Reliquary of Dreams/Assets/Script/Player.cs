@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
-       /*stat = FindObjectOfType<Singleton>();
+        /*stat = FindObjectOfType<Singleton>();
         str = stat.forza;
         cos = stat.cost;
         hp = cos*4;
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour {
         intS = stat.intel;
         per = stat.perc;
         forS = stat.fortuna;*/
-        
+
         str = 7;
         cos = 7;
         hp = cos * 4;
