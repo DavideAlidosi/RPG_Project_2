@@ -77,6 +77,7 @@ public class Grid : MonoBehaviour {
         
         playerLinking.SpawnPlayer(posPlayer);
         CreateGrid();
+       
         
         
         
@@ -91,6 +92,10 @@ public class Grid : MonoBehaviour {
 	void Update () {
         
 	}
+    void Start()
+    {
+        playerLinking.GetComponent<FogOfWar>().LightRadius();
+    }
 
     // Crea la griglia logica attorno al player ad ogni click di range caselle
     // TESTING
