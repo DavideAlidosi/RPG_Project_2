@@ -22,6 +22,10 @@ public class GameControl : MonoBehaviour
 
     public List<GameObject> movementCell = new List<GameObject>();
 
+    public int potionTurnStr = 0;
+    public int potionTurnAgi = 0;
+    public int potionTurnFor = 0;
+
     Player plRef;
     FogOfWar fogRef;
     MenuPopUp refMPU;
@@ -90,6 +94,34 @@ public class GameControl : MonoBehaviour
             //movementCell[i].GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
         }
         movementCell.Clear();
+
+        if (potionTurnStr > 0)
+        {
+            potionTurnStr--;
+            
+        }
+        if (potionTurnStr == 0)
+        {
+            plRef.str = plRef.strMax;
+        }
+        if (potionTurnAgi > 0)
+        {
+            potionTurnAgi--;
+            
+        }
+        if (potionTurnAgi == 0)
+        {
+            plRef.agi = plRef.agiMax;
+        }
+        if (potionTurnFor > 0)
+        {
+            potionTurnFor--;
+            
+        }
+        if (potionTurnFor == 0)
+        {
+            plRef.forS = plRef.forMax;
+        }
     }
 
     public void CombatPlayer()

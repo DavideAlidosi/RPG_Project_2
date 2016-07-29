@@ -9,6 +9,8 @@ public class LuckPotion : Item {
     public override void Drink()
     {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
+        FindObjectOfType<Player>().forS += 2;
+        FindObjectOfType<Player>().gcRef.potionTurnFor += 2;
         inventoryPanel.SetActive(false);
         Destroy(this.gameObject);
     }

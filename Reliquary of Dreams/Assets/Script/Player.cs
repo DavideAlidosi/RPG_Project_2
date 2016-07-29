@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour {
     public SpriteRenderer sr;
     Grid gridRef;
-    GameControl gcRef;
+    public GameControl gcRef;
     FogOfWar fogRef;
     MenuPopUp refMPU;
     Singleton stat;
@@ -22,7 +22,11 @@ public class Player : MonoBehaviour {
     public int per;
     public int forS;
     public int level = 1;
+
     public int hpMax;
+    public int strMax;
+    public int agiMax;
+    public int forMax;
 
 
     // Use this for initialization
@@ -44,7 +48,11 @@ public class Player : MonoBehaviour {
         intS = 7;
         per = 10;
         forS = 7;
+
         hpMax = hp;
+        strMax = str;
+        agiMax = agi;
+        forMax = forS;
         
     }
 	void Start () {
