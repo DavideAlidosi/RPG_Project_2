@@ -51,7 +51,7 @@ public class EnemyController : MonoBehaviour {
                 StartCoroutine(moveEnemy(enemy));
             }
            
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.5f);
             foreach (var cell in enemy.moveCell)
             {
                 cell.isFree = false;
@@ -62,7 +62,8 @@ public class EnemyController : MonoBehaviour {
             }
         }
         //refGrid.CreateGrid();
-        refGC.phase = GamePhase.Selezione;
+        refGC.phase = GamePhase.Movimento;
+        refGC.ResetToSelectionPhase();
     }
 
     public IEnumerator moveEnemy(Enemy other)
@@ -73,7 +74,7 @@ public class EnemyController : MonoBehaviour {
             other.refMyCell = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ];
             other.transform.parent = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ].transform;
             other.transform.localPosition = new Vector3(0, 0, 1);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.4f);
         }
 
         refFog.GetPlayerNearEnemy(other.refMyCell.myI, other.refMyCell.myJ);

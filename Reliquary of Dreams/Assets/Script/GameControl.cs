@@ -42,7 +42,7 @@ public class GameControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (phase == GamePhase.Azione || phase == GamePhase.Movimento)
+        /*if (phase == GamePhase.Azione || phase == GamePhase.Movimento)
         {
             if (Input.GetMouseButtonUp(1))
             {
@@ -61,7 +61,7 @@ public class GameControl : MonoBehaviour
                 fogRef.enemyCell.Clear();
 
             }
-        }
+        }*/
 
     }
 
@@ -71,10 +71,22 @@ public class GameControl : MonoBehaviour
         refMPU.Deactivate();
         firstCell.GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
 
+        Vector2 pos;
+        fogRef.LightRadius();
+        
+        cellCombat = null;
+        queueMoveCell.Clear();
+        
+        pos = new Vector2(firstCell.GetComponent<Cell>().myI, firstCell.GetComponent<Cell>().myJ);
+
+        fogRef.Fog(pos, plRef.agi);
+        fogRef.AStar();
+        movementCell.Add(firstCell);
+
         //Clear Movment Cell
         for (int i = 0; i < movementCell.Count; i++)
         {
-            movementCell[i].GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
+            //movementCell[i].GetComponent<Cell>().sBox.GetComponent<SpriteRenderer>().color = Color.clear;
         }
         movementCell.Clear();
     }
@@ -248,9 +260,11 @@ public class GameControl : MonoBehaviour
 
         fogRef.ResetEnemyStatus();
 
-        ResetToSelectionPhase();
+        
         StartCoroutine(plRef.MovePlayer());
         StartCoroutine(CEndPlayerPhases(_myI, _myJ));
+
+        
 
         //plRef.MovePlayer(_myI, _myJ);
         //fogRef.GetEnemyNearPlayer(_myI, _myJ);
@@ -268,7 +282,7 @@ public class GameControl : MonoBehaviour
 
         fogRef.ResetEnemyStatus();
 
-        ResetToSelectionPhase();
+        
 
         StartCoroutine(plRef.MovePlayer());
         StartCoroutine(CEndPlayerPhasesWCombat(_myI, _myJ));
@@ -277,7 +291,7 @@ public class GameControl : MonoBehaviour
         //refGrid.CreateGrid();
         //playerCell = refGrid.cellMat[_myI,_myJ].gameObject;
         //fogRef.LightRadius();
-
+        
 
         fogRef.enemyCell.Clear();
 
@@ -299,7 +313,7 @@ public class GameControl : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
             }
             isMovingPlayer = false;
-
+            
             if (enemyCell != null)
             {
                 //CombatPlayer();
@@ -318,7 +332,7 @@ public class GameControl : MonoBehaviour
 
         }
         //fogRef.ClearPath();
-
+        
         //phase = GamePhase.Selezione;
 
     }

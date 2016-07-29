@@ -94,7 +94,17 @@ public class Grid : MonoBehaviour {
 	}
     void Start()
     {
+        Vector2 pos;
         playerLinking.GetComponent<FogOfWar>().LightRadius();
+        refGC.phase++;
+        refGC.cellCombat = null;
+        refGC.queueMoveCell.Clear();
+        refGC.firstCell = playerLinking.GetComponentInParent<Cell>().gameObject;
+        pos = new Vector2(playerLinking.GetComponentInParent<Cell>().myI, playerLinking.GetComponentInParent<Cell>().myJ);
+
+        playerLinking.GetComponent<FogOfWar>().Fog(pos, playerLinking.agi);
+        playerLinking.GetComponent<FogOfWar>().AStar();
+        refGC.movementCell.Add(playerLinking.GetComponentInParent<Cell>().gameObject);
     }
 
     // Crea la griglia logica attorno al player ad ogni click di range caselle
