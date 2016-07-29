@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour {
     public Grid refGrid;
     public FogOfWar refFog;
     public Enemy[] enemies;
+    bool end = false;
     // Use this for initialization
     void Start () {
         refGC = FindObjectOfType<GameControl>();
@@ -28,7 +29,7 @@ public class EnemyController : MonoBehaviour {
         
         foreach (var enemy in enemies)
         {
-
+            end = false;
             Pathfind path = enemy.GetComponent<Pathfind>();
             enemy.refMyCell = enemy.GetComponentInParent<Cell>();
             if (enemy.refMyCell == null)
@@ -51,7 +52,9 @@ public class EnemyController : MonoBehaviour {
                 StartCoroutine(moveEnemy(enemy));
             }
            
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
+
+            
             foreach (var cell in enemy.moveCell)
             {
                 cell.isFree = false;
@@ -63,7 +66,11 @@ public class EnemyController : MonoBehaviour {
         }
         //refGrid.CreateGrid();
         refGC.phase = GamePhase.Movimento;
+       
         refGC.ResetToSelectionPhase();
+            
+       
+        
     }
 
     public IEnumerator moveEnemy(Enemy other)
@@ -74,7 +81,7 @@ public class EnemyController : MonoBehaviour {
             other.refMyCell = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ];
             other.transform.parent = refGrid.cellMat[cellToMove[i].myI, cellToMove[i].myJ].transform;
             other.transform.localPosition = new Vector3(0, 0, 1);
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(0.1f);
         }
 
         refFog.GetPlayerNearEnemy(other.refMyCell.myI, other.refMyCell.myJ);
@@ -83,7 +90,8 @@ public class EnemyController : MonoBehaviour {
             refGC.CombatEnemy(other);
 
         }
-        yield return new WaitForSeconds(0.2f);
+        end = true;
+        //yield return new WaitForSeconds(0.2f);
     }
 
 
