@@ -7,7 +7,7 @@ public class Cell : MonoBehaviour {
     public bool isSpawnCell = false;
     public SpriteRenderer sBox;
     public bool isFree = false;
-    Vector2 pos;
+    
     public bool isWall = true;
     public bool isCombat = false;
     public bool isMove = false;
@@ -113,9 +113,9 @@ public class Cell : MonoBehaviour {
                     gcRef.cellCombat = null;
                     gcRef.queueMoveCell.Clear();
                     gcRef.firstCell = this.gameObject;
-                    pos = new Vector2(myI, myJ);
+                    //pos = new Vector2(myI, myJ);
                     refFog.LightRadius();
-                    refFog.Fog(pos, playerRef.agi);
+                    //refFog.Fog(pos, playerRef.agi);
                     refFog.AStar();
                     gcRef.movementCell.Add(this.gameObject);
                     ////gcRef.Adjacent(this.gameObject);
