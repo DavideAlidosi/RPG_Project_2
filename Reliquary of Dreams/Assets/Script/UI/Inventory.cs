@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour {
     public Button prefab;
     Player refPlayer;
+    MenuPopUp refMenu;
     // Use this for initialization
     bool isEnable = false;
     
@@ -30,6 +31,7 @@ public class Inventory : MonoBehaviour {
         {
 
             item.GetComponent<Item>().n = n;
+            item.GetComponent<Item>().inventoryPanel = this.gameObject;
             n++;
             Button newButton = Instantiate(prefab);
             newButton.name = item.name;
@@ -38,8 +40,25 @@ public class Inventory : MonoBehaviour {
             if (item.name == "Potion")
             {
                 newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+                
             }
-            
+            if (item.name == "PotionMax")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+            if (item.name == "LuckyPotion")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+            if (item.name == "StrengthPotion")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+            if (item.name == "AgilityPotion")
+            {
+                newButton.onClick.AddListener(() => item.GetComponent<Item>().Drink());
+            }
+
 
 
         }
@@ -50,6 +69,8 @@ public class Inventory : MonoBehaviour {
 
     void OnDisable()
     {
+        refMenu = FindObjectOfType<MenuPopUp>();
+        refMenu.isActiveCons = false;
         isEnable = false;
         foreach (Transform item in this.gameObject.transform)
         {

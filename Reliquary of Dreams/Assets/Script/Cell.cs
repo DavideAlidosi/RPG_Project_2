@@ -67,6 +67,7 @@ public class Cell : MonoBehaviour {
     {
         //refFog = FindObjectOfType<FogOfWar>();
         //gcRef = FindObjectOfType<GameControl>();
+
         if (this.GetComponentInChildren<Enemy>())
         {
             

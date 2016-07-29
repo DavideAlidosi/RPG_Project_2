@@ -8,7 +8,7 @@ public class MenuPopUp : MonoBehaviour {
     public GameObject menuPanel;
     public GameObject levelUpPanel;
 
-    bool isActiveCons = false;
+    public bool isActiveCons = false;
     bool isActiveEquip = false;
     public Image inventory;
     public Text dialoghi;

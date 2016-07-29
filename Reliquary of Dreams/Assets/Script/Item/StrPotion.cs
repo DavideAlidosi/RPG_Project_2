@@ -19,6 +19,7 @@ public class StrPotion : Item {
     public override void Drink()
     {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
+        inventoryPanel.SetActive(false);
         Destroy(this.gameObject);
     }
 }
