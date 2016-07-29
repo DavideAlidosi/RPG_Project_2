@@ -109,7 +109,7 @@ public class Player : MonoBehaviour {
             this.transform.localPosition = new Vector3(0, 0, 1);
             
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
         }
         gcRef.playerCell = GetComponentInParent<Cell>().gameObject;
         

@@ -76,7 +76,7 @@ public class GameControl : MonoBehaviour
         
         cellCombat = null;
         queueMoveCell.Clear();
-        
+        firstCell = playerCell;
         pos = new Vector2(plRef.GetComponentInParent<Cell>().myI, plRef.GetComponentInParent<Cell>().myJ);
 
         fogRef.Fog(pos, plRef.agi);
@@ -312,7 +312,7 @@ public class GameControl : MonoBehaviour
                 Vector2 pos = new Vector2(0,0);
                 playerCell = refGrid.cellMat[_myI, _myJ].gameObject;
                 fogRef.LightRadius();
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.2f);
             }
             isMovingPlayer = false;
             
@@ -353,7 +353,7 @@ public class GameControl : MonoBehaviour
             {
                 playerCell = refGrid.cellMat[_myI, _myJ].gameObject;
                 fogRef.LightRadius();
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.2f);
             }
             isMovingPlayer = false;
 

@@ -101,7 +101,7 @@ public class Pathfind : MonoBehaviour {
 
     void Apri(List<Vector3> pathList, Vector3 v, int startX, int startY)
     {
-        Grid refGrid = FindObjectOfType<Grid>();
+        
         pathList.Add(v);
         //Debug.Log("X : "+startX+" Y : "+startY);
         //Debug.Log("VX : "+v.x+" VY : "+v.y);
@@ -112,7 +112,7 @@ public class Pathfind : MonoBehaviour {
 
         if (v.x != startX || v.y != startY)
         {
-            if (v.z < 5)
+            if (v.z < 10)
             {
 
 
@@ -203,12 +203,13 @@ public class Pathfind : MonoBehaviour {
             foreach (var item in pathList)
             {
                 if (startX + 1 == item.x && startY == item.y && item.z == tempCount - 1)
-                {
+                { 
 
                     startX = (int)item.x;
                     startY = (int)item.y;
                     tempCount--;
                     pathCell.Add(refGrid.cellMat[startX, startY]);
+                    refGrid.cellMat[startX, startY].sBox.color = Color.gray;
 
 
                 }
@@ -218,6 +219,7 @@ public class Pathfind : MonoBehaviour {
                     startY = (int)item.y;
                     tempCount--;
                     pathCell.Add(refGrid.cellMat[startX, startY]);
+                    refGrid.cellMat[startX, startY].sBox.color = Color.gray;
                 }
                 if (startX == item.x && startY + 1 == item.y && item.z == tempCount - 1)
                 {
@@ -225,6 +227,7 @@ public class Pathfind : MonoBehaviour {
                     startY = (int)item.y;
                     tempCount--;
                     pathCell.Add(refGrid.cellMat[startX, startY]);
+                    refGrid.cellMat[startX, startY].sBox.color = Color.gray;
                 }
                 if (startX == item.x && startY - 1 == item.y && item.z == tempCount - 1)
                 {
@@ -232,6 +235,7 @@ public class Pathfind : MonoBehaviour {
                     startY = (int)item.y;
                     tempCount--;
                     pathCell.Add(refGrid.cellMat[startX, startY]);
+                    refGrid.cellMat[startX, startY].sBox.color = Color.gray;
                 }
             }
         }
