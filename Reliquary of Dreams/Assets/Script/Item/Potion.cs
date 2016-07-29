@@ -19,8 +19,14 @@ public class Potion : Item {
     public override void Drink()
     {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
-        
-        GetComponent<Image>().gameObject.SetActive(false);
+
+        inventoryPanel.SetActive(false);
         Destroy(this.gameObject);
+        int temp =  FindObjectOfType<Player>().hpMax / 2;
+        if (true)
+        {
+
+        }
+        
     }
 }

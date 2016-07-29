@@ -7,7 +7,7 @@ public class AgiPotion : Item {
     public override void Drink()
     {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
-        GetComponent<Image>().gameObject.SetActive(false);
+        inventoryPanel.SetActive(false);
         Destroy(this.gameObject);
     }
 
