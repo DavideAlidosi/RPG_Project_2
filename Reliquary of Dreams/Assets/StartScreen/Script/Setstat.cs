@@ -96,8 +96,11 @@ public class Setstat : MonoBehaviour
     }
 
     void OnMouseEnter()
-    {
-        Debug.Log("CIao");
-        forzText.text = "ciao for";
+    {        
+        forzText.text = "La forza determina la probabilita' del personaggio di colpire un nemico. Inoltre aumenta i danni inflitti.";
+        agiText.text = "L'agilita' determina il numero di caselle percorribili ogni turno e òa probabilità di schivare gli attacchi avversari.";
+        cosText.text = "La costituzione determina i punti vita del personaggio e la sua resistenza ai colpi dei nemici.";
+        perText.text = "La percezione determina la visuale del personaggio, maggiore e' il suo valore e maggiore è la visione della mappa.";
+        fortuText.text = "La fortuna determina la possibilita' di trovare oggetti e la loro qualita', inoltre incrementa la probabilita' di eseguire un colpo critico.";
     }
 }
