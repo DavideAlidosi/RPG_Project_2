@@ -90,7 +90,7 @@ public class Cell : MonoBehaviour {
 
     
 
-    void OnMouseUp()
+    void OnMouseUpAsButton()
     {
 
         //gcRef = FindObjectOfType<GameControl>();
