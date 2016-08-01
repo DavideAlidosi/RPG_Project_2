@@ -135,10 +135,6 @@ public class Setstat : MonoBehaviour
         if (fortuText != null)
         {
             fortuText.text = "La fortuna determina la possibilita' di trovare oggetti e la loro qualita', inoltre incrementa la probabilita' di eseguire un colpo critico.";
-        }
-        
-        
-        
-        
+        }                                
     }
 }
