@@ -16,6 +16,11 @@ public class FogOfWar : MonoBehaviour {
 
     //Cell enemyCell;
 
+    void Awake()
+    {
+        refGrid = FindObjectOfType<Grid>();
+        refGC = FindObjectOfType<GameControl>();
+    }
     void Start()
     {
         refGrid = FindObjectOfType<Grid>();
