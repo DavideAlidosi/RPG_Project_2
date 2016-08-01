@@ -23,6 +23,7 @@ public class PotionMax : Item {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
         inventoryPanel.SetActive(false);
         Destroy(this.gameObject);
+        equipPanel.SetActive(false);
         FindObjectOfType<Player>().hp = FindObjectOfType<Player>().hpMax;
     }
 }

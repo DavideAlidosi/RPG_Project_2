@@ -11,6 +11,7 @@ public class LuckPotion : Item {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
         FindObjectOfType<Player>().forS += 2;
         FindObjectOfType<Player>().gcRef.potionTurnFor += 2;
+        equipPanel.SetActive(false);
         inventoryPanel.SetActive(false);
         Destroy(this.gameObject);
     }

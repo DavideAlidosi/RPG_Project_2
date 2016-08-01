@@ -34,6 +34,7 @@ public class Inventory : MonoBehaviour {
 
             item.GetComponent<Item>().n = n;
             item.GetComponent<Item>().inventoryPanel = this.gameObject;
+            
             n++;
             Button newButton = Instantiate(prefab);
             newButton.name = item.name;

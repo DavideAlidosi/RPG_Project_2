@@ -21,6 +21,7 @@ public class Potion : Item {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
 
         inventoryPanel.SetActive(false);
+        equipPanel.SetActive(false);
         Destroy(this.gameObject);
         int temp =  FindObjectOfType<Player>().hpMax / 2;
         if (temp + FindObjectOfType<Player>().hp > FindObjectOfType<Player>().hpMax)

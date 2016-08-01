@@ -34,12 +34,18 @@ public class Setstat : MonoBehaviour
         stat.cost = 4;
         stat.perc = 5;
         stat.fortuna = 3;
+
+        stat.className = "Bandito";
+        stat.armorSprite = stat.armorBand;
+        stat.weaponSprite = stat.weaponBand;
+        stat.player = stat.bandito;
     }
 
     public void setStatsCavaliere()
     {
         refChange = FindObjectOfType<ChangeScene>();
         stat = FindObjectOfType<Singleton>();
+        
 
         forz.text = "3";
         agi.text = "3";
@@ -53,6 +59,10 @@ public class Setstat : MonoBehaviour
         stat.perc = 6;
         stat.fortuna = 6;
 
+        stat.className = "Cavaliere";
+        stat.armorSprite = stat.armorCav;
+        stat.weaponSprite = stat.weaponCav;
+        stat.player = stat.cavaliere;
     }
 
 
@@ -73,6 +83,10 @@ public class Setstat : MonoBehaviour
         stat.perc = 2;
         stat.fortuna = 7;
 
+        stat.className = "Ladro";
+        stat.armorSprite = stat.armorLadr;
+        stat.weaponSprite = stat.weaponLadr;
+        stat.player = stat.ladro;
     }
 
 
@@ -92,6 +106,11 @@ public class Setstat : MonoBehaviour
         stat.cost = 4;
         stat.perc = 6;
         stat.fortuna = 3;
+
+        stat.className = "Guerriero";
+        stat.armorSprite = stat.armorGuer;
+        stat.weaponSprite = stat.weaponGuer;
+        stat.player = stat.guerriero;
 
     }
 

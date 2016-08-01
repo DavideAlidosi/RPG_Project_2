@@ -7,11 +7,14 @@ public class AnimationHero : MonoBehaviour {
     public Animator animator;
     public int speed;
 
+    public AudioClip attackSound;
+
     public int hp;
 
     bool facingRight = true;
 
-    bool attack = false;
+    public bool attack = false;
+    
 
     void Update () {
         
@@ -23,6 +26,7 @@ public class AnimationHero : MonoBehaviour {
             currentSpeed = speed;
             facingRight = true;
             transform.localScale = new Vector3(1, 1, 1);
+
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -35,10 +39,11 @@ public class AnimationHero : MonoBehaviour {
         if (Input.GetKey(KeyCode.R))
         {
             attack = true;
+            SoundManager.instance.PlaySingle(attackSound);
         }
         else
         {
-            attack = false;
+            //attack = false;
         }
 
         transform.Translate(transform.right * currentSpeed * Time.deltaTime);
@@ -47,6 +52,12 @@ public class AnimationHero : MonoBehaviour {
         animator.SetInteger("HP", hp);
         animator.SetBool("FacingRight", facingRight);
         animator.SetBool("Attack", attack);
+        
 
+    }
+    public void AttackSound()
+    {
+        animator.SetTrigger("Attacck");
+        SoundManager.instance.PlaySingle(attackSound);
     }
 }

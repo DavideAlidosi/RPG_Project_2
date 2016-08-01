@@ -337,9 +337,22 @@ public class FogOfWar : MonoBehaviour {
             //cell.refMyTileGO.GetComponent<SpriteRenderer>().color = Color.grey;
 			if (cell.GetComponentInChildren<Enemy>())
 			{
-				cell.GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.clear;
+				cell.GetComponentInChildren<Enemy>().gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.clear;
 			}
 		}
+
+        foreach (var cell in destroyCell)
+        {
+            foreach (var sprite in cell.myTile)
+            {
+                sprite.color = Color.grey;
+                
+            }
+            if (cell.GetComponentInChildren<Enemy>())
+            {
+                cell.GetComponentInChildren<Enemy>().gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.clear;
+            }
+        }
 
 
 
