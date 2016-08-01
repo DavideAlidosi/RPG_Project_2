@@ -47,7 +47,7 @@ public class StoryText : MonoBehaviour {
     void PrimoDialogo()
     {
         
-        refMenu.dialoghi.text = "Puoi attaccare premendo con il tasto sinistro sul nemico. Il personaggio si avvicinera' a lui e lo provera' a colpire.";
+        refMenu.dialoghi.text = "Puoi attaccare creando un percorso sul terreno e premendo con il tasto sinistro sul nemico. Il personaggio si avvicinera' a lui e lo provera' a colpire.";
     }
 
     void SecondoDialogo()
