@@ -25,7 +25,7 @@ public class TestiScene : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "Storia 4")
         {
-            TextScene.text = "";
+            TextScene.text = "TEMPO:      ogni persona deve seguire il suo corso temporale, nessuno può sottrari.";
         }
         sprite.GetComponent<SpriteRenderer>().sprite = FindObjectOfType<Singleton>().player;
     }
@@ -105,22 +105,22 @@ public class TestiScene : MonoBehaviour
         {
             if (counterText == 1)
             {
-                TextScene.text = "1";
+                TextScene.text = "HEND DEMISE:      avrei dovuto trascorrere piu' tempo con lui. Ormai è tardi.";
                 counterText++;
             }
             else if (counterText == 2)
             {
-                TextScene.text = "2";
+                TextScene.text = "TEMPO:       non puoi combattere il tempo, puoi solo trascorrere quello che hai con serenità";
                 counterText++;
             }
             else if (counterText == 3)
             {
-                TextScene.text = "3";
+                TextScene.text = "HEND DEMISE:      ora capisco... troppo tardi ma capisco.";
                 counterText++;
             }
             else if (counterText == 4)
             {
-                TextScene.text = "4";
+                TextScene.text = "TEMPO:       hai ancora tempo, Hend. Trascorrilo con le persone che ami senza sprecarne altro.";
                 counterText++;
             }           
         }
