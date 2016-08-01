@@ -20,6 +20,6 @@ public class NextScene : MonoBehaviour {
         refST = FindObjectOfType<StoryTeller>();
         
         SceneManager.LoadScene(refST.sceneToLoad);
-        refST.sceneToLoad++;
+        refST.sceneToLoad += 2;
     }
 }
