@@ -34,6 +34,10 @@ public class Setstat : MonoBehaviour
         stat.cost = 4;
         stat.perc = 5;
         stat.fortuna = 3;
+
+        stat.className = "Bandito";
+        stat.armorSprite = stat.armorBand;
+        stat.weaponSprite = stat.weaponBand;
     }
 
     public void setStatsCavaliere()
@@ -52,6 +56,10 @@ public class Setstat : MonoBehaviour
         stat.cost = 7;
         stat.perc = 6;
         stat.fortuna = 6;
+
+        stat.className = "Cavaliere";
+        stat.armorSprite = stat.armorCav;
+        stat.weaponSprite = stat.weaponCav;
 
     }
 
@@ -73,6 +81,9 @@ public class Setstat : MonoBehaviour
         stat.perc = 2;
         stat.fortuna = 7;
 
+        stat.className = "Ladro";
+        stat.armorSprite = stat.armorLadr;
+        stat.weaponSprite = stat.weaponLadr;
     }
 
 
@@ -92,6 +103,10 @@ public class Setstat : MonoBehaviour
         stat.cost = 4;
         stat.perc = 6;
         stat.fortuna = 3;
+
+        stat.className = "Guerriero";
+        stat.armorSprite = stat.armorGuer;
+        stat.weaponSprite = stat.weaponGuer;
 
     }
 

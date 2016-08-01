@@ -5,6 +5,7 @@ public abstract class Item : MonoBehaviour {
 
     public int n;
     public GameObject inventoryPanel;
+    public GameObject equipPanel;
 
     // Use this for initialization
     void Start () {

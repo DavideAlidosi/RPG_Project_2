@@ -21,6 +21,7 @@ public class StrPotion : Item {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
         inventoryPanel.SetActive(false);
         Destroy(this.gameObject);
+        equipPanel.SetActive(false);
         FindObjectOfType<Player>().str += 2;
         FindObjectOfType<Player>().gcRef.potionTurnStr += 2;
     }

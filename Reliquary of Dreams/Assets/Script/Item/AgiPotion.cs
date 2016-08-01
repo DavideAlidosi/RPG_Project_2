@@ -8,6 +8,7 @@ public class AgiPotion : Item {
     {
         FindObjectOfType<Player>().itemPlayer.RemoveAt(n);
         inventoryPanel.SetActive(false);
+        equipPanel.SetActive(false);
         Destroy(this.gameObject);
         FindObjectOfType<Player>().agi += 2;
         FindObjectOfType<Player>().gcRef.potionTurnAgi += 2;
