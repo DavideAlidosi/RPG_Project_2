@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: 83320d9845fa90a4ca828dc43418cf99
+timeCreated: 1470082242
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HERo45old-attack-SpS_0
+    21300002: HERo45old-attack-SpS_1
+    21300004: HERo45old-attack-SpS_2
+    21300006: HERo45old-attack-SpS_3
+    21300008: HERo45old-attack-SpS_4
+    21300010: HERo45old-attack-SpS_5
+    21300012: HERo45old-attack-SpS_6
+    21300014: HERo45old-attack-SpS_7
+    21300016: HERo45old-attack-SpS_8
+    21300018: HERo45old-attack-SpS_9
+    21300020: HERo45old-attack-SpS_10
+    21300022: HERo45old-attack-SpS_11
+    21300024: HERo45old-attack-SpS_12
+    21300026: HERo45old-attack-SpS_13
+    21300028: HERo45old-attack-SpS_14
+    21300030: HERo45old-attack-SpS_15
+    21300032: HERo45old-attack-SpS_16
+    21300034: HERo45old-attack-SpS_17
+    21300036: HERo45old-attack-SpS_18
+    21300038: HERo45old-attack-SpS_19
+    21300040: HERo45old-attack-SpS_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HERo45old-attack-SpS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 4.5}
+        - {x: 27, y: 1.5}
+        - {x: 30, y: 2.5}
+        - {x: 34, y: 4.5}
+        - {x: 34, y: 23.5}
+        - {x: 33, y: 30.5}
+        - {x: 13, y: 59.5}
+        - {x: -5, y: 59.5}
+        - {x: -27, y: 34.5}
+        - {x: -34, y: 14.5}
+        - {x: -34, y: -36.5}
+        - {x: -21, y: -48.5}
+        - {x: 33, y: -48.5}
+        - {x: 34, y: -43.5}
+        - {x: 34, y: -12.5}
+        - {x: 24, y: 1.5}
+    - name: HERo45old-attack-SpS_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 58.5}
+        - {x: -32, y: 53.5}
+        - {x: -36, y: 23.5}
+        - {x: -36, y: -35.5}
+        - {x: -16, y: -48.5}
+        - {x: -13, y: -48.5}
+        - {x: -4, y: -45.5}
+        - {x: 1, y: -48.5}
+        - {x: 31, y: -48.5}
+        - {x: 31, y: 47.5}
+        - {x: 22, y: 58.5}
+    - name: HERo45old-attack-SpS_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 56.5}
+        - {x: -30, y: 41.5}
+        - {x: -42, y: 18.5}
+        - {x: -42, y: -33.5}
+        - {x: -35, y: -48.5}
+        - {x: 30, y: -48.5}
+        - {x: 30, y: 37.5}
+        - {x: 10, y: 56.5}
+    - name: HERo45old-attack-SpS_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 54.5}
+        - {x: -25, y: 54.5}
+        - {x: -48, y: 20.5}
+        - {x: -48, y: -34.5}
+        - {x: -39, y: -43.5}
+        - {x: -26, y: -48.5}
+        - {x: 29, y: -48.5}
+        - {x: 29, y: -0.5}
+        - {x: 4, y: 51.5}
+    - name: HERo45old-attack-SpS_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 5.5}
+        - {x: 4, y: 53.5}
+        - {x: -33, y: 53.5}
+        - {x: -54, y: 26.5}
+        - {x: -54, y: -33.5}
+        - {x: -51, y: -35.5}
+        - {x: -45, y: -32.5}
+        - {x: -31, y: -44.5}
+        - {x: -25, y: -47.5}
+        - {x: -16, y: -47.5}
+        - {x: -13, y: -40.5}
+        - {x: 9, y: -47.5}
+        - {x: 28, y: -47.5}
+    - name: HERo45old-attack-SpS_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1598
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 14.5}
+        - {x: -7, y: 52.5}
+        - {x: -19, y: 52.5}
+        - {x: -36, y: 39.5}
+        - {x: -56, y: -9.5}
+        - {x: -56, y: -28.5}
+        - {x: -52, y: -34.5}
+        - {x: -28, y: -47.5}
+        - {x: 27, y: -47.5}
+    - name: HERo45old-attack-SpS_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 52.5}
+        - {x: -34, y: 46.5}
+        - {x: -54, y: 20.5}
+        - {x: -54, y: -34.5}
+        - {x: -36, y: -48.5}
+        - {x: 29, y: -48.5}
+        - {x: 29, y: 10.5}
+        - {x: -4, y: 52.5}
+    - name: HERo45old-attack-SpS_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 52.5}
+        - {x: -34, y: 44.5}
+        - {x: -49, y: 1.5}
+        - {x: -49, y: -49.5}
+        - {x: 34, y: -49.5}
+        - {x: 34, y: 1.5}
+        - {x: 2, y: 52.5}
+    - name: HERo45old-attack-SpS_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 52.5}
+        - {x: -26, y: 38.5}
+        - {x: -43, y: -5.5}
+        - {x: -43, y: -33.5}
+        - {x: -40, y: -38.5}
+        - {x: -36, y: -45.5}
+        - {x: -33, y: -48.5}
+        - {x: 34, y: -48.5}
+        - {x: 40, y: -46.5}
+        - {x: 40, y: -1.5}
+        - {x: 8, y: 52.5}
+    - name: HERo45old-attack-SpS_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 52.5}
+        - {x: -7, y: 52.5}
+        - {x: -38, y: 11.5}
+        - {x: -38, y: -42.5}
+        - {x: -37, y: -46.5}
+        - {x: 45, y: -46.5}
+        - {x: 45, y: -0.5}
+        - {x: 36, y: 28.5}
+    - name: HERo45old-attack-SpS_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: -7.5}
+        - {x: -34, y: -38.5}
+        - {x: -30, y: -46.5}
+        - {x: 49, y: -46.5}
+        - {x: 49, y: 13.5}
+        - {x: 40, y: 52.5}
+        - {x: 5, y: 52.5}
+        - {x: -13, y: 36.5}
+    - name: HERo45old-attack-SpS_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1148
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 7.5}
+        - {x: -33, y: -36.5}
+        - {x: -25, y: -45.5}
+        - {x: 50, y: -45.5}
+        - {x: 50, y: 6.5}
+        - {x: 45, y: 32.5}
+        - {x: 21, y: 52.5}
+        - {x: 5, y: 52.5}
+        - {x: -17, y: 40.5}
+    - name: HERo45old-attack-SpS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 52.5}
+        - {x: -32, y: -0.5}
+        - {x: -32, y: -34.5}
+        - {x: -30, y: -39.5}
+        - {x: -22, y: -43.5}
+        - {x: -8, y: -45.5}
+        - {x: 51, y: -45.5}
+        - {x: 51, y: 8.5}
+        - {x: 26, y: 52.5}
+    - name: HERo45old-attack-SpS_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 51.5}
+        - {x: -17, y: 39.5}
+        - {x: -32, y: -7.5}
+        - {x: -32, y: -40.5}
+        - {x: -31, y: -44.5}
+        - {x: 51, y: -44.5}
+        - {x: 51, y: -4.5}
+        - {x: 21, y: 51.5}
+    - name: HERo45old-attack-SpS_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 51.5}
+        - {x: -12, y: 36.5}
+        - {x: -32, y: -3.5}
+        - {x: -32, y: -39.5}
+        - {x: -31, y: -44.5}
+        - {x: 52, y: -44.5}
+        - {x: 52, y: 12.5}
+        - {x: 24, y: 51.5}
+    - name: HERo45old-attack-SpS_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 51.5}
+        - {x: -32, y: -1.5}
+        - {x: -32, y: -38.5}
+        - {x: -31, y: -40.5}
+        - {x: -23, y: -43.5}
+        - {x: 52, y: -43.5}
+        - {x: 52, y: 0.5}
+        - {x: 27, y: 51.5}
+    - name: HERo45old-attack-SpS_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 52.5}
+        - {x: -32, y: 25.5}
+        - {x: -32, y: -44.5}
+        - {x: 50, y: -44.5}
+        - {x: 50, y: 4.5}
+        - {x: 34, y: 52.5}
+    - name: HERo45old-attack-SpS_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 698
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 54.5}
+        - {x: -33, y: 27.5}
+        - {x: -33, y: -47.5}
+        - {x: 45, y: -47.5}
+        - {x: 45, y: 11.5}
+        - {x: 24, y: 54.5}
+    - name: HERo45old-attack-SpS_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39, y: -27.5}
+        - {x: 39, y: -15.5}
+        - {x: 37, y: -8.5}
+        - {x: 32, y: -2.5}
+        - {x: 26, y: 2.5}
+        - {x: 21, y: 8.5}
+        - {x: 20, y: 16.5}
+        - {x: 20, y: 14.5}
+        - {x: 22, y: 10.5}
+        - {x: 24, y: 5.5}
+        - {x: 27, y: 1.5}
+        - {x: 30, y: 0.5}
+        - {x: 39, y: 1.5}
+        - {x: 39, y: 13.5}
+        - {x: 21, y: 56.5}
+        - {x: 1, y: 56.5}
+        - {x: -20, y: 35.5}
+        - {x: -33, y: -4.5}
+        - {x: -33, y: -27.5}
+        - {x: -30, y: -29.5}
+        - {x: -23, y: -32.5}
+        - {x: -26, y: -38.5}
+        - {x: -19, y: -47.5}
+        - {x: -18, y: -48.5}
+        - {x: 34, y: -48.5}
+        - {x: 39, y: -46.5}
+        - {x: 37, y: -42.5}
+    - name: HERo45old-attack-SpS_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 58.5}
+        - {x: -17, y: 51.5}
+        - {x: -34, y: 3.5}
+        - {x: -34, y: -25.5}
+        - {x: -30, y: -28.5}
+        - {x: -23, y: -33.5}
+        - {x: -24, y: -31.5}
+        - {x: -23, y: -42.5}
+        - {x: -15, y: -48.5}
+        - {x: 35, y: -48.5}
+        - {x: 35, y: 33.5}
+        - {x: 15, y: 58.5}
+    - name: HERo45old-attack-SpS_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 248
+        width: 600
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 4.5}
+        - {x: 26, y: 1.5}
+        - {x: 34, y: 3.5}
+        - {x: 34, y: 24.5}
+        - {x: 18, y: 57.5}
+        - {x: 15, y: 59.5}
+        - {x: -2, y: 59.5}
+        - {x: -17, y: 47.5}
+        - {x: -34, y: 9.5}
+        - {x: -34, y: -24.5}
+        - {x: -30, y: -34.5}
+        - {x: -24, y: -29.5}
+        - {x: -22, y: -27.5}
+        - {x: -28, y: -48.5}
+        - {x: 34, y: -48.5}
+        - {x: 34, y: -12.5}
+        - {x: 24, y: 1.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
