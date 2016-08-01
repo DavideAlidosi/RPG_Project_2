@@ -452,12 +452,17 @@ public class GameControl : MonoBehaviour
 
     IEnumerator CDrop(int x, int y)
     {
-        yield return new WaitForSeconds(1f);
-        GameObject pot = Instantiate(potion);
-        pot.tag = "GameObject";
-        pot.GetComponent<ItemLoader>().x = x;
-        pot.GetComponent<ItemLoader>().y = y;
-        pot.transform.parent = refGrid.cellMat[x, y].transform;
-        pot.transform.localPosition = Vector3.zero;
+        int n = Random.Range(0, 101);
+        if (n < 50)
+        {
+            yield return new WaitForSeconds(1f);
+            GameObject pot = Instantiate(potion);
+            pot.tag = "GameObject";
+            pot.GetComponent<ItemLoader>().x = x;
+            pot.GetComponent<ItemLoader>().y = y;
+            pot.transform.parent = refGrid.cellMat[x, y].transform;
+            pot.transform.localPosition = Vector3.zero;
+        }
+        
     }
 }
