@@ -73,9 +73,9 @@ public class FogOfWar : MonoBehaviour {
                 continue;
             if (cell.myJ < 0)
                 continue;
-            
-                
 
+
+            
             if (refGrid.cellMat[cell.myI+1,cell.myJ].isFree)            
                 continue;
             if (refGrid.cellMat[cell.myI, cell.myJ+1].isFree)            
@@ -85,11 +85,15 @@ public class FogOfWar : MonoBehaviour {
             if (refGrid.cellMat[cell.myI, cell.myJ - 1].isFree)
                 continue;
 
-            
-            
+            foreach (var sprite in cell.myTile)
+            {
+                sprite.color = Color.gray;
+            }
+
             cell.isFree = false;
+
             
-            cell.refMyTile.color = Color.white;
+            //cell.refMyTile.color = Color.white;
             
 
         }
@@ -100,6 +104,11 @@ public class FogOfWar : MonoBehaviour {
         foreach (var cell in destroyCell)
         {
             cell.isFree = false;
+
+            foreach (var sprite in cell.myTile)
+            {
+                sprite.color = Color.gray;
+            }
             /*if (cell.refMyTile.color == null)
             {
                 continue;
