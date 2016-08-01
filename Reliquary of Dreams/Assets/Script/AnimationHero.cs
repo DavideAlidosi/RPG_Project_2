@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AnimationTester : MonoBehaviour {
+public class AnimationHero : MonoBehaviour {
 
     //define the varables
     public Animator animator;
