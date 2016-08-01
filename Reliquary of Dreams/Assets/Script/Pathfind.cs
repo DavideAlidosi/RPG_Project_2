@@ -179,7 +179,7 @@ public class Pathfind : MonoBehaviour {
     {
         Cell cellNearest = GetComponent<Enemy>().SearchPlayer();
         int startX = cellNearest.myI;
-        int startY = cellNearest.myJ;/*refGrid.playerLinking.GetComponentInParent<Cell>().myJ;*/
+        int startY = cellNearest.myJ;
         
         int countStart = 0;
         foreach (var item in pathList)

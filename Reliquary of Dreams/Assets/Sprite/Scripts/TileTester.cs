@@ -314,6 +314,7 @@ public class TileTester : MonoBehaviour
                 td.go.transform.parent = refGrid.cellMat[td.cell_y, td.cell_x].transform;
                 td.go.transform.localPosition = new Vector3(0, 0, 1);
                 td.go.GetComponentInChildren<SpriteRenderer>().color = Color.clear;
+                td.go.GetComponent<Enemy>().mySprite = td.go.GetComponentInChildren<SpriteRenderer>();
             }
 
             if (td.go.GetComponent<NextScene>())

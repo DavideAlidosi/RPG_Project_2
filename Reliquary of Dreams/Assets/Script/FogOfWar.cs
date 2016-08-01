@@ -55,7 +55,7 @@ public class FogOfWar : MonoBehaviour {
                 {
                     sprite.color = Color.red;
                 }
-                //cell.refMyTile.color = Color.red;
+                
             }
 		}
         
@@ -326,9 +326,9 @@ public class FogOfWar : MonoBehaviour {
                 }
                 if (cell.GetComponentInChildren<Enemy>())
                 {
-                    cell.GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-                    cell.isFree = false;
                     
+                    cell.isFree = false;
+                    cell.GetComponentInChildren<Enemy>().mySprite.color = Color.white;
                 }
             }
 

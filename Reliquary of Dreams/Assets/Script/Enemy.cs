@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour
     public List<Cell> lookCell = new List<Cell>();
     public List<Cell> canMoveCell = new List<Cell>();
 
+    public SpriteRenderer mySprite;
+
     // Use this for initialization
     void Start()
     {

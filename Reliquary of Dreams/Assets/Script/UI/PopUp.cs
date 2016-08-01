@@ -30,7 +30,7 @@ public class PopUp : MonoBehaviour {
             refShowTool.forTxt.text = "For : " + GetComponentInChildren<Player>().forS;
         }
 
-        if (GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color != Color.clear)
+        if (GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().mySprite.color != Color.clear)
         {
             ActivateTooltip();
             refShowTool.strTxt.text = "Str : " + GetComponentInChildren<Enemy>().str;
@@ -52,7 +52,7 @@ public class PopUp : MonoBehaviour {
     {
         
         DeactivateTooltip();
-        if (this.GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().gameObject.GetComponent<SpriteRenderer>().color != Color.clear)
+        if (this.GetComponentInChildren<Enemy>() && GetComponentInChildren<Enemy>().mySprite.color != Color.clear)
         {
             this.GetComponentInChildren<Enemy>().ResetLookingCell();
             
