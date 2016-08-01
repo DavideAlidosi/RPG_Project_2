@@ -13,6 +13,8 @@ public class Singleton : MonoBehaviour
 
     public string className = "Fannullone";
 
+    public Sprite player;
+
     public Sprite armorSprite;
     public Sprite weaponSprite;
 
@@ -25,6 +27,13 @@ public class Singleton : MonoBehaviour
     public Sprite weaponBand;
     public Sprite weaponLadr;
     public Sprite weaponGuer;
+
+
+    public Sprite bandito;
+    public Sprite guerriero;
+    public Sprite cavaliere;
+    public Sprite ladro;
+
 
     // Define of sigleton, it store if the audio source exist and manain it alivi between the scene
     private static Singleton instance = null;
