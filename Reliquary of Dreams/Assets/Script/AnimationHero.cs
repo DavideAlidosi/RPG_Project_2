@@ -13,7 +13,8 @@ public class AnimationHero : MonoBehaviour {
 
     bool facingRight = true;
 
-    bool attack = false;
+    public bool attack = false;
+    
 
     void Update () {
         
@@ -42,7 +43,7 @@ public class AnimationHero : MonoBehaviour {
         }
         else
         {
-            attack = false;
+            //attack = false;
         }
 
         transform.Translate(transform.right * currentSpeed * Time.deltaTime);
@@ -51,6 +52,12 @@ public class AnimationHero : MonoBehaviour {
         animator.SetInteger("HP", hp);
         animator.SetBool("FacingRight", facingRight);
         animator.SetBool("Attack", attack);
+        
 
+    }
+    public void AttackSound()
+    {
+        animator.SetTrigger("Attacck");
+        SoundManager.instance.PlaySingle(attackSound);
     }
 }
