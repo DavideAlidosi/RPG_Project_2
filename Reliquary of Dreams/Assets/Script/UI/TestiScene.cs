@@ -7,6 +7,7 @@ public class TestiScene : MonoBehaviour
 {
     public int counterText = 1;
     public Text TextScene;
+    public GameObject sprite;
 
     public void Awake()
     {
@@ -26,6 +27,7 @@ public class TestiScene : MonoBehaviour
         {
             TextScene.text = "";
         }
+        sprite.GetComponent<SpriteRenderer>().sprite = FindObjectOfType<Singleton>().player;
     }
 
     public void nextText ()
@@ -120,12 +122,7 @@ public class TestiScene : MonoBehaviour
             {
                 TextScene.text = "4";
                 counterText++;
-            }
-            else if (counterText == 5)
-            {
-                TextScene.text = "5";
-                counterText++;
-            }
+            }           
         }
         else if (counterText == 5)
         {
@@ -151,4 +148,5 @@ public class TestiScene : MonoBehaviour
     {
         SceneManager.LoadScene(newScene);
     }
+
 }

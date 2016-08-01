@@ -57,7 +57,7 @@ public class AnimationHero : MonoBehaviour {
     }
     public void AttackSound()
     {
-        animator.SetTrigger("Attacck");
+        animator.SetTrigger("Attack");
         SoundManager.instance.PlaySingle(attackSound);
     }
 }
