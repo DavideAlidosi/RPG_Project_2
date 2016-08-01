@@ -4,7 +4,7 @@ using System.Collections;
 public class AnimationEnemy2 : MonoBehaviour {
 
     //define the varables
-    public Animator animator;
+    public Animator animatorE2;
     public int e2Speed;
 
     public int e2Hp;
@@ -43,10 +43,10 @@ public class AnimationEnemy2 : MonoBehaviour {
 
         transform.Translate(transform.right * e2CurrentSpeed * Time.deltaTime);
 
-        animator.SetInteger("e2XSpeed", e2CurrentSpeed);
-        animator.SetInteger("e2HP", e2Hp);
-        animator.SetBool("e2FacingRight", e2FacingRight);
-        animator.SetBool("e2Attack", e2Attack);
+        animatorE2.SetInteger("e2XSpeed", e2CurrentSpeed);
+        animatorE2.SetInteger("e2HP", e2Hp);
+        animatorE2.SetBool("e2FacingRight", e2FacingRight);
+        animatorE2.SetBool("e2Attack", e2Attack);
 
     }
 }

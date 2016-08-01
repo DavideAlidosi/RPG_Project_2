@@ -41,7 +41,11 @@ public class Player : MonoBehaviour {
         per = stat.perc;
         forS = stat.fortuna;
 
+<<<<<<< HEAD
        /*str = 7;
+=======
+        str = 7;
+>>>>>>> d1222cdd7d5376bc8f4b1d0ab2b46315b069b09b
         cos = 100;
         hp = cos * 4;
         agi = 10;

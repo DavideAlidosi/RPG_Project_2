@@ -31,11 +31,11 @@ public class TestiScene : MonoBehaviour
             {
                 NextScene("Livello 1");
             }
-            if (SceneManager.GetActiveScene().name == "Storia 2")
+            else if (SceneManager.GetActiveScene().name == "Storia 2")
             {
                 NextScene("Livello 2");
             }
-            if (SceneManager.GetActiveScene().name == "Storia 3")
+            else if (SceneManager.GetActiveScene().name == "Storia 3")
             {
                 NextScene("Livello 3");
             }
@@ -46,6 +46,3 @@ public class TestiScene : MonoBehaviour
         SceneManager.LoadScene(newScene);
     }
 }
-
-	
-

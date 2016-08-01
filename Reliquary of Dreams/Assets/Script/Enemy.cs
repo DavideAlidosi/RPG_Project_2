@@ -225,19 +225,27 @@ public class Enemy : MonoBehaviour
             }
             else if (cell.refMyTile.color == Color.green)
             {
-                cell.refMyTile.color = new Color(0, 0.5f, 0);
+                //cell.refMyTile.color = new Color(0, 0.5f, 0);
+                foreach (var sprite in cell.myTile)
+                {
+                    sprite.color = new Color(0, 0.5f, 0);
+                }
                 cell.isFree = true;
 
             }
             else 
             {
-                cell.refMyTile.color = Color.yellow;
+                //cell.refMyTile.color = Color.yellow;
+                foreach (var sprite in cell.myTile)
+                {
+                    sprite.color = Color.yellow;
+                }
                 
             }
             
             
         }
-
+        
         
     }
 

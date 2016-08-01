@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a03bfb7acc55d244cb7e264a03474fcc
-timeCreated: 1469610636
+timeCreated: 1470040524
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -71,18 +71,18 @@ TextureImporter:
         y: 1598
         width: 600
         height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4949559, y: 0.3352265}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -21, y: 12.5}
-        - {x: -25, y: 8.5}
-        - {x: -25, y: -47.5}
-        - {x: -18, y: -52.5}
-        - {x: 14, y: -52.5}
-        - {x: 25, y: -49.5}
-        - {x: 25, y: -1.5}
-        - {x: 19, y: 12.5}
+      - - {x: -19.48677, y: 49.574036}
+        - {x: -23.48677, y: 45.574036}
+        - {x: -23.48677, y: -10.425964}
+        - {x: -16.48677, y: -15.425964}
+        - {x: 15.513229, y: -15.425964}
+        - {x: 26.51323, y: -12.425964}
+        - {x: 26.51323, y: 35.574036}
+        - {x: 20.51323, y: 49.574036}
     - name: nemico-3-move-.psd-Sheet_1
       rect:
         serializedVersion: 2
@@ -90,18 +90,18 @@ TextureImporter:
         y: 1598
         width: 600
         height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.30832466}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 3.5}
-        - {x: 5, y: 12.5}
-        - {x: -15, y: 12.5}
-        - {x: -25, y: 2.5}
-        - {x: -25, y: -51.5}
-        - {x: 17, y: -51.5}
-        - {x: 25, y: -44.5}
-        - {x: 25, y: -17.5}
+      - - {x: 22, y: 46.626953}
+        - {x: 5, y: 55.626953}
+        - {x: -15, y: 55.626953}
+        - {x: -25, y: 45.626953}
+        - {x: -25, y: -8.373047}
+        - {x: 17, y: -8.373047}
+        - {x: 25, y: -1.3730469}
+        - {x: 25, y: 25.626953}
     - name: nemico-3-move-.psd-Sheet_2
       rect:
         serializedVersion: 2
@@ -109,18 +109,18 @@ TextureImporter:
         y: 1598
         width: 600
         height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3217757}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 4, y: 12.5}
-        - {x: -14, y: 12.5}
-        - {x: -25, y: -1.5}
-        - {x: -25, y: -44.5}
-        - {x: -20, y: -48.5}
-        - {x: 25, y: -48.5}
-        - {x: 25, y: -5.5}
-        - {x: 22, y: 2.5}
+      - - {x: 4, y: 52.600464}
+        - {x: -14, y: 52.600464}
+        - {x: -25, y: 38.600464}
+        - {x: -25, y: -4.399536}
+        - {x: -20, y: -8.399536}
+        - {x: 25, y: -8.399536}
+        - {x: 25, y: 34.600464}
+        - {x: 22, y: 42.600464}
     - name: nemico-3-move-.psd-Sheet_3
       rect:
         serializedVersion: 2
@@ -128,18 +128,18 @@ TextureImporter:
         y: 1598
         width: 600
         height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.49495566, y: 0.3184128}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 14, y: 12.5}
-        - {x: -10, y: 12.5}
-        - {x: -25, y: 1.5}
-        - {x: -25, y: -39.5}
-        - {x: -16, y: -48.5}
-        - {x: 25, y: -48.5}
-        - {x: 25, y: -0.5}
-        - {x: 24, y: 4.5}
+      - - {x: 15.513306, y: 53.357117}
+        - {x: -8.486694, y: 53.357117}
+        - {x: -23.486694, y: 42.357117}
+        - {x: -23.486694, y: 1.3571167}
+        - {x: -14.486694, y: -7.6428833}
+        - {x: 26.513306, y: -7.6428833}
+        - {x: 26.513306, y: 40.357117}
+        - {x: 25.513306, y: 45.357117}
     - name: nemico-3-move-.psd-Sheet_4
       rect:
         serializedVersion: 2
@@ -147,17 +147,17 @@ TextureImporter:
         y: 1598
         width: 600
         height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5050439, y: 0.328501}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 12.5}
-        - {x: -25, y: -1.5}
-        - {x: -25, y: -36.5}
-        - {x: -7, y: -47.5}
-        - {x: 25, y: -47.5}
-        - {x: 25, y: 7.5}
-        - {x: 7, y: 12.5}
+      - - {x: -12.513184, y: 51.08728}
+        - {x: -26.513184, y: 37.08728}
+        - {x: -26.513184, y: 2.0872803}
+        - {x: -8.513184, y: -8.91272}
+        - {x: 23.486816, y: -8.91272}
+        - {x: 23.486816, y: 46.08728}
+        - {x: 5.4868164, y: 51.08728}
     - name: nemico-3-move-.psd-Sheet_5
       rect:
         serializedVersion: 2
@@ -165,18 +165,18 @@ TextureImporter:
         y: 1598
         width: 600
         height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.505588, y: 0.31745145}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 14, y: 12.5}
-        - {x: -10, y: 12.5}
-        - {x: -25, y: 1.5}
-        - {x: -25, y: -39.5}
-        - {x: -16, y: -48.5}
-        - {x: 25, y: -48.5}
-        - {x: 25, y: -0.5}
-        - {x: 24, y: 4.5}
+      - - {x: 12.323608, y: 53.573425}
+        - {x: -11.676392, y: 53.573425}
+        - {x: -26.676392, y: 42.573425}
+        - {x: -26.676392, y: 1.5734253}
+        - {x: -17.676392, y: -7.4265747}
+        - {x: 23.323608, y: -7.4265747}
+        - {x: 23.323608, y: 40.573425}
+        - {x: 22.323608, y: 45.573425}
     - name: nemico-3-move-.psd-Sheet_6
       rect:
         serializedVersion: 2
@@ -185,7 +185,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 4, y: 12.5}
@@ -204,7 +204,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 22, y: 3.5}
@@ -223,7 +223,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 4, y: 12.5}
@@ -242,7 +242,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -25, y: -47.5}
@@ -262,7 +262,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -11, y: 12.5}
@@ -289,7 +289,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 4, y: 12.5}
@@ -314,7 +314,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -11, y: 12.5}
@@ -341,7 +341,7 @@ TextureImporter:
         width: 600
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -25, y: -47.5}
