@@ -118,7 +118,7 @@ public class Enemy : MonoBehaviour
                 if (Mathf.Abs(i - myI) + Mathf.Abs(j - myJ) <= (per))
                 {
                     moveCell.Add(refGrid.cellMat[i, j]);
-                    refGrid.cellMat[i, j].sBox.color = Color.gray;
+                    //refGrid.cellMat[i, j].sBox.color = Color.gray;
                 }
             }
         }

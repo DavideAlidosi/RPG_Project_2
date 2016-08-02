@@ -142,6 +142,10 @@ public class TestiScene : MonoBehaviour
             {
                 NextScene("Livello 3");
             }
+            else if (SceneManager.GetActiveScene().name == "Storia 4")
+            {
+                NextScene("Menu");
+            }
         }
     }
     public void NextScene (string newScene)

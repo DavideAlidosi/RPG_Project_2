@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum GamePhase {Selezione, Movimento,Azione,Combattimento,TurnoNemici,Dialoghi }
 public class GameControl : MonoBehaviour
@@ -31,6 +32,8 @@ public class GameControl : MonoBehaviour
     MenuPopUp refMPU;
     Grid refGrid;
     EnemyController refEnemyC;
+
+    public Image damagePanel;
 
 
     // Use this for initialization
@@ -153,12 +156,17 @@ public class GameControl : MonoBehaviour
             {
                 molt = 2;
             }
-            playerTxt.text = "-" + (damage * molt).ToString() + " HP";
 
+
+            damagePanel.gameObject.SetActive(true);
+            damagePanel.GetComponentInChildren<Text>().text = "-" + (damage * molt).ToString() + " HP";
+            damagePanel.GetComponentInChildren<Text>().color = Color.green;
+
+            /*playerTxt.text = "-" + (damage * molt).ToString() + " HP";
             playerTxt.transform.parent = enemyCell.transform;
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             playerTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
-            playerTxt.transform.localPosition = new Vector3(0, 1, 1);
+            playerTxt.transform.localPosition = new Vector3(0, 1, 1);*/
 
 
             enemyCell.GetComponentInChildren<Enemy>().hp -= damage;
@@ -171,12 +179,16 @@ public class GameControl : MonoBehaviour
         }
         else
         {
-            playerTxt.text = "MISS";
+            damagePanel.gameObject.SetActive(true);
+            damagePanel.GetComponentInChildren<Text>().text = "MISS";
+            damagePanel.GetComponentInChildren<Text>().color = Color.green;
+
+            /*playerTxt.text = "MISS";
             playerTxt.transform.parent = enemyCell.transform;
             playerTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             playerTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
             playerTxt.transform.localPosition = new Vector3(0, 1, 1);
-            Debug.Log("Player " + playerCell + " ha missato");
+            Debug.Log("Player " + playerCell + " ha missato");*/
         }
         Invoke("SetTextToNull", 1.5f);
     }
@@ -206,36 +218,48 @@ public class GameControl : MonoBehaviour
             {
                 molt = 2;
             }
+
+            damagePanel.gameObject.SetActive(true);
+            damagePanel.GetComponentInChildren<Text>().text = "-" + (damage * molt).ToString() + " HP";
+            damagePanel.GetComponentInChildren<Text>().color = Color.red;
+
+            /*
             enemyTxt.text = "-" + (damage * molt).ToString() + " HP";
             enemyTxt.transform.parent = playerCell.transform;
             enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
-            enemyTxt.transform.localPosition = new Vector3(0, 1f, 1);
+            enemyTxt.transform.localPosition = new Vector3(0, 1f, 1);*/
 
 
             Debug.Log("Enemy " + enemyCell + " Colpo andato a segno");
-            playerCell.GetComponentInChildren<Player>().hp -= damage;
+            playerCell.GetComponentInChildren<Player>().hp -= damage*molt;
             if (playerCell.GetComponentInChildren<Player>().hp <= 0)
             {
-                Destroy(playerCell.GetComponentInChildren<Player>().gameObject);
+                StartCoroutine(PlayerDeath());
+                
+                //Destroy(playerCell.GetComponentInChildren<Player>().gameObject);
             }
         }
         else
         {
-            Debug.Log("Enemy " + enemyCell + " ha missato");
+
+            damagePanel.gameObject.SetActive(true);
+            damagePanel.GetComponentInChildren<Text>().text = "MISS";
+            damagePanel.GetComponentInChildren<Text>().color = Color.red;
+
+            /*Debug.Log("Enemy " + enemyCell + " ha missato");
             enemyTxt.text = "MISS";
             enemyTxt.transform.parent = playerCell.transform;
             enemyTxt.GetComponent<MeshRenderer>().sortingLayerName = "Default";
             enemyTxt.GetComponent<MeshRenderer>().sortingOrder = 99;
-            enemyTxt.transform.localPosition = new Vector3(0, 1f, 1);
+            enemyTxt.transform.localPosition = new Vector3(0, 1f, 1);*/
         }
         Invoke("SetTextToNull", 1.5f);
     }
 
     void SetTextToNull()
     {
-        playerTxt.text = "";
-        enemyTxt.text = "";
+        damagePanel.gameObject.SetActive(false);
     }
 
     public void Adjacent(GameObject cell)
@@ -464,5 +488,24 @@ public class GameControl : MonoBehaviour
             pot.transform.localPosition = Vector3.zero;
         }
         
+    }
+
+    IEnumerator PlayerDeath()
+    {
+        
+        
+        AnimationHero[] arrayHP = plRef.GetComponentsInChildren<AnimationHero>();
+        phase = GamePhase.Dialoghi;
+        Debug.Log(arrayHP);
+        foreach (var item in arrayHP)
+        {
+           
+            
+            item.hp = 0;
+            
+        }
+        yield return new WaitForSeconds(1.2f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

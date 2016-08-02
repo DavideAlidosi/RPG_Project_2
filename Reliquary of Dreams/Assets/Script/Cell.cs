@@ -141,7 +141,7 @@ public class Cell : MonoBehaviour {
                 {
 
 
-                    if (gcRef.cellCombat != null /*|| refFog.isPlayerNearEnemy(myI, myJ)*/)
+                    if (gcRef.cellCombat != null || refFog.isPlayerNearEnemy(myI, myJ))
                     {
                         //playerRef.MovePlayer(gcRef.cellCombat.GetComponent<Cell>().myI, gcRef.cellCombat.GetComponent<Cell>().myJ);
                         FindObjectOfType<AnimationHero>().AttackSound();

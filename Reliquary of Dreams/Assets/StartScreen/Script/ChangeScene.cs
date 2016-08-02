@@ -39,6 +39,7 @@ public class ChangeScene : MonoBehaviour
         }
         else
         {
+            
             SceneManager.LoadScene(sceneToChangeTo);
         }
 

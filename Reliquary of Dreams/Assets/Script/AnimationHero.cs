@@ -10,7 +10,7 @@ public class AnimationHero : MonoBehaviour {
     public AudioClip attackSound;
 
     public int hp;
-
+        
     bool facingRight = true;
 
     public bool attack = false;

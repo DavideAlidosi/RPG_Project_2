@@ -34,6 +34,8 @@ public class Singleton : MonoBehaviour
     public Sprite cavaliere;
     public Sprite ladro;
 
+    
+
 
     // Define of sigleton, it store if the audio source exist and manain it alivi between the scene
     private static Singleton instance = null;
